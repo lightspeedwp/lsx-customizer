@@ -32,6 +32,14 @@ if ( ! class_exists( 'LSX_Blog_Customizer' ) ) {
 		public function __construct() {
 			require_once( LSX_BLOG_CUSTOMIZER_PATH . '/classes/class-lsx-blog-customizer-admin.php' );
 			require_once( LSX_BLOG_CUSTOMIZER_PATH . '/classes/class-lsx-blog-customizer-frontend.php' );
+			require_once( LSX_BLOG_CUSTOMIZER_PATH . '/classes/class-lsx-blog-customizer-customizer.php' );
+		}
+
+		/**
+		 * Sanitize checkbox
+		 */
+		public function sanitize_checkbox( $input ) {
+			return ( 1 === absint( $input ) ) ? 1 : 0;
 		}
 
 	}
