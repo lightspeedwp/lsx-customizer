@@ -80,18 +80,30 @@ msgstr ""
 msgid "Display post tags in blog archives and blog post pages."
 msgstr ""
 
-#: classes/class-lsx-blog-customizer-customizer.php:157
-msgid "Display thumbnail"
+#: classes/class-lsx-blog-customizer-customizer.php:157, classes/class-lsx-blog-customizer-customizer.php:174
+msgid "Full width"
 msgstr ""
 
 #: classes/class-lsx-blog-customizer-customizer.php:158
-msgid "Display post thumbnail in blog post pages."
-msgstr ""
-
-#: classes/class-lsx-blog-customizer-customizer.php:174
-msgid "Display related posts"
+msgid "Display blog archives in a full width layout."
 msgstr ""
 
 #: classes/class-lsx-blog-customizer-customizer.php:175
+msgid "Give the single blog post pages a full width layout."
+msgstr ""
+
+#: classes/class-lsx-blog-customizer-customizer.php:191
+msgid "Display thumbnail"
+msgstr ""
+
+#: classes/class-lsx-blog-customizer-customizer.php:192
+msgid "Display post thumbnail in blog post pages."
+msgstr ""
+
+#: classes/class-lsx-blog-customizer-customizer.php:208
+msgid "Display related posts"
+msgstr ""
+
+#: classes/class-lsx-blog-customizer-customizer.php:209
 msgid "Display related posts in blog post pages."
 msgstr ""

@@ -30,3 +30,12 @@ body.archive.author .wrap #primary #main > .infinite-wrap > article.lsx-hide-pos
 body.archive.tax-post_format .wrap #primary #main > .infinite-wrap > article.lsx-hide-post-tags .post-tags-wrapper,
 body.search .wrap #primary #main > .infinite-wrap > article.lsx-hide-post-tags .post-tags-wrapper, body.single-post .wrap #primary #main > .infinite-wrap > article.lsx-hide-post-tags .post-tags-wrapper {
   display: none; }
+
+body.lsx-body-full-width.blog .wrap #primary.col-sm-12,
+body.lsx-body-full-width.archive.date .wrap #primary.col-sm-12,
+body.lsx-body-full-width.archive.tag .wrap #primary.col-sm-12,
+body.lsx-body-full-width.archive.category .wrap #primary.col-sm-12,
+body.lsx-body-full-width.archive.author .wrap #primary.col-sm-12,
+body.lsx-body-full-width.archive.tax-post_format .wrap #primary.col-sm-12,
+body.lsx-body-full-width.search .wrap #primary.col-sm-12, body.lsx-body-full-width.single-post .wrap #primary.col-sm-12 {
+  max-width: 100%; }

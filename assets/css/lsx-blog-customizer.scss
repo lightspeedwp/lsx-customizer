@@ -32,6 +32,16 @@
 	}
 }
 
+%full-width {
+	&.lsx-body-full-width {
+		.wrap {
+			#primary.col-sm-12 {
+				max-width: 100%;
+			}
+		}
+	}
+}
+
 body.blog,
 body.archive.date,
 body.archive.tag,
@@ -41,9 +51,11 @@ body.archive.tax-post_format,
 body.search {
 	@extend %hide-post-meta;
 	@extend %hide-post-tags;
+	@extend %full-width;
 }
 
 body.single-post {
 	@extend %hide-post-meta;
 	@extend %hide-post-tags;
+	@extend %full-width;
 }
