@@ -1,3 +1,22 @@
 /*
  * lsx-blog-customizer.css
  */
+body.blog.lsx-hide-post-date.lsx-hide-post-author.lsx-hide-post-category .wrap #primary #main > article .entry-meta,
+body.blog.lsx-hide-post-date.lsx-hide-post-author.lsx-hide-post-category .wrap #primary #main > .infinite-wrap > article .entry-meta,
+body.archive.date.lsx-hide-post-date.lsx-hide-post-author.lsx-hide-post-category .wrap #primary #main > article .entry-meta,
+body.archive.date.lsx-hide-post-date.lsx-hide-post-author.lsx-hide-post-category .wrap #primary #main > .infinite-wrap > article .entry-meta,
+body.archive.tag.lsx-hide-post-date.lsx-hide-post-author.lsx-hide-post-category .wrap #primary #main > article .entry-meta,
+body.archive.tag.lsx-hide-post-date.lsx-hide-post-author.lsx-hide-post-category .wrap #primary #main > .infinite-wrap > article .entry-meta,
+body.archive.category.lsx-hide-post-date.lsx-hide-post-author.lsx-hide-post-category .wrap #primary #main > article .entry-meta,
+body.archive.category.lsx-hide-post-date.lsx-hide-post-author.lsx-hide-post-category .wrap #primary #main > .infinite-wrap > article .entry-meta,
+body.archive.author.lsx-hide-post-date.lsx-hide-post-author.lsx-hide-post-category .wrap #primary #main > article .entry-meta,
+body.archive.author.lsx-hide-post-date.lsx-hide-post-author.lsx-hide-post-category .wrap #primary #main > .infinite-wrap > article .entry-meta,
+body.archive.tax-post_format.lsx-hide-post-date.lsx-hide-post-author.lsx-hide-post-category .wrap #primary #main > article .entry-meta,
+body.archive.tax-post_format.lsx-hide-post-date.lsx-hide-post-author.lsx-hide-post-category .wrap #primary #main > .infinite-wrap > article .entry-meta,
+body.search.lsx-hide-post-date.lsx-hide-post-author.lsx-hide-post-category .wrap #primary #main > article .entry-meta,
+body.search.lsx-hide-post-date.lsx-hide-post-author.lsx-hide-post-category .wrap #primary #main > .infinite-wrap > article .entry-meta {
+  display: none; }
+
+body.single-post.lsx-hide-post-date.lsx-hide-post-author.lsx-hide-post-category .wrap #primary #main > article .entry-meta,
+body.single-post.lsx-hide-post-date.lsx-hide-post-author.lsx-hide-post-category .wrap #primary #main > .infinite-wrap > article .entry-meta {
+  display: none; }

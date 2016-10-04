@@ -24,6 +24,7 @@ if ( ! class_exists( 'LSX_Blog_Customizer_Customizer' ) ) {
 		 */
 		public function __construct() {
 			add_action( 'customize_register', array( $this, 'customize_register' ), 20 );
+			add_filter( 'body_class',         array( $this, 'body_class' ) );
 			add_action( 'wp',                 array( $this, 'layout' ), 999 );
 		}
 
@@ -91,11 +92,44 @@ if ( ! class_exists( 'LSX_Blog_Customizer_Customizer' ) ) {
 				'type'          => 'checkbox',
 				'priority'      => 10,
 			) ) );
+
+			/**
+			 * General section: display author
+			 */
+			$wp_customize->add_setting( 'lsx_blog_customizer_general_author', array(
+				'default'           => true,
+				'sanitize_callback' => array( $this, 'sanitize_checkbox' ),
+			) );
+
+			$wp_customize->add_control( new WP_Customize_Control( $wp_customize, 'lsx_blog_customizer_general_author', array(
+				'label'         => esc_html__( 'Display author', 'lsx-blog-customizer' ),
+				'description'   => esc_html__( 'Display post author in blog archives and blog post pages.', 'lsx-blog-customizer' ),
+				'section'       => 'lsx_blog_customizer_general',
+				'settings'      => 'lsx_blog_customizer_general_author',
+				'type'          => 'checkbox',
+				'priority'      => 20,
+			) ) );
+
+			/**
+			 * General section: display categories
+			 */
+			$wp_customize->add_setting( 'lsx_blog_customizer_general_category', array(
+				'default'           => true,
+				'sanitize_callback' => array( $this, 'sanitize_checkbox' ),
+			) );
+
+			$wp_customize->add_control( new WP_Customize_Control( $wp_customize, 'lsx_blog_customizer_general_category', array(
+				'label'         => esc_html__( 'Display categories', 'lsx-blog-customizer' ),
+				'description'   => esc_html__( 'Display post categories in blog archives and blog post pages.', 'lsx-blog-customizer' ),
+				'section'       => 'lsx_blog_customizer_general',
+				'settings'      => 'lsx_blog_customizer_general_category',
+				'type'          => 'checkbox',
+				'priority'      => 30,
+			) ) );
 		}
 
 		/**
 		 * Layout
-		 * Tweaks layout based on settings
 		 */
 		public function layout() {
 			$body_classes               = get_body_class();
@@ -105,10 +139,49 @@ if ( ! class_exists( 'LSX_Blog_Customizer_Customizer' ) ) {
 			$is_archive_or_single_post  = $is_archive || $is_single_post;
 
 			$general_date               = get_theme_mod( 'lsx_blog_customizer_general_date', true );
+			$general_author             = get_theme_mod( 'lsx_blog_customizer_general_author', true );
+			$general_category           = get_theme_mod( 'lsx_blog_customizer_general_category', true );
 
 			if ( $is_archive_or_single_post && false == $general_date ) {
 				remove_action( 'lsx_content_post_meta', 'lsx_post_meta_date', 10 );
 			}
+
+			if ( $is_archive_or_single_post && false == $general_author ) {
+				remove_action( 'lsx_content_post_meta', 'lsx_post_meta_author', 20 );
+			}
+
+			if ( $is_archive_or_single_post && false == $general_category ) {
+				remove_action( 'lsx_content_post_meta', 'lsx_post_meta_category', 30 );
+			}
+		}
+
+		/**
+		 * Body class
+		 *
+		 * @param array $classes the classes applied to the body tag.
+		 */
+		public function body_class( $body_classes ) {
+			$is_archive                 = in_array( 'blog', $body_classes ) || is_archive() || is_category() || is_tag() || is_date() || is_search();
+			$is_single_post             = is_singular( 'post' );
+			$is_archive_or_single_post  = $is_archive || $is_single_post;
+
+			$general_date               = get_theme_mod( 'lsx_blog_customizer_general_date', true );
+			$general_author             = get_theme_mod( 'lsx_blog_customizer_general_author', true );
+			$general_category           = get_theme_mod( 'lsx_blog_customizer_general_category', true );
+
+			if ( $is_archive_or_single_post && false == $general_date ) {
+				$body_classes[] = 'lsx-hide-post-date';
+			}
+
+			if ( $is_archive_or_single_post && false == $general_author ) {
+				$body_classes[] = 'lsx-hide-post-author';
+			}
+
+			if ( $is_archive_or_single_post && false == $general_category ) {
+				$body_classes[] = 'lsx-hide-post-category';
+			}
+			
+			return $body_classes;
 		}
 
 	}

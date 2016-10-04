@@ -1,3 +1,39 @@
 /*
  * lsx-blog-customizer.css
  */
+
+body.blog,
+body.archive.date,
+body.archive.tag,
+body.archive.category,
+body.archive.author,
+body.archive.tax-post_format,
+body.search {
+	&.lsx-hide-post-date.lsx-hide-post-author.lsx-hide-post-category {
+		.wrap {
+			#primary {
+				#main > article,
+				#main > .infinite-wrap > article {
+					.entry-meta {
+						display: none;
+					}
+				}
+			}
+		}
+	}
+}
+
+body.single-post {
+	&.lsx-hide-post-date.lsx-hide-post-author.lsx-hide-post-category {
+		.wrap {
+			#primary {
+				#main > article,
+				#main > .infinite-wrap > article {
+					.entry-meta {
+						display: none;
+					}
+				}
+			}
+		}
+	}
+}
