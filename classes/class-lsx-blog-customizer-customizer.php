@@ -144,6 +144,23 @@ if ( ! class_exists( 'LSX_Blog_Customizer_Customizer' ) ) {
 				'type'          => 'checkbox',
 				'priority'      => 30,
 			) ) );
+
+			/**
+			 * Post section: display thumbnail
+			 */
+			$wp_customize->add_setting( 'lsx_blog_customizer_single_thumbnail', array(
+				'default'           => true,
+				'sanitize_callback' => array( $this, 'sanitize_checkbox' ),
+			) );
+
+			$wp_customize->add_control( new WP_Customize_Control( $wp_customize, 'lsx_blog_customizer_single_thumbnail', array(
+				'label'         => esc_html__( 'Display thumbnail', 'lsx-blog-customizer' ),
+				'description'   => esc_html__( 'Display post thumbnail in blog post pages.', 'lsx-blog-customizer' ),
+				'section'       => 'lsx_blog_customizer_single',
+				'settings'      => 'lsx_blog_customizer_single_thumbnail',
+				'type'          => 'checkbox',
+				'priority'      => 10,
+			) ) );
 		}
 
 		/**
@@ -161,6 +178,8 @@ if ( ! class_exists( 'LSX_Blog_Customizer_Customizer' ) ) {
 			$general_category           = get_theme_mod( 'lsx_blog_customizer_general_category', true );
 			$general_tags               = get_theme_mod( 'lsx_blog_customizer_general_tags', true );
 
+			$single_thumbnail           = get_theme_mod( 'lsx_blog_customizer_single_thumbnail', true );
+
 			if ( $is_archive_or_single_post && false == $general_date ) {
 				remove_action( 'lsx_content_post_meta', 'lsx_post_meta_date', 10 );
 			}
@@ -175,6 +194,16 @@ if ( ! class_exists( 'LSX_Blog_Customizer_Customizer' ) ) {
 
 			if ( $is_archive_or_single_post && false == $general_tags ) {
 				remove_action( 'lsx_content_post_tags', 'lsx_post_tags', 10 );
+			}
+
+			if ( $is_single_post && false == $single_thumbnail ) {
+				add_filter( 'lsx_allowed_post_type_banners', function( $post_types ) {
+					if ( ( $key = array_search( 'post', $post_types ) ) !== false ) {
+						unset( $post_types[$key] );
+					}
+
+					return $post_types;
+				} );
 			}
 		}
 

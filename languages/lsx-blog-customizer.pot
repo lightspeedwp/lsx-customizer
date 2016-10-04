@@ -79,3 +79,11 @@ msgstr ""
 #: classes/class-lsx-blog-customizer-customizer.php:141
 msgid "Display post tags in blog archives and blog post pages."
 msgstr ""
+
+#: classes/class-lsx-blog-customizer-customizer.php:157
+msgid "Display thumbnail"
+msgstr ""
+
+#: classes/class-lsx-blog-customizer-customizer.php:158
+msgid "Display post thumbnail in blog post pages."
+msgstr ""
