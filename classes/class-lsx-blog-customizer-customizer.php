@@ -161,6 +161,23 @@ if ( ! class_exists( 'LSX_Blog_Customizer_Customizer' ) ) {
 				'type'          => 'checkbox',
 				'priority'      => 10,
 			) ) );
+
+			/**
+			 * Post section: display related posts
+			 */
+			$wp_customize->add_setting( 'lsx_blog_customizer_single_related_posts', array(
+				'default'           => true,
+				'sanitize_callback' => array( $this, 'sanitize_checkbox' ),
+			) );
+
+			$wp_customize->add_control( new WP_Customize_Control( $wp_customize, 'lsx_blog_customizer_single_related_posts', array(
+				'label'         => esc_html__( 'Display related posts', 'lsx-blog-customizer' ),
+				'description'   => esc_html__( 'Display related posts in blog post pages.', 'lsx-blog-customizer' ),
+				'section'       => 'lsx_blog_customizer_single',
+				'settings'      => 'lsx_blog_customizer_single_related_posts',
+				'type'          => 'checkbox',
+				'priority'      => 20,
+			) ) );
 		}
 
 		/**
@@ -179,6 +196,7 @@ if ( ! class_exists( 'LSX_Blog_Customizer_Customizer' ) ) {
 			$general_tags               = get_theme_mod( 'lsx_blog_customizer_general_tags', true );
 
 			$single_thumbnail           = get_theme_mod( 'lsx_blog_customizer_single_thumbnail', true );
+			$single_related_posts       = get_theme_mod( 'lsx_blog_customizer_single_related_posts', true );
 
 			if ( $is_archive_or_single_post && false == $general_date ) {
 				remove_action( 'lsx_content_post_meta', 'lsx_post_meta_date', 10 );
@@ -204,6 +222,10 @@ if ( ! class_exists( 'LSX_Blog_Customizer_Customizer' ) ) {
 
 					return $post_types;
 				} );
+			}
+
+			if ( $is_single_post && false == $single_related_posts ) {
+				remove_action( 'lsx_entry_bottom', 'lsx_related_posts', 10 );
 			}
 		}
 

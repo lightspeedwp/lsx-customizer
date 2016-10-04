@@ -87,3 +87,11 @@ msgstr ""
 #: classes/class-lsx-blog-customizer-customizer.php:158
 msgid "Display post thumbnail in blog post pages."
 msgstr ""
+
+#: classes/class-lsx-blog-customizer-customizer.php:174
+msgid "Display related posts"
+msgstr ""
+
+#: classes/class-lsx-blog-customizer-customizer.php:175
+msgid "Display related posts in blog post pages."
+msgstr ""
