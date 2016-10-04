@@ -16,58 +16,66 @@ msgstr ""
 "X-Poedit-SearchPathExcluded-0: *.js\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-#: classes/class-lsx-blog-customizer-customizer.php:45
+#: classes/class-lsx-blog-customizer-customizer.php:46
 msgid "Blog"
 msgstr ""
 
-#: classes/class-lsx-blog-customizer-customizer.php:46
+#: classes/class-lsx-blog-customizer-customizer.php:47
 msgid "Customise the appearance of your blog posts and archives."
 msgstr ""
 
-#: classes/class-lsx-blog-customizer-customizer.php:53
+#: classes/class-lsx-blog-customizer-customizer.php:54
 msgid "General"
 msgstr ""
 
-#: classes/class-lsx-blog-customizer-customizer.php:55
+#: classes/class-lsx-blog-customizer-customizer.php:56
 msgid "Customise the look & feel of the blog archives and blog post pages"
 msgstr ""
 
-#: classes/class-lsx-blog-customizer-customizer.php:63
+#: classes/class-lsx-blog-customizer-customizer.php:64
 msgid "Archives"
 msgstr ""
 
-#: classes/class-lsx-blog-customizer-customizer.php:65
+#: classes/class-lsx-blog-customizer-customizer.php:66
 msgid "Customise the look & feel of the blog archives"
 msgstr ""
 
-#: classes/class-lsx-blog-customizer-customizer.php:73
+#: classes/class-lsx-blog-customizer-customizer.php:74
 msgid "Single posts"
 msgstr ""
 
-#: classes/class-lsx-blog-customizer-customizer.php:75
+#: classes/class-lsx-blog-customizer-customizer.php:76
 msgid "Customise the look & feel of the blog post pages"
 msgstr ""
 
-#: classes/class-lsx-blog-customizer-customizer.php:88
+#: classes/class-lsx-blog-customizer-customizer.php:89
 msgid "Display date"
 msgstr ""
 
-#: classes/class-lsx-blog-customizer-customizer.php:89
+#: classes/class-lsx-blog-customizer-customizer.php:90
 msgid "Display post date in blog archives and blog post pages."
 msgstr ""
 
-#: classes/class-lsx-blog-customizer-customizer.php:105
+#: classes/class-lsx-blog-customizer-customizer.php:106
 msgid "Display author"
 msgstr ""
 
-#: classes/class-lsx-blog-customizer-customizer.php:106
+#: classes/class-lsx-blog-customizer-customizer.php:107
 msgid "Display post author in blog archives and blog post pages."
 msgstr ""
 
-#: classes/class-lsx-blog-customizer-customizer.php:122
+#: classes/class-lsx-blog-customizer-customizer.php:123
 msgid "Display categories"
 msgstr ""
 
-#: classes/class-lsx-blog-customizer-customizer.php:123
+#: classes/class-lsx-blog-customizer-customizer.php:124
 msgid "Display post categories in blog archives and blog post pages."
+msgstr ""
+
+#: classes/class-lsx-blog-customizer-customizer.php:140
+msgid "Display tags"
+msgstr ""
+
+#: classes/class-lsx-blog-customizer-customizer.php:141
+msgid "Display post tags in blog archives and blog post pages."
 msgstr ""

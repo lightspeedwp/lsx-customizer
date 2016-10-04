@@ -25,6 +25,7 @@ if ( ! class_exists( 'LSX_Blog_Customizer_Customizer' ) ) {
 		public function __construct() {
 			add_action( 'customize_register', array( $this, 'customize_register' ), 20 );
 			add_filter( 'body_class',         array( $this, 'body_class' ) );
+			add_filter( 'post_class',         array( $this, 'post_class' ) );
 			add_action( 'wp',                 array( $this, 'layout' ), 999 );
 		}
 
@@ -126,6 +127,23 @@ if ( ! class_exists( 'LSX_Blog_Customizer_Customizer' ) ) {
 				'type'          => 'checkbox',
 				'priority'      => 30,
 			) ) );
+
+			/**
+			 * General section: display tags
+			 */
+			$wp_customize->add_setting( 'lsx_blog_customizer_general_tags', array(
+				'default'           => true,
+				'sanitize_callback' => array( $this, 'sanitize_checkbox' ),
+			) );
+
+			$wp_customize->add_control( new WP_Customize_Control( $wp_customize, 'lsx_blog_customizer_general_tags', array(
+				'label'         => esc_html__( 'Display tags', 'lsx-blog-customizer' ),
+				'description'   => esc_html__( 'Display post tags in blog archives and blog post pages.', 'lsx-blog-customizer' ),
+				'section'       => 'lsx_blog_customizer_general',
+				'settings'      => 'lsx_blog_customizer_general_tags',
+				'type'          => 'checkbox',
+				'priority'      => 30,
+			) ) );
 		}
 
 		/**
@@ -141,6 +159,7 @@ if ( ! class_exists( 'LSX_Blog_Customizer_Customizer' ) ) {
 			$general_date               = get_theme_mod( 'lsx_blog_customizer_general_date', true );
 			$general_author             = get_theme_mod( 'lsx_blog_customizer_general_author', true );
 			$general_category           = get_theme_mod( 'lsx_blog_customizer_general_category', true );
+			$general_tags               = get_theme_mod( 'lsx_blog_customizer_general_tags', true );
 
 			if ( $is_archive_or_single_post && false == $general_date ) {
 				remove_action( 'lsx_content_post_meta', 'lsx_post_meta_date', 10 );
@@ -153,12 +172,17 @@ if ( ! class_exists( 'LSX_Blog_Customizer_Customizer' ) ) {
 			if ( $is_archive_or_single_post && false == $general_category ) {
 				remove_action( 'lsx_content_post_meta', 'lsx_post_meta_category', 30 );
 			}
+
+			if ( $is_archive_or_single_post && false == $general_tags ) {
+				remove_action( 'lsx_content_post_tags', 'lsx_post_tags', 10 );
+			}
 		}
 
 		/**
 		 * Body class
 		 *
 		 * @param array $classes the classes applied to the body tag.
+		 * @return array $classes the classes applied to the body tag.
 		 */
 		public function body_class( $body_classes ) {
 			$is_archive                 = in_array( 'blog', $body_classes ) || is_archive() || is_category() || is_tag() || is_date() || is_search();
@@ -168,7 +192,7 @@ if ( ! class_exists( 'LSX_Blog_Customizer_Customizer' ) ) {
 			$general_date               = get_theme_mod( 'lsx_blog_customizer_general_date', true );
 			$general_author             = get_theme_mod( 'lsx_blog_customizer_general_author', true );
 			$general_category           = get_theme_mod( 'lsx_blog_customizer_general_category', true );
-
+			
 			if ( $is_archive_or_single_post && false == $general_date ) {
 				$body_classes[] = 'lsx-hide-post-date';
 			}
@@ -180,8 +204,36 @@ if ( ! class_exists( 'LSX_Blog_Customizer_Customizer' ) ) {
 			if ( $is_archive_or_single_post && false == $general_category ) {
 				$body_classes[] = 'lsx-hide-post-category';
 			}
-			
+
 			return $body_classes;
+		}
+
+		/**
+		 * Post class.
+		 *
+		 * @param  array $classes The classes.
+		 * @return array $classes The classes.
+		 */
+		function post_class( $classes ) {
+			$body_classes               = get_body_class();
+			
+			$is_archive                 = in_array( 'blog', $body_classes ) || is_archive() || is_category() || is_tag() || is_date() || is_search();
+			$is_single_post             = is_singular( 'post' );
+			$is_archive_or_single_post  = $is_archive || $is_single_post;
+
+			$general_tags               = get_theme_mod( 'lsx_blog_customizer_general_tags', true );
+
+			if ( $is_single_post && false == $general_tags ) {
+				if ( ! function_exists( 'sharing_display' ) && ! class_exists( 'Jetpack_Likes' ) ) {
+					$classes[] = 'lsx-hide-post-tags';
+				}
+			} elseif ( $is_archive && false == $general_tags ) {
+				if ( ! comments_open() || empty( get_comments_number() ) ) {
+					$classes[] = 'lsx-hide-post-tags';
+				}
+			}
+
+			return $classes;
 		}
 
 	}

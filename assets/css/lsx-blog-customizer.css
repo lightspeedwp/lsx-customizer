@@ -1,22 +1,32 @@
 /*
  * lsx-blog-customizer.css
  */
-body.blog.lsx-hide-post-date.lsx-hide-post-author.lsx-hide-post-category .wrap #primary #main > article .entry-meta,
-body.blog.lsx-hide-post-date.lsx-hide-post-author.lsx-hide-post-category .wrap #primary #main > .infinite-wrap > article .entry-meta,
-body.archive.date.lsx-hide-post-date.lsx-hide-post-author.lsx-hide-post-category .wrap #primary #main > article .entry-meta,
-body.archive.date.lsx-hide-post-date.lsx-hide-post-author.lsx-hide-post-category .wrap #primary #main > .infinite-wrap > article .entry-meta,
-body.archive.tag.lsx-hide-post-date.lsx-hide-post-author.lsx-hide-post-category .wrap #primary #main > article .entry-meta,
-body.archive.tag.lsx-hide-post-date.lsx-hide-post-author.lsx-hide-post-category .wrap #primary #main > .infinite-wrap > article .entry-meta,
-body.archive.category.lsx-hide-post-date.lsx-hide-post-author.lsx-hide-post-category .wrap #primary #main > article .entry-meta,
-body.archive.category.lsx-hide-post-date.lsx-hide-post-author.lsx-hide-post-category .wrap #primary #main > .infinite-wrap > article .entry-meta,
-body.archive.author.lsx-hide-post-date.lsx-hide-post-author.lsx-hide-post-category .wrap #primary #main > article .entry-meta,
-body.archive.author.lsx-hide-post-date.lsx-hide-post-author.lsx-hide-post-category .wrap #primary #main > .infinite-wrap > article .entry-meta,
-body.archive.tax-post_format.lsx-hide-post-date.lsx-hide-post-author.lsx-hide-post-category .wrap #primary #main > article .entry-meta,
-body.archive.tax-post_format.lsx-hide-post-date.lsx-hide-post-author.lsx-hide-post-category .wrap #primary #main > .infinite-wrap > article .entry-meta,
-body.search.lsx-hide-post-date.lsx-hide-post-author.lsx-hide-post-category .wrap #primary #main > article .entry-meta,
-body.search.lsx-hide-post-date.lsx-hide-post-author.lsx-hide-post-category .wrap #primary #main > .infinite-wrap > article .entry-meta {
+body.lsx-hide-post-date.lsx-hide-post-author.lsx-hide-post-category.blog .wrap #primary #main > article .entry-meta,
+body.lsx-hide-post-date.lsx-hide-post-author.lsx-hide-post-category.archive.date .wrap #primary #main > article .entry-meta,
+body.lsx-hide-post-date.lsx-hide-post-author.lsx-hide-post-category.archive.tag .wrap #primary #main > article .entry-meta,
+body.lsx-hide-post-date.lsx-hide-post-author.lsx-hide-post-category.archive.category .wrap #primary #main > article .entry-meta,
+body.lsx-hide-post-date.lsx-hide-post-author.lsx-hide-post-category.archive.author .wrap #primary #main > article .entry-meta,
+body.lsx-hide-post-date.lsx-hide-post-author.lsx-hide-post-category.archive.tax-post_format .wrap #primary #main > article .entry-meta,
+body.lsx-hide-post-date.lsx-hide-post-author.lsx-hide-post-category.search .wrap #primary #main > article .entry-meta, body.lsx-hide-post-date.lsx-hide-post-author.lsx-hide-post-category.single-post .wrap #primary #main > article .entry-meta, body.lsx-hide-post-date.lsx-hide-post-author.lsx-hide-post-category.blog .wrap #primary #main > .infinite-wrap > article .entry-meta,
+body.lsx-hide-post-date.lsx-hide-post-author.lsx-hide-post-category.archive.date .wrap #primary #main > .infinite-wrap > article .entry-meta,
+body.lsx-hide-post-date.lsx-hide-post-author.lsx-hide-post-category.archive.tag .wrap #primary #main > .infinite-wrap > article .entry-meta,
+body.lsx-hide-post-date.lsx-hide-post-author.lsx-hide-post-category.archive.category .wrap #primary #main > .infinite-wrap > article .entry-meta,
+body.lsx-hide-post-date.lsx-hide-post-author.lsx-hide-post-category.archive.author .wrap #primary #main > .infinite-wrap > article .entry-meta,
+body.lsx-hide-post-date.lsx-hide-post-author.lsx-hide-post-category.archive.tax-post_format .wrap #primary #main > .infinite-wrap > article .entry-meta,
+body.lsx-hide-post-date.lsx-hide-post-author.lsx-hide-post-category.search .wrap #primary #main > .infinite-wrap > article .entry-meta, body.lsx-hide-post-date.lsx-hide-post-author.lsx-hide-post-category.single-post .wrap #primary #main > .infinite-wrap > article .entry-meta {
   display: none; }
 
-body.single-post.lsx-hide-post-date.lsx-hide-post-author.lsx-hide-post-category .wrap #primary #main > article .entry-meta,
-body.single-post.lsx-hide-post-date.lsx-hide-post-author.lsx-hide-post-category .wrap #primary #main > .infinite-wrap > article .entry-meta {
+body.blog .wrap #primary #main > article.lsx-hide-post-tags .post-tags-wrapper,
+body.archive.date .wrap #primary #main > article.lsx-hide-post-tags .post-tags-wrapper,
+body.archive.tag .wrap #primary #main > article.lsx-hide-post-tags .post-tags-wrapper,
+body.archive.category .wrap #primary #main > article.lsx-hide-post-tags .post-tags-wrapper,
+body.archive.author .wrap #primary #main > article.lsx-hide-post-tags .post-tags-wrapper,
+body.archive.tax-post_format .wrap #primary #main > article.lsx-hide-post-tags .post-tags-wrapper,
+body.search .wrap #primary #main > article.lsx-hide-post-tags .post-tags-wrapper, body.single-post .wrap #primary #main > article.lsx-hide-post-tags .post-tags-wrapper, body.blog .wrap #primary #main > .infinite-wrap > article.lsx-hide-post-tags .post-tags-wrapper,
+body.archive.date .wrap #primary #main > .infinite-wrap > article.lsx-hide-post-tags .post-tags-wrapper,
+body.archive.tag .wrap #primary #main > .infinite-wrap > article.lsx-hide-post-tags .post-tags-wrapper,
+body.archive.category .wrap #primary #main > .infinite-wrap > article.lsx-hide-post-tags .post-tags-wrapper,
+body.archive.author .wrap #primary #main > .infinite-wrap > article.lsx-hide-post-tags .post-tags-wrapper,
+body.archive.tax-post_format .wrap #primary #main > .infinite-wrap > article.lsx-hide-post-tags .post-tags-wrapper,
+body.search .wrap #primary #main > .infinite-wrap > article.lsx-hide-post-tags .post-tags-wrapper, body.single-post .wrap #primary #main > .infinite-wrap > article.lsx-hide-post-tags .post-tags-wrapper {
   display: none; }

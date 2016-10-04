@@ -2,13 +2,7 @@
  * lsx-blog-customizer.css
  */
 
-body.blog,
-body.archive.date,
-body.archive.tag,
-body.archive.category,
-body.archive.author,
-body.archive.tax-post_format,
-body.search {
+%hide-post-meta {
 	&.lsx-hide-post-date.lsx-hide-post-author.lsx-hide-post-category {
 		.wrap {
 			#primary {
@@ -23,17 +17,33 @@ body.search {
 	}
 }
 
-body.single-post {
-	&.lsx-hide-post-date.lsx-hide-post-author.lsx-hide-post-category {
-		.wrap {
-			#primary {
-				#main > article,
-				#main > .infinite-wrap > article {
-					.entry-meta {
+%hide-post-tags {
+	.wrap {
+		#primary {
+			#main > article,
+			#main > .infinite-wrap > article {
+				&.lsx-hide-post-tags {
+					.post-tags-wrapper {
 						display: none;
 					}
 				}
 			}
 		}
 	}
+}
+
+body.blog,
+body.archive.date,
+body.archive.tag,
+body.archive.category,
+body.archive.author,
+body.archive.tax-post_format,
+body.search {
+	@extend %hide-post-meta;
+	@extend %hide-post-tags;
+}
+
+body.single-post {
+	@extend %hide-post-meta;
+	@extend %hide-post-tags;
 }
