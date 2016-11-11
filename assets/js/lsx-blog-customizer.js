@@ -1,3 +1,0 @@
-/*
- * lsx-blog-customizer.js
- */

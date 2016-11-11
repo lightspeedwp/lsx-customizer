@@ -1,38 +1,38 @@
 <?php
 /**
- * LSX_Blog_Customizer
+ * LSX_Customizer
  *
- * @package   lsx-blog-customizer
+ * @package   lsx-customizer
  * @author    LightSpeed
  * @license   GPL-2.0+
  * @link      
  * @copyright 2016 LightSpeedDevelopment
  */
 
-if ( ! class_exists( 'LSX_Blog_Customizer' ) ) {
+if ( ! class_exists( 'LSX_Customizer' ) ) {
 
 	/**
 	 * Main plugin class.
 	 *
-	 * @package LSX_Blog_Customizer
+	 * @package LSX_Customizer
 	 * @author  LightSpeed
 	 */	
-	class LSX_Blog_Customizer {
+	class LSX_Customizer {
 
 		/**
 		 * Plugin slug
 		 *
 		 * @var string
 		 */
-		public $plugin_slug = 'lsx-blog-customizer';
+		public $plugin_slug = 'lsx-customizer';
 
 		/**
 		 * Constructor
 		 */
 		public function __construct() {
-			require_once( LSX_BLOG_CUSTOMIZER_PATH . '/classes/class-lsx-blog-customizer-admin.php' );
-			require_once( LSX_BLOG_CUSTOMIZER_PATH . '/classes/class-lsx-blog-customizer-frontend.php' );
-			require_once( LSX_BLOG_CUSTOMIZER_PATH . '/classes/class-lsx-blog-customizer-customizer.php' );
+			require_once( LSX_CUSTOMIZER_PATH . '/classes/class-lsx-customizer-admin.php' );
+			require_once( LSX_CUSTOMIZER_PATH . '/classes/class-lsx-customizer-frontend.php' );
+			require_once( LSX_CUSTOMIZER_PATH . '/classes/class-lsx-customizer-customizer.php' );
 		}
 
 		/**
@@ -44,6 +44,6 @@ if ( ! class_exists( 'LSX_Blog_Customizer' ) ) {
 
 	}
 
-	new LSX_Blog_Customizer();
+	new LSX_Customizer();
 
 }

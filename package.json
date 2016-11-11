@@ -1,14 +1,14 @@
 {
-  "name": "lsx-blog-customizer",
+  "name": "lsx-customizer",
   "version": "1.0.0",
-  "description": "The LSX Blog Customizer gives you additional layout options for the blog on your LSX powered web site.",
+  "description": "The LSX Customizer gives you additional layout options for the blog on your LSX powered web site.",
   "main": "gulpfile.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://bitbucket.org/feedmycode/lsx-blog-customizer"
+    "url": "git+https://bitbucket.org/feedmycode/lsx-customizer"
   },
   "keywords": [
     "lsx",
@@ -17,9 +17,9 @@
   "author": "LightSpeed",
   "license": "GPL2+",
   "bugs": {
-    "url": "https://bitbucket.org/feedmycode/lsx-blog-customizer/issues"
+    "url": "https://bitbucket.org/feedmycode/lsx-customizer/issues"
   },
-  "homepage": "https://bitbucket.org/feedmycode/lsx-blog-customizer#readme",
+  "homepage": "https://bitbucket.org/feedmycode/lsx-customizer#readme",
   "devDependencies": {
     "gulp": "^3.9.1",
     "gulp-concat": "^2.6.0",
