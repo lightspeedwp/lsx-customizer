@@ -42,6 +42,11 @@ gulp.task('admin-js', function () {
 	.pipe(concat('lsx-customizer-admin.min.js'))
 	.pipe(uglify())
 	.pipe(gulp.dest('assets/js'));
+
+	gulp.src('assets/js/lsx-customizer-colour-admin.js')
+	.pipe(concat('lsx-customizer-colour-admin.min.js'))
+	.pipe(uglify())
+	.pipe(gulp.dest('assets/js'));
 });
  
 gulp.task('compile-sass', (['sass', 'admin-sass']));
@@ -52,6 +57,7 @@ gulp.task('watch', function() {
 	gulp.watch('assets/css/lsx-customizer-admin.scss', ['admin-sass']);
 	gulp.watch('assets/js/lsx-customizer.js', ['js']);
 	gulp.watch('assets/js/lsx-customizer-admin.js', ['admin-js']);
+	gulp.watch('assets/js/lsx-customizer-colour-admin.js', ['admin-js']);
 });
 
 gulp.task('wordpress-lang', function () {

@@ -12,7 +12,7 @@
 if ( ! class_exists( 'LSX_Customizer_Admin' ) ) {
 
 	/**
-	 * Admin plugin class.
+	 * Admin class.
 	 *
 	 * @package LSX_Customizer_Admin
 	 * @author  LightSpeed
@@ -20,14 +20,18 @@ if ( ! class_exists( 'LSX_Customizer_Admin' ) ) {
 	class LSX_Customizer_Admin extends LSX_Customizer {
 
 		/**
-		 * Constructor
+		 * Constructor.
+		 *
+		 * @since 1.0.0
 		 */
 		public function __construct() {
-			add_action( 'admin_enqueue_scripts', array( $this, 'assets' ) );
+			add_action( 'customize_preview_init', array( $this, 'assets' ), 9999 );
 		}
 
 		/**
-		 * Enques the assets
+		 * Enques the assets.
+		 *
+		 * @since 1.0.0
 		 */
 		public function assets() {
 			if ( defined( 'WP_DEBUG' ) && true === WP_DEBUG ) {

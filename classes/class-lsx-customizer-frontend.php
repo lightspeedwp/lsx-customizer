@@ -12,7 +12,7 @@
 if ( ! class_exists( 'LSX_Customizer_Frontend' ) ) {
 
 	/**
-	 * Front-end plugin class.
+	 * Front-end class.
 	 *
 	 * @package LSX_Customizer_Frontend
 	 * @author  LightSpeed
@@ -20,14 +20,18 @@ if ( ! class_exists( 'LSX_Customizer_Frontend' ) ) {
 	class LSX_Customizer_Frontend extends LSX_Customizer {
 
 		/**
-		 * Constructor
+		 * Constructor.
+		 *
+		 * @since 1.0.0
 		 */
 		public function __construct() {
-			add_action( 'wp_enqueue_scripts', array( $this, 'assets' ) );
+			add_action( 'wp_enqueue_scripts', array( $this, 'assets' ), 9999 );
 		}
 
 		/**
-		 * Enques the assets
+		 * Enques the assets.
+		 *
+		 * @since 1.0.0
 		 */
 		public function assets() {
 			if ( defined( 'WP_DEBUG' ) && true === WP_DEBUG ) {

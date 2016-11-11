@@ -1,6 +1,6 @@
 <?php
 /**
- * LSX_Customizer_Customizer
+ * LSX_Customizer_Blog
  *
  * @package   lsx-customizer
  * @author    LightSpeed
@@ -9,18 +9,20 @@
  * @copyright 2016 LightSpeedDevelopment
  */
 
-if ( ! class_exists( 'LSX_Customizer_Customizer' ) ) {
+if ( ! class_exists( 'LSX_Customizer_Blog' ) ) {
 
 	/**
-	 * Customizer plugin class.
+	 * Customizer class.
 	 *
-	 * @package LSX_Customizer_Customizer
+	 * @package LSX_Customizer_Blog
 	 * @author  LightSpeed
 	 */
-	class LSX_Customizer_Customizer extends LSX_Customizer {
+	class LSX_Customizer_Blog extends LSX_Customizer {
 
 		/**
-		 * Constructor
+		 * Constructor.
+		 *
+		 * @since 1.0.0
 		 */
 		public function __construct() {
 			add_action( 'customize_register', array( $this, 'customize_register' ), 20 );
@@ -30,7 +32,7 @@ if ( ! class_exists( 'LSX_Customizer_Customizer' ) ) {
 		}
 
 		/**
-		 * Customizer Controls and Settings
+		 * Customizer Controls and Settings.
 		 *
 		 * @param WP_Customize_Manager $wp_customize Theme Customizer object.
 		 * @since 1.0.0
@@ -39,8 +41,8 @@ if ( ! class_exists( 'LSX_Customizer_Customizer' ) ) {
 			/**
 			 * Add the blog panel
 			 */
-			$wp_customize->add_panel( 'lsx_customizer_panel', array(
-				'priority'       	=> 60,
+			$wp_customize->add_panel( 'lsx_customizer_blog_panel', array(
+				'priority'       	=> 61,
 				'capability'     	=> 'edit_theme_options',
 				'theme_supports' 	=> '',
 				'title'				=> esc_html__( 'Blog', 'lsx-customizer' ),
@@ -54,7 +56,7 @@ if ( ! class_exists( 'LSX_Customizer_Customizer' ) ) {
 				'title'      	=> esc_html__( 'General', 'lsx-customizer' ),
 				'priority'   	=> 10,
 				'description' 	=> esc_html__( 'Customise the look & feel of the blog archives and blog post pages', 'lsx-customizer' ),
-				'panel'			=> 'lsx_customizer_panel',
+				'panel'			=> 'lsx_customizer_blog_panel',
 			) );
 
 			/**
@@ -64,7 +66,7 @@ if ( ! class_exists( 'LSX_Customizer_Customizer' ) ) {
 				'title'      	=> esc_html__( 'Archives', 'lsx-customizer' ),
 				'priority'   	=> 20,
 				'description' 	=> esc_html__( 'Customise the look & feel of the blog archives', 'lsx-customizer' ),
-				'panel'			=> 'lsx_customizer_panel',
+				'panel'			=> 'lsx_customizer_blog_panel',
 			) );
 
 			/**
@@ -74,7 +76,7 @@ if ( ! class_exists( 'LSX_Customizer_Customizer' ) ) {
 				'title'      	=> esc_html__( 'Single posts', 'lsx-customizer' ),
 				'priority'   	=> 30,
 				'description' 	=> esc_html__( 'Customise the look & feel of the blog post pages', 'lsx-customizer' ),
-				'panel'			=> 'lsx_customizer_panel',
+				'panel'			=> 'lsx_customizer_blog_panel',
 			) );
 
 			/**
@@ -215,7 +217,9 @@ if ( ! class_exists( 'LSX_Customizer_Customizer' ) ) {
 		}
 
 		/**
-		 * Layout
+		 * Layout.
+		 *
+		 * @since 1.0.0
 		 */
 		public function layout() {
 			$body_classes               = get_body_class();
@@ -264,10 +268,11 @@ if ( ! class_exists( 'LSX_Customizer_Customizer' ) ) {
 		}
 
 		/**
-		 * Body class
+		 * Body class.
 		 *
 		 * @param array $classes the classes applied to the body tag.
 		 * @return array $classes the classes applied to the body tag.
+		 * @since 1.0.0
 		 */
 		public function body_class( $body_classes ) {
 			$is_archive                 = in_array( 'blog', $body_classes ) || is_archive() || is_category() || is_tag() || is_date() || is_search();
@@ -310,8 +315,9 @@ if ( ! class_exists( 'LSX_Customizer_Customizer' ) ) {
 		 *
 		 * @param  array $classes The classes.
 		 * @return array $classes The classes.
+		 * @since 1.0.0
 		 */
-		function post_class( $classes ) {
+		public function post_class( $classes ) {
 			$body_classes               = get_body_class();
 			
 			$is_archive                 = in_array( 'blog', $body_classes ) || is_archive() || is_category() || is_tag() || is_date() || is_search();
@@ -335,6 +341,6 @@ if ( ! class_exists( 'LSX_Customizer_Customizer' ) ) {
 
 	}
 
-	new LSX_Customizer_Customizer;
+	new LSX_Customizer_Blog;
 
 }
