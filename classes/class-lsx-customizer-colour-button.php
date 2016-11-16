@@ -159,6 +159,23 @@ if ( ! class_exists( 'LSX_Customizer_Colour_Button' ) ) {
 					}
 				}
 
+				.give-form {
+					.give-btn {
+						&,
+						&:visited {
+							background-color: {$colors['button_background_color']};
+							color: {$colors['button_text_color']};
+						}
+
+						&:hover,
+						&:active,
+						&:focus {
+							background-color: {$colors['button_background_hover_color']};
+							color: {$colors['button_text_color_hover']};
+						}
+					}
+				}
+
 				.field-wrap {
 					input[type="submit"],
 					input[type="button"],
