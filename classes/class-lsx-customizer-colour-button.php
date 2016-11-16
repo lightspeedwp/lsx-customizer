@@ -212,6 +212,9 @@ if ( ! class_exists( 'LSX_Customizer_Colour_Button' ) ) {
 				.button-primary.border-btn,
 				.btn.border-btn,
 				button.border-btn,
+				.button-primary.lsx-border-button,
+				.btn.lsx-border-button,
+				button.lsx-border-button,
 				.wp-pagenavi a,
 				.lsx-postnav > a {
 					&,
