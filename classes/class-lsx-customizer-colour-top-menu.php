@@ -130,7 +130,8 @@ if ( ! class_exists( 'LSX_Customizer_Colour_Top_Menu' ) ) {
 								}
 							}
 
-							&.submenu-languages {
+							&.submenu-languages,
+							&.submenu-currency {
 								& > li {
 									a {
 										&,
