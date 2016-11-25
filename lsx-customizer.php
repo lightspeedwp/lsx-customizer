@@ -49,6 +49,7 @@ add_filter('lsx_api_manager_options_pages','lsx_customizer_options_pages_filter'
 
 function lsx_customizer_api_admin_init(){
 	global $lsx_customizer_api_manager;
+	
 	if(class_exists('Tour_Operator')) {
 		$options = get_option('_to_settings', false);
 	}else{
