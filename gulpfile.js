@@ -9,7 +9,7 @@ gulp.task('default', function() {
 	console.log('gulp js             to compile the custom.js to custom.min.js');
 	console.log('gulp compile-js     to compile both of the above.');
 	console.log('gulp watch          to continue watching all files for changes, and build when changed');
-	console.log('gulp wordpress-pot  to compile the lsx-customizer.pot');
+	console.log('gulp wordpress-lang to compile the lsx-customizer.pot');
 });
 
 var sass = require('gulp-sass');

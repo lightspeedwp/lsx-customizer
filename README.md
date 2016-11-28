@@ -1,7 +1,11 @@
-# lsx-customizer
-The LSX Customizer gives you additional layout options on your LSX powered web site.
+# LSX Customizer
 
-LSX is a theme we’ve built to be versatile, so it’s only fair we put the power in the users’ hands to make it look and work exactly how they want. The importance of an active blog with a large readership is an invaluable asset, so to encourage that on your site, use the blog customizer to select just the right layout, colour, metadata and more.
+This extension gives you complete control over the appearance of your LSX-powered WordPress site.
+
+## Changelog
+
+### 1.0.0 - 30/11/16
+* First Version
 
 ## Setup
 
