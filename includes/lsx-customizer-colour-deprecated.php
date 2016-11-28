@@ -1,4 +1,13 @@
 <?php
+/**
+ * Deprecated functions
+ *
+ * @package   LSX Customizer
+ * @author    LightSpeed
+ * @license   GPL3
+ * @link      
+ * @copyright 2016 LightSpeed
+ */
 
 /**
  * Converts a HEX value to RGB.

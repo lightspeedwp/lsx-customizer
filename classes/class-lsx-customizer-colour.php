@@ -1,21 +1,14 @@
 <?php
-/**
- * LSX_Customizer_Colour
- *
- * @package   lsx-customizer
- * @author    LightSpeed
- * @license   GPL-2.0+
- * @link      
- * @copyright 2016 LightSpeedDevelopment
- */
-
 if ( ! class_exists( 'LSX_Customizer_Colour' ) ) {
 
 	/**
-	 * Customizer Colour class.
+	 * LSX Customizer Colour Class
 	 *
-	 * @package LSX_Customizer_Colour
-	 * @author  LightSpeed
+	 * @package   LSX Customizer
+	 * @author    LightSpeed
+	 * @license   GPL3
+	 * @link      
+	 * @copyright 2016 LightSpeed
 	 */
 	class LSX_Customizer_Colour extends LSX_Customizer {
 
@@ -23,7 +16,7 @@ if ( ! class_exists( 'LSX_Customizer_Colour' ) ) {
 		 * Button customizer instance.
 		 *
 		 * @var string
-		 * @since 1.1.0
+		 * @since 1.0.0
 		 */
 		public $button;
 
@@ -31,7 +24,7 @@ if ( ! class_exists( 'LSX_Customizer_Colour' ) ) {
 		 * Button CTA customizer instance.
 		 *
 		 * @var string
-		 * @since 1.1.0
+		 * @since 1.0.0
 		 */
 		public $button_cta;
 
@@ -39,7 +32,7 @@ if ( ! class_exists( 'LSX_Customizer_Colour' ) ) {
 		 * Top Menu customizer instance.
 		 *
 		 * @var string
-		 * @since 1.1.0
+		 * @since 1.0.0
 		 */
 		public $top_menu;
 
@@ -47,7 +40,7 @@ if ( ! class_exists( 'LSX_Customizer_Colour' ) ) {
 		 * Header customizer instance.
 		 *
 		 * @var string
-		 * @since 1.1.0
+		 * @since 1.0.0
 		 */
 		public $header;
 
@@ -55,7 +48,7 @@ if ( ! class_exists( 'LSX_Customizer_Colour' ) ) {
 		 * Main menu customizer instance.
 		 *
 		 * @var string
-		 * @since 1.1.0
+		 * @since 1.0.0
 		 */
 		public $main_menu;
 
@@ -63,7 +56,7 @@ if ( ! class_exists( 'LSX_Customizer_Colour' ) ) {
 		 * Banner customizer instance.
 		 *
 		 * @var string
-		 * @since 1.1.0
+		 * @since 1.0.0
 		 */
 		public $banner;
 
@@ -71,7 +64,7 @@ if ( ! class_exists( 'LSX_Customizer_Colour' ) ) {
 		 * Body customizer instance.
 		 *
 		 * @var string
-		 * @since 1.1.0
+		 * @since 1.0.0
 		 */
 		public $body;
 
@@ -79,7 +72,7 @@ if ( ! class_exists( 'LSX_Customizer_Colour' ) ) {
 		 * Footer CTA customizer instance.
 		 *
 		 * @var string
-		 * @since 1.1.0
+		 * @since 1.0.0
 		 */
 		public $footer_cta;
 
@@ -87,7 +80,7 @@ if ( ! class_exists( 'LSX_Customizer_Colour' ) ) {
 		 * Footer Widgets customizer instance.
 		 *
 		 * @var string
-		 * @since 1.1.0
+		 * @since 1.0.0
 		 */
 		public $footer_widgets;
 
@@ -95,14 +88,14 @@ if ( ! class_exists( 'LSX_Customizer_Colour' ) ) {
 		 * Footer customizer instance.
 		 *
 		 * @var string
-		 * @since 1.1.0
+		 * @since 1.0.0
 		 */
 		public $footer;
 
 		/**
 		 * Constructor.
 		 *
-		 * @since 1.1.0
+		 * @since 1.0.0
 		 */
 		public function __construct() {
 			add_action( 'after_setup_theme',                       array( $this, 'after_setup_theme' ), 20 );
@@ -114,7 +107,7 @@ if ( ! class_exists( 'LSX_Customizer_Colour' ) ) {
 		 * Customizer Controls and Settings.
 		 *
 		 * @param WP_Customize_Manager $wp_customize Theme Customizer object.
-		 * @since 1.1.0
+		 * @since 1.0.0
 		 */
 		public function after_setup_theme() {
 			require_once( LSX_CUSTOMIZER_PATH . 'includes/lsx-customizer-colour-options.php' );
@@ -159,7 +152,7 @@ if ( ! class_exists( 'LSX_Customizer_Colour' ) ) {
 		 * Customizer Controls and Settings.
 		 *
 		 * @param WP_Customize_Manager $wp_customize Theme Customizer object.
-		 * @since 1.1.0
+		 * @since 1.0.0
 		 */
 		public function customize_register( $wp_customize ) {
 			global $customizer_colour_names;
@@ -215,7 +208,7 @@ if ( ! class_exists( 'LSX_Customizer_Colour' ) ) {
 		/**
 		 * Outputs an Underscore template for generating CSS for the color scheme.
 		 *
-		 * @since 1.1.0
+		 * @since 1.0.0
 		 */
 		public function colour_scheme_css_template() {
 			global $customizer_colour_names;
@@ -247,7 +240,7 @@ if ( ! class_exists( 'LSX_Customizer_Colour' ) ) {
 		/**
 		 * Transform SCSS to CSS.
 		 *
-		 * @since 1.1.0
+		 * @since 1.0.0
 		 */
 		public function scss_to_css( $scss ) {
 			$css = '';
@@ -273,7 +266,7 @@ if ( ! class_exists( 'LSX_Customizer_Colour' ) ) {
 		/**
 		 * Converts a HEX value to RGB.
 		 *
-		 * @since 1.1.0
+		 * @since 1.0.0
 		 */
 		public static function hex2rgb( $color ) {
 			$color = trim( $color, '#' );
@@ -296,7 +289,7 @@ if ( ! class_exists( 'LSX_Customizer_Colour' ) ) {
 		/**
 		 * Retrieves the current color scheme.
 		 *
-		 * @since 1.1.0
+		 * @since 1.0.0
 		 */
 		public function get_color_scheme() {
 			global $customizer_colour_choices;

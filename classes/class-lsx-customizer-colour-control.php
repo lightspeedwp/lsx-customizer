@@ -1,28 +1,21 @@
 <?php
-/**
- * LSX_Customizer_Colour_Control
- *
- * @package   lsx-customizer
- * @author    LightSpeed
- * @license   GPL-2.0+
- * @link      
- * @copyright 2016 LightSpeedDevelopment
- */
-
 if ( ! class_exists( 'LSX_Customizer_Colour_Control' ) ) {
 
 	/**
-	 * Customizer Colour Control class.
+	 * LSX Customizer Colour Control Class
 	 *
-	 * @package LSX_Customizer_Colour_Control
-	 * @author  LightSpeed
+	 * @package   LSX Customizer
+	 * @author    LightSpeed
+	 * @license   GPL3
+	 * @link      
+	 * @copyright 2016 LightSpeed
 	 */
 	class LSX_Customizer_Colour_Control extends WP_Customize_Control {
 		
 		/**
 		 * Enqueue control related scripts/styles.
 		 *
-		 * @since 1.1.0
+		 * @since 1.0.0
 		 */
 		public function enqueue() {
 			if ( defined( 'WP_DEBUG' ) && true === WP_DEBUG ) {
@@ -45,7 +38,7 @@ if ( ! class_exists( 'LSX_Customizer_Colour_Control' ) ) {
 		/**
 		 * Render the control's content.
 		 *
-		 * @since 1.1.0
+		 * @since 1.0.0
 		 */
 		public function render_content() {
 			if ( empty( $this->choices ) ) {

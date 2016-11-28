@@ -1,28 +1,21 @@
 <?php
-/**
- * LSX_Customizer_Colour_Banner
- *
- * @package   lsx-customizer
- * @author    LightSpeed
- * @license   GPL-2.0+
- * @link      
- * @copyright 2016 LightSpeedDevelopment
- */
-
 if ( ! class_exists( 'LSX_Customizer_Colour_Banner' ) ) {
 
 	/**
-	 * Customizer Colour class.
+	 * LSX Customizer Colour Banner Class
 	 *
-	 * @package LSX_Customizer_Colour_Banner
-	 * @author  LightSpeed
+	 * @package   LSX Customizer
+	 * @author    LightSpeed
+	 * @license   GPL3
+	 * @link      
+	 * @copyright 2016 LightSpeed
 	 */
 	class LSX_Customizer_Colour_Banner extends LSX_Customizer_Colour {
 
 		/**
 		 * Constructor.
 		 *
-		 * @since 1.1.0
+		 * @since 1.0.0
 		 */
 		public function __construct() {
 			add_action( 'after_switch_theme',   array( $this, 'set_theme_mod' ) );
@@ -34,7 +27,7 @@ if ( ! class_exists( 'LSX_Customizer_Colour_Banner' ) ) {
 		/**
 		 * Assign CSS to theme mod.
 		 *
-		 * @since 1.1.0
+		 * @since 1.0.0
 		 */
 		public function set_theme_mod() {
 			$theme_mods = $this->get_theme_mods();
@@ -46,7 +39,7 @@ if ( ! class_exists( 'LSX_Customizer_Colour_Banner' ) ) {
 		/**
 		 * Enqueues front-end CSS.
 		 *
-		 * @since 1.1.0
+		 * @since 1.0.0
 		 */
 		public function enqueue_css() {
 			$styles_from_theme_mod = get_theme_mod( 'lsx_customizer_colour__banner_theme_mod' );
@@ -68,7 +61,7 @@ if ( ! class_exists( 'LSX_Customizer_Colour_Banner' ) ) {
 		/**
 		 * Get CSS theme mods.
 		 *
-		 * @since 1.1.0
+		 * @since 1.0.0
 		 */
 		public function get_theme_mods() {
 			$colors = parent::get_color_scheme();
@@ -83,7 +76,7 @@ if ( ! class_exists( 'LSX_Customizer_Colour_Banner' ) ) {
 		/**
 		 * Returns CSS.
 		 *
-		 * @since 1.1.0
+		 * @since 1.0.0
 		 */
 		function get_css( $colors ) {
 			global $customizer_colour_names;

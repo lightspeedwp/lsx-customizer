@@ -1,4 +1,13 @@
 <?php
+/**
+ * Customizer colour options
+ *
+ * @package   LSX Customizer
+ * @author    LightSpeed
+ * @license   GPL3
+ * @link      
+ * @copyright 2016 LightSpeed
+ */
 
 global $customizer_colour_names;
 global $customizer_colour_choices;

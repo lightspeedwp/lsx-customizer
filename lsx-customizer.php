@@ -1,14 +1,15 @@
 <?php
 /*
- * Plugin Name:	LSX Customizer
- * Plugin URI:	https://www.lsdev.biz/product/
- * Description:	The LSX Customizer gives you additional layout options on your LSX powered web site.
- * Author:		LightSpeed
- * Version: 	1.1.0
- * Author URI: 	https://www.lsdev.biz/products/
- * License: 	GPL2+
+ * Plugin Name: LSX Customizer
+ * Plugin URI:  https://www.lsdev.biz/product/lsx-theme-customizer/
+ * Description:	This extension gives you complete control over the appearance of your LSX-powered WordPress site.
+ * Version:     1.0.0
+ * Author:      LightSpeed WordPress Development
+ * Author URI:  https://www.lsdev.biz/
+ * License:     GPL3
+ * License URI: https://www.gnu.org/licenses/gpl-3.0.html
  * Text Domain: lsx-customizer
- * Domain Path: /languages/
+ * Domain Path: /languages
  */
 
 // If this file is called directly, abort.
@@ -22,6 +23,7 @@ define( 'LSX_CUSTOMIZER_URL', plugin_dir_url( __FILE__ ) );
 define( 'LSX_CUSTOMIZER_VER', '1.1.0' );
 
 /* ======================= The API Classes ========================= */
+
 if(!class_exists('LSX_API_Manager')){
 	require_once('classes/class-lsx-api-manager.php');
 }

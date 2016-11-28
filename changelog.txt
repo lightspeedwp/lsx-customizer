@@ -1,8 +1,4 @@
 ## Change log
 
-### 1.1.0
-* Renamed from LSX Blog Customizer to LSX Customizer
-* Added a new customizer feature: colours (migrated from LSX Theme)
-
 ### 1.0.0
 * First Version

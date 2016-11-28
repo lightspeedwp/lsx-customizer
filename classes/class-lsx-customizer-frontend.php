@@ -1,21 +1,14 @@
 <?php
-/**
- * LSX_Customizer_Frontend
- *
- * @package   lsx-customizer
- * @author    LightSpeed
- * @license   GPL-2.0+
- * @link      
- * @copyright 2016 LightSpeedDevelopment
- */
-
 if ( ! class_exists( 'LSX_Customizer_Frontend' ) ) {
 
 	/**
-	 * Front-end class.
+	 * LSX Customizer Frontend Class
 	 *
-	 * @package LSX_Customizer_Frontend
-	 * @author  LightSpeed
+	 * @package   LSX Customizer
+	 * @author    LightSpeed
+	 * @license   GPL3
+	 * @link      
+	 * @copyright 2016 LightSpeed
 	 */
 	class LSX_Customizer_Frontend extends LSX_Customizer {
 

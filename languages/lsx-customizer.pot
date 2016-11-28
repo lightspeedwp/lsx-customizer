@@ -16,103 +16,103 @@ msgstr ""
 "X-Poedit-SearchPathExcluded-0: *.js\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-#: classes/class-lsx-customizer-blog.php:48
+#: classes/class-lsx-customizer-blog.php:41
 msgid "Blog"
 msgstr ""
 
-#: classes/class-lsx-customizer-blog.php:49
+#: classes/class-lsx-customizer-blog.php:42
 msgid "Customise the appearance of your blog posts and archives."
 msgstr ""
 
-#: classes/class-lsx-customizer-blog.php:56
+#: classes/class-lsx-customizer-blog.php:49
 msgid "General"
 msgstr ""
 
-#: classes/class-lsx-customizer-blog.php:58
+#: classes/class-lsx-customizer-blog.php:51
 msgid "Customise the look & feel of the blog archives and blog post pages"
 msgstr ""
 
-#: classes/class-lsx-customizer-blog.php:66
+#: classes/class-lsx-customizer-blog.php:59
 msgid "Archives"
 msgstr ""
 
-#: classes/class-lsx-customizer-blog.php:68
+#: classes/class-lsx-customizer-blog.php:61
 msgid "Customise the look & feel of the blog archives"
 msgstr ""
 
-#: classes/class-lsx-customizer-blog.php:76
+#: classes/class-lsx-customizer-blog.php:69
 msgid "Single posts"
 msgstr ""
 
-#: classes/class-lsx-customizer-blog.php:78
+#: classes/class-lsx-customizer-blog.php:71
 msgid "Customise the look & feel of the blog post pages"
 msgstr ""
 
-#: classes/class-lsx-customizer-blog.php:91
+#: classes/class-lsx-customizer-blog.php:84
 msgid "Display date"
 msgstr ""
 
-#: classes/class-lsx-customizer-blog.php:92
+#: classes/class-lsx-customizer-blog.php:85
 msgid "Display post date in blog archives and blog post pages."
 msgstr ""
 
-#: classes/class-lsx-customizer-blog.php:108
+#: classes/class-lsx-customizer-blog.php:101
 msgid "Display author"
 msgstr ""
 
-#: classes/class-lsx-customizer-blog.php:109
+#: classes/class-lsx-customizer-blog.php:102
 msgid "Display post author in blog archives and blog post pages."
 msgstr ""
 
-#: classes/class-lsx-customizer-blog.php:125
+#: classes/class-lsx-customizer-blog.php:118
 msgid "Display categories"
 msgstr ""
 
-#: classes/class-lsx-customizer-blog.php:126
+#: classes/class-lsx-customizer-blog.php:119
 msgid "Display post categories in blog archives and blog post pages."
 msgstr ""
 
-#: classes/class-lsx-customizer-blog.php:142
+#: classes/class-lsx-customizer-blog.php:135
 msgid "Display tags"
 msgstr ""
 
-#: classes/class-lsx-customizer-blog.php:143
+#: classes/class-lsx-customizer-blog.php:136
 msgid "Display post tags in blog archives and blog post pages."
 msgstr ""
 
-#: classes/class-lsx-customizer-blog.php:159, classes/class-lsx-customizer-blog.php:176
+#: classes/class-lsx-customizer-blog.php:152, classes/class-lsx-customizer-blog.php:169
 msgid "Full width"
 msgstr ""
 
-#: classes/class-lsx-customizer-blog.php:160
+#: classes/class-lsx-customizer-blog.php:153
 msgid "Display blog archives in a full width layout."
 msgstr ""
 
-#: classes/class-lsx-customizer-blog.php:177
+#: classes/class-lsx-customizer-blog.php:170
 msgid "Give the single blog post pages a full width layout."
 msgstr ""
 
-#: classes/class-lsx-customizer-blog.php:193
+#: classes/class-lsx-customizer-blog.php:186
 msgid "Display thumbnail"
 msgstr ""
 
-#: classes/class-lsx-customizer-blog.php:194
+#: classes/class-lsx-customizer-blog.php:187
 msgid "Display post thumbnail in blog post pages."
 msgstr ""
 
-#: classes/class-lsx-customizer-blog.php:210
+#: classes/class-lsx-customizer-blog.php:203
 msgid "Display related posts"
 msgstr ""
 
-#: classes/class-lsx-customizer-blog.php:211
+#: classes/class-lsx-customizer-blog.php:204
 msgid "Display related posts in blog post pages."
 msgstr ""
 
-#: classes/class-lsx-customizer-colour.php:172
+#: classes/class-lsx-customizer-colour.php:165
 msgid "Colors"
 msgstr ""
 
-#: classes/class-lsx-customizer-colour.php:186
+#: classes/class-lsx-customizer-colour.php:179
 msgid "Base Color Scheme"
 msgstr ""
 
@@ -128,202 +128,202 @@ msgstr ""
 msgid "Test"
 msgstr ""
 
-#: includes/lsx-customizer-colour-options.php:7
+#: includes/lsx-customizer-colour-options.php:16
 msgid "BUTTON: Background"
 msgstr ""
 
-#: includes/lsx-customizer-colour-options.php:8
+#: includes/lsx-customizer-colour-options.php:17
 msgid "BUTTON: Background (hover)"
 msgstr ""
 
-#: includes/lsx-customizer-colour-options.php:9
+#: includes/lsx-customizer-colour-options.php:18
 msgid "BUTTON: Text"
 msgstr ""
 
-#: includes/lsx-customizer-colour-options.php:10
+#: includes/lsx-customizer-colour-options.php:19
 msgid "BUTTON: Text (hover)"
 msgstr ""
 
-#: includes/lsx-customizer-colour-options.php:12
+#: includes/lsx-customizer-colour-options.php:21
 msgid "BUTTON CTA: Background"
 msgstr ""
 
-#: includes/lsx-customizer-colour-options.php:13
+#: includes/lsx-customizer-colour-options.php:22
 msgid "BUTTON CTA: Background (hover)"
 msgstr ""
 
-#: includes/lsx-customizer-colour-options.php:14
+#: includes/lsx-customizer-colour-options.php:23
 msgid "BUTTON CTA: Text"
 msgstr ""
 
-#: includes/lsx-customizer-colour-options.php:15
+#: includes/lsx-customizer-colour-options.php:24
 msgid "BUTTON CTA: Text (hover)"
 msgstr ""
 
-#: includes/lsx-customizer-colour-options.php:17
+#: includes/lsx-customizer-colour-options.php:26
 msgid "TOP MENU: Background"
 msgstr ""
 
-#: includes/lsx-customizer-colour-options.php:18
+#: includes/lsx-customizer-colour-options.php:27
 msgid "TOP MENU: Text"
 msgstr ""
 
-#: includes/lsx-customizer-colour-options.php:19
+#: includes/lsx-customizer-colour-options.php:28
 msgid "TOP MENU: Text (hover)"
 msgstr ""
 
-#: includes/lsx-customizer-colour-options.php:21
+#: includes/lsx-customizer-colour-options.php:30
 msgid "HEADER: Background"
 msgstr ""
 
-#: includes/lsx-customizer-colour-options.php:22
+#: includes/lsx-customizer-colour-options.php:31
 msgid "HEADER: Title"
 msgstr ""
 
-#: includes/lsx-customizer-colour-options.php:23
+#: includes/lsx-customizer-colour-options.php:32
 msgid "HEADER: Title (hover)"
 msgstr ""
 
-#: includes/lsx-customizer-colour-options.php:24
+#: includes/lsx-customizer-colour-options.php:33
 msgid "HEADER: Description"
 msgstr ""
 
-#: includes/lsx-customizer-colour-options.php:26
+#: includes/lsx-customizer-colour-options.php:35
 msgid "MENU: Background (L1 hover)"
 msgstr ""
 
-#: includes/lsx-customizer-colour-options.php:27
+#: includes/lsx-customizer-colour-options.php:36
 msgid "MENU: Background (L2 hover)"
 msgstr ""
 
-#: includes/lsx-customizer-colour-options.php:28
+#: includes/lsx-customizer-colour-options.php:37
 msgid "MENU: Text (L1)"
 msgstr ""
 
-#: includes/lsx-customizer-colour-options.php:29
+#: includes/lsx-customizer-colour-options.php:38
 msgid "MENU: Text (L1 hover)"
 msgstr ""
 
-#: includes/lsx-customizer-colour-options.php:30
+#: includes/lsx-customizer-colour-options.php:39
 msgid "MENU: Text (L2 hover)"
 msgstr ""
 
-#: includes/lsx-customizer-colour-options.php:32
+#: includes/lsx-customizer-colour-options.php:41
 msgid "BANNER: Background"
 msgstr ""
 
-#: includes/lsx-customizer-colour-options.php:33
+#: includes/lsx-customizer-colour-options.php:42
 msgid "BANNER: Text"
 msgstr ""
 
-#: includes/lsx-customizer-colour-options.php:34
+#: includes/lsx-customizer-colour-options.php:43
 msgid "BANNER: Text (over image)"
 msgstr ""
 
-#: includes/lsx-customizer-colour-options.php:36
+#: includes/lsx-customizer-colour-options.php:45
 msgid "BODY: Background"
 msgstr ""
 
-#: includes/lsx-customizer-colour-options.php:37
+#: includes/lsx-customizer-colour-options.php:46
 msgid "BODY: Line"
 msgstr ""
 
-#: includes/lsx-customizer-colour-options.php:38
+#: includes/lsx-customizer-colour-options.php:47
 msgid "BODY: Text (heading)"
 msgstr ""
 
-#: includes/lsx-customizer-colour-options.php:39
+#: includes/lsx-customizer-colour-options.php:48
 msgid "BODY: Text"
 msgstr ""
 
-#: includes/lsx-customizer-colour-options.php:40
+#: includes/lsx-customizer-colour-options.php:49
 msgid "BODY: Link"
 msgstr ""
 
-#: includes/lsx-customizer-colour-options.php:41
+#: includes/lsx-customizer-colour-options.php:50
 msgid "BODY: Link (hover)"
 msgstr ""
 
-#: includes/lsx-customizer-colour-options.php:42
+#: includes/lsx-customizer-colour-options.php:51
 msgid "BODY: Section full (background)"
 msgstr ""
 
-#: includes/lsx-customizer-colour-options.php:43
+#: includes/lsx-customizer-colour-options.php:52
 msgid "BODY: Section full (text)"
 msgstr ""
 
-#: includes/lsx-customizer-colour-options.php:44
+#: includes/lsx-customizer-colour-options.php:53
 msgid "BODY: Section full CTA (background)"
 msgstr ""
 
-#: includes/lsx-customizer-colour-options.php:45
+#: includes/lsx-customizer-colour-options.php:54
 msgid "BODY: Section full CTA (text)"
 msgstr ""
 
-#: includes/lsx-customizer-colour-options.php:47
+#: includes/lsx-customizer-colour-options.php:56
 msgid "FOOTER CTA: Background"
 msgstr ""
 
-#: includes/lsx-customizer-colour-options.php:48
+#: includes/lsx-customizer-colour-options.php:57
 msgid "FOOTER CTA: Text"
 msgstr ""
 
-#: includes/lsx-customizer-colour-options.php:49
+#: includes/lsx-customizer-colour-options.php:58
 msgid "FOOTER CTA: Link"
 msgstr ""
 
-#: includes/lsx-customizer-colour-options.php:50
+#: includes/lsx-customizer-colour-options.php:59
 msgid "FOOTER CTA: Link (hover)"
 msgstr ""
 
-#: includes/lsx-customizer-colour-options.php:52
+#: includes/lsx-customizer-colour-options.php:61
 msgid "FOOTER WIDGETS: Background"
 msgstr ""
 
-#: includes/lsx-customizer-colour-options.php:53
+#: includes/lsx-customizer-colour-options.php:62
 msgid "FOOTER WIDGETS: Text"
 msgstr ""
 
-#: includes/lsx-customizer-colour-options.php:54
+#: includes/lsx-customizer-colour-options.php:63
 msgid "FOOTER WIDGETS: Link"
 msgstr ""
 
-#: includes/lsx-customizer-colour-options.php:55
+#: includes/lsx-customizer-colour-options.php:64
 msgid "FOOTER WIDGETS: Link (hover)"
 msgstr ""
 
-#: includes/lsx-customizer-colour-options.php:57
+#: includes/lsx-customizer-colour-options.php:66
 msgid "FOOTER: Background"
 msgstr ""
 
-#: includes/lsx-customizer-colour-options.php:58
+#: includes/lsx-customizer-colour-options.php:67
 msgid "FOOTER: Text"
 msgstr ""
 
-#: includes/lsx-customizer-colour-options.php:59
+#: includes/lsx-customizer-colour-options.php:68
 msgid "FOOTER: Link"
 msgstr ""
 
-#: includes/lsx-customizer-colour-options.php:60
+#: includes/lsx-customizer-colour-options.php:69
 msgid "FOOTER: Link (hover)"
 msgstr ""
 
-#: includes/lsx-customizer-colour-options.php:65
+#: includes/lsx-customizer-colour-options.php:74
 msgid "Default"
 msgstr ""
 
-#: includes/lsx-customizer-colour-options.php:124
+#: includes/lsx-customizer-colour-options.php:133
 msgid "Red"
 msgstr ""
 
-#: includes/lsx-customizer-colour-options.php:183
+#: includes/lsx-customizer-colour-options.php:192
 msgid "Orange"
 msgstr ""
 
-#: includes/lsx-customizer-colour-options.php:242
+#: includes/lsx-customizer-colour-options.php:251
 msgid "Green"
 msgstr ""
 
-#: includes/lsx-customizer-colour-options.php:301
+#: includes/lsx-customizer-colour-options.php:310
 msgid "Brown"
 msgstr ""
