@@ -29,6 +29,6 @@ Wait for the terminal to finish and test by running
 
 ### 4: Gulp Commands
 `gulp watch`
-`gulp compile-css`
+`gulp compile-sass`
 `gulp compile-js`
 `gulp wordpress-lang`
