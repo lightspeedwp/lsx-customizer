@@ -4,7 +4,7 @@
  * Plugin URI:  https://www.lsdev.biz/product/lsx-theme-customizer/
  * Description:	This extension gives you complete control over the appearance of your LSX-powered WordPress site.
  * Version:     1.0.0
- * Author:      LightSpeed WordPress Development
+ * Author:      LightSpeed
  * Author URI:  https://www.lsdev.biz/
  * License:     GPL3
  * License URI: https://www.gnu.org/licenses/gpl-3.0.html
