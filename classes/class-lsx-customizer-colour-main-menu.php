@@ -109,7 +109,8 @@ if ( ! class_exists( 'LSX_Customizer_Colour_Main_Menu' ) ) {
 							
 							&:hover,
 							&.open,
-							&.active {
+							&.active,
+							&.active:hover {
 								& > a {
 									background-color: {$colors['main_menu_background_hover1_color']};
 									color: {$colors['main_menu_text_hover1_color']};

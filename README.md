@@ -4,6 +4,9 @@ This extension gives you complete control over the appearance of your LSX-powere
 
 ## Changelog
 
+### 1.0.1 - 30/11/16
+* Added a extra style selector for main menu CSS: item active + hover
+
 ### 1.0.0 - 30/11/16
 * First Version
 

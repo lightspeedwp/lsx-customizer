@@ -1,4 +1,7 @@
 ## Changelog
 
+### 1.0.1
+* Added a extra style selector for main menu CSS: item active + hover
+
 ### 1.0.0
 * First Version
