@@ -1,7 +1,8 @@
 ## Changelog
 
 ### 1.0.1
-* Added a extra style selector for main menu CSS: item active + hover
+* Fix - Added a extra style selector for main menu CSS: item active + hover
+* Fix - Avoided use a return function inside the PHP function "empty" (compatibility with PHP 5.5 and lower)
 
 ### 1.0.0
 * First Version

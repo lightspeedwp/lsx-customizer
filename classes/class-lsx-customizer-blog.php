@@ -324,7 +324,7 @@ if ( ! class_exists( 'LSX_Customizer_Blog' ) ) {
 					$classes[] = 'lsx-hide-post-tags';
 				}
 			} elseif ( $is_archive && false == $general_tags ) {
-				if ( ! comments_open() || empty( get_comments_number() ) ) {
+				if ( ! comments_open() || 0 == get_comments_number() ) {
 					$classes[] = 'lsx-hide-post-tags';
 				}
 			}
