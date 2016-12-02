@@ -3,6 +3,7 @@
 ### 1.0.1
 * Fix - Added a extra style selector for main menu CSS: item active + hover
 * Fix - Avoided use a return function inside the PHP function "empty" (compatibility with PHP 5.5 and lower)
+* Fix - Compatibility with WPML 3.6
 
 ### 1.0.0
 * First Version

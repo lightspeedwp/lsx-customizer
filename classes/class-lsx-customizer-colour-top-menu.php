@@ -123,8 +123,7 @@ if ( ! class_exists( 'LSX_Customizer_Colour_Top_Menu' ) ) {
 								}
 							}
 
-							&.submenu-languages,
-							&.submenu-currency {
+							&.dropdown-menu {
 								& > li {
 									a {
 										&,
