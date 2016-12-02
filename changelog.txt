@@ -4,6 +4,7 @@
 * Fix - Added a extra style selector for main menu CSS: item active + hover
 * Fix - Avoided use a return function inside the PHP function "empty" (compatibility with PHP 5.5 and lower)
 * Fix - Compatibility with WPML 3.6
+* Fix - Reduced the access to server (check API key status) using transients
 
 ### 1.0.0
 * First Version

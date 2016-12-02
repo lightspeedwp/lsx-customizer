@@ -335,22 +335,33 @@ class LSX_API_Manager {
 	 * @return array
 	 */
 	public function query($action='status') {
-		$args = array(
-			'request' 		=> $action,
-			'email' 		=> $this->email,
-			'licence_key'	=> $this->api_key,
-			'product_id' 	=> $this->product_id,
-			'platform' 		=> home_url(),
-			'instance' 		=> $this->password
-		);
-		$target_url = esc_url_raw( $this->create_software_api_url( $args ) );
-
-		$request = wp_remote_get( $target_url );
-		if( is_wp_error( $request ) || wp_remote_retrieve_response_code( $request ) != 200 ) {
-			// Request failed
-			return false;
+		if ( 'status' === $action ) {
+			$transient_status_id = 'lsx_addon_' . $this->product_id . '_status';
+			$response =  get_transient( $transient_status_id );
+		} else {
+			$response = false;
 		}
-		$response = wp_remote_retrieve_body( $request );
+
+		if ( ! $response ) {
+			$args = array(
+				'request' 		=> $action,
+				'email' 		=> $this->email,
+				'licence_key'	=> $this->api_key,
+				'product_id' 	=> $this->product_id,
+				'platform' 		=> home_url(),
+				'instance' 		=> $this->password
+			);
+			$target_url = esc_url_raw( $this->create_software_api_url( $args ) );
+
+			$request = wp_remote_get( $target_url );
+			if( is_wp_error( $request ) || wp_remote_retrieve_response_code( $request ) != 200 ) {
+				// Request failed
+				return false;
+			}
+			$response = wp_remote_retrieve_body( $request );
+			set_transient( $transient_status_id, $response, MINUTE_IN_SECONDS );
+		}
+
 		return json_decode($response);
 	}
 
