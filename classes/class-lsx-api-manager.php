@@ -18,6 +18,13 @@ class LSX_API_Manager {
 	public $api_key = false;
 
 	/**
+	 * Holds the mode (dev/live)
+	 *
+	 * @var      string
+	 */
+	public $dev_mode = false;
+
+	/**
 	 * Holds the Email address used to purchase the API key
 	 *
 	 * @var      string
@@ -93,7 +100,12 @@ class LSX_API_Manager {
 	public function __construct($api_array = array()) {
 
 		if(isset($api_array['api_key'])){
-			$this->api_key = trim($api_array['api_key']);
+			$api_array['api_key'] = trim($api_array['api_key']);
+			if('dev-' === substr($api_array['api_key'], 0, 4)){
+				$this->dev_mode = true;
+				$api_array['api_key'] = preg_replace('/^(dev-)(.*)$/i', '${2}', $api_array['api_key']);
+			}
+			$this->api_key = $api_array['api_key'];
 		}
 		if(isset($api_array['email'])){
 			$this->email = trim($api_array['email']);
@@ -116,9 +128,15 @@ class LSX_API_Manager {
 			$this->documentation = $api_array['documentation'];
 		}
 
-		$this->api_url = 'https://dev.lsdev.biz/wc-api/product-key-api';
-		$this->products_api_url = 'https://dev.lsdev.biz/';
-		$this->license_check_url = 'https://dev.lsdev.biz/wc-api/license-status-check';
+		if ($this->dev_mode) {
+			$this->api_url = 'https://dev.lsdev.biz/wc-api/product-key-api';
+			$this->products_api_url = 'https://dev.lsdev.biz/';
+			$this->license_check_url = 'https://dev.lsdev.biz/wc-api/license-status-check';
+		} else {
+			$this->api_url = 'https://www.lsdev.biz/wc-api/product-key-api';
+			$this->products_api_url = 'https://www.lsdev.biz/';
+			$this->license_check_url = 'https://www.lsdev.biz/wc-api/license-status-check';
+		}
 
 		add_filter( 'plugin_action_links_' . plugin_basename(str_replace('.php','',$this->file).'/'.$this->file), array($this,'add_action_links'));
 		$this->status = get_option($this->product_slug.'_status',false);
