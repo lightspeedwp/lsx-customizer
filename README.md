@@ -4,6 +4,9 @@ This extension gives you complete control over the appearance of your LSX-powere
 
 ## Changelog
 
+### 1.0.2
+* Fix - Fixed all prefixes replaces (to_ > lsx_to_, TO_ > LSX_TO_)
+
 ### 1.0.1 - 08/12/16
 * Fix - Added a extra style selector for main menu CSS: item active + hover
 * Fix - Avoided use a return function inside the PHP function "empty" (compatibility with PHP 5.5 and lower)

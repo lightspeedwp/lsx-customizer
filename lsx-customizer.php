@@ -3,7 +3,7 @@
  * Plugin Name: LSX Customizer
  * Plugin URI:  https://www.lsdev.biz/product/lsx-theme-customizer/
  * Description:	This extension gives you complete control over the appearance of your LSX-powered WordPress site.
- * Version:     1.0.1
+ * Version:     1.0.2
  * Author:      LightSpeed
  * Author URI:  https://www.lsdev.biz/
  * License:     GPL3
@@ -20,7 +20,7 @@ if ( ! defined( 'WPINC' ) ) {
 define( 'LSX_CUSTOMIZER_PATH', plugin_dir_path( __FILE__ ) );
 define( 'LSX_CUSTOMIZER_CORE', __FILE__ );
 define( 'LSX_CUSTOMIZER_URL', plugin_dir_url( __FILE__ ) );
-define( 'LSX_CUSTOMIZER_VER', '1.0.1' );
+define( 'LSX_CUSTOMIZER_VER', '1.0.2' );
 
 /* ======================= The API Classes ========================= */
 
@@ -44,7 +44,7 @@ register_activation_hook( __FILE__, 'lsx_customizer_activate_plugin' );
  */
 function lsx_customizer_options_pages_filter($pages){
 	$pages[] = 'lsx-settings';
-	$pages[] = 'to-settings';
+	$pages[] = 'lsx-to-settings';
 	return $pages;
 }
 add_filter('lsx_api_manager_options_pages','lsx_customizer_options_pages_filter',10,1);
@@ -53,7 +53,7 @@ function lsx_customizer_api_admin_init(){
 	global $lsx_customizer_api_manager;
 	
 	if(class_exists('Tour_Operator')) {
-		$options = get_option('_to_settings', false);
+		$options = get_option('_lsx-to_settings', false);
 	}else{
 		$options = get_option('_lsx_settings', false);
 		if (false === $options) {
@@ -79,7 +79,7 @@ function lsx_customizer_api_admin_init(){
 
 	$api_array = array(
 		'product_id'	=>		'LSX Customizer',
-		'version'		=>		'1.0.1',
+		'version'		=>		'1.0.2',
 		'instance'		=>		$instance,
 		'email'			=>		$data['email'],
 		'api_key'		=>		$data['api_key'],
