@@ -2,7 +2,7 @@
 /*
  * Plugin Name: LSX Customizer
  * Plugin URI:  https://www.lsdev.biz/product/lsx-theme-customizer/
- * Description:	This extension gives you complete control over the appearance of your LSX-powered WordPress site.
+ * Description:	This extension gives you complete control over the appearance of your LSX-powered WordPress site
  * Version:     1.0.2
  * Author:      LightSpeed
  * Author URI:  https://www.lsdev.biz/
