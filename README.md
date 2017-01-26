@@ -4,6 +4,9 @@ This extension gives you complete control over the appearance of your LSX-powere
 
 ## Changelog
 
+### 1.0.3
+* Moved all blog customizer options to LSX Blog Customizer plugin
+
 ### 1.0.2
 * Fix - Fixed all prefixes replaces (to_ > lsx_to_, TO_ > LSX_TO_)
 

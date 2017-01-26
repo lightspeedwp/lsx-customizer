@@ -1,6 +1,6 @@
 {
   "name": "lsx-customizer",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "The LSX Customizer gives you additional layout options on your LSX powered web site.",
   "main": "gulpfile.js",
   "scripts": {

@@ -28,8 +28,6 @@ if ( ! class_exists( 'LSX_Customizer' ) ) {
 		public function __construct() {
 			require_once( LSX_CUSTOMIZER_PATH . 'classes/class-lsx-customizer-admin.php' );
 			require_once( LSX_CUSTOMIZER_PATH . 'classes/class-lsx-customizer-frontend.php' );
-
-			require_once( LSX_CUSTOMIZER_PATH . 'classes/class-lsx-customizer-blog.php' );
 			require_once( LSX_CUSTOMIZER_PATH . 'classes/class-lsx-customizer-colour.php' );
 		}
 
