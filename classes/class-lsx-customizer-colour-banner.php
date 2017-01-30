@@ -66,11 +66,11 @@ if ( ! class_exists( 'LSX_Customizer_Colour_Banner' ) ) {
 		public function get_theme_mods() {
 			$colors = parent::get_color_scheme();
 
-			return array(
+			return apply_filters( 'lsx_customizer_colours_banner', array(
 				'banner_background_color' => get_theme_mod( 'banner_background_color', $colors['banner_background_color'] ),
 				'banner_text_color' =>       get_theme_mod( 'banner_text_color',       $colors['banner_text_color'] ),
-				'banner_text_image_color' => get_theme_mod( 'banner_text_image_color', $colors['banner_text_image_color'] )
-			);
+				'banner_text_image_color' => get_theme_mod( 'banner_text_image_color', $colors['banner_text_image_color'] ),
+			) );
 		}
 
 		/**

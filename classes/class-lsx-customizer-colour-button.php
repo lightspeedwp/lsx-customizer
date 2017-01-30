@@ -66,12 +66,12 @@ if ( ! class_exists( 'LSX_Customizer_Colour_Button' ) ) {
 		public function get_theme_mods() {
 			$colors = parent::get_color_scheme();
 
-			return array(
+			return apply_filters( 'lsx_customizer_colours_button', array(
 				'button_background_color' =>       get_theme_mod( 'button_background_color',       $colors['button_background_color'] ),
 				'button_background_hover_color' => get_theme_mod( 'button_background_hover_color', $colors['button_background_hover_color'] ),
 				'button_text_color' =>             get_theme_mod( 'button_text_color',             $colors['button_text_color'] ),
-				'button_text_color_hover' =>       get_theme_mod( 'button_text_color_hover',       $colors['button_text_color_hover'] )
-			);
+				'button_text_color_hover' =>       get_theme_mod( 'button_text_color_hover',       $colors['button_text_color_hover'] ),
+			) );
 		}
 
 		/**

@@ -66,13 +66,13 @@ if ( ! class_exists( 'LSX_Customizer_Colour_Main_Menu' ) ) {
 		public function get_theme_mods() {
 			$colors = parent::get_color_scheme();
 
-			return array(
+			return apply_filters( 'lsx_customizer_colours_main_menu', array(
 				'main_menu_background_hover1_color' => get_theme_mod( 'main_menu_background_hover1_color', $colors['main_menu_background_hover1_color'] ),
 				'main_menu_background_hover2_color' => get_theme_mod( 'main_menu_background_hover2_color', $colors['main_menu_background_hover2_color'] ),
 				'main_menu_text_color' =>              get_theme_mod( 'main_menu_text_color',              $colors['main_menu_text_color'] ),
 				'main_menu_text_hover1_color' =>       get_theme_mod( 'main_menu_text_hover1_color',       $colors['main_menu_text_hover1_color'] ),
-				'main_menu_text_hover2_color' =>       get_theme_mod( 'main_menu_text_hover2_color',       $colors['main_menu_text_hover2_color'] )
-			);
+				'main_menu_text_hover2_color' =>       get_theme_mod( 'main_menu_text_hover2_color',       $colors['main_menu_text_hover2_color'] ),
+			) );
 		}
 
 		/**

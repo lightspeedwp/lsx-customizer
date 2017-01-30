@@ -72,7 +72,7 @@ if ( ! class_exists( 'LSX_Customizer_Colour_Body' ) ) {
 				$background_color = '#' . $background_color;
 			}
 
-			return array(
+			return apply_filters( 'lsx_customizer_colours_body', array(
 				'background_color' =>                       $background_color,
 				'body_line_color' =>                        get_theme_mod( 'body_line_color',                        $colors['body_line_color'] ),
 				'body_text_heading_color' =>                get_theme_mod( 'body_text_heading_color',                $colors['body_text_heading_color'] ),
@@ -82,8 +82,8 @@ if ( ! class_exists( 'LSX_Customizer_Colour_Body' ) ) {
 				'body_section_full_background_color' =>     get_theme_mod( 'body_section_full_background_color',     $colors['body_section_full_background_color'] ),
 				'body_section_full_text_color' =>           get_theme_mod( 'body_section_full_text_color',           $colors['body_section_full_text_color'] ),
 				'body_section_full_cta_background_color' => get_theme_mod( 'body_section_full_cta_background_color', $colors['body_section_full_cta_background_color'] ),
-				'body_section_full_cta_text_color' =>       get_theme_mod( 'body_section_full_cta_text_color',       $colors['body_section_full_cta_text_color'] )
-			);
+				'body_section_full_cta_text_color' =>       get_theme_mod( 'body_section_full_cta_text_color',       $colors['body_section_full_cta_text_color'] ),
+			) );
 		}
 
 		/**
