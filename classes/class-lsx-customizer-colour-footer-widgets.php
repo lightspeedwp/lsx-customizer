@@ -105,7 +105,7 @@ if ( ! class_exists( 'LSX_Customizer_Colour_Footer_Widgets' ) ) {
 					.widget h3.widget-title {
 						color: {$colors['footer_widgets_text_color']};
 
-						a:not(.btn) {
+						a:not(.btn):not(.button) {
 							&,
 							&:visited {
 								color: {$colors['footer_widgets_link_color']};

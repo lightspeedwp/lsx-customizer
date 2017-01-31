@@ -297,8 +297,8 @@ if ( ! class_exists( 'LSX_Customizer_Colour_Body' ) ) {
 
 				a {
 					&,
-					.entry-content &:not(.btn),
-					.entry-summary &:not(.btn) {
+					.entry-content &:not(.btn):not(.button),
+					.entry-summary &:not(.btn):not(.button) {
 						&,
 						&:visited {
 							color: {$colors['body_link_color']};
