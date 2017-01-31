@@ -304,6 +304,55 @@ if ( ! class_exists( 'LSX_Customizer_Colour_Button' ) ) {
 						color: {$colors['button_text_color']} !important;
 					}
 				}
+
+				/*
+				 *
+				 * Button Sensei
+				 *
+				 */
+
+				a.view-results,
+				a.view-results-link,
+				a.sensei-certificate-link {
+					&,
+					&:visited {
+						background-color: {$colors['button_background_color']};
+						color: {$colors['button_text_color']};
+					}
+
+					&:hover,
+					&:active,
+					&:focus {
+						background-color: {$colors['button_background_hover_color']};
+						color: {$colors['button_text_color_hover']};
+					}
+				}
+
+				.course-container,
+				.course,
+				.lesson,
+				.quiz {
+					a.button,
+					a.comment-reply-link,
+					#commentform #submit,
+					.submit,
+					input[type=submit],
+					input.button,
+					button.button {
+						&,
+						&:visited {
+							background-color: {$colors['button_background_color']};
+							color: {$colors['button_text_color']};
+						}
+
+						&:hover,
+						&:active,
+						&:focus {
+							background-color: {$colors['button_background_hover_color']};
+							color: {$colors['button_text_color_hover']};
+						}
+					}
+				}
 CSS;
 
 			$css = apply_filters( 'lsx_customizer_colour_selectors_button', $css, $colors );
