@@ -103,14 +103,18 @@ if ( ! class_exists( 'LSX_Customizer_Colour_Button' ) ) {
 				#searchform .input-group span.input-group-btn button.search-submit,
 				#respond #submit {
 					&,
+					&:active,
 					&:visited {
 						background-color: {$colors['button_background_color']};
 						color: {$colors['button_text_color']};
 					}
 
 					&:hover,
-					&:active,
-					&:focus {
+					&:hover:active,
+					&:focus,
+					&.active,
+					&.active:hover,
+					&.active:focus {
 						background-color: {$colors['button_background_hover_color']};
 						color: {$colors['button_text_color_hover']};
 					}
@@ -118,13 +122,14 @@ if ( ! class_exists( 'LSX_Customizer_Colour_Button' ) ) {
 
 				#infinite-handle span {
 					&,
+					&:active,
 					&:visited {
 						background-color: {$colors['button_background_color']} !important;
 						color: {$colors['button_text_color']} !important;
 					}
 
 					&:hover,
-					&:active,
+					&:hover:active,
 					&:focus {
 						background-color: {$colors['button_background_hover_color']} !important;
 						color: {$colors['button_text_color_hover']} !important;
@@ -138,13 +143,14 @@ if ( ! class_exists( 'LSX_Customizer_Colour_Button' ) ) {
 					.button-primary,
 					button {
 						&,
+						&:active,
 						&:visited {
 							background-color: {$colors['button_background_color']};
 							color: {$colors['button_text_color']};
 						}
 
 						&:hover,
-						&:active,
+						&:hover:active,
 						&:focus {
 							background-color: {$colors['button_background_hover_color']};
 							color: {$colors['button_text_color_hover']};
@@ -155,13 +161,14 @@ if ( ! class_exists( 'LSX_Customizer_Colour_Button' ) ) {
 				.give-form {
 					.give-btn {
 						&,
+						&:active,
 						&:visited {
 							background-color: {$colors['button_background_color']};
 							color: {$colors['button_text_color']};
 						}
 
 						&:hover,
-						&:active,
+						&:hover:active,
 						&:focus {
 							background-color: {$colors['button_background_hover_color']};
 							color: {$colors['button_text_color_hover']};
@@ -174,13 +181,14 @@ if ( ! class_exists( 'LSX_Customizer_Colour_Button' ) ) {
 					input[type="button"],
 					button {
 						&,
+						&:active,
 						&:visited {
 							background-color: {$colors['button_background_color']} !important;
 							color: {$colors['button_text_color']} !important;
 						}
 
 						&:hover,
-						&:active,
+						&:hover:active,
 						&:focus {
 							background-color: {$colors['button_background_hover_color']} !important;
 							color: {$colors['button_text_color_hover']} !important;
@@ -211,13 +219,14 @@ if ( ! class_exists( 'LSX_Customizer_Colour_Button' ) ) {
 				.wp-pagenavi a,
 				.lsx-postnav > a {
 					&,
+					&:active,
 					&:visited {
 						border-color: {$colors['button_background_color']} !important;
 						color: {$colors['button_background_color']} !important;
 					}
 
 					&:hover,
-					&:active,
+					&:hover:active,
 					&:focus {
 						background-color: {$colors['button_background_hover_color']} !important;
 						border-color: {$colors['button_background_hover_color']} !important;
@@ -244,6 +253,30 @@ if ( ! class_exists( 'LSX_Customizer_Colour_Button' ) ) {
 					}
 				}
 
+				.tooltip {
+					& > .tooltip-inner {
+						background-color: {$colors['button_background_color']};
+						border: 1px solid {$colors['button_background_color']};
+						color: {$colors['button_text_color']};
+					}
+
+					&.top > .tooltip-arrow {
+						border-top: 5px solid {$colors['button_background_color']};
+					}
+
+					&.bottom > .tooltip-arrow {
+						border-bottom: 5px solid {$colors['button_background_color']};
+					}
+
+					&.left > .tooltip-arrow {
+						border-left: 5px solid {$colors['button_background_color']};
+					}
+
+					&.right > .tooltip-arrow {
+						border-right: 5px solid {$colors['button_background_color']};
+					}
+				}
+
 				/*
 				 *
 				 * Button WooCommerce
@@ -257,13 +290,14 @@ if ( ! class_exists( 'LSX_Customizer_Colour_Button' ) ) {
 					input[type="submit"],
 					#respond input#submit {
 						&,
+						&:active,
 						&:visited {
 							background-color: {$colors['button_background_color']} !important;
 							color: {$colors['button_text_color']} !important;
 						}
 
 						&:hover,
-						&:active,
+						&:hover:active,
 						&:focus {
 							background-color: {$colors['button_background_hover_color']} !important;
 							color: {$colors['button_text_color_hover']} !important;
@@ -284,13 +318,14 @@ if ( ! class_exists( 'LSX_Customizer_Colour_Button' ) ) {
 
 					nav.woocommerce-pagination a {
 						&,
+						&:active,
 						&:visited {
 							border-color: {$colors['button_background_color']} !important;
 							color: {$colors['button_background_color']} !important;
 						}
 
 						&:hover,
-						&:active,
+						&:hover:active,
 						&:focus {
 							background-color: {$colors['button_background_hover_color']} !important;
 							border-color: {$colors['button_background_hover_color']} !important;
@@ -315,13 +350,14 @@ if ( ! class_exists( 'LSX_Customizer_Colour_Button' ) ) {
 				a.view-results-link,
 				a.sensei-certificate-link {
 					&,
+					&:active,
 					&:visited {
 						background-color: {$colors['button_background_color']};
 						color: {$colors['button_text_color']};
 					}
 
 					&:hover,
-					&:active,
+					&:hover:active,
 					&:focus {
 						background-color: {$colors['button_background_hover_color']};
 						color: {$colors['button_text_color_hover']};
@@ -340,13 +376,14 @@ if ( ! class_exists( 'LSX_Customizer_Colour_Button' ) ) {
 					input.button,
 					button.button {
 						&,
+						&:active,
 						&:visited {
 							background-color: {$colors['button_background_color']};
 							color: {$colors['button_text_color']};
 						}
 
 						&:hover,
-						&:active,
+						&:hover:active,
 						&:focus {
 							background-color: {$colors['button_background_hover_color']};
 							color: {$colors['button_text_color_hover']};

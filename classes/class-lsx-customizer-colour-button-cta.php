@@ -100,13 +100,14 @@ if ( ! class_exists( 'LSX_Customizer_Colour_Button_CTA' ) ) {
 				.btn {
 					&.cta-btn {
 						&,
+						&:active,
 						&:visited {
 							background-color: {$colors['button_cta_background_color']} !important;
 							color: {$colors['button_cta_text_color']} !important;
 						}
 
 						&:hover,
-						&:active,
+						&:hover:active,
 						&:focus {
 							background-color: {$colors['button_cta_background_hover_color']} !important;
 							color: {$colors['button_cta_text_color_hover']} !important;
@@ -115,13 +116,14 @@ if ( ! class_exists( 'LSX_Customizer_Colour_Button_CTA' ) ) {
 
 					&.cta-border-btn {
 						&,
+						&:active,
 						&:visited {
 							border-color: {$colors['button_cta_background_color']} !important;
 							color: {$colors['button_cta_background_color']} !important;
 						}
 
 						&:hover,
-						&:active,
+						&:hover:active,
 						&:focus {
 							background-color: {$colors['button_cta_background_hover_color']} !important;
 							border-color: {$colors['button_cta_background_hover_color']} !important;
@@ -136,13 +138,14 @@ if ( ! class_exists( 'LSX_Customizer_Colour_Button_CTA' ) ) {
 							li.cta {
 								a {
 									&,
+									&:active,
 									&:visited {
 										background-color: {$colors['button_cta_background_color']} !important;
 										color: {$colors['button_cta_text_color']} !important;
 									}
 
 									&:hover,
-									&:active,
+									&:hover:active,
 									&:focus {
 										background-color: {$colors['button_cta_background_hover_color']} !important;
 										color: {$colors['button_cta_text_color_hover']} !important;
@@ -207,13 +210,14 @@ if ( ! class_exists( 'LSX_Customizer_Colour_Button_CTA' ) ) {
 					#respond input#submit {
 						&.alt {
 							&,
+							&:active,
 							&:visited {
 								background-color: {$colors['button_cta_background_color']} !important;
 								color: {$colors['button_cta_text_color']} !important;
 							}
 
 							&:hover,
-							&:active,
+							&:hover:active,
 							&:focus {
 								background-color: {$colors['button_cta_background_hover_color']} !important;
 								color: {$colors['button_cta_text_color_hover']} !important;
