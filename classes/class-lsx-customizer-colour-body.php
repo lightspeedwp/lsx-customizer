@@ -149,20 +149,18 @@ if ( ! class_exists( 'LSX_Customizer_Colour_Body' ) ) {
 
 								.post-navigation {
 									.pager {
-										a {
-											&,
-											&:visited {
-												div {
+										div {
+											a {
+												&,
+												&:visited {
 													h3 {
 														color: {$colors['body_text_heading_color']};
 													}
 												}
-											}
 
-											&:hover,
-											&:active,
-											&:focus {
-												div {
+												&:hover,
+												&:active,
+												&:focus {
 													h3 {
 														color: {$colors['body_link_hover_color']};
 													}
