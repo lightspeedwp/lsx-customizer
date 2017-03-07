@@ -167,12 +167,13 @@ if ( ! class_exists( 'LSX_Customizer_Colour_Main_Menu' ) ) {
 				header.banner {
 					.search-submit {
 						&,
+						&:active,
 						&:visited {
 							color: {$colors['main_menu_text_color']} !important;
 						}
 
 						&:hover,
-						&:active,
+						&:hover:active,
 						&:focus {
 							color: #333 !important; /* @TODO */
 						}

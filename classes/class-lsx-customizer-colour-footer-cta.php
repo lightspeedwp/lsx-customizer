@@ -109,12 +109,13 @@ if ( ! class_exists( 'LSX_Customizer_Colour_Footer_CTA' ) ) {
 
 						a {
 							&,
+							&:active,
 							&:visited {
 								color: {$colors['footer_cta_link_color']};
 							}
 
 							&:hover,
-							&:active,
+							&:hover:active,
 							&:focus {
 								color: {$colors['footer_cta_link_hover_color']};
 							}

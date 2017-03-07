@@ -106,12 +106,13 @@ if ( ! class_exists( 'LSX_Customizer_Colour_Header' ) ) {
 
 							a {
 								&,
+								&:active,
 								&:visited {
 									color: {$colors['header_title_color']};
 								}
 
 								&:hover,
-								&:active,
+								&:hover:active,
 								&:focus {
 									color: {$colors['header_title_hover_color']};
 								}

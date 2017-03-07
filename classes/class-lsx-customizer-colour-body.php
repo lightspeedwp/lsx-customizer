@@ -152,6 +152,7 @@ if ( ! class_exists( 'LSX_Customizer_Colour_Body' ) ) {
 										div {
 											a {
 												&,
+												&:active,
 												&:visited {
 													h3 {
 														color: {$colors['body_text_heading_color']};
@@ -159,7 +160,7 @@ if ( ! class_exists( 'LSX_Customizer_Colour_Body' ) ) {
 												}
 
 												&:hover,
-												&:active,
+												&:hover:active,
 												&:focus {
 													h3 {
 														color: {$colors['body_link_hover_color']};
@@ -183,12 +184,13 @@ if ( ! class_exists( 'LSX_Customizer_Colour_Body' ) ) {
 
 					a {
 						&,
+						&:active,
 						&:visited {
 							color: {$colors['body_text_heading_color']};
 						}
 
 						&:hover,
-						&:active,
+						&:hover:active,
 						&:focus {
 							color: {$colors['body_link_hover_color']};
 						}
@@ -200,12 +202,13 @@ if ( ! class_exists( 'LSX_Customizer_Colour_Body' ) ) {
 						h1.entry-title {
 							a {
 								&,
+								&:active,
 								&:visited {
 									color: {$colors['body_text_heading_color']} !important;
 								}
 
 								&:hover,
-								&:active,
+								&:hover:active,
 								&:focus {
 									color: {$colors['body_link_hover_color']} !important;
 								}
@@ -257,12 +260,13 @@ if ( ! class_exists( 'LSX_Customizer_Colour_Body' ) ) {
 
 					a {
 						&,
+						&:active,
 						&:visited {
 							color: {$colors['body_link_color']} !important;
 						}
 
 						&:hover,
-						&:active,
+						&:hover:active,
 						&:focus {
 							color: {$colors['body_link_hover_color']} !important;
 						}
@@ -275,12 +279,13 @@ if ( ! class_exists( 'LSX_Customizer_Colour_Body' ) ) {
 					}
 
 					&,
+					&:active,
 					&:visited {
 						color: {$colors['body_link_color']} !important;
 					}
 
 					&:hover,
-					&:active,
+					&:hover:active,
 					&:focus {
 						color: {$colors['body_link_hover_color']} !important;
 					}
@@ -298,12 +303,13 @@ if ( ! class_exists( 'LSX_Customizer_Colour_Body' ) ) {
 					.entry-content &:not(.btn):not(.button),
 					.entry-summary &:not(.btn):not(.button) {
 						&,
+						&:active,
 						&:visited {
 							color: {$colors['body_link_color']};
 						}
 
 						&:hover,
-						&:active,
+						&:hover:active,
 						&:focus {
 							color: {$colors['body_link_hover_color']};
 						}
@@ -348,8 +354,8 @@ if ( ! class_exists( 'LSX_Customizer_Colour_Body' ) ) {
 							border-color: {$colors['body_section_full_text_color']} !important;
 
 							&:hover,
-							&:active,
-							&focus {
+							&:hover:active,
+							&:focus {
 								color: {$colors['body_section_full_background_color']} !important;
 								background-color: {$colors['body_section_full_text_color']} !important;
 							}
@@ -370,8 +376,8 @@ if ( ! class_exists( 'LSX_Customizer_Colour_Body' ) ) {
 							border-color: {$colors['body_section_full_cta_text_color']} !important;
 
 							&:hover,
-							&:active,
-							&focus {
+							&:hover:active,
+							&:focus {
 								color: {$colors['body_section_full_cta_background_color']} !important;
 								background-color: {$colors['body_section_full_cta_text_color']} !important;
 							}

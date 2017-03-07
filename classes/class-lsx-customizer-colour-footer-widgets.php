@@ -107,12 +107,13 @@ if ( ! class_exists( 'LSX_Customizer_Colour_Footer_Widgets' ) ) {
 
 						a:not(.btn):not(.button) {
 							&,
+							&:active,
 							&:visited {
 								color: {$colors['footer_widgets_link_color']};
 							}
 
 							&:hover,
-							&:active,
+							&:hover:active,
 							&:focus {
 								color: {$colors['footer_widgets_link_hover_color']};
 							}

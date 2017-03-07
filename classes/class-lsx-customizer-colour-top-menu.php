@@ -104,6 +104,7 @@ if ( ! class_exists( 'LSX_Customizer_Colour_Top_Menu' ) ) {
 							li {
 								a {
 									&,
+									&:active,
 									&:visited {
 										color: {$colors['top_menu_text_color']};
 									}
@@ -113,7 +114,7 @@ if ( ! class_exists( 'LSX_Customizer_Colour_Top_Menu' ) ) {
 									}
 
 									&:hover,
-									&:active,
+									&:hover:active,
 									&:focus {
 										&,
 										&:before {
@@ -127,13 +128,14 @@ if ( ! class_exists( 'LSX_Customizer_Colour_Top_Menu' ) ) {
 								& > li {
 									a {
 										&,
+										&:active,
 										&:visited {
 											background-color: {$colors['top_menu_background_color']};
 											color: {$colors['top_menu_text_color']};
 										}
 
 										&:hover,
-										&:active,
+										&:hover:active,
 										&:focus {
 											background-color: {$colors['top_menu_background_color']};
 											color: {$colors['top_menu_text_hover_color']};
