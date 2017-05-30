@@ -235,6 +235,15 @@ if ( ! class_exists( 'LSX_Customizer_Colour_Body' ) ) {
 					}
 				}
 
+				.lsx-sharing-content {
+					.lsx-sharing-label {
+						&,
+						&:before {
+							color: {$colors['body_text_color']} !important;
+						}
+					}
+				}
+
 				.entry-meta {
 					.post-meta {
 						color: {$colors['body_text_color']} !important;

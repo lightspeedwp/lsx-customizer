@@ -3,3 +3,4 @@ vendor/composer
 vendor/bin
 vendor/autoload.php
 composer.phar
+lsx-customizer.sublime-workspace

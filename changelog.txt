@@ -1,5 +1,8 @@
 ## Changelog
 
+### 1.0.4
+* Dev - LSX Sharing integrated
+
 ### 1.0.3
 * Moved all blog customizer options to LSX Blog Customizer plugin
 * Fix - Added filters to send the custom colours to custom selectors
