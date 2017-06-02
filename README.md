@@ -6,6 +6,7 @@ This extension gives you complete control over the appearance of your LSX-powere
 
 ### 1.0.4
 * Dev - LSX Sharing integrated
+* Dev - Added modals customization
 
 ### 1.0.3
 * Moved all blog customizer options to LSX Blog Customizer plugin

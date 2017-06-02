@@ -114,6 +114,24 @@ if ( ! class_exists( 'LSX_Customizer_Colour_Banner' ) ) {
 						}
 					}
 				}
+
+				.modal {
+					.modal-content {
+						border-color: {$colors['banner_background_color']} !important;
+					}
+
+					.close {
+						color: {$colors['banner_text_color']} !important;
+						background-color: {$colors['banner_background_color']} !important;
+						border-color: {$colors['banner_text_color']} !important;
+						box-shadow: 0 0 4px 0 {$colors['banner_background_color']} !important;
+
+						&:hover {
+							background-color: {$colors['banner_background_color']} !important;
+						}
+					}
+				}
+
 CSS;
 
 			$css = apply_filters( 'lsx_customizer_colour_selectors_banner', $css, $colors );
