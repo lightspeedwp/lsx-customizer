@@ -1,6 +1,8 @@
 node_modules
+.sass-cache
+.idea
+*.sublime-workspace
 vendor/composer
 vendor/bin
 vendor/autoload.php
 composer.phar
-lsx-customizer.sublime-workspace

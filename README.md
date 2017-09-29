@@ -4,15 +4,10 @@ This extension gives you complete control over the appearance of your LSX-powere
 
 ## Changelog
 
-### 1.0.4
-* Dev - LSX Sharing integrated
-* Dev - Added modals customization
-
 ### 1.0.3
 * Moved all blog customizer options to LSX Blog Customizer plugin
 * Fix - Added filters to send the custom colours to custom selectors
 * Fix - Adjusted the plugin settings link inside the LSX API Class
-* Fix - Fixed buttons (default and CTA) selectors (hover, active, focus, visited)
 
 ### 1.0.2
 * Fix - Fixed all prefixes replaces (to_ > lsx_to_, TO_ > LSX_TO_)

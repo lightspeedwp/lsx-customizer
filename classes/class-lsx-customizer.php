@@ -7,7 +7,7 @@ if ( ! class_exists( 'LSX_Customizer' ) ) {
 	 * @package   LSX Customizer
 	 * @author    LightSpeed
 	 * @license   GPL3
-	 * @link      
+	 * @link
 	 * @copyright 2016 LightSpeed
 	 */
 	class LSX_Customizer {
@@ -28,6 +28,7 @@ if ( ! class_exists( 'LSX_Customizer' ) ) {
 		public function __construct() {
 			require_once( LSX_CUSTOMIZER_PATH . 'classes/class-lsx-customizer-admin.php' );
 			require_once( LSX_CUSTOMIZER_PATH . 'classes/class-lsx-customizer-frontend.php' );
+			require_once( LSX_CUSTOMIZER_PATH . 'classes/class-lsx-customizer-core.php' );
 			require_once( LSX_CUSTOMIZER_PATH . 'classes/class-lsx-customizer-colour.php' );
 		}
 

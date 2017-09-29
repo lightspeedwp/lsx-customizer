@@ -7,24 +7,18 @@ if ( ! class_exists( 'LSX_Customizer_Colour_Control' ) ) {
 	 * @package   LSX Customizer
 	 * @author    LightSpeed
 	 * @license   GPL3
-	 * @link      
+	 * @link
 	 * @copyright 2016 LightSpeed
 	 */
 	class LSX_Customizer_Colour_Control extends WP_Customize_Control {
-		
+
 		/**
 		 * Enqueue control related scripts/styles.
 		 *
 		 * @since 1.0.0
 		 */
 		public function enqueue() {
-			if ( defined( 'WP_DEBUG' ) && true === WP_DEBUG ) {
-				$min = '';
-			} else {
-				$min = '.min';
-			}
-
-			wp_enqueue_script( 'lsx_customizer_colour_admin', LSX_CUSTOMIZER_URL . 'assets/js/lsx-customizer-colour-admin' . $min . '.js', array( 'customize-controls', 'iris', 'underscore', 'wp-util' ), LSX_CUSTOMIZER_VER, true );
+			wp_enqueue_script( 'lsx_customizer_colour_admin', LSX_CUSTOMIZER_URL . 'assets/js/lsx-customizer-colour-admin.min.js', array( 'customize-controls', 'iris', 'underscore', 'wp-util' ), LSX_CUSTOMIZER_VER, true );
 			wp_localize_script( 'lsx_customizer_colour_admin', 'color_scheme', $this->choices );
 
 			global $customizer_colour_names;
@@ -45,7 +39,7 @@ if ( ! class_exists( 'LSX_Customizer_Colour_Control' ) ) {
 				return;
 			}
 
-			?> 
+			?>
 			<label>
 				<?php if ( ! empty( $this->label ) ) { ?>
 					<span class="customize-control-title"><?php echo esc_html( $this->label ) ?></span>

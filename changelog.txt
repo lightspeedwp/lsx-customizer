@@ -1,8 +1,12 @@
 ## Changelog
 
-### 1.0.4
-* Dev - LSX Sharing integrated
-* Dev - Added modals customization
+### 1.1.0
+* Added compatibility with LSX 2.0
+* Dev - New project structure
+* Dev - UIX copied from TO 1.1 + Fixed issue with sub tabs click (settings)
+* Fix - Fixed scripts/styles loading order
+* Fix - Fixed small issues
+* Tweak - New option: disable theme credit
 
 ### 1.0.3
 * Moved all blog customizer options to LSX Blog Customizer plugin

@@ -7,7 +7,7 @@ if ( ! class_exists( 'LSX_Customizer_Colour' ) ) {
 	 * @package   LSX Customizer
 	 * @author    LightSpeed
 	 * @license   GPL3
-	 * @link      
+	 * @link
 	 * @copyright 2016 LightSpeed
 	 */
 	class LSX_Customizer_Colour extends LSX_Customizer {
@@ -157,17 +157,86 @@ if ( ! class_exists( 'LSX_Customizer_Colour' ) ) {
 		public function customize_register( $wp_customize ) {
 			global $customizer_colour_names;
 			global $customizer_colour_choices;
-			
+
 			/**
 			 * Colors
 			 */
-			$wp_customize->add_section( 'colors' , array(
+			$wp_customize->add_panel( 'colors' , array(
 				'title'             => esc_html__( 'Colors', 'lsx-customizer' ),
 				'priority'          => 60,
 			) );
 
 			/**
-			 * Background: Background Color
+			 * Colors - Sections
+			 */
+			$wp_customize->add_section( 'colors-core' , array(
+				'title'             => esc_html__( 'Color Scheme', 'lsx-customizer' ),
+				'priority'          => 1,
+				'panel'             => 'colors',
+			) );
+
+			$wp_customize->add_section( 'colors-button' , array(
+				'title'             => esc_html__( 'Button', 'lsx-customizer' ),
+				'priority'          => 2,
+				'panel'             => 'colors',
+			) );
+
+			$wp_customize->add_section( 'colors-button-cta' , array(
+				'title'             => esc_html__( 'Button CTA', 'lsx-customizer' ),
+				'priority'          => 3,
+				'panel'             => 'colors',
+			) );
+
+			$wp_customize->add_section( 'colors-top-menu' , array(
+				'title'             => esc_html__( 'Top Menu', 'lsx-customizer' ),
+				'priority'          => 4,
+				'panel'             => 'colors',
+			) );
+
+			$wp_customize->add_section( 'colors-header' , array(
+				'title'             => esc_html__( 'Header', 'lsx-customizer' ),
+				'priority'          => 5,
+				'panel'             => 'colors',
+			) );
+
+			$wp_customize->add_section( 'colors-main-menu' , array(
+				'title'             => esc_html__( 'Main Menu', 'lsx-customizer' ),
+				'priority'          => 6,
+				'panel'             => 'colors',
+			) );
+
+			$wp_customize->add_section( 'colors-banner' , array(
+				'title'             => esc_html__( 'Banner', 'lsx-customizer' ),
+				'priority'          => 7,
+				'panel'             => 'colors',
+			) );
+
+			$wp_customize->add_section( 'colors-body' , array(
+				'title'             => esc_html__( 'Body', 'lsx-customizer' ),
+				'priority'          => 8,
+				'panel'             => 'colors',
+			) );
+
+			$wp_customize->add_section( 'colors-footer-cta' , array(
+				'title'             => esc_html__( 'Footer CTA', 'lsx-customizer' ),
+				'priority'          => 9,
+				'panel'             => 'colors',
+			) );
+
+			$wp_customize->add_section( 'colors-footer-widgets' , array(
+				'title'             => esc_html__( 'Footer Widgets', 'lsx-customizer' ),
+				'priority'          => 10,
+				'panel'             => 'colors',
+			) );
+
+			$wp_customize->add_section( 'colors-footer' , array(
+				'title'             => esc_html__( 'Footer', 'lsx-customizer' ),
+				'priority'          => 11,
+				'panel'             => 'colors',
+			) );
+
+			/**
+			 * Color Scheme
 			 */
 			$wp_customize->add_setting( 'color_scheme', array(
 				'default'           => 'default',
@@ -177,12 +246,15 @@ if ( ! class_exists( 'LSX_Customizer_Colour' ) ) {
 
 			$wp_customize->add_control( new LSX_Customizer_Colour_Control( $wp_customize, 'color_scheme', array(
 				'label'             => esc_html__( 'Base Color Scheme', 'lsx-customizer' ),
-				'section'           => 'colors',
+				'section'           => 'colors-core',
 				'type'              => 'select',
 				'priority'          => 1,
 				'choices'           => $customizer_colour_choices,
 			) ) );
 
+			/**
+			 * Colors
+			 */
 			foreach ( $customizer_colour_names as $key => $value ) {
 				$sanitize_callback = 'sanitize_hex_color';
 
@@ -190,8 +262,32 @@ if ( ! class_exists( 'LSX_Customizer_Colour' ) ) {
 					$sanitize_callback = 'sanitize_hex_color_no_hash';
 				}
 
+				$section = 'colors-core';
+
+				if ( preg_match( '/^button_cta_.*/', $key ) ) {
+					$section = 'colors-button-cta';
+				} elseif ( preg_match( '/^button_.*/', $key ) ) {
+					$section = 'colors-button';
+				} elseif ( preg_match( '/^top_menu_.*/', $key ) ) {
+					$section = 'colors-top-menu';
+				} elseif ( preg_match( '/^header_.*/', $key ) ) {
+					$section = 'colors-header';
+				} elseif ( preg_match( '/^main_menu_.*/', $key ) ) {
+					$section = 'colors-main-menu';
+				} elseif ( preg_match( '/^banner_.*/', $key ) ) {
+					$section = 'colors-banner';
+				} elseif ( preg_match( '/^body_.*/', $key ) || 'background_color' === $key ) {
+					$section = 'colors-body';
+				} elseif ( preg_match( '/^footer_cta_.*/', $key ) ) {
+					$section = 'colors-footer-cta';
+				} elseif ( preg_match( '/^footer_widgets_.*/', $key ) ) {
+					$section = 'colors-footer-widgets';
+				} elseif ( preg_match( '/^footer_.*/', $key ) ) {
+					$section = 'colors-footer';
+				}
+
 				$wp_customize->add_setting( $key, array(
-					'default'           => $customizer_colour_choices['default']['colors'][$key],
+					'default'           => $customizer_colour_choices['default']['colors'][ $key ],
 					'type'	            => 'theme_mod',
 					'transport'         => 'postMessage',
 					'sanitize_callback' => $sanitize_callback,
@@ -199,7 +295,7 @@ if ( ! class_exists( 'LSX_Customizer_Colour' ) ) {
 
 				$wp_customize->add_control( new WP_Customize_Color_Control( $wp_customize, $key, array(
 					'label'             => $value,
-					'section'           => 'colors',
+					'section'           => $section,
 					'settings'          => $key,
 				) ) );
 			}
@@ -212,27 +308,27 @@ if ( ! class_exists( 'LSX_Customizer_Colour' ) ) {
 		 */
 		public function colour_scheme_css_template() {
 			global $customizer_colour_names;
-			
+
 			$colors = array();
 
 			foreach ( $customizer_colour_names as $key => $value ) {
-				$colors[$key] = 'unquote("{{ data.'.$key.' }}")';
+				$colors[ $key ] = 'unquote("{{ data.' . $key . ' }}")';
 			}
 			?>
 			<script type="text/html" id="tmpl-lsx-color-scheme">
-				<?php echo $this->top_menu->get_css( $colors ) ?>
-				<?php echo $this->header->get_css( $colors ) ?>
+				<?php echo $this->top_menu->get_css( $colors ); ?>
+				<?php echo $this->header->get_css( $colors ); ?>
 				<?php echo $this->main_menu->get_css( $colors ) ?>
 
-				<?php echo $this->banner->get_css( $colors ) ?>
-				<?php echo $this->body->get_css( $colors ) ?>
+				<?php echo $this->banner->get_css( $colors ); ?>
+				<?php echo $this->body->get_css( $colors ); ?>
 
-				<?php echo $this->footer_cta->get_css( $colors ) ?>
-				<?php echo $this->footer_widgets->get_css( $colors ) ?>
-				<?php echo $this->footer->get_css( $colors ) ?>
+				<?php echo $this->footer_cta->get_css( $colors ); ?>
+				<?php echo $this->footer_widgets->get_css( $colors ); ?>
+				<?php echo $this->footer->get_css( $colors ); ?>
 
-				<?php echo $this->button->get_css( $colors ) ?>
-				<?php echo $this->button_cta->get_css( $colors ) ?>
+				<?php echo $this->button->get_css( $colors ); ?>
+				<?php echo $this->button_cta->get_css( $colors ); ?>
 			</script>
 			<?php
 		}
@@ -243,18 +339,25 @@ if ( ! class_exists( 'LSX_Customizer_Colour' ) ) {
 		 * @since 1.0.0
 		 */
 		public function scss_to_css( $scss ) {
-			$css = '';
-			$scssphp_file = LSX_CUSTOMIZER_PATH .'vendor/leafo/scssphp/scss.inc.php';
+			$css                 = '';
+			$scss_php_file       = LSX_CUSTOMIZER_PATH . 'vendor/leafo/scssphp/scss.inc.php';
+			$lsx_theme_sass_file = get_template_directory() . '/assets/css/scss/lsx.scss';
 
-			if ( ! empty( $scss ) && file_exists( $scssphp_file ) ) {
-				require_once $scssphp_file;
+			if ( ! empty( $scss ) && file_exists( $scss_php_file ) && file_exists( $lsx_theme_sass_file ) ) {
+				require_once $scss_php_file;
 
 				$compiler = new \Leafo\ScssPhp\Compiler();
 				$compiler->setFormatter( 'Leafo\ScssPhp\Formatter\Compact' );
 
 				try {
+					$scss = '
+						@import "' . get_template_directory() . '/assets/css/scss/global/lsx-variables";
+						@import "' . get_template_directory() . '/assets/css/scss/global/mixins/colours-helper";
+						' . $scss . '
+					';
+
 					$css = $compiler->compile( $scss );
-				} catch ( Exception $e ) {
+				} catch ( \Exception $e ) {
 					$error = $e->getMessage();
 					return "/*\n\n\$error:\n\n{$error}\n\n\$scss:\n\n{$scss} */";
 				}
@@ -272,10 +375,10 @@ if ( ! class_exists( 'LSX_Customizer_Colour' ) ) {
 			$color = trim( $color, '#' );
 
 			if ( strlen( $color ) === 3 ) {
-				$r = hexdec( substr( $color, 0, 1 ).substr( $color, 0, 1 ) );
-				$g = hexdec( substr( $color, 1, 1 ).substr( $color, 1, 1 ) );
-				$b = hexdec( substr( $color, 2, 1 ).substr( $color, 2, 1 ) );
-			} else if ( strlen( $color ) === 6 ) {
+				$r = hexdec( substr( $color, 0, 1 ) . substr( $color, 0, 1 ) );
+				$g = hexdec( substr( $color, 1, 1 ) . substr( $color, 1, 1 ) );
+				$b = hexdec( substr( $color, 2, 1 ) . substr( $color, 2, 1 ) );
+			} elseif ( strlen( $color ) === 6 ) {
 				$r = hexdec( substr( $color, 0, 2 ) );
 				$g = hexdec( substr( $color, 2, 2 ) );
 				$b = hexdec( substr( $color, 4, 2 ) );
@@ -283,7 +386,11 @@ if ( ! class_exists( 'LSX_Customizer_Colour' ) ) {
 				return array();
 			}
 
-			return array( 'red' => $r, 'green' => $g, 'blue' => $b );
+			return array(
+				'red'   => $r,
+				'green' => $g,
+				'blue'  => $b,
+			);
 		}
 
 		/**

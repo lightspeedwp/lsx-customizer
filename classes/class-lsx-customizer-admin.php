@@ -7,7 +7,7 @@ if ( ! class_exists( 'LSX_Customizer_Admin' ) ) {
 	 * @package   LSX Customizer
 	 * @author    LightSpeed
 	 * @license   GPL3
-	 * @link      
+	 * @link
 	 * @copyright 2016 LightSpeed
 	 */
 	class LSX_Customizer_Admin extends LSX_Customizer {
@@ -27,13 +27,7 @@ if ( ! class_exists( 'LSX_Customizer_Admin' ) ) {
 		 * @since 1.0.0
 		 */
 		public function assets() {
-			if ( defined( 'WP_DEBUG' ) && true === WP_DEBUG ) {
-				$min = '';
-			} else {
-				$min = '.min';
-			}
-
-			wp_enqueue_script( 'lsx_customizer_admin', LSX_CUSTOMIZER_URL . 'assets/js/lsx-customizer-admin' . $min . '.js', array( 'jquery' ), LSX_CUSTOMIZER_VER, true );
+			wp_enqueue_script( 'lsx_customizer_admin', LSX_CUSTOMIZER_URL . 'assets/js/lsx-customizer-admin.min.js', array( 'jquery' ), LSX_CUSTOMIZER_VER, true );
 
 			$params = apply_filters( 'lsx_customizer_admin_js_params', array(
 				'ajax_url' => admin_url( 'admin-ajax.php' ),
