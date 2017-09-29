@@ -29,6 +29,14 @@ if ( ! class_exists( 'LSX_Customizer_Colour' ) ) {
 		public $button_cta;
 
 		/**
+		 * Button secondary customizer instance.
+		 *
+		 * @var string
+		 * @since 1.1.0
+		 */
+		public $button_secondary;
+
+		/**
 		 * Top Menu customizer instance.
 		 *
 		 * @var string
@@ -123,6 +131,9 @@ if ( ! class_exists( 'LSX_Customizer_Colour' ) ) {
 			require_once( LSX_CUSTOMIZER_PATH . 'classes/class-lsx-customizer-colour-button-cta.php' );
 			$this->button_cta = new LSX_Customizer_Colour_Button_CTA;
 
+			require_once( LSX_CUSTOMIZER_PATH . 'classes/class-lsx-customizer-colour-button-secondary.php' );
+			$this->button_secondary = new LSX_Customizer_Colour_Button_Secondary;
+
 			require_once( LSX_CUSTOMIZER_PATH . 'classes/class-lsx-customizer-colour-top-menu.php' );
 			$this->top_menu = new LSX_Customizer_Colour_Top_Menu;
 
@@ -187,51 +198,57 @@ if ( ! class_exists( 'LSX_Customizer_Colour' ) ) {
 				'panel'             => 'colors',
 			) );
 
+			$wp_customize->add_section( 'colors-button-secondary' , array(
+				'title'             => esc_html__( 'Button Secondary', 'lsx-customizer' ),
+				'priority'          => 4,
+				'panel'             => 'colors',
+			) );
+
 			$wp_customize->add_section( 'colors-top-menu' , array(
 				'title'             => esc_html__( 'Top Menu', 'lsx-customizer' ),
-				'priority'          => 4,
+				'priority'          => 5,
 				'panel'             => 'colors',
 			) );
 
 			$wp_customize->add_section( 'colors-header' , array(
 				'title'             => esc_html__( 'Header', 'lsx-customizer' ),
-				'priority'          => 5,
+				'priority'          => 6,
 				'panel'             => 'colors',
 			) );
 
 			$wp_customize->add_section( 'colors-main-menu' , array(
 				'title'             => esc_html__( 'Main Menu', 'lsx-customizer' ),
-				'priority'          => 6,
+				'priority'          => 7,
 				'panel'             => 'colors',
 			) );
 
 			$wp_customize->add_section( 'colors-banner' , array(
 				'title'             => esc_html__( 'Banner', 'lsx-customizer' ),
-				'priority'          => 7,
+				'priority'          => 8,
 				'panel'             => 'colors',
 			) );
 
 			$wp_customize->add_section( 'colors-body' , array(
 				'title'             => esc_html__( 'Body', 'lsx-customizer' ),
-				'priority'          => 8,
+				'priority'          => 9,
 				'panel'             => 'colors',
 			) );
 
 			$wp_customize->add_section( 'colors-footer-cta' , array(
 				'title'             => esc_html__( 'Footer CTA', 'lsx-customizer' ),
-				'priority'          => 9,
+				'priority'          => 10,
 				'panel'             => 'colors',
 			) );
 
 			$wp_customize->add_section( 'colors-footer-widgets' , array(
 				'title'             => esc_html__( 'Footer Widgets', 'lsx-customizer' ),
-				'priority'          => 10,
+				'priority'          => 11,
 				'panel'             => 'colors',
 			) );
 
 			$wp_customize->add_section( 'colors-footer' , array(
 				'title'             => esc_html__( 'Footer', 'lsx-customizer' ),
-				'priority'          => 11,
+				'priority'          => 12,
 				'panel'             => 'colors',
 			) );
 
@@ -266,6 +283,8 @@ if ( ! class_exists( 'LSX_Customizer_Colour' ) ) {
 
 				if ( preg_match( '/^button_cta_.*/', $key ) ) {
 					$section = 'colors-button-cta';
+				} elseif ( preg_match( '/^button_secondary_.*/', $key ) ) {
+					$section = 'colors-button-secondary';
 				} elseif ( preg_match( '/^button_.*/', $key ) ) {
 					$section = 'colors-button';
 				} elseif ( preg_match( '/^top_menu_.*/', $key ) ) {
@@ -329,6 +348,7 @@ if ( ! class_exists( 'LSX_Customizer_Colour' ) ) {
 
 				<?php echo $this->button->get_css( $colors ); ?>
 				<?php echo $this->button_cta->get_css( $colors ); ?>
+				<?php echo $this->button_secondary->get_css( $colors ); ?>
 			</script>
 			<?php
 		}
