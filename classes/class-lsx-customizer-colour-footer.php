@@ -90,6 +90,13 @@ if ( ! class_exists( 'LSX_Customizer_Colour_Footer' ) ) {
 
 			$colors = wp_parse_args( $colors, $colors_template );
 
+			if ( empty( $colors['footer_background_color'] )
+				|| empty( $colors['footer_text_color'] )
+				|| empty( $colors['footer_link_color'] )
+				|| empty( $colors['footer_link_hover_color'] ) ) {
+				return '';
+			}
+
 			$css = '
 				@import "' . get_template_directory() . '/assets/css/scss/global/mixins/footer";
 

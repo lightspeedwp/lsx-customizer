@@ -91,6 +91,14 @@ if ( ! class_exists( 'LSX_Customizer_Colour_Button' ) ) {
 
 			$colors = wp_parse_args( $colors, $colors_template );
 
+			if ( empty( $colors['button_text_color'] )
+				|| empty( $colors['button_text_color_hover'] )
+				|| empty( $colors['button_background_color'] )
+				|| empty( $colors['button_background_hover_color'] )
+				|| empty( $colors['button_shadow'] ) ) {
+				return '';
+			}
+
 			$css = '
 				@import "' . get_template_directory() . '/assets/css/scss/global/mixins/button";
 

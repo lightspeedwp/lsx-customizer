@@ -92,6 +92,15 @@ if ( ! class_exists( 'LSX_Customizer_Colour_Banner' ) ) {
 
 			$colors = wp_parse_args( $colors, $colors_template );
 
+			if ( empty( $colors['banner_background_color'] )
+				|| empty( $colors['banner_text_color'] )
+				|| empty( $colors['banner_text_image_color'] )
+				|| empty( $colors['banner_breadcrumb_background_color'] )
+				|| empty( $colors['banner_breadcrumb_text_color'] )
+				|| empty( $colors['banner_breadcrumb_text_selected_color'] ) ) {
+				return '';
+			}
+
 			$css = '
 				@import "' . get_template_directory() . '/assets/css/scss/global/mixins/banner";
 

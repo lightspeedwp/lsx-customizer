@@ -90,6 +90,13 @@ if ( ! class_exists( 'LSX_Customizer_Colour_Header' ) ) {
 
 			$colors = wp_parse_args( $colors, $colors_template );
 
+			if ( empty( $colors['header_background_color'] )
+				|| empty( $colors['header_link_color'] )
+				|| empty( $colors['header_link_hover_color'] )
+				|| empty( $colors['header_description_color'] ) ) {
+				return '';
+			}
+
 			$css = '
 				@import "' . get_template_directory() . '/assets/css/scss/global/mixins/header";
 

@@ -95,6 +95,18 @@ if ( ! class_exists( 'LSX_Customizer_Colour_Top_Menu' ) ) {
 
 			$colors = wp_parse_args( $colors, $colors_template );
 
+			if ( empty( $colors['top_menu_background_color'] )
+				|| empty( $colors['top_menu_link_color'] )
+				|| empty( $colors['top_menu_link_hover_color'] )
+				|| empty( $colors['top_menu_icon_color'] )
+				|| empty( $colors['top_menu_icon_hover_color'] )
+				|| empty( $colors['top_menu_dropdown_color'] )
+				|| empty( $colors['top_menu_dropdown_hover_color'] )
+				|| empty( $colors['top_menu_dropdown_link_color'] )
+				|| empty( $colors['top_menu_dropdown_link_hover_color'] ) ) {
+				return '';
+			}
+
 			$css = '
 				@import "' . get_template_directory() . '/assets/css/scss/global/mixins/top-menu";
 

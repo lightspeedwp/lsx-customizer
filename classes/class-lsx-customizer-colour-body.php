@@ -107,6 +107,24 @@ if ( ! class_exists( 'LSX_Customizer_Colour_Body' ) ) {
 
 			$colors = wp_parse_args( $colors, $colors_template );
 
+			if ( empty( $colors['background_color'] )
+				|| empty( $colors['body_line_color'] )
+				|| empty( $colors['body_text_heading_color'] )
+				|| empty( $colors['body_text_color'] )
+				|| empty( $colors['body_link_color'] )
+				|| empty( $colors['body_link_hover_color'] )
+				|| empty( $colors['body_text_small_color'] )
+				|| empty( $colors['body_section_full_background_color'] )
+				|| empty( $colors['body_section_full_text_color'] )
+				|| empty( $colors['body_section_full_link_color'] )
+				|| empty( $colors['body_section_full_link_hover_color'] )
+				|| empty( $colors['body_section_full_cta_background_color'] )
+				|| empty( $colors['body_section_full_cta_text_color'] )
+				|| empty( $colors['body_section_full_cta_link_color'] )
+				|| empty( $colors['body_section_full_cta_link_hover_color'] ) ) {
+				return '';
+			}
+
 			$css = '
 				@import "' . get_template_directory() . '/assets/css/scss/global/mixins/content";
 
