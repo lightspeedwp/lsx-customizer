@@ -14,59 +14,63 @@ msgstr ""
 "X-Poedit-SourceCharset: UTF-8\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-#: classes/class-lsx-customizer-colour.php:176
+#: classes/class-lsx-customizer-colour.php:187
 msgid "Colors"
 msgstr ""
 
-#: classes/class-lsx-customizer-colour.php:184
+#: classes/class-lsx-customizer-colour.php:195
 msgid "Color Scheme"
 msgstr ""
 
-#: classes/class-lsx-customizer-colour.php:190
+#: classes/class-lsx-customizer-colour.php:201
 msgid "Button"
 msgstr ""
 
-#: classes/class-lsx-customizer-colour.php:196
+#: classes/class-lsx-customizer-colour.php:207
 msgid "Button CTA"
 msgstr ""
 
-#: classes/class-lsx-customizer-colour.php:202
+#: classes/class-lsx-customizer-colour.php:213
 msgid "Button Secondary"
 msgstr ""
 
-#: classes/class-lsx-customizer-colour.php:208
+#: classes/class-lsx-customizer-colour.php:219
+msgid "Button Tertiary"
+msgstr ""
+
+#: classes/class-lsx-customizer-colour.php:225
 msgid "Top Menu"
 msgstr ""
 
-#: classes/class-lsx-customizer-colour.php:214
+#: classes/class-lsx-customizer-colour.php:231
 msgid "Header"
 msgstr ""
 
-#: classes/class-lsx-customizer-colour.php:220
+#: classes/class-lsx-customizer-colour.php:237
 msgid "Main Menu"
 msgstr ""
 
-#: classes/class-lsx-customizer-colour.php:226
+#: classes/class-lsx-customizer-colour.php:243
 msgid "Banner"
 msgstr ""
 
-#: classes/class-lsx-customizer-colour.php:232
+#: classes/class-lsx-customizer-colour.php:249
 msgid "Body"
 msgstr ""
 
-#: classes/class-lsx-customizer-colour.php:238
+#: classes/class-lsx-customizer-colour.php:255
 msgid "Footer CTA"
 msgstr ""
 
-#: classes/class-lsx-customizer-colour.php:244
+#: classes/class-lsx-customizer-colour.php:261
 msgid "Footer Widgets"
 msgstr ""
 
-#: classes/class-lsx-customizer-colour.php:250
+#: classes/class-lsx-customizer-colour.php:267
 msgid "Footer"
 msgstr ""
 
-#: classes/class-lsx-customizer-colour.php:265
+#: classes/class-lsx-customizer-colour.php:282
 msgid "Base Color Scheme"
 msgstr ""
 
@@ -86,138 +90,138 @@ msgstr ""
 msgid "Test"
 msgstr ""
 
-#: includes/lsx-customizer-colour-options.php:16, includes/lsx-customizer-colour-options.php:22, includes/lsx-customizer-colour-options.php:28, includes/lsx-customizer-colour-options.php:34, includes/lsx-customizer-colour-options.php:44, includes/lsx-customizer-colour-options.php:49, includes/lsx-customizer-colour-options.php:57, includes/lsx-customizer-colour-options.php:64, includes/lsx-customizer-colour-options.php:80, includes/lsx-customizer-colour-options.php:85, includes/lsx-customizer-colour-options.php:90
+#: includes/lsx-customizer-colour-options.php:16, includes/lsx-customizer-colour-options.php:22, includes/lsx-customizer-colour-options.php:28, includes/lsx-customizer-colour-options.php:34, includes/lsx-customizer-colour-options.php:40, includes/lsx-customizer-colour-options.php:50, includes/lsx-customizer-colour-options.php:55, includes/lsx-customizer-colour-options.php:63, includes/lsx-customizer-colour-options.php:70, includes/lsx-customizer-colour-options.php:86, includes/lsx-customizer-colour-options.php:91, includes/lsx-customizer-colour-options.php:96
 msgid "Background"
 msgstr ""
 
-#: includes/lsx-customizer-colour-options.php:17, includes/lsx-customizer-colour-options.php:23, includes/lsx-customizer-colour-options.php:29
+#: includes/lsx-customizer-colour-options.php:17, includes/lsx-customizer-colour-options.php:23, includes/lsx-customizer-colour-options.php:29, includes/lsx-customizer-colour-options.php:35
 msgid "Background (hover)"
 msgstr ""
 
-#: includes/lsx-customizer-colour-options.php:18, includes/lsx-customizer-colour-options.php:24, includes/lsx-customizer-colour-options.php:30, includes/lsx-customizer-colour-options.php:58, includes/lsx-customizer-colour-options.php:68, includes/lsx-customizer-colour-options.php:81, includes/lsx-customizer-colour-options.php:86, includes/lsx-customizer-colour-options.php:91
+#: includes/lsx-customizer-colour-options.php:18, includes/lsx-customizer-colour-options.php:24, includes/lsx-customizer-colour-options.php:30, includes/lsx-customizer-colour-options.php:36, includes/lsx-customizer-colour-options.php:64, includes/lsx-customizer-colour-options.php:74, includes/lsx-customizer-colour-options.php:87, includes/lsx-customizer-colour-options.php:92, includes/lsx-customizer-colour-options.php:97
 msgid "Text"
 msgstr ""
 
-#: includes/lsx-customizer-colour-options.php:19, includes/lsx-customizer-colour-options.php:25, includes/lsx-customizer-colour-options.php:31
+#: includes/lsx-customizer-colour-options.php:19, includes/lsx-customizer-colour-options.php:25, includes/lsx-customizer-colour-options.php:31, includes/lsx-customizer-colour-options.php:37
 msgid "Text (hover)"
 msgstr ""
 
-#: includes/lsx-customizer-colour-options.php:20, includes/lsx-customizer-colour-options.php:26, includes/lsx-customizer-colour-options.php:32
+#: includes/lsx-customizer-colour-options.php:20, includes/lsx-customizer-colour-options.php:26, includes/lsx-customizer-colour-options.php:32, includes/lsx-customizer-colour-options.php:38
 msgid "Shadow"
 msgstr ""
 
-#: includes/lsx-customizer-colour-options.php:35, includes/lsx-customizer-colour-options.php:45, includes/lsx-customizer-colour-options.php:50, includes/lsx-customizer-colour-options.php:69, includes/lsx-customizer-colour-options.php:82, includes/lsx-customizer-colour-options.php:87, includes/lsx-customizer-colour-options.php:92
+#: includes/lsx-customizer-colour-options.php:41, includes/lsx-customizer-colour-options.php:51, includes/lsx-customizer-colour-options.php:56, includes/lsx-customizer-colour-options.php:75, includes/lsx-customizer-colour-options.php:88, includes/lsx-customizer-colour-options.php:93, includes/lsx-customizer-colour-options.php:98
 msgid "Link"
 msgstr ""
 
-#: includes/lsx-customizer-colour-options.php:36, includes/lsx-customizer-colour-options.php:46, includes/lsx-customizer-colour-options.php:51, includes/lsx-customizer-colour-options.php:70, includes/lsx-customizer-colour-options.php:83, includes/lsx-customizer-colour-options.php:88, includes/lsx-customizer-colour-options.php:93
+#: includes/lsx-customizer-colour-options.php:42, includes/lsx-customizer-colour-options.php:52, includes/lsx-customizer-colour-options.php:57, includes/lsx-customizer-colour-options.php:76, includes/lsx-customizer-colour-options.php:89, includes/lsx-customizer-colour-options.php:94, includes/lsx-customizer-colour-options.php:99
 msgid "Link (hover)"
 msgstr ""
 
-#: includes/lsx-customizer-colour-options.php:37
+#: includes/lsx-customizer-colour-options.php:43
 msgid "Icon"
 msgstr ""
 
-#: includes/lsx-customizer-colour-options.php:38
+#: includes/lsx-customizer-colour-options.php:44
 msgid "Icon (hover)"
 msgstr ""
 
-#: includes/lsx-customizer-colour-options.php:39, includes/lsx-customizer-colour-options.php:52
+#: includes/lsx-customizer-colour-options.php:45, includes/lsx-customizer-colour-options.php:58
 msgid "Dropdown"
 msgstr ""
 
-#: includes/lsx-customizer-colour-options.php:40, includes/lsx-customizer-colour-options.php:53
+#: includes/lsx-customizer-colour-options.php:46, includes/lsx-customizer-colour-options.php:59
 msgid "Dropdown (hover)"
 msgstr ""
 
-#: includes/lsx-customizer-colour-options.php:41, includes/lsx-customizer-colour-options.php:54
+#: includes/lsx-customizer-colour-options.php:47, includes/lsx-customizer-colour-options.php:60
 msgid "Dropdown link"
 msgstr ""
 
-#: includes/lsx-customizer-colour-options.php:42, includes/lsx-customizer-colour-options.php:55
+#: includes/lsx-customizer-colour-options.php:48, includes/lsx-customizer-colour-options.php:61
 msgid "Dropdown link (hover)"
 msgstr ""
 
-#: includes/lsx-customizer-colour-options.php:47
+#: includes/lsx-customizer-colour-options.php:53
 msgid "Description"
 msgstr ""
 
-#: includes/lsx-customizer-colour-options.php:59
+#: includes/lsx-customizer-colour-options.php:65
 msgid "Text (over image)"
 msgstr ""
 
-#: includes/lsx-customizer-colour-options.php:60
+#: includes/lsx-customizer-colour-options.php:66
 msgid "Breadcrumb Background"
 msgstr ""
 
-#: includes/lsx-customizer-colour-options.php:61
+#: includes/lsx-customizer-colour-options.php:67
 msgid "Breadcrumb Text"
 msgstr ""
 
-#: includes/lsx-customizer-colour-options.php:62
+#: includes/lsx-customizer-colour-options.php:68
 msgid "Breadcrumb Text (selected)"
 msgstr ""
 
-#: includes/lsx-customizer-colour-options.php:65
+#: includes/lsx-customizer-colour-options.php:71
 msgid "Line"
 msgstr ""
 
-#: includes/lsx-customizer-colour-options.php:66
+#: includes/lsx-customizer-colour-options.php:72
 msgid "Text (heading)"
 msgstr ""
 
-#: includes/lsx-customizer-colour-options.php:67
+#: includes/lsx-customizer-colour-options.php:73
 msgid "Text (small)"
 msgstr ""
 
-#: includes/lsx-customizer-colour-options.php:71
+#: includes/lsx-customizer-colour-options.php:77
 msgid "Section full (background)"
 msgstr ""
 
-#: includes/lsx-customizer-colour-options.php:72
+#: includes/lsx-customizer-colour-options.php:78
 msgid "Section full (text)"
 msgstr ""
 
-#: includes/lsx-customizer-colour-options.php:73
+#: includes/lsx-customizer-colour-options.php:79
 msgid "Section full (link)"
 msgstr ""
 
-#: includes/lsx-customizer-colour-options.php:74
+#: includes/lsx-customizer-colour-options.php:80
 msgid "Section full (link hover)"
 msgstr ""
 
-#: includes/lsx-customizer-colour-options.php:75
+#: includes/lsx-customizer-colour-options.php:81
 msgid "Section full CTA (background)"
 msgstr ""
 
-#: includes/lsx-customizer-colour-options.php:76
+#: includes/lsx-customizer-colour-options.php:82
 msgid "Section full CTA (text)"
 msgstr ""
 
-#: includes/lsx-customizer-colour-options.php:77
+#: includes/lsx-customizer-colour-options.php:83
 msgid "Section full CTA (link)"
 msgstr ""
 
-#: includes/lsx-customizer-colour-options.php:78
+#: includes/lsx-customizer-colour-options.php:84
 msgid "Section full CTA (link hover)"
 msgstr ""
 
-#: includes/lsx-customizer-colour-options.php:98
+#: includes/lsx-customizer-colour-options.php:104
 msgid "Default"
 msgstr ""
 
-#: includes/lsx-customizer-colour-options.php:181
+#: includes/lsx-customizer-colour-options.php:193
 msgid "Red"
 msgstr ""
 
-#: includes/lsx-customizer-colour-options.php:264
+#: includes/lsx-customizer-colour-options.php:282
 msgid "Orange"
 msgstr ""
 
-#: includes/lsx-customizer-colour-options.php:347
+#: includes/lsx-customizer-colour-options.php:371
 msgid "Green"
 msgstr ""
 
-#: includes/lsx-customizer-colour-options.php:430
+#: includes/lsx-customizer-colour-options.php:460
 msgid "Brown"
 msgstr ""

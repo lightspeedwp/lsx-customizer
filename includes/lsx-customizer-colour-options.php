@@ -31,6 +31,12 @@ $customizer_colour_names = apply_filters( 'lsx_customizer_colour_names', array(
 	'button_secondary_text_color_hover'       => esc_html__( 'Text (hover)', 'lsx-customizer' ),
 	'button_secondary_shadow'                 => esc_html__( 'Shadow', 'lsx-customizer' ),
 
+	'button_tertiary_background_color'       => esc_html__( 'Background', 'lsx-customizer' ),
+	'button_tertiary_background_hover_color' => esc_html__( 'Background (hover)', 'lsx-customizer' ),
+	'button_tertiary_text_color'             => esc_html__( 'Text', 'lsx-customizer' ),
+	'button_tertiary_text_color_hover'       => esc_html__( 'Text (hover)', 'lsx-customizer' ),
+	'button_tertiary_shadow'                 => esc_html__( 'Shadow', 'lsx-customizer' ),
+
 	'top_menu_background_color'          => esc_html__( 'Background', 'lsx-customizer' ),
 	'top_menu_link_color'                => esc_html__( 'Link', 'lsx-customizer' ),
 	'top_menu_link_hover_color'          => esc_html__( 'Link (hover)', 'lsx-customizer' ),
@@ -115,6 +121,12 @@ $customizer_colour_choices = apply_filters( 'lsx_customizer_colour_choices', arr
 			'button_secondary_text_color_hover'       => '#4A4A4A',
 			'button_secondary_shadow'                 => '#C4C4C4',
 
+			'button_tertiary_background_color'       => '#6BA913',
+			'button_tertiary_background_hover_color' => '#649E12',
+			'button_tertiary_text_color'             => '#FFFFFF',
+			'button_tertiary_text_color_hover'       => '#FFFFFF',
+			'button_tertiary_shadow'                 => '#3F640B',
+
 			'top_menu_background_color'          => '#F2F2F2',
 			'top_menu_link_color'                => '#418AD0',
 			'top_menu_link_hover_color'          => '#F7AE00',
@@ -197,6 +209,12 @@ $customizer_colour_choices = apply_filters( 'lsx_customizer_colour_choices', arr
 			'button_secondary_text_color'             => '#4A4A4A',
 			'button_secondary_text_color_hover'       => '#4A4A4A',
 			'button_secondary_shadow'                 => '#C4C4C4',
+
+			'button_tertiary_background_color'       => '#6BA913',
+			'button_tertiary_background_hover_color' => '#649E12',
+			'button_tertiary_text_color'             => '#FFFFFF',
+			'button_tertiary_text_color_hover'       => '#FFFFFF',
+			'button_tertiary_shadow'                 => '#3F640B',
 
 			'top_menu_background_color'          => '#333333',
 			'top_menu_link_color'                => '#ffffff',
@@ -281,6 +299,12 @@ $customizer_colour_choices = apply_filters( 'lsx_customizer_colour_choices', arr
 			'button_secondary_text_color_hover'       => '#4A4A4A',
 			'button_secondary_shadow'                 => '#C4C4C4',
 
+			'button_tertiary_background_color'       => '#6BA913',
+			'button_tertiary_background_hover_color' => '#649E12',
+			'button_tertiary_text_color'             => '#FFFFFF',
+			'button_tertiary_text_color_hover'       => '#FFFFFF',
+			'button_tertiary_shadow'                 => '#3F640B',
+
 			'top_menu_background_color'          => '#333333',
 			'top_menu_link_color'                => '#ffffff',
 			'top_menu_link_hover_color'          => '#e4701e',
@@ -364,6 +388,12 @@ $customizer_colour_choices = apply_filters( 'lsx_customizer_colour_choices', arr
 			'button_secondary_text_color_hover'       => '#4A4A4A',
 			'button_secondary_shadow'                 => '#C4C4C4',
 
+			'button_tertiary_background_color'       => '#6BA913',
+			'button_tertiary_background_hover_color' => '#649E12',
+			'button_tertiary_text_color'             => '#FFFFFF',
+			'button_tertiary_text_color_hover'       => '#FFFFFF',
+			'button_tertiary_shadow'                 => '#3F640B',
+
 			'top_menu_background_color'          => '#333333',
 			'top_menu_link_color'                => '#ffffff',
 			'top_menu_link_hover_color'          => '#a5a370',
@@ -446,6 +476,12 @@ $customizer_colour_choices = apply_filters( 'lsx_customizer_colour_choices', arr
 			'button_secondary_text_color'             => '#4A4A4A',
 			'button_secondary_text_color_hover'       => '#4A4A4A',
 			'button_secondary_shadow'                 => '#C4C4C4',
+
+			'button_tertiary_background_color'       => '#6BA913',
+			'button_tertiary_background_hover_color' => '#649E12',
+			'button_tertiary_text_color'             => '#FFFFFF',
+			'button_tertiary_text_color_hover'       => '#FFFFFF',
+			'button_tertiary_shadow'                 => '#3F640B',
 
 			'top_menu_background_color'          => '#333333',
 			'top_menu_link_color'                => '#ffffff',
