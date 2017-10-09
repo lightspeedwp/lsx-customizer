@@ -2,26 +2,6 @@
 
 This extension gives you complete control over the appearance of your LSX-powered WordPress site.
 
-## Changelog
-
-### 1.0.3
-* Moved all blog customizer options to LSX Blog Customizer plugin
-* Fix - Added filters to send the custom colours to custom selectors
-* Fix - Adjusted the plugin settings link inside the LSX API Class
-
-### 1.0.2
-* Fix - Fixed all prefixes replaces (to_ > lsx_to_, TO_ > LSX_TO_)
-
-### 1.0.1 - 08/12/16
-* Fix - Added a extra style selector for main menu CSS: item active + hover
-* Fix - Avoided use a return function inside the PHP function "empty" (compatibility with PHP 5.5 and lower)
-* Fix - Compatibility with WPML 3.6
-* Fix - Reduced the access to server (check API key status) using transients
-* Fix - Made the API URLs dev/live dynamic using a prefix "dev-" in the API KEY
-
-### 1.0.0 - 30/11/16
-* First Version
-
 ## Setup
 
 ### 1: Install NPM
