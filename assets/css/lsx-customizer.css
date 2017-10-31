@@ -1,3 +1,5 @@
+@media (min-width: 992px) { .page-template-default:not(.has-sidebar).woocommerce-page.lsx-wc-checkout-layout-stacked article.page { width: 750px !important; } }
+
 @media (min-width: 768px) { .lsx-wc-checkout-layout-stacked .col2-set { clear: both; float: none; width: 100%; }
   .lsx-wc-checkout-layout-stacked .col2-set .col-1 { float: none; width: 100%; }
   .lsx-wc-checkout-layout-stacked .col2-set .col-1 .form-row-first { float: left; margin-right: 5.8823529412%; width: 41.1764705882%; }

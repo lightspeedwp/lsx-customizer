@@ -3,6 +3,14 @@
 
 // Checkout layout
 
+// Structure
+
+article.page {
+	.page-template-default:not(.has-sidebar).woocommerce-page.lsx-wc-checkout-layout-stacked & {
+		@include media ('>=tablet') { width: 750px !important; }
+	}
+}
+
 @include media ('>=phone') {
 	.lsx-wc-checkout-layout-stacked {
 		.col2-set {
