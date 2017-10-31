@@ -62,7 +62,7 @@ if ( ! class_exists( 'LSX_Customizer_Frontend' ) ) {
 		 * @since 1.1.1
 		 */
 		public function body_class( $classes ) {
-			if ( is_checkout() ) {
+			if ( class_exists( 'WooCommerce' ) && is_checkout() ) {
 				$layout = get_theme_mod( 'lsx_wc_checkout_layout', 'default' );
 
 				if ( 'stacked' === $layout ) {
@@ -81,7 +81,7 @@ if ( ! class_exists( 'LSX_Customizer_Frontend' ) ) {
 		 * @since 1.1.1
 		 */
 		public function checkout_steps() {
-			if ( is_checkout() && ! empty( get_theme_mod( 'lsx_wc_checkout_steps', '1' ) ) ) :
+			if ( class_exists( 'WooCommerce' ) && is_checkout() && ! empty( get_theme_mod( 'lsx_wc_checkout_steps', '1' ) ) ) :
 				?>
 				<div class="lsx-wc-checkout-steps">
 					<ul class="lsx-wc-checkout-steps-items">
