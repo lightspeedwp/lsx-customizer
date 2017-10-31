@@ -30,6 +30,19 @@ if ( ! class_exists( 'LSX_Customizer' ) ) {
 			require_once( LSX_CUSTOMIZER_PATH . 'classes/class-lsx-customizer-frontend.php' );
 			require_once( LSX_CUSTOMIZER_PATH . 'classes/class-lsx-customizer-core.php' );
 			require_once( LSX_CUSTOMIZER_PATH . 'classes/class-lsx-customizer-colour.php' );
+
+			add_action( 'plugins_loaded', array( $this, 'woocommerce' ) );
+		}
+
+		/**
+		 * Check if WooCommerce is installed to load the related file.
+		 *
+		 * @since 1.1.1
+		 */
+		public function woocommerce() {
+			if ( class_exists( 'WooCommerce' ) ) {
+				require_once( LSX_CUSTOMIZER_PATH . 'classes/class-lsx-customizer-woocommerce.php' );
+			}
 		}
 
 		/**

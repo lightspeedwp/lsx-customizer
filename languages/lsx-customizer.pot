@@ -78,6 +78,58 @@ msgstr ""
 msgid "Theme Credit"
 msgstr ""
 
+#: classes/class-lsx-customizer-frontend.php:94, classes/class-lsx-customizer-frontend.php:124
+msgid "Choose your product"
+msgstr ""
+
+#: classes/class-lsx-customizer-frontend.php:103, classes/class-lsx-customizer-frontend.php:130
+msgid "My Cart"
+msgstr ""
+
+#: classes/class-lsx-customizer-frontend.php:110
+msgid "3"
+msgstr ""
+
+#: classes/class-lsx-customizer-frontend.php:111, classes/class-lsx-customizer-frontend.php:136
+msgid "Payment details"
+msgstr ""
+
+#: classes/class-lsx-customizer-frontend.php:116, classes/class-lsx-customizer-frontend.php:141
+msgid "4"
+msgstr ""
+
+#: classes/class-lsx-customizer-frontend.php:117, classes/class-lsx-customizer-frontend.php:142
+msgid "Thank you!"
+msgstr ""
+
+#: classes/class-lsx-customizer-woocommerce.php:35
+msgid "Checkout"
+msgstr ""
+
+#: classes/class-lsx-customizer-woocommerce.php:36
+msgid "Change the WooCommerce checkout settings."
+msgstr ""
+
+#: classes/class-lsx-customizer-woocommerce.php:49, classes/class-lsx-customizer-woocommerce.php:61
+msgid "Checkout Steps"
+msgstr ""
+
+#: classes/class-lsx-customizer-woocommerce.php:50, classes/class-lsx-customizer-woocommerce.php:62
+msgid "Enable the checkout steps header."
+msgstr ""
+
+#: classes/class-lsx-customizer-woocommerce.php:67, includes/lsx-customizer-colour-options.php:104
+msgid "Default"
+msgstr ""
+
+#: classes/class-lsx-customizer-woocommerce.php:68
+msgid "Stacked"
+msgstr ""
+
+#: classes/class-lsx-customizer-woocommerce.php:69
+msgid "Columns"
+msgstr ""
+
 #: examples/lsx-customizer-colour.php:9
 msgid "TEST: Text"
 msgstr ""
@@ -204,10 +256,6 @@ msgstr ""
 
 #: includes/lsx-customizer-colour-options.php:84
 msgid "Section full CTA (link hover)"
-msgstr ""
-
-#: includes/lsx-customizer-colour-options.php:104
-msgid "Default"
 msgstr ""
 
 #: includes/lsx-customizer-colour-options.php:193

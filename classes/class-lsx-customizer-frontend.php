@@ -20,6 +20,9 @@ if ( ! class_exists( 'LSX_Customizer_Frontend' ) ) {
 		public function __construct() {
 			add_action( 'wp_enqueue_scripts', array( $this, 'assets' ), 2999 );
 			add_action( 'wp',                 array( $this, 'layout' ), 2999 );
+
+			add_filter( 'body_class', array( $this, 'body_class' ), 2999 );
+			add_action( 'lsx_content_top', array( $this, 'checkout_steps' ), 15 );
 		}
 
 		/**
@@ -51,6 +54,100 @@ if ( ! class_exists( 'LSX_Customizer_Frontend' ) ) {
 			if ( false == $theme_credit ) {
 				add_filter( 'lsx_credit_link', '__return_false' );
 			}
+		}
+
+		/**
+		 * Add and remove body_class() classes.
+		 *
+		 * @since 1.1.1
+		 */
+		public function body_class( $classes ) {
+			if ( is_checkout() ) {
+				$layout = get_theme_mod( 'lsx_wc_checkout_layout', 'default' );
+
+				if ( 'stacked' === $layout ) {
+					$classes[] = 'lsx-wc-checkout-layout-stacked';
+				} elseif ( 'columns' === $layout ) {
+					$classes[] = 'lsx-wc-checkout-layout-two-column-addreses';
+				}
+			}
+
+			return $classes;
+		}
+
+		/**
+		 * Display WC checkout steps.
+		 *
+		 * @since 1.1.1
+		 */
+		public function checkout_steps() {
+			if ( is_checkout() && ! empty( get_theme_mod( 'lsx_wc_checkout_steps', '1' ) ) ) :
+				?>
+				<div class="lsx-wc-checkout-steps">
+					<ul class="lsx-wc-checkout-steps-items">
+
+						<?php if ( empty( $wp->query_vars['order-received'] ) ) : ?>
+
+							<li class="lsx-wc-checkout-steps-item">
+								<a href="<?php echo esc_url( get_permalink( woocommerce_get_page_id( 'shop' ) ) ); ?>" class="lsx-wc-checkout-steps-link">
+									<i class="fa fa-check-circle" aria-hidden="true"></i>
+									<span><?php esc_html_e( 'Choose your product', 'lsx-customizer' ); ?></span>
+								</a>
+
+								<i class="fa fa-angle-right" aria-hidden="true"></i>
+							</li>
+
+							<li class="lsx-wc-checkout-steps-item">
+								<a href="<?php echo esc_url( WC()->cart->get_cart_url() ); ?>" class="lsx-wc-checkout-steps-link">
+									<i class="fa fa-check-circle" aria-hidden="true"></i>
+									<span><?php esc_html_e( 'My Cart', 'lsx-customizer' ); ?></span>
+								</a>
+
+								<i class="fa fa-angle-right" aria-hidden="true"></i>
+							</li>
+
+							<li class="lsx-wc-checkout-steps-item lsx-wc-checkout-steps-item-current">
+								<i class="lsx-wc-checkout-steps-counter" aria-hidden="true"><?php esc_html_e( '3', 'lsx-customizer' ); ?></i>
+								<span><?php esc_html_e( 'Payment details', 'lsx-customizer' ); ?></span>
+								<i class="fa fa-angle-right" aria-hidden="true"></i>
+							</li>
+
+							<li class="lsx-wc-checkout-steps-item lsx-wc-checkout-steps-item-disabled">
+								<i class="lsx-wc-checkout-steps-counter" aria-hidden="true"><?php esc_html_e( '4', 'lsx-customizer' ); ?></i>
+								<span><?php esc_html_e( 'Thank you!', 'lsx-customizer' ); ?></span>
+							</li>
+
+						<?php else : ?>
+
+							<li class="lsx-wc-checkout-steps-item">
+								<i class="fa fa-check-circle" aria-hidden="true"></i>
+								<span><?php esc_html_e( 'Choose your product', 'lsx-customizer' ); ?></span>
+								<i class="fa fa-angle-right" aria-hidden="true"></i>
+							</li>
+
+							<li class="lsx-wc-checkout-steps-item">
+								<i class="fa fa-check-circle" aria-hidden="true"></i>
+								<span><?php esc_html_e( 'My Cart', 'lsx-customizer' ); ?></span>
+								<i class="fa fa-angle-right" aria-hidden="true"></i>
+							</li>
+
+							<li class="lsx-wc-checkout-steps-item">
+								<i class="fa fa-check-circle" aria-hidden="true"></i>
+								<span><?php esc_html_e( 'Payment details', 'lsx-customizer' ); ?></span>
+								<i class="fa fa-angle-right" aria-hidden="true"></i>
+							</li>
+
+							<li class="lsx-wc-checkout-steps-item lsx-wc-checkout-steps-item-current">
+								<i class="lsx-wc-checkout-steps-counter" aria-hidden="true"><?php esc_html_e( '4', 'lsx-customizer' ); ?></i>
+								<span><?php esc_html_e( 'Thank you!', 'lsx-customizer' ); ?></span>
+							</li>
+
+						<?php endif; ?>
+
+					</ul>
+				</div>
+				<?php
+			endif;
 		}
 
 	}

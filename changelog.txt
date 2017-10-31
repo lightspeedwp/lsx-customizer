@@ -1,5 +1,9 @@
 ## Changelog
 
+### 1.1.1
+* Tweak - WooCommerce checkout layout
+* Tweak - WooCommerce checkout steps
+
 ### 1.1.0
 * Added compatibility with LSX 2.0
 * Dev - New project structure

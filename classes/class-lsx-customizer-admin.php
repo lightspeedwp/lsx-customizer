@@ -19,6 +19,10 @@ if ( ! class_exists( 'LSX_Customizer_Admin' ) ) {
 		 */
 		public function __construct() {
 			add_action( 'customize_preview_init', array( $this, 'assets' ), 9999 );
+
+			if ( is_admin() ) {
+				add_filter( 'lsx_customizer_colour_selectors_body', array( $this, 'customizer_body_colours_handler' ), 15, 2 );
+			}
 		}
 
 		/**
@@ -36,6 +40,29 @@ if ( ! class_exists( 'LSX_Customizer_Admin' ) ) {
 			wp_localize_script( 'lsx_customizer_admin', 'lsx_customizer_params', $params );
 
 			wp_enqueue_style( 'lsx_customizer_admin', LSX_CUSTOMIZER_URL . 'assets/css/lsx-customizer-admin.css', array(), LSX_CUSTOMIZER_VER );
+		}
+
+		/**
+		 * Handle body colours that might be change by LSX Customiser.
+		 */
+		public function customizer_body_colours_handler( $css, $colors ) {
+			$css .= '
+				@import "' . LSX_CUSTOMIZER_PATH . '/assets/css/scss/customizer-customizer-body-colours";
+
+				/**
+				 * LSX Customizer - Body (LSX Customizer)
+				 */
+				@include customizer-customizer-body-colours (
+					$bg:   		' . $colors['background_color'] . ',
+					$breaker:   ' . $colors['body_line_color'] . ',
+					$color:    	' . $colors['body_text_color'] . ',
+					$link:    	' . $colors['body_link_color'] . ',
+					$hover:    	' . $colors['body_link_hover_color'] . ',
+					$small:    	' . $colors['body_text_small_color'] . '
+				);
+			';
+
+			return $css;
 		}
 
 	}
