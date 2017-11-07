@@ -78,27 +78,31 @@ msgstr ""
 msgid "Theme Credit"
 msgstr ""
 
-#: classes/class-lsx-customizer-frontend.php:94, classes/class-lsx-customizer-frontend.php:124
+#: classes/class-lsx-customizer-frontend.php:94, classes/class-lsx-customizer-frontend.php:122, classes/class-lsx-customizer-frontend.php:152
 msgid "Choose your product"
 msgstr ""
 
-#: classes/class-lsx-customizer-frontend.php:103, classes/class-lsx-customizer-frontend.php:130
+#: classes/class-lsx-customizer-frontend.php:101
+msgid "2"
+msgstr ""
+
+#: classes/class-lsx-customizer-frontend.php:102, classes/class-lsx-customizer-frontend.php:131, classes/class-lsx-customizer-frontend.php:158
 msgid "My Cart"
 msgstr ""
 
-#: classes/class-lsx-customizer-frontend.php:110
+#: classes/class-lsx-customizer-frontend.php:107, classes/class-lsx-customizer-frontend.php:138
 msgid "3"
 msgstr ""
 
-#: classes/class-lsx-customizer-frontend.php:111, classes/class-lsx-customizer-frontend.php:136
+#: classes/class-lsx-customizer-frontend.php:108, classes/class-lsx-customizer-frontend.php:139, classes/class-lsx-customizer-frontend.php:164
 msgid "Payment details"
 msgstr ""
 
-#: classes/class-lsx-customizer-frontend.php:116, classes/class-lsx-customizer-frontend.php:141
+#: classes/class-lsx-customizer-frontend.php:113, classes/class-lsx-customizer-frontend.php:144, classes/class-lsx-customizer-frontend.php:169
 msgid "4"
 msgstr ""
 
-#: classes/class-lsx-customizer-frontend.php:117, classes/class-lsx-customizer-frontend.php:142
+#: classes/class-lsx-customizer-frontend.php:114, classes/class-lsx-customizer-frontend.php:145, classes/class-lsx-customizer-frontend.php:170
 msgid "Thank you!"
 msgstr ""
 

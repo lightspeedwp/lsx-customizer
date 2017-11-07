@@ -81,12 +81,40 @@ if ( ! class_exists( 'LSX_Customizer_Frontend' ) ) {
 		 * @since 1.1.1
 		 */
 		public function checkout_steps() {
-			if ( class_exists( 'WooCommerce' ) && is_checkout() && ! empty( get_theme_mod( 'lsx_wc_checkout_steps', '1' ) ) ) :
+			if ( class_exists( 'WooCommerce' ) && ( is_checkout() || is_cart() ) && ! empty( get_theme_mod( 'lsx_wc_checkout_steps', '1' ) ) ) :
 				?>
 				<div class="lsx-wc-checkout-steps">
 					<ul class="lsx-wc-checkout-steps-items">
 
-						<?php if ( empty( $wp->query_vars['order-received'] ) ) : ?>
+						<?php if ( is_cart() ) : ?>
+
+							<li class="lsx-wc-checkout-steps-item">
+								<a href="<?php echo esc_url( get_permalink( woocommerce_get_page_id( 'shop' ) ) ); ?>" class="lsx-wc-checkout-steps-link">
+									<i class="fa fa-check-circle" aria-hidden="true"></i>
+									<span><?php esc_html_e( 'Choose your product', 'lsx-customizer' ); ?></span>
+								</a>
+
+								<i class="fa fa-angle-right" aria-hidden="true"></i>
+							</li>
+
+							<li class="lsx-wc-checkout-steps-item lsx-wc-checkout-steps-item-current">
+								<i class="lsx-wc-checkout-steps-counter" aria-hidden="true"><?php esc_html_e( '2', 'lsx-customizer' ); ?></i>
+								<span><?php esc_html_e( 'My Cart', 'lsx-customizer' ); ?></span>
+								<i class="fa fa-angle-right" aria-hidden="true"></i>
+							</li>
+
+							<li class="lsx-wc-checkout-steps-item lsx-wc-checkout-steps-item-disabled">
+								<i class="lsx-wc-checkout-steps-counter" aria-hidden="true"><?php esc_html_e( '3', 'lsx-customizer' ); ?></i>
+								<span><?php esc_html_e( 'Payment details', 'lsx-customizer' ); ?></span>
+								<i class="fa fa-angle-right" aria-hidden="true"></i>
+							</li>
+
+							<li class="lsx-wc-checkout-steps-item lsx-wc-checkout-steps-item-disabled">
+								<i class="lsx-wc-checkout-steps-counter" aria-hidden="true"><?php esc_html_e( '4', 'lsx-customizer' ); ?></i>
+								<span><?php esc_html_e( 'Thank you!', 'lsx-customizer' ); ?></span>
+							</li>
+
+						<?php elseif ( is_checkout() && empty( $wp->query_vars['order-received'] ) ) : ?>
 
 							<li class="lsx-wc-checkout-steps-item">
 								<a href="<?php echo esc_url( get_permalink( woocommerce_get_page_id( 'shop' ) ) ); ?>" class="lsx-wc-checkout-steps-link">
@@ -117,7 +145,7 @@ if ( ! class_exists( 'LSX_Customizer_Frontend' ) ) {
 								<span><?php esc_html_e( 'Thank you!', 'lsx-customizer' ); ?></span>
 							</li>
 
-						<?php else : ?>
+						<?php elseif ( is_checkout() ) : ?>
 
 							<li class="lsx-wc-checkout-steps-item">
 								<i class="fa fa-check-circle" aria-hidden="true"></i>
