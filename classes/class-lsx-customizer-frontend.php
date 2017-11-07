@@ -82,6 +82,7 @@ if ( ! class_exists( 'LSX_Customizer_Frontend' ) ) {
 		 */
 		public function checkout_steps() {
 			if ( class_exists( 'WooCommerce' ) && ( is_checkout() || is_cart() ) && ! empty( get_theme_mod( 'lsx_wc_checkout_steps', '1' ) ) ) :
+				global $wp;
 				?>
 				<div class="lsx-wc-checkout-steps">
 					<ul class="lsx-wc-checkout-steps-items">
