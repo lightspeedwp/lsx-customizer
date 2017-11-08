@@ -21,9 +21,12 @@ if ( ! class_exists( 'LSX_Customizer_Frontend' ) ) {
 			add_action( 'wp_enqueue_scripts', array( $this, 'assets' ), 2999 );
 			add_action( 'wp', array( $this, 'layout' ), 2999 );
 
-			add_filter( 'body_class', array( $this, 'body_class' ), 2999 );
-			add_action( 'template_redirect', array( $this, 'thankyou_page' ), 2999 );
-			add_action( 'lsx_content_top', array( $this, 'checkout_steps' ), 15 );
+			add_filter( 'body_class', array( $this, 'wc_body_class' ), 2999 );
+			add_action( 'template_redirect', array( $this, 'wc_thankyou_page' ), 2999 );
+			add_action( 'lsx_content_top', array( $this, 'wc_checkout_steps' ), 15 );
+
+			add_action( 'wp', array( $this, 'wp_cart_extra_html' ), 2999 );
+			add_action( 'wp', array( $this, 'wp_checkout_extra_html' ), 2999 );
 		}
 
 		/**
@@ -58,11 +61,11 @@ if ( ! class_exists( 'LSX_Customizer_Frontend' ) ) {
 		}
 
 		/**
-		 * Add and remove body_class() classes.
+		 * Add and remove WC body_class() classes.
 		 *
 		 * @since 1.1.1
 		 */
-		public function body_class( $classes ) {
+		public function wc_body_class( $classes ) {
 			if ( class_exists( 'WooCommerce' ) && is_checkout() ) {
 				$layout = get_theme_mod( 'lsx_wc_checkout_layout', 'default' );
 
@@ -77,11 +80,11 @@ if ( ! class_exists( 'LSX_Customizer_Frontend' ) ) {
 		}
 
 		/**
-		 * Thank you page.
+		 * WC thank you page.
 		 *
 		 * @since 1.1.1
 		 */
-		public function thankyou_page() {
+		public function wc_thankyou_page() {
 			global $wp;
 
 			if ( class_exists( 'WooCommerce' ) && is_checkout() && ! empty( $wp->query_vars['order-received'] ) ) {
@@ -104,7 +107,7 @@ if ( ! class_exists( 'LSX_Customizer_Frontend' ) ) {
 		 *
 		 * @since 1.1.1
 		 */
-		public function checkout_steps() {
+		public function wc_checkout_steps() {
 			if ( class_exists( 'WooCommerce' ) && ( is_checkout() || is_cart() ) && ! empty( get_theme_mod( 'lsx_wc_checkout_steps', '1' ) ) ) :
 				global $wp;
 				?>
@@ -201,6 +204,71 @@ if ( ! class_exists( 'LSX_Customizer_Frontend' ) ) {
 				</div>
 				<?php
 			endif;
+		}
+
+		/**
+		 * Display extra HTML on checkout.
+		 *
+		 * @since 1.1.1
+		 */
+		public function wp_checkout_extra_html() {
+			if ( class_exists( 'WooCommerce' ) && is_checkout() ) {
+				$checkout_extra_html = get_theme_mod( 'lsx_wc_checkout_extra_html', '' );
+
+				if ( ! empty( $checkout_extra_html ) ) {
+					add_action( 'woocommerce_review_order_after_payment', array( $this, 'wp_checkout_extra_html_echo' ), 9 );
+				}
+			}
+		}
+
+		/**
+		 * Display extra HTML on checkout.
+		 *
+		 * @since 1.1.1
+		 */
+		public function wp_checkout_extra_html_echo() {
+			if ( class_exists( 'WooCommerce' ) && is_checkout() ) {
+				$checkout_extra_html = get_theme_mod( 'lsx_wc_checkout_extra_html', '' );
+
+				if ( ! empty( $checkout_extra_html ) ) { ?>
+					<div class="lsx-wc-checkout-extra-html">
+						<?php echo wp_kses_post( $checkout_extra_html ); ?>
+					</div>
+				<?php }
+			}
+		}
+
+		/**
+		 * Display extra HTML on cart.
+		 *
+		 * @since 1.1.1
+		 */
+		public function wp_cart_extra_html() {
+			if ( class_exists( 'WooCommerce' ) && is_cart() ) {
+				$cart_extra_html = get_theme_mod( 'lsx_wc_cart_extra_html', '' );
+
+				if ( ! empty( $cart_extra_html ) ) {
+					remove_action( 'woocommerce_cart_collaterals', 'woocommerce_cross_sell_display' );
+					add_action( 'woocommerce_cart_collaterals', array( $this, 'wp_cart_extra_html_echo' ), 9 );
+				}
+			}
+		}
+
+		/**
+		 * Display extra HTML on cart.
+		 *
+		 * @since 1.1.1
+		 */
+		public function wp_cart_extra_html_echo() {
+			if ( class_exists( 'WooCommerce' ) && is_cart() ) {
+				$cart_extra_html = get_theme_mod( 'lsx_wc_cart_extra_html', '' );
+
+				if ( ! empty( $cart_extra_html ) ) { ?>
+					<div class="lsx-wc-cart-extra-html">
+						<?php echo wp_kses_post( $cart_extra_html ); ?>
+					</div>
+				<?php }
+			}
 		}
 
 	}

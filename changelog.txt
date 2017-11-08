@@ -4,6 +4,8 @@
 * Tweak - WooCommerce checkout layout
 * Tweak - WooCommerce checkout steps
 * Tweak - WooCommerce checkout custom thank you page
+* Tweak - WooCommerce checkout custom cart extra HTML
+* Tweak - WooCommerce checkout custom checkout extra HTML
 
 ### 1.1.0
 * Added compatibility with LSX 2.0

@@ -270,4 +270,19 @@ article.page {
 	vertical-align: middle;
 }
 
+// Extra HTML
+
+.lsx-wc-cart-extra-html {
+	margin-bottom: 4.25rem;
+	width: 100%;
+
+	@include media ('>=phone') {
+		float: left;
+		margin-bottom: 0;
+		width: 48%;
+	}
+}
+
+.lsx-wc-checkout-extra-html {}
+
 @include customizer-customizer-body-colours(#F6F6F6, #DADDDF, #4A4A4A, #418AD0, #F7AE00, #919191);

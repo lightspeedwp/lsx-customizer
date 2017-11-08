@@ -54,6 +54,28 @@ if ( ! class_exists( 'LSX_Customizer' ) ) {
 			return ( 1 === absint( $input ) ) ? 1 : 0;
 		}
 
+		/**
+		 * Sanitize select.
+		 *
+		 * @since 1.1.1
+		 */
+		public function sanitize_select( $input ) {
+			if ( is_string( $input ) || is_integer( $input ) || is_bool( $input ) ) {
+				return $input;
+			} else {
+				return '';
+			}
+		}
+
+		/**
+		 * Sanitize textarea.
+		 *
+		 * @since 1.1.1
+		 */
+		public function sanitize_textarea( $input ) {
+			return wp_kses_post( $input );
+		}
+
 	}
 
 	new LSX_Customizer();

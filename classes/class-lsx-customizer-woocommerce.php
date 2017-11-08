@@ -37,6 +37,12 @@ if ( ! class_exists( 'LSX_Customizer_WooCommerce' ) ) {
 				'panel'       => 'lsx-wc',
 			) );
 
+			$wp_customize->add_section( 'lsx-wc-cart' , array(
+				'title'       => esc_html__( 'Cart', 'lsx-customizer' ),
+				'description' => esc_html__( 'Change the WooCommerce cart settings.', 'lsx-customizer' ),
+				'panel'       => 'lsx-wc',
+			) );
+
 			/**
 			 * Fields.
 			 */
@@ -55,6 +61,7 @@ if ( ! class_exists( 'LSX_Customizer_WooCommerce' ) ) {
 
 			$wp_customize->add_setting( 'lsx_wc_checkout_layout', array(
 				'default' => 'default',
+				'sanitize_callback' => array( $this, 'sanitize_select' ),
 			) );
 
 			$wp_customize->add_control( new WP_Customize_Control( $wp_customize, 'lsx_wc_checkout_layout', array(
@@ -72,6 +79,7 @@ if ( ! class_exists( 'LSX_Customizer_WooCommerce' ) ) {
 
 			$wp_customize->add_setting( 'lsx_wc_checkout_thankyou_page', array(
 				'default' => '0',
+				'sanitize_callback' => array( $this, 'sanitize_select' ),
 			) );
 
 			$choices = array(
@@ -91,6 +99,32 @@ if ( ! class_exists( 'LSX_Customizer_WooCommerce' ) ) {
 				'settings'    => 'lsx_wc_checkout_thankyou_page',
 				'type'        => 'select',
 				'choices'     => $choices,
+			) ) );
+
+			$wp_customize->add_setting( 'lsx_wc_checkout_extra_html', array(
+				'default'           => '',
+				'sanitize_callback' => array( $this, 'sanitize_textarea' ),
+			) );
+
+			$wp_customize->add_control( new WP_Customize_Control( $wp_customize, 'lsx_wc_checkout_extra_html', array(
+				'label'       => esc_html__( 'Extra Checkout HTML', 'lsx-customizer' ),
+				'description' => esc_html__( 'Extra HTML to display at checkout page (bottom/right).', 'lsx-customizer' ),
+				'section'     => 'lsx-wc-checkout',
+				'settings'    => 'lsx_wc_checkout_extra_html',
+				'type'        => 'textarea',
+			) ) );
+
+			$wp_customize->add_setting( 'lsx_wc_cart_extra_html', array(
+				'default'           => '',
+				'sanitize_callback' => array( $this, 'sanitize_textarea' ),
+			) );
+
+			$wp_customize->add_control( new WP_Customize_Control( $wp_customize, 'lsx_wc_cart_extra_html', array(
+				'label'       => esc_html__( 'Extra Cart HTML', 'lsx-customizer' ),
+				'description' => esc_html__( 'Extra HTML to display at cart page (bottom/left).', 'lsx-customizer' ),
+				'section'     => 'lsx-wc-cart',
+				'settings'    => 'lsx_wc_cart_extra_html',
+				'type'        => 'textarea',
 			) ) );
 		}
 

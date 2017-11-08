@@ -54,6 +54,10 @@
 
 .lsx-wc-checkout-steps-link { display: inline-block; vertical-align: middle; }
 
+.lsx-wc-cart-extra-html { margin-bottom: 4.25rem; width: 100%; }
+
+@media (min-width: 768px) { .lsx-wc-cart-extra-html { float: left; margin-bottom: 0; width: 48%; } }
+
 .lsx-wc-checkout-steps-item { color: #418AD0; }
 
 .lsx-wc-checkout-steps-item-current { color: #F7AE00; }
