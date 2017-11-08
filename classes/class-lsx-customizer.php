@@ -32,6 +32,7 @@ if ( ! class_exists( 'LSX_Customizer' ) ) {
 			require_once( LSX_CUSTOMIZER_PATH . 'classes/class-lsx-customizer-colour.php' );
 
 			add_action( 'plugins_loaded', array( $this, 'woocommerce' ) );
+			add_action( 'after_setup_theme', array( $this, 'wysiwyg_editor_control' ), 20 );
 		}
 
 		/**
@@ -42,6 +43,18 @@ if ( ! class_exists( 'LSX_Customizer' ) ) {
 		public function woocommerce() {
 			if ( class_exists( 'WooCommerce' ) ) {
 				require_once( LSX_CUSTOMIZER_PATH . 'classes/class-lsx-customizer-woocommerce.php' );
+			}
+		}
+
+		/**
+		 * Customizer Controls and Settings.
+		 *
+		 * @param WP_Customize_Manager $wp_customize Theme Customizer object.
+		 * @since 1.1.1
+		 */
+		public function wysiwyg_editor_control() {
+			if ( class_exists( 'WP_Customize_Control' ) ) {
+				require_once( LSX_CUSTOMIZER_PATH . 'classes/class-lsx-customizer-wysiwyg-control.php' );
 			}
 		}
 

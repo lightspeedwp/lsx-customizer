@@ -120,7 +120,22 @@ gulp.task('admin-js', function() {
 		.pipe(gulp.dest('assets/js'))
 });
 
-gulp.task('compile-js', ['js', 'admin-js']);
+gulp.task('editor-js', function() {
+	return gulp.src('assets/js/src/lsx-customizer-editor.js')
+		.pipe(plumber({
+			errorHandler: function(err) {
+				console.log(err);
+				this.emit('end');
+			}
+		}))
+		.pipe(jshint())
+		//.pipe(errorreporter)
+		.pipe(concat('lsx-customizer-editor.min.js'))
+		.pipe(uglify())
+		.pipe(gulp.dest('assets/js'))
+});
+
+gulp.task('compile-js', ['js', 'admin-js', 'editor-js']);
 
 gulp.task('watch-css', function () {
 	return gulp.watch('assets/css/**/*.scss', ['compile-css']);

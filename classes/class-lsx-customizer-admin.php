@@ -19,6 +19,7 @@ if ( ! class_exists( 'LSX_Customizer_Admin' ) ) {
 		 */
 		public function __construct() {
 			add_action( 'customize_preview_init', array( $this, 'assets' ), 9999 );
+			add_action( 'customize_controls_enqueue_scripts', array( $this, 'assets_wysiwyg_editor' ), 9999 );
 
 			if ( is_admin() ) {
 				add_filter( 'lsx_customizer_colour_selectors_body', array( $this, 'customizer_body_colours_handler' ), 15, 2 );
@@ -40,6 +41,15 @@ if ( ! class_exists( 'LSX_Customizer_Admin' ) ) {
 			wp_localize_script( 'lsx_customizer_admin', 'lsx_customizer_params', $params );
 
 			wp_enqueue_style( 'lsx_customizer_admin', LSX_CUSTOMIZER_URL . 'assets/css/lsx-customizer-admin.css', array(), LSX_CUSTOMIZER_VER );
+		}
+
+		/**
+		 * Enques the assets for editor.
+		 *
+		 * @since 1.1.1
+		 */
+		public function assets_wysiwyg_editor() {
+			wp_enqueue_script( 'lsx_customizer_editor', LSX_CUSTOMIZER_URL . 'assets/js/lsx-customizer-editor.min.js', array( 'jquery' ), LSX_CUSTOMIZER_VER, true );
 		}
 
 		/**

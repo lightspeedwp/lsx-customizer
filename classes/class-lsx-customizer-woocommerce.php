@@ -103,28 +103,28 @@ if ( ! class_exists( 'LSX_Customizer_WooCommerce' ) ) {
 
 			$wp_customize->add_setting( 'lsx_wc_checkout_extra_html', array(
 				'default'           => '',
-				'sanitize_callback' => array( $this, 'sanitize_textarea' ),
+				'sanitize_callback' => 'wp_kses_post',
 			) );
 
-			$wp_customize->add_control( new WP_Customize_Control( $wp_customize, 'lsx_wc_checkout_extra_html', array(
+			$wp_customize->add_control( new LSX_Customizer_Wysiwyg_Control( $wp_customize, 'lsx_wc_checkout_extra_html', array(
 				'label'       => esc_html__( 'Extra Checkout HTML', 'lsx-customizer' ),
 				'description' => esc_html__( 'Extra HTML to display at checkout page (bottom/right).', 'lsx-customizer' ),
 				'section'     => 'lsx-wc-checkout',
 				'settings'    => 'lsx_wc_checkout_extra_html',
-				'type'        => 'textarea',
+				'type'        => 'wysiwyg',
 			) ) );
 
 			$wp_customize->add_setting( 'lsx_wc_cart_extra_html', array(
 				'default'           => '',
-				'sanitize_callback' => array( $this, 'sanitize_textarea' ),
+				'sanitize_callback' => 'wp_kses_post',
 			) );
 
-			$wp_customize->add_control( new WP_Customize_Control( $wp_customize, 'lsx_wc_cart_extra_html', array(
+			$wp_customize->add_control( new LSX_Customizer_Wysiwyg_Control( $wp_customize, 'lsx_wc_cart_extra_html', array(
 				'label'       => esc_html__( 'Extra Cart HTML', 'lsx-customizer' ),
 				'description' => esc_html__( 'Extra HTML to display at cart page (bottom/left).', 'lsx-customizer' ),
 				'section'     => 'lsx-wc-cart',
 				'settings'    => 'lsx_wc_cart_extra_html',
-				'type'        => 'textarea',
+				'type'        => 'wysiwyg',
 			) ) );
 		}
 
