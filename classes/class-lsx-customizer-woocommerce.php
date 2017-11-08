@@ -58,8 +58,8 @@ if ( ! class_exists( 'LSX_Customizer_WooCommerce' ) ) {
 			) );
 
 			$wp_customize->add_control( new WP_Customize_Control( $wp_customize, 'lsx_wc_checkout_layout', array(
-				'label'       => esc_html__( 'Checkout Steps', 'lsx-customizer' ),
-				'description' => esc_html__( 'Enable the checkout steps header.', 'lsx-customizer' ),
+				'label'       => esc_html__( 'Checkout Layout', 'lsx-customizer' ),
+				'description' => esc_html__( 'WooCommerce checkout layout.', 'lsx-customizer' ),
 				'section'     => 'lsx-wc-checkout',
 				'settings'    => 'lsx_wc_checkout_layout',
 				'type'        => 'select',
@@ -68,6 +68,29 @@ if ( ! class_exists( 'LSX_Customizer_WooCommerce' ) ) {
 					'stacked' => esc_html__( 'Stacked', 'lsx-customizer' ),
 					'columns' => esc_html__( 'Columns', 'lsx-customizer' ),
 				),
+			) ) );
+
+			$wp_customize->add_setting( 'lsx_wc_checkout_thankyou_page', array(
+				'default' => '0',
+			) );
+
+			$choices = array(
+				'0' => esc_html__( 'Default', 'lsx-customizer' ),
+			);
+
+			$pages = get_pages();
+
+			foreach ( $pages as $key => $page ) {
+				$choices[ $page->ID ] = $page->post_title;
+			}
+
+			$wp_customize->add_control( new WP_Customize_Control( $wp_customize, 'lsx_wc_checkout_thankyou_page', array(
+				'label'       => esc_html__( 'Checkout Thank You', 'lsx-customizer' ),
+				'description' => esc_html__( 'WooCommerce checkout thank you page.', 'lsx-customizer' ),
+				'section'     => 'lsx-wc-checkout',
+				'settings'    => 'lsx_wc_checkout_thankyou_page',
+				'type'        => 'select',
+				'choices'     => $choices,
 			) ) );
 		}
 

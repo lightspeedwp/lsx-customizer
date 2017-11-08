@@ -19,9 +19,10 @@ if ( ! class_exists( 'LSX_Customizer_Frontend' ) ) {
 		 */
 		public function __construct() {
 			add_action( 'wp_enqueue_scripts', array( $this, 'assets' ), 2999 );
-			add_action( 'wp',                 array( $this, 'layout' ), 2999 );
+			add_action( 'wp', array( $this, 'layout' ), 2999 );
 
 			add_filter( 'body_class', array( $this, 'body_class' ), 2999 );
+			add_action( 'template_redirect', array( $this, 'thankyou_page' ), 2999 );
 			add_action( 'lsx_content_top', array( $this, 'checkout_steps' ), 15 );
 		}
 
@@ -73,6 +74,29 @@ if ( ! class_exists( 'LSX_Customizer_Frontend' ) ) {
 			}
 
 			return $classes;
+		}
+
+		/**
+		 * Thank you page.
+		 *
+		 * @since 1.1.1
+		 */
+		public function thankyou_page() {
+			global $wp;
+
+			if ( class_exists( 'WooCommerce' ) && is_checkout() && ! empty( $wp->query_vars['order-received'] ) ) {
+				$thankyou_page = get_theme_mod( 'lsx_wc_checkout_thankyou_page', '0' );
+
+				if ( ! empty( $thankyou_page ) ) {
+					$order_id  = apply_filters( 'woocommerce_thankyou_order_id', absint( $wp->query_vars['order-received'] ) );
+					$order_key = apply_filters( 'woocommerce_thankyou_order_key', empty( $_GET['key'] ) ? '' : wc_clean( $_GET['key'] ) );
+
+					if ( $order_id > 0 ) {
+						wp_safe_redirect( get_permalink( $thankyou_page ) . '?order-received=' . $order_id . '&key=' . $order_key, 302 );
+						exit;
+					}
+				}
+			}
 		}
 
 		/**

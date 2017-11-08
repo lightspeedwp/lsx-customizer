@@ -78,31 +78,31 @@ msgstr ""
 msgid "Theme Credit"
 msgstr ""
 
-#: classes/class-lsx-customizer-frontend.php:95, classes/class-lsx-customizer-frontend.php:123, classes/class-lsx-customizer-frontend.php:153
+#: classes/class-lsx-customizer-frontend.php:119, classes/class-lsx-customizer-frontend.php:147, classes/class-lsx-customizer-frontend.php:177
 msgid "Choose your product"
 msgstr ""
 
-#: classes/class-lsx-customizer-frontend.php:102
+#: classes/class-lsx-customizer-frontend.php:126
 msgid "2"
 msgstr ""
 
-#: classes/class-lsx-customizer-frontend.php:103, classes/class-lsx-customizer-frontend.php:132, classes/class-lsx-customizer-frontend.php:159
+#: classes/class-lsx-customizer-frontend.php:127, classes/class-lsx-customizer-frontend.php:156, classes/class-lsx-customizer-frontend.php:183
 msgid "My Cart"
 msgstr ""
 
-#: classes/class-lsx-customizer-frontend.php:108, classes/class-lsx-customizer-frontend.php:139
+#: classes/class-lsx-customizer-frontend.php:132, classes/class-lsx-customizer-frontend.php:163
 msgid "3"
 msgstr ""
 
-#: classes/class-lsx-customizer-frontend.php:109, classes/class-lsx-customizer-frontend.php:140, classes/class-lsx-customizer-frontend.php:165
+#: classes/class-lsx-customizer-frontend.php:133, classes/class-lsx-customizer-frontend.php:164, classes/class-lsx-customizer-frontend.php:189
 msgid "Payment details"
 msgstr ""
 
-#: classes/class-lsx-customizer-frontend.php:114, classes/class-lsx-customizer-frontend.php:145, classes/class-lsx-customizer-frontend.php:170
+#: classes/class-lsx-customizer-frontend.php:138, classes/class-lsx-customizer-frontend.php:169, classes/class-lsx-customizer-frontend.php:194
 msgid "4"
 msgstr ""
 
-#: classes/class-lsx-customizer-frontend.php:115, classes/class-lsx-customizer-frontend.php:146, classes/class-lsx-customizer-frontend.php:171
+#: classes/class-lsx-customizer-frontend.php:139, classes/class-lsx-customizer-frontend.php:170, classes/class-lsx-customizer-frontend.php:195
 msgid "Thank you!"
 msgstr ""
 
@@ -114,15 +114,23 @@ msgstr ""
 msgid "Change the WooCommerce checkout settings."
 msgstr ""
 
-#: classes/class-lsx-customizer-woocommerce.php:49, classes/class-lsx-customizer-woocommerce.php:61
+#: classes/class-lsx-customizer-woocommerce.php:49
 msgid "Checkout Steps"
 msgstr ""
 
-#: classes/class-lsx-customizer-woocommerce.php:50, classes/class-lsx-customizer-woocommerce.php:62
+#: classes/class-lsx-customizer-woocommerce.php:50
 msgid "Enable the checkout steps header."
 msgstr ""
 
-#: classes/class-lsx-customizer-woocommerce.php:67, includes/lsx-customizer-colour-options.php:104
+#: classes/class-lsx-customizer-woocommerce.php:61
+msgid "Checkout Layout"
+msgstr ""
+
+#: classes/class-lsx-customizer-woocommerce.php:62
+msgid "WooCommerce checkout layout."
+msgstr ""
+
+#: classes/class-lsx-customizer-woocommerce.php:67, classes/class-lsx-customizer-woocommerce.php:78, includes/lsx-customizer-colour-options.php:104
 msgid "Default"
 msgstr ""
 
@@ -132,6 +140,14 @@ msgstr ""
 
 #: classes/class-lsx-customizer-woocommerce.php:69
 msgid "Columns"
+msgstr ""
+
+#: classes/class-lsx-customizer-woocommerce.php:88
+msgid "Checkout Thank You"
+msgstr ""
+
+#: classes/class-lsx-customizer-woocommerce.php:89
+msgid "WooCommerce checkout thank you page."
 msgstr ""
 
 #: examples/lsx-customizer-colour.php:9
