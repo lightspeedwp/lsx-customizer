@@ -1,9 +1,50 @@
 @mixin customizer-customizer-body-colours($bg: #F6F6F6, $breaker: #DADDDF, $color: #4A4A4A, $link: #418AD0, $hover: #F7AE00, $small: #919191) {
-	.lsx-wc-checkout-steps-item { color: $link; }
+	.lsx-wc-checkout-steps-item {
+		color: $link;
 
-	.lsx-wc-checkout-steps-item-current { color: $hover; }
+		&.lsx-wc-checkout-steps-item-done {
+			@media (max-width: 767px) {
+				.fa-check-circle {
+					background-color: $link;
+					&:after { background-color: #FFF; }
+				}
+			}
+		}
 
-	.lsx-wc-checkout-steps-item-disabled { color: $breaker; }
+		&:not(.lsx-wc-checkout-steps-item-done) {
+			@media (max-width: 767px) {
+				& > span,
+				a > span {
+					&:before {
+						background-color: $link;
+						color: #FFF;
+					}
+				}
+			}
+		}
+
+		&.lsx-wc-checkout-steps-item-current {
+			color: $hover;
+
+			& > span,
+			a > span {
+				@media (max-width: 767px) {
+					&:before { background-color: $hover; }
+				}
+			}
+		}
+
+		&.lsx-wc-checkout-steps-item-disabled {
+			color: $breaker;
+
+			& > span,
+			a > span {
+				@media (max-width: 767px) {
+					&:before { background-color: $breaker; }
+				}
+			}
+		}
+	}
 
 	.lsx-wc-checkout-steps-counter {
 		background-color: $link;
@@ -11,5 +52,14 @@
 
 		.lsx-wc-checkout-steps-item-current & { background-color: $hover; }
 		.lsx-wc-checkout-steps-item-disabled & { background-color: $breaker; }
+	}
+
+	.lsx-wc-checkout-steps-link {
+		&:hover,
+		&:focus {
+			@media (max-width: 767px) {
+				color: $link !important;
+			}
+		}
 	}
 }

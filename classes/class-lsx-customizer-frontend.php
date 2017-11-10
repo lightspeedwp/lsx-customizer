@@ -116,86 +116,86 @@ if ( ! class_exists( 'LSX_Customizer_Frontend' ) ) {
 
 						<?php if ( is_cart() ) : ?>
 
-							<li class="lsx-wc-checkout-steps-item">
+							<li class="lsx-wc-checkout-steps-item lsx-wc-checkout-steps-item-done">
 								<a href="<?php echo esc_url( get_permalink( woocommerce_get_page_id( 'shop' ) ) ); ?>" class="lsx-wc-checkout-steps-link">
 									<i class="fa fa-check-circle" aria-hidden="true"></i>
-									<span><?php esc_html_e( 'Choose your product', 'lsx-customizer' ); ?></span>
+									<span><span><?php esc_html_e( 'Choose your product', 'lsx-customizer' ); ?></span></span>
 								</a>
 
 								<i class="fa fa-angle-right" aria-hidden="true"></i>
 							</li>
 
-							<li class="lsx-wc-checkout-steps-item lsx-wc-checkout-steps-item-current">
+							<li class="lsx-wc-checkout-steps-item lsx-wc-checkout-steps-item-current lsx-wc-checkout-steps-item-cart">
 								<i class="lsx-wc-checkout-steps-counter" aria-hidden="true"><?php esc_html_e( '2', 'lsx-customizer' ); ?></i>
-								<span><?php esc_html_e( 'My Cart', 'lsx-customizer' ); ?></span>
+								<span><span><?php esc_html_e( 'My Cart', 'lsx-customizer' ); ?></span></span>
 								<i class="fa fa-angle-right" aria-hidden="true"></i>
 							</li>
 
-							<li class="lsx-wc-checkout-steps-item lsx-wc-checkout-steps-item-disabled">
+							<li class="lsx-wc-checkout-steps-item lsx-wc-checkout-steps-item-disabled lsx-wc-checkout-steps-item-payment">
 								<i class="lsx-wc-checkout-steps-counter" aria-hidden="true"><?php esc_html_e( '3', 'lsx-customizer' ); ?></i>
-								<span><?php esc_html_e( 'Payment details', 'lsx-customizer' ); ?></span>
+								<span><span><?php esc_html_e( 'Payment details', 'lsx-customizer' ); ?></span></span>
 								<i class="fa fa-angle-right" aria-hidden="true"></i>
 							</li>
 
-							<li class="lsx-wc-checkout-steps-item lsx-wc-checkout-steps-item-disabled">
+							<li class="lsx-wc-checkout-steps-item lsx-wc-checkout-steps-item-disabled lsx-wc-checkout-steps-item-thankyou">
 								<i class="lsx-wc-checkout-steps-counter" aria-hidden="true"><?php esc_html_e( '4', 'lsx-customizer' ); ?></i>
-								<span><?php esc_html_e( 'Thank you!', 'lsx-customizer' ); ?></span>
+								<span><span><?php esc_html_e( 'Thank you!', 'lsx-customizer' ); ?></span></span>
 							</li>
 
 						<?php elseif ( is_checkout() && empty( $wp->query_vars['order-received'] ) ) : ?>
 
-							<li class="lsx-wc-checkout-steps-item">
+							<li class="lsx-wc-checkout-steps-item lsx-wc-checkout-steps-item-done">
 								<a href="<?php echo esc_url( get_permalink( woocommerce_get_page_id( 'shop' ) ) ); ?>" class="lsx-wc-checkout-steps-link">
 									<i class="fa fa-check-circle" aria-hidden="true"></i>
-									<span><?php esc_html_e( 'Choose your product', 'lsx-customizer' ); ?></span>
+									<span><span><?php esc_html_e( 'Choose your product', 'lsx-customizer' ); ?></span></span>
 								</a>
 
 								<i class="fa fa-angle-right" aria-hidden="true"></i>
 							</li>
 
-							<li class="lsx-wc-checkout-steps-item">
+							<li class="lsx-wc-checkout-steps-item lsx-wc-checkout-steps-item-done lsx-wc-checkout-steps-item-cart">
 								<a href="<?php echo esc_url( WC()->cart->get_cart_url() ); ?>" class="lsx-wc-checkout-steps-link">
 									<i class="fa fa-check-circle" aria-hidden="true"></i>
-									<span><?php esc_html_e( 'My Cart', 'lsx-customizer' ); ?></span>
+									<span><span><?php esc_html_e( 'My Cart', 'lsx-customizer' ); ?></span></span>
 								</a>
 
 								<i class="fa fa-angle-right" aria-hidden="true"></i>
 							</li>
 
-							<li class="lsx-wc-checkout-steps-item lsx-wc-checkout-steps-item-current">
+							<li class="lsx-wc-checkout-steps-item lsx-wc-checkout-steps-item-current lsx-wc-checkout-steps-item-payment">
 								<i class="lsx-wc-checkout-steps-counter" aria-hidden="true"><?php esc_html_e( '3', 'lsx-customizer' ); ?></i>
-								<span><?php esc_html_e( 'Payment details', 'lsx-customizer' ); ?></span>
+								<span><span><?php esc_html_e( 'Payment details', 'lsx-customizer' ); ?></span></span>
 								<i class="fa fa-angle-right" aria-hidden="true"></i>
 							</li>
 
-							<li class="lsx-wc-checkout-steps-item lsx-wc-checkout-steps-item-disabled">
+							<li class="lsx-wc-checkout-steps-item lsx-wc-checkout-steps-item-disabled lsx-wc-checkout-steps-item-thankyou">
 								<i class="lsx-wc-checkout-steps-counter" aria-hidden="true"><?php esc_html_e( '4', 'lsx-customizer' ); ?></i>
-								<span><?php esc_html_e( 'Thank you!', 'lsx-customizer' ); ?></span>
+								<span><span><?php esc_html_e( 'Thank you!', 'lsx-customizer' ); ?></span></span>
 							</li>
 
 						<?php elseif ( is_checkout() ) : ?>
 
-							<li class="lsx-wc-checkout-steps-item">
+							<li class="lsx-wc-checkout-steps-item lsx-wc-checkout-steps-item-done">
 								<i class="fa fa-check-circle" aria-hidden="true"></i>
-								<span><?php esc_html_e( 'Choose your product', 'lsx-customizer' ); ?></span>
+								<span><span><?php esc_html_e( 'Choose your product', 'lsx-customizer' ); ?></span></span>
 								<i class="fa fa-angle-right" aria-hidden="true"></i>
 							</li>
 
-							<li class="lsx-wc-checkout-steps-item">
+							<li class="lsx-wc-checkout-steps-item lsx-wc-checkout-steps-item-done lsx-wc-checkout-steps-item-cart">
 								<i class="fa fa-check-circle" aria-hidden="true"></i>
-								<span><?php esc_html_e( 'My Cart', 'lsx-customizer' ); ?></span>
+								<span><span><?php esc_html_e( 'My Cart', 'lsx-customizer' ); ?></span></span>
 								<i class="fa fa-angle-right" aria-hidden="true"></i>
 							</li>
 
-							<li class="lsx-wc-checkout-steps-item">
+							<li class="lsx-wc-checkout-steps-item lsx-wc-checkout-steps-item-done lsx-wc-checkout-steps-item-payment">
 								<i class="fa fa-check-circle" aria-hidden="true"></i>
-								<span><?php esc_html_e( 'Payment details', 'lsx-customizer' ); ?></span>
+								<span><span><?php esc_html_e( 'Payment details', 'lsx-customizer' ); ?></span></span>
 								<i class="fa fa-angle-right" aria-hidden="true"></i>
 							</li>
 
-							<li class="lsx-wc-checkout-steps-item lsx-wc-checkout-steps-item-current">
+							<li class="lsx-wc-checkout-steps-item lsx-wc-checkout-steps-item-current lsx-wc-checkout-steps-item-thankyou">
 								<i class="lsx-wc-checkout-steps-counter" aria-hidden="true"><?php esc_html_e( '4', 'lsx-customizer' ); ?></i>
-								<span><?php esc_html_e( 'Thank you!', 'lsx-customizer' ); ?></span>
+								<span><span><?php esc_html_e( 'Thank you!', 'lsx-customizer' ); ?></span></span>
 							</li>
 
 						<?php endif; ?>

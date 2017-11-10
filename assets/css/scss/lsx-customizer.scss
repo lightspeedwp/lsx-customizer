@@ -208,8 +208,6 @@ article.page {
 .lsx-wc-checkout-steps {
 	font-size: 18px;
 	margin-bottom: 4.2rem;
-
-	@include media ('<phone') { display: none; }
 }
 
 .lsx-wc-checkout-steps-items {
@@ -230,12 +228,69 @@ article.page {
 		font-size: 30px;
 		margin-right: 5px;
 		vertical-align: middle;
+
+		@include media ('<phone') {
+			border-radius: 50%;
+			line-height: 35px;
+			height: 35px;
+			position: relative;
+			text-align: center;
+			width: 35px;
+
+			&:before {
+				position: relative;
+				z-index: 2;
+			}
+
+			&:after {
+				border-radius: 50%;
+				content: '';
+				height: 21px;
+				left: 50%;
+				position: absolute;
+				top: 50%;
+				transform: translate(-50%, -50%);
+				width: 21px;
+				z-index: 1;
+			}
+		}
 	}
 
-	span {
+	& > span,
+	a > span {
 		display: inline-block;
 		line-height: 30px;
 		vertical-align: middle;
+
+		@include media ('<phone') {
+			span { display: none; }
+		}
+	}
+
+	&:not(.lsx-wc-checkout-steps-item-done) {
+		@include media ('<phone') {
+			.fa-check-circle { display: none; }
+
+			& > span,
+			a > span {
+				display: inline-block;
+				font: normal normal normal 14px/1 FontAwesome;
+				font-size: inherit;
+				text-rendering: auto;
+				-webkit-font-smoothing: antialiased;
+				-moz-osx-font-smoothing: grayscale;
+
+				&:before {
+					border-radius: 50%;
+					display: inline-block;
+					font-size: 90%;
+					height: 35px;
+					line-height: 35px;
+					text-align: center;
+					width: 35px;
+				}
+			}
+		}
 	}
 
 	.fa-angle-right {
@@ -249,6 +304,39 @@ article.page {
 .lsx-wc-checkout-steps-item-current {}
 
 .lsx-wc-checkout-steps-item-disabled {}
+
+.lsx-wc-checkout-steps-item-cart {
+	@include media ('<phone') {
+		&:not(.lsx-wc-checkout-steps-item-done) {
+			& > span,
+			a > span {
+				&:before { content: '\f291'; }
+			}
+		}
+	}
+}
+
+.lsx-wc-checkout-steps-item-payment {
+	@include media ('<phone') {
+		&:not(.lsx-wc-checkout-steps-item-done) {
+			& > span,
+			a > span {
+				&:before { content: '\f09d'; }
+			}
+		}
+	}
+}
+
+.lsx-wc-checkout-steps-item-thankyou {
+	@include media ('<phone') {
+		&:not(.lsx-wc-checkout-steps-item-done) {
+			& > span,
+			a > span {
+				&:before { content: '\f118'; }
+			}
+		}
+	}
+}
 
 .lsx-wc-checkout-steps-counter {
 	border-radius: 50%;
