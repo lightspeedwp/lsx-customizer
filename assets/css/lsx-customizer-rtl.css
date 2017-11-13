@@ -72,6 +72,22 @@
 
 @media (min-width: 768px) { .lsx-wc-cart-extra-html { float: right; margin-bottom: 0; width: 48%; } }
 
+.lsx-wc-my-account-menu-item > a:after { display: inline-block; font: normal normal normal 14px/1 FontAwesome; font-size: inherit; text-rendering: auto; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; float: left; content: '\f007'; margin-right: 2rem; }
+
+#top-menu .lsx-wc-my-account-menu-item > a:after { margin-right: 1.2rem; }
+
+.lsx-wc-my-account-menu-item.lsx-wc-my-account-menu-item-simple > a:before { display: inline-block; font: normal normal normal 14px/1 FontAwesome; font-size: inherit; text-rendering: auto; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; float: left; content: '\f007'; margin-left: 0.5rem; }
+
+#top-menu .lsx-wc-my-account-menu-item.lsx-wc-my-account-menu-item-simple > a:before { float: none; margin-left: 0; }
+
+.lsx-wc-my-account-menu-item.lsx-wc-my-account-menu-item-simple > a:after, .lsx-wc-my-account-menu-item.lsx-wc-my-account-menu-item-simple > a span { display: none; }
+
+@media (min-width: 1200px) { .lsx-wc-my-account-menu-item.lsx-wc-my-account-menu-item-right-aligned { margin-right: auto; } }
+
+@media (min-width: 1200px) { .lsx-wc-my-account-menu-item.lsx-wc-my-account-menu-item-right-aligned + .lsx-wc-cart-menu-item-right-aligned { margin-right: 0; } }
+
+.lsx-wc-my-account-menu-item-simple ul.lsx-wc-my-account-sub-menu { display: none !important; }
+
 .lsx-wc-checkout-steps-item { color: #418AD0; }
 
 @media (max-width: 767px) { .lsx-wc-checkout-steps-item.lsx-wc-checkout-steps-item-done .fa-check-circle { background-color: #418AD0; }

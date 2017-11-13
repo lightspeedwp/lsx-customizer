@@ -29,6 +29,10 @@ if ( ! class_exists( 'LSX_Customizer_WooCommerce' ) ) {
 			add_action( 'wp', array( $this, 'checkout_extra_html' ), 2999 );
 			add_action( 'lsx_wc_cart_menu_item_position', array( $this, 'cart_menu_item_position' ) );
 			add_action( 'lsx_wc_cart_menu_item_class', array( $this, 'cart_menu_item_class' ) );
+
+			add_filter( 'wp_nav_menu_items', array( $this, 'my_account_menu_item' ), 9, 2 );
+			add_action( 'lsx_wc_my_account_menu_item_position', array( $this, 'my_account_menu_item_position' ) );
+			add_action( 'lsx_wc_my_account_menu_item_class', array( $this, 'my_account_menu_item_class' ) );
 		}
 
 		/**
@@ -39,8 +43,9 @@ if ( ! class_exists( 'LSX_Customizer_WooCommerce' ) ) {
 		 */
 		public function customize_register( $wp_customize ) {
 			/**
-			 * Sections.
+			 * Checkout.
 			 */
+
 			$wp_customize->add_section( 'lsx-wc-checkout' , array(
 				'title'       => esc_html__( 'Checkout', 'lsx-customizer' ),
 				'description' => esc_html__( 'Change the WooCommerce checkout settings.', 'lsx-customizer' ),
@@ -120,6 +125,10 @@ if ( ! class_exists( 'LSX_Customizer_WooCommerce' ) ) {
 				'type'        => 'wysiwyg',
 			) ) );
 
+			/**
+			 * Cart.
+			 */
+
 			$wp_customize->add_setting( 'lsx_wc_cart_menu_item_style', array(
 				'default' => 'extended',
 				'sanitize_callback' => array( $this, 'sanitize_select' ),
@@ -131,7 +140,7 @@ if ( ! class_exists( 'LSX_Customizer_WooCommerce' ) ) {
 				'section'     => 'lsx-wc-cart',
 				'settings'    => 'lsx_wc_cart_menu_item_style',
 				'type'        => 'select',
-				'priority'    => 1,
+				'priority'    => 2,
 				'choices'     => array(
 					'simple'   => esc_html__( 'Simple', 'lsx-customizer' ),
 					'extended' => esc_html__( 'Extended', 'lsx-customizer' ),
@@ -149,7 +158,7 @@ if ( ! class_exists( 'LSX_Customizer_WooCommerce' ) ) {
 				'section'     => 'lsx-wc-cart',
 				'settings'    => 'lsx_wc_cart_menu_item_position',
 				'type'        => 'select',
-				'priority'    => 2,
+				'priority'    => 3,
 				'choices'     => array(
 					'main-menu-in'   => esc_html__( 'Main Menu (as last item)', 'lsx-customizer' ),
 					'main-menu-out'  => esc_html__( 'Main Menu (as last item, right aligned)', 'lsx-customizer' ),
@@ -168,8 +177,71 @@ if ( ! class_exists( 'LSX_Customizer_WooCommerce' ) ) {
 				'description' => esc_html__( 'Extra HTML to display at cart page (bottom/left).', 'lsx-customizer' ),
 				'section'     => 'lsx-wc-cart',
 				'settings'    => 'lsx_wc_cart_extra_html',
-				'priority'    => 3,
+				'priority'    => 4,
 				'type'        => 'wysiwyg',
+			) ) );
+
+			/**
+			 * My Account.
+			 */
+
+			$wp_customize->add_section( 'lsx-wc-my-account' , array(
+				'title'       => esc_html__( 'My Account', 'lsx-customizer' ),
+				'description' => esc_html__( 'Change the WooCommerce My Account settings.', 'lsx-customizer' ),
+				'panel'       => 'lsx-wc',
+				'priority'    => 4,
+			) );
+
+			$wp_customize->add_setting( 'lsx_wc_my_account_menu_item', array(
+				'default'           => false,
+				'sanitize_callback' => array( $this, 'sanitize_checkbox' ),
+			) );
+
+			$wp_customize->add_control( new WP_Customize_Control( $wp_customize, 'lsx_wc_my_account_menu_item', array(
+				'label'       => esc_html__( 'Menu Item', 'lsx-customizer' ),
+				'description' => esc_html__( 'Enable the My Account menu item.', 'lsx-customizer' ),
+				'section'     => 'lsx-wc-my-account',
+				'settings'    => 'lsx_wc_my_account_menu_item',
+				'type'        => 'checkbox',
+				'priority'    => 1,
+			) ) );
+
+			$wp_customize->add_setting( 'lsx_wc_my_account_menu_item_style', array(
+				'default' => 'extended',
+				'sanitize_callback' => array( $this, 'sanitize_select' ),
+			) );
+
+			$wp_customize->add_control( new WP_Customize_Control( $wp_customize, 'lsx_wc_my_account_menu_item_style', array(
+				'label'       => esc_html__( 'Menu Item Style', 'lsx-customizer' ),
+				'description' => esc_html__( 'WooCommerce menu item My Account style.', 'lsx-customizer' ),
+				'section'     => 'lsx-wc-my-account',
+				'settings'    => 'lsx_wc_my_account_menu_item_style',
+				'type'        => 'select',
+				'priority'    => 2,
+				'choices'     => array(
+					'simple'   => esc_html__( 'Simple', 'lsx-customizer' ),
+					'extended' => esc_html__( 'Extended', 'lsx-customizer' ),
+				),
+			) ) );
+
+			$wp_customize->add_setting( 'lsx_wc_my_account_menu_item_position', array(
+				'default' => 'main-menu-in',
+				'sanitize_callback' => array( $this, 'sanitize_select' ),
+			) );
+
+			$wp_customize->add_control( new WP_Customize_Control( $wp_customize, 'lsx_wc_my_account_menu_item_position', array(
+				'label'       => esc_html__( 'Menu Item Position', 'lsx-customizer' ),
+				'description' => esc_html__( 'WooCommerce menu item My Account position.', 'lsx-customizer' ),
+				'section'     => 'lsx-wc-my-account',
+				'settings'    => 'lsx_wc_my_account_menu_item_position',
+				'type'        => 'select',
+				'priority'    => 3,
+				'choices'     => array(
+					'main-menu-in'   => esc_html__( 'Main Menu (as last item)', 'lsx-customizer' ),
+					'main-menu-out'  => esc_html__( 'Main Menu (as last item, right aligned)', 'lsx-customizer' ),
+					'top-menu-left'  => esc_html__( 'Top Menu (left)', 'lsx-customizer' ),
+					'top-menu-right' => esc_html__( 'Top Menu (right)', 'lsx-customizer' ),
+				),
 			) ) );
 		}
 
@@ -428,6 +500,97 @@ if ( ! class_exists( 'LSX_Customizer_WooCommerce' ) ) {
 
 			if ( 'simple' === $style ) {
 				$item_class .= ' lsx-wc-cart-menu-item-simple';
+			}
+
+			return $item_class;
+		}
+
+		/**
+		 * Adds WC My Account to the header.
+		 *
+		 * @since 1.1.1
+		 */
+		public function my_account_menu_item( $items, $args ) {
+			$my_account_menu_item_position = apply_filters( 'lsx_wc_my_account_menu_item_position', 'primary' );
+
+			if ( $my_account_menu_item_position === $args->theme_location ) {
+				$customizer_option  = get_theme_mod( 'lsx_wc_my_account_menu_item', false );
+
+				if ( ! empty( $customizer_option ) ) {
+					if ( is_account_page() ) {
+						$item_class = 'current-menu-item';
+					} else {
+						$item_class = '';
+					}
+
+					$item_class = 'menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children dropdown lsx-wc-my-account-menu-item ' . $class;
+					$item_class = apply_filters( 'lsx_wc_my_account_menu_item_class', $item_class );
+
+					$item = '<li class="' . $item_class . '">' .
+								'<a title="' . esc_attr__( 'View your account', 'lsx-customizer' ) . '" href="' . esc_url( wc_get_page_permalink( 'myaccount' ) ) . '" data-toggle="dropdown" class="dropdown-toggle" aria-haspopup="true"><span>' . esc_attr__( 'My Account', 'lsx-customizer' ) . '</span></a>' .
+								'<ul role="menu" class=" dropdown-menu lsx-wc-my-account-sub-menu">' .
+									'<li class="menu-item"><a title="" href="' . esc_url( wc_get_account_endpoint_url( get_option( 'woocommerce_myaccount_downloads_endpoint', 'downloads' ) ) ) . '">' . esc_html__( 'Downloads', 'lsx-customizer' ) . '</a></li>' .
+									( class_exists( 'WC_Subscription' ) ? ( '<li class="menu-item"><a title="" href="' . esc_url( wc_get_endpoint_url( 'subscriptions', '', wc_get_page_permalink( 'myaccount' ) ) ) . '">' . esc_html__( 'Subscriptions', 'lsx-customizer' ) . '</a></li>' ) : '' ) .
+									'<li class="menu-item"><a title="" href="' . esc_url( wc_lostpassword_url() ) . '">' . esc_html__( 'Change Password', 'lsx-customizer' ) . '</a></li>' .
+									'<li class="menu-item"><a title="" href="' . esc_url( wc_logout_url() ) . '">' . esc_html__( 'Logout', 'lsx-customizer' ) . '</a></li>' .
+								'</ul>' .
+							'</li>';
+
+					if ( 'top-menu' === $args->theme_location ) {
+						$items = $item . $items;
+					} else {
+						$items = $items . $item;
+					}
+				}
+			}
+
+			return $items;
+		}
+
+		/**
+		 * The place (menu) to display the My Account menu item position.
+		 *
+		 * @since 1.1.1
+		 */
+		public function my_account_menu_item_position( $menu_position ) {
+			$position = get_theme_mod( 'lsx_wc_my_account_menu_item_position', '' );
+
+			if ( ! empty( $position ) ) {
+				switch ( $position ) {
+					case 'main-menu-in':
+					case 'main-menu-out':
+						$menu_position = 'primary';
+						break;
+
+					case 'top-menu-right':
+						$menu_position = 'top-menu';
+						break;
+
+					case 'top-menu-left':
+						$menu_position = 'top-menu-left';
+						break;
+				}
+			}
+
+			return $menu_position;
+		}
+
+		/**
+		 * The place (menu) to display the My Account menu item position.
+		 *
+		 * @since 1.1.1
+		 */
+		public function my_account_menu_item_class( $item_class ) {
+			$position = get_theme_mod( 'lsx_wc_my_account_menu_item_position', '' );
+
+			if ( 'main-menu-out' === $position ) {
+				$item_class .= ' lsx-wc-my-account-menu-item-right-aligned';
+			}
+
+			$style = get_theme_mod( 'lsx_wc_my_account_menu_item_style', '' );
+
+			if ( 'simple' === $style ) {
+				$item_class .= ' lsx-wc-my-account-menu-item-simple';
 			}
 
 			return $item_class;

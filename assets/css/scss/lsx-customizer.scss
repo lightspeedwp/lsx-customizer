@@ -1,6 +1,15 @@
 @import 'include-media';
 @import 'customizer-customizer-body-colours';
 
+@mixin fa-icon() {
+	display: inline-block;
+	font: normal normal normal 14px/1 FontAwesome; // shortening font declaration
+	font-size: inherit; // can't have font-size inherit on line above, so need to override
+	text-rendering: auto; // optimizelegibility throws things off #1094
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
 // Checkout layout
 
 // Structure
@@ -273,12 +282,7 @@ article.page {
 
 			& > span,
 			a > span {
-				display: inline-block;
-				font: normal normal normal 14px/1 FontAwesome;
-				font-size: inherit;
-				text-rendering: auto;
-				-webkit-font-smoothing: antialiased;
-				-moz-osx-font-smoothing: grayscale;
+				@include fa-icon();
 
 				&:before {
 					border-radius: 50%;
@@ -372,5 +376,50 @@ article.page {
 }
 
 .lsx-wc-checkout-extra-html {}
+
+// Main menu
+
+.lsx-wc-my-account-menu-item {
+	& > a {
+		&:after {
+			@include fa-icon();
+			float: right;
+			content: '\f007';
+			margin-left: 2rem;
+
+			#top-menu & { margin-left: 1.2rem; }
+		}
+	}
+
+	&.lsx-wc-my-account-menu-item-simple {
+		& > a {
+			&:before {
+				@include fa-icon();
+				float: right;
+				content: '\f007';
+				margin-right: 0.5rem;
+
+				#top-menu & {
+					float: none;
+					margin-right: 0;
+				}
+			}
+
+			&:after, span { display: none; }
+		}
+	}
+
+	&.lsx-wc-my-account-menu-item-right-aligned {
+		@include media ('>=desktop') { margin-left: auto; }
+
+		& + .lsx-wc-cart-menu-item-right-aligned {
+			@include media ('>=desktop') { margin-left: 0; }
+		}
+	}
+}
+
+ul.lsx-wc-my-account-sub-menu {
+	.lsx-wc-my-account-menu-item-simple & { display: none !important; }
+}
 
 @include customizer-customizer-body-colours(#F6F6F6, #DADDDF, #4A4A4A, #418AD0, #F7AE00, #919191);
