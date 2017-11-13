@@ -48,16 +48,6 @@ if ( ! class_exists( 'LSX_Customizer_WooCommerce' ) ) {
 				'priority'    => 3,
 			) );
 
-			$wp_customize->add_section( 'lsx-wc-cart' , array(
-				'title'       => esc_html__( 'Cart', 'lsx-customizer' ),
-				'description' => esc_html__( 'Change the WooCommerce cart settings.', 'lsx-customizer' ),
-				'panel'       => 'lsx-wc',
-				'priority'    => 2,
-			) );
-
-			/**
-			 * Fields.
-			 */
 			$wp_customize->add_setting( 'lsx_checkout_steps', array(
 				'default'           => true,
 				'sanitize_callback' => array( $this, 'sanitize_checkbox' ),
