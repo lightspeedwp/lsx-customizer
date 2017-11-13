@@ -138,12 +138,12 @@ msgstr ""
 msgid "Extra HTML to display at checkout page (bottom/right)."
 msgstr ""
 
-#: classes/class-lsx-customizer-woocommerce.php:139, classes/class-lsx-customizer-woocommerce.php:157
-msgid "Menu Item Position"
+#: classes/class-lsx-customizer-woocommerce.php:139
+msgid "Menu Item Style"
 msgstr ""
 
-#: classes/class-lsx-customizer-woocommerce.php:140, classes/class-lsx-customizer-woocommerce.php:158
-msgid "WooCommerce menu item cart position."
+#: classes/class-lsx-customizer-woocommerce.php:140
+msgid "WooCommerce menu item cart style."
 msgstr ""
 
 #: classes/class-lsx-customizer-woocommerce.php:146
@@ -152,6 +152,14 @@ msgstr ""
 
 #: classes/class-lsx-customizer-woocommerce.php:147
 msgid "Extended"
+msgstr ""
+
+#: classes/class-lsx-customizer-woocommerce.php:157
+msgid "Menu Item Position"
+msgstr ""
+
+#: classes/class-lsx-customizer-woocommerce.php:158
+msgid "WooCommerce menu item cart position."
 msgstr ""
 
 #: classes/class-lsx-customizer-woocommerce.php:164

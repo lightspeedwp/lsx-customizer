@@ -136,8 +136,8 @@ if ( ! class_exists( 'LSX_Customizer_WooCommerce' ) ) {
 			) );
 
 			$wp_customize->add_control( new WP_Customize_Control( $wp_customize, 'lsx_wc_cart_menu_item_style', array(
-				'label'       => esc_html__( 'Menu Item Position', 'lsx-customizer' ),
-				'description' => esc_html__( 'WooCommerce menu item cart position.', 'lsx-customizer' ),
+				'label'       => esc_html__( 'Menu Item Style', 'lsx-customizer' ),
+				'description' => esc_html__( 'WooCommerce menu item cart style.', 'lsx-customizer' ),
 				'section'     => 'lsx-wc-cart',
 				'settings'    => 'lsx_wc_cart_menu_item_style',
 				'type'        => 'select',
