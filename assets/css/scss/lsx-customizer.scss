@@ -416,6 +416,18 @@ article.page {
 			@include media ('>=desktop') { margin-left: 0; }
 		}
 	}
+
+	&.lsx-wc-my-account-login {
+		& > a {
+			&:after { content: '\f090'; }
+		}
+
+		&.lsx-wc-my-account-menu-item-simple {
+			& > a {
+				&:before { content: '\f090'; }
+			}
+		}
+	}
 }
 
 ul.lsx-wc-my-account-sub-menu {
