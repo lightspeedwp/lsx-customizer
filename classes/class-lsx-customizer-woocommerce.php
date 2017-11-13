@@ -434,6 +434,12 @@ if ( ! class_exists( 'LSX_Customizer_WooCommerce' ) ) {
 				$item_class .= ' lsx-wc-cart-menu-item-right-aligned';
 			}
 
+			$style = get_theme_mod( 'lsx_wc_cart_menu_item_style', '' );
+
+			if ( 'simple' === $style ) {
+				$item_class .= ' lsx-wc-cart-menu-item-simple';
+			}
+
 			return $item_class;
 		}
 

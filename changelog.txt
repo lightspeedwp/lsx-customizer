@@ -7,6 +7,7 @@
 * Tweak - WooCommerce checkout custom cart extra HTML
 * Tweak - WooCommerce checkout custom checkout extra HTML
 * Tweak - WooCommerce cart menu item position
+* Tweak - WooCommerce cart menu item style
 
 ### 1.1.0
 * Added compatibility with LSX 2.0
