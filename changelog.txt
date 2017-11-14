@@ -9,6 +9,7 @@
 * Tweak - WooCommerce cart menu item position
 * Tweak - WooCommerce cart menu item style
 * Tweak - WooCommerce My Account menu item
+* Tweak - Add WooCommerce Wishlist compatibility
 
 ### 1.1.0
 * Added compatibility with LSX 2.0
