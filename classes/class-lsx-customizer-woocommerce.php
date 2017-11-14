@@ -532,6 +532,7 @@ if ( ! class_exists( 'LSX_Customizer_WooCommerce' ) ) {
 									'<ul role="menu" class=" dropdown-menu lsx-wc-my-account-sub-menu">' .
 										'<li class="menu-item"><a title="" href="' . esc_url( wc_get_account_endpoint_url( get_option( 'woocommerce_myaccount_downloads_endpoint', 'downloads' ) ) ) . '">' . esc_html__( 'Downloads', 'lsx-customizer' ) . '</a></li>' .
 										( class_exists( 'WC_Subscription' ) ? ( '<li class="menu-item"><a title="" href="' . esc_url( wc_get_endpoint_url( 'subscriptions', '', wc_get_page_permalink( 'myaccount' ) ) ) . '">' . esc_html__( 'Subscriptions', 'lsx-customizer' ) . '</a></li>' ) : '' ) .
+										( class_exists( 'WC_Wishlists_Plugin' ) ? ( '<li class="menu-item"><a title="" href="' . esc_url( WC_Wishlists_Pages::get_url_for( 'wishlists' ) ) . '">' . esc_html__( 'Wishlists', 'lsx-customizer' ) . '</a></li>' ) : '' ) .
 										'<li class="menu-item"><a title="" href="' . esc_url( wc_lostpassword_url() ) . '">' . esc_html__( 'Change Password', 'lsx-customizer' ) . '</a></li>' .
 										'<li class="menu-item"><a title="" href="' . esc_url( wc_logout_url() ) . '">' . esc_html__( 'Logout', 'lsx-customizer' ) . '</a></li>' .
 									'</ul>' .
