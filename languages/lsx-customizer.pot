@@ -226,7 +226,7 @@ msgstr ""
 msgid "Thank you!"
 msgstr ""
 
-#: classes/class-lsx-customizer-woocommerce.php:531, classes/class-lsx-customizer-woocommerce.php:542
+#: classes/class-lsx-customizer-woocommerce.php:531, classes/class-lsx-customizer-woocommerce.php:543
 msgid "View your account"
 msgstr ""
 
@@ -243,14 +243,18 @@ msgid "Wishlists"
 msgstr ""
 
 #: classes/class-lsx-customizer-woocommerce.php:536
-msgid "Change Password"
+msgid "Courses"
 msgstr ""
 
 #: classes/class-lsx-customizer-woocommerce.php:537
+msgid "Change Password"
+msgstr ""
+
+#: classes/class-lsx-customizer-woocommerce.php:538
 msgid "Logout"
 msgstr ""
 
-#: classes/class-lsx-customizer-woocommerce.php:542
+#: classes/class-lsx-customizer-woocommerce.php:543
 msgid "Login"
 msgstr ""
 
