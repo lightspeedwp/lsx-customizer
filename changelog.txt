@@ -10,6 +10,7 @@
 * Tweak - WooCommerce cart menu item style
 * Tweak - WooCommerce My Account menu item
 * Tweak - Add WooCommerce Wishlist compatibility
+* Tweak - Default colours scheme updated (top menu colors)
 
 ### 1.1.0
 * Added compatibility with LSX 2.0
