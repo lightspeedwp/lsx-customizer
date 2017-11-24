@@ -383,8 +383,9 @@ article.page {
 	& > a {
 		&:after {
 			@include fa-icon();
-			float: right;
 			content: '\f007';
+			float: right;
+			font-size: 20px;
 			margin-left: 2rem;
 
 			#top-menu & { margin-left: 1.2rem; }
@@ -395,8 +396,9 @@ article.page {
 		& > a {
 			&:before {
 				@include fa-icon();
-				float: right;
 				content: '\f007';
+				float: right;
+				font-size: 20px;
 				margin-right: 0.5rem;
 
 				#top-menu & {

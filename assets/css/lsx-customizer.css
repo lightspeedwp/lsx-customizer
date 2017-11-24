@@ -72,11 +72,11 @@
 
 @media (min-width: 768px) { .lsx-wc-cart-extra-html { float: left; margin-bottom: 0; width: 48%; } }
 
-.lsx-wc-my-account-menu-item > a:after { display: inline-block; font: normal normal normal 14px/1 FontAwesome; font-size: inherit; text-rendering: auto; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; float: right; content: '\f007'; margin-left: 2rem; }
+.lsx-wc-my-account-menu-item > a:after { display: inline-block; font: normal normal normal 14px/1 FontAwesome; font-size: inherit; text-rendering: auto; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; content: '\f007'; float: right; font-size: 20px; margin-left: 2rem; }
 
 #top-menu .lsx-wc-my-account-menu-item > a:after { margin-left: 1.2rem; }
 
-.lsx-wc-my-account-menu-item.lsx-wc-my-account-menu-item-simple > a:before { display: inline-block; font: normal normal normal 14px/1 FontAwesome; font-size: inherit; text-rendering: auto; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; float: right; content: '\f007'; margin-right: 0.5rem; }
+.lsx-wc-my-account-menu-item.lsx-wc-my-account-menu-item-simple > a:before { display: inline-block; font: normal normal normal 14px/1 FontAwesome; font-size: inherit; text-rendering: auto; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; content: '\f007'; float: right; font-size: 20px; margin-right: 0.5rem; }
 
 #top-menu .lsx-wc-my-account-menu-item.lsx-wc-my-account-menu-item-simple > a:before { float: none; margin-right: 0; }
 
