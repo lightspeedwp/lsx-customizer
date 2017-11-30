@@ -1,6 +1,6 @@
 ## Changelog
 
-### 1.1.1
+### 1.2.0
 * Tweak - WooCommerce checkout layout
 * Tweak - WooCommerce checkout steps
 * Tweak - WooCommerce checkout custom thank you page
