@@ -513,7 +513,7 @@ if ( ! class_exists( 'LSX_Customizer_WooCommerce' ) ) {
 		public function my_account_menu_item( $items, $args ) {
 			$my_account_menu_item_position = apply_filters( 'lsx_wc_my_account_menu_item_position', 'primary' );
 
-			if ( $my_account_menu_item_position === $args->theme_location ) {
+			if ( $my_account_menu_item_position === $args->theme_location || ( 'primary_logged_out' === $args->theme_location && 'primary' === $my_account_menu_item_position ) ) {
 				$customizer_option  = get_theme_mod( 'lsx_wc_my_account_menu_item', false );
 
 				if ( ! empty( $customizer_option ) ) {

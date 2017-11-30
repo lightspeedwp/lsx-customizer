@@ -12,6 +12,7 @@
 * Tweak - Add WooCommerce Wishlist compatibility
 * Tweak - Default colours scheme updated (top menu colors)
 * Tweak - Add Sensei compatibility
+* Fix - Extra menu items for logout users / Compatibility with LSX Login
 
 ### 1.1.0
 * Added compatibility with LSX 2.0
