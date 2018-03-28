@@ -415,11 +415,13 @@ if ( ! class_exists( 'LSX_Customizer_WooCommerce' ) ) {
 			if ( is_checkout() ) {
 				$checkout_extra_html = get_theme_mod( 'lsx_wc_checkout_extra_html', '' );
 
-				if ( ! empty( $checkout_extra_html ) ) { ?>
+				if ( ! empty( $checkout_extra_html ) ) {
+					?>
 					<div class="lsx-wc-checkout-extra-html">
 						<?php echo wp_kses_post( $checkout_extra_html ); ?>
 					</div>
-				<?php }
+				<?php
+				}
 			}
 		}
 
