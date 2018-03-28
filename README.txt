@@ -1,14 +1,14 @@
 === LSX Customizer ===
 Contributors: feedmymedia
 Donate link: https://www.lsdev.biz/product/lsx-customizer/
-Tags: lsx, lsx theme, customizer, layout, features
+Tags: LSX, LSX Theme, WordPress customizer, layout, website colours
 Requires at least: 4.3
 Tested up to: 4.9.4
 Requires PHP: 7.0
 Stable tag: 1.2
 License: GPLv3
 
-LSX is a theme we’ve built to be versatile, so it’s only fair we put the power in its users’ hands to make it look exactly how they want. The LSX Customizer allows you to tweak various elements of your website to display the colours you want.
+This extension gives you control over the colours of your LSX-powered WordPress site, allowing you to adjust all your individual element styles. 
 
 == Description ==
 
@@ -47,3 +47,7 @@ Bugs can be reported either in our support forum or preferably on the [LSX Custo
 Yes you can! Join in on our [GitHub repository](https://github.com/lightspeeddevelopment/lsx-customizer) :)
 
 == Screenshots ==
+
+1. Customiser Settings 
+
+2. Customiser Colour Options
