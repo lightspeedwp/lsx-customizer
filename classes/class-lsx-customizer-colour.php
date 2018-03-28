@@ -354,21 +354,21 @@ if ( ! class_exists( 'LSX_Customizer_Colour' ) ) {
 			}
 			?>
 			<script type="text/html" id="tmpl-lsx-color-scheme">
-				<?php echo $this->top_menu->get_css( $colors ); ?>
-				<?php echo $this->header->get_css( $colors ); ?>
-				<?php echo $this->main_menu->get_css( $colors ) ?>
+				<?php echo esc_attr( $this->top_menu->get_css( $colors ) ); ?>
+				<?php echo esc_attr( $this->header->get_css( $colors ) ); ?>
+				<?php echo esc_attr( $this->main_menu->get_css( $colors ) ); ?>
 
-				<?php echo $this->banner->get_css( $colors ); ?>
-				<?php echo $this->body->get_css( $colors ); ?>
+				<?php echo esc_attr( $this->banner->get_css( $colors ) ); ?>
+				<?php echo esc_attr( $this->body->get_css( $colors ) ); ?>
 
-				<?php echo $this->footer_cta->get_css( $colors ); ?>
-				<?php echo $this->footer_widgets->get_css( $colors ); ?>
-				<?php echo $this->footer->get_css( $colors ); ?>
+				<?php echo esc_attr( $this->footer_cta->get_css( $colors ) ); ?>
+				<?php echo esc_attr( $this->footer_widgets->get_css( $colors ) ); ?>
+				<?php echo esc_attr( $this->footer->get_css( $colors ) ); ?>
 
-				<?php echo $this->button->get_css( $colors ); ?>
-				<?php echo $this->button_cta->get_css( $colors ); ?>
-				<?php echo $this->button_secondary->get_css( $colors ); ?>
-				<?php echo $this->button_tertiary->get_css( $colors ); ?>
+				<?php echo esc_attr( $this->button->get_css( $colors ) ); ?>
+				<?php echo esc_attr( $this->button_cta->get_css( $colors ) ); ?>
+				<?php echo esc_attr( $this->button_secondary->get_css( $colors ) ); ?>
+				<?php echo esc_attr( $this->button_tertiary->get_css( $colors ) ); ?>
 			</script>
 			<?php
 		}

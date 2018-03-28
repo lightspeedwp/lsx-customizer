@@ -42,16 +42,18 @@ if ( ! class_exists( 'LSX_Customizer_Colour_Control' ) ) {
 			?>
 			<label>
 				<?php if ( ! empty( $this->label ) ) { ?>
-					<span class="customize-control-title"><?php echo esc_html( $this->label ) ?></span>
-				<?php }
-				if ( ! empty( $this->description ) ) { ?>
-					<span class="description customize-control-description"><?php echo esc_html( $this->description ) ?></span>
+					<span class="customize-control-title"><?php echo esc_html( $this->label ); ?></span>
+				<?php
+}
+if ( ! empty( $this->description ) ) {
+					?>
+					<span class="description customize-control-description"><?php echo esc_html( $this->description ); ?></span>
 				<?php } ?>
-				<select <?php $this->link() ?>>
+				<select <?php $this->link(); ?>>
 					<?php
-						foreach ( $this->choices as $value => $label ) {
-							echo '<option value="'. esc_attr( $value ) .'"'. selected( $this->value(), $value, false ) .'>'. esc_html( $label['label'] ) .'</option>';
-						}
+					foreach ( $this->choices as $value => $label ) {
+							echo '<option value="' . esc_attr( $value ) . '"' . selected( $this->value(), $value, false ) . '>' . esc_html( $label['label'] ) . '</option>';
+					}
 					?>
 				</select>
 			</label>
