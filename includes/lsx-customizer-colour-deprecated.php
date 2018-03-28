@@ -5,7 +5,7 @@
  * @package   LSX Customizer
  * @author    LightSpeed
  * @license   GPL3
- * @link      
+ * @link
  * @copyright 2016 LightSpeed
  */
 
