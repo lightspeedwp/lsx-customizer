@@ -68,7 +68,7 @@ class Server
 			case isset( $_SERVER['PATH_INFO'] ):
 				return sanitize_text_field( wp_unslash( $_SERVER['PATH_INFO'] ) );
 			case isset( $_SERVER['DOCUMENT_URI'] ):
-				return substr( sanitize_text_field( wp_unslash( $_SERVER['DOCUMENT_URI'], strlen( sanitize_text_field( wp_unslash( $_SERVER['SCRIPT_NAME'] ) ) ) ) );
+				return substr( sanitize_text_field( wp_unslash( $_SERVER['DOCUMENT_URI'], strlen( sanitize_text_field( wp_unslash( $_SERVER['SCRIPT_NAME'] ) ) ) ) ) );
 		}
 	}
 
