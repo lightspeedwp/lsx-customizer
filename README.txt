@@ -5,7 +5,7 @@ Tags: LSX, LSX Theme, WordPress customizer, layout, website colours
 Requires at least: 4.3
 Tested up to: 4.9.4
 Requires PHP: 7.0
-Stable tag: 1.2
+Stable tag: 1.2.2
 License: GPLv3
 
 This extension gives you control over the colours of your LSX-powered WordPress site, allowing you to adjust all your individual element styles. 
