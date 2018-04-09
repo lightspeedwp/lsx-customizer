@@ -1,5 +1,11 @@
 ## Changelog
 
+### 1.2.2 (development)
+* Dev - Update the SCSS 2 CSS Vendor (http://leafo.github.io/scssphp/)
+
+### 1.2.1
+* Dev - Removed the API Class
+
 ### 1.2.0
 * Tweak - WooCommerce checkout layout
 * Tweak - WooCommerce checkout steps

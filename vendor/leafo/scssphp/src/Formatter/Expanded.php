@@ -2,7 +2,7 @@
 /**
  * SCSSPHP
  *
- * @copyright 2012-2017 Leaf Corcoran
+ * @copyright 2012-2018 Leaf Corcoran
  *
  * @license http://opensource.org/licenses/MIT MIT
  *
@@ -21,46 +21,48 @@ use Leafo\ScssPhp\Formatter\OutputBlock;
  */
 class Expanded extends Formatter
 {
-	/**
-	 * {@inheritdoc}
-	 */
-	public function __construct() {
-		$this->indentLevel = 0;
-		$this->indentChar = '  ';
-		$this->break = "\n";
-		$this->open = ' {';
-		$this->close = '}';
-		$this->tagSeparator = ', ';
-		$this->assignSeparator = ': ';
-		$this->keepSemicolons = true;
-	}
+    /**
+     * {@inheritdoc}
+     */
+    public function __construct()
+    {
+        $this->indentLevel = 0;
+        $this->indentChar = '  ';
+        $this->break = "\n";
+        $this->open = ' {';
+        $this->close = '}';
+        $this->tagSeparator = ', ';
+        $this->assignSeparator = ': ';
+        $this->keepSemicolons = true;
+    }
 
-	/**
-	 * {@inheritdoc}
-	 */
-	protected function indentStr()
-	{
-		return str_repeat( $this->indentChar, $this->indentLevel );
-	}
+    /**
+     * {@inheritdoc}
+     */
+    protected function indentStr()
+    {
+        return str_repeat($this->indentChar, $this->indentLevel);
+    }
 
-	/**
-	 * {@inheritdoc}
-	 */
-	protected function blockLines( OutputBlock $block ) {
-		$inner = $this->indentStr();
+    /**
+     * {@inheritdoc}
+     */
+    protected function blockLines(OutputBlock $block)
+    {
+        $inner = $this->indentStr();
 
-		$glue = $this->break . $inner;
+        $glue = $this->break . $inner;
 
-		foreach ( $block->lines as $index => $line ) {
-			if ( substr( $line, 0, 2 ) === '/*' ) {
-				$block->lines[ $index ] = preg_replace( '/(\r|\n )+/', $glue, $line );
-			}
-		}
+        foreach ($block->lines as $index => $line) {
+            if (substr($line, 0, 2) === '/*') {
+                $block->lines[$index] = preg_replace('/(\r|\n)+/', $glue, $line);
+            }
+        }
 
-		echo esc_attr( $inner . implode( $glue, $block->lines ) );
+        $this->write($inner . implode($glue, $block->lines));
 
-		if ( empty( $block->selectors ) || ! empty( $block->children ) ) {
-			echo esc_attr( $this->break );
-		}
-	}
+        if (empty($block->selectors) || ! empty($block->children)) {
+            $this->write($this->break);
+        }
+    }
 }
