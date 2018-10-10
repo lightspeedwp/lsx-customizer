@@ -38,5 +38,12 @@
     "gulp-wp-pot": "^2.0.3",
     "jshint": "^2.9.4",
     "map-stream": "^0.0.7"
+  },
+  "dependencies": {
+    "atob": "^2.1.0",
+    "hoek": "^4.2.1",
+    "minimatch": "^3.0.2",
+    "randomatic": "^3.0.0",
+    "tough-cookie": "^2.3.3"
   }
 }
