@@ -1,32 +1,42 @@
 === LSX Customizer ===
 Contributors: feedmymedia
-Donate link: https://www.lsdev.biz/product/lsx-customizer/
-Tags: LSX, LSX Theme, WordPress customizer, layout, website colours
+Donate link: 
+Tags: LSX, LSX Theme, WordPress Customizer, Gutenberg, website colours
 Requires at least: 4.3
-Tested up to: 4.9.4
+Tested up to: 5.1.1
 Requires PHP: 7.0
 Stable tag: 1.2.2
 License: GPLv3
 
-This extension gives you control over the colours of your LSX-powered WordPress site, allowing you to adjust all your individual element styles. 
+The LSX Customizer extension gives you control over the colours of your LSX-powered WordPress site, allowing you to adjust all your individual element styles. 
 
 == Description ==
 
-The customizer has a range of options that allow you to make changes throughout your website, and view the changes in real time. You can also greatly extend your customizing power by making use of the LSX Customizer and LSX Blog Customizer Extensions.
+The LSX Customizer plugin extends the power of your normal WordPress customiser. Update your site colours and structure with no code or hassle!
 
 = Works with the LSX Theme =
-We've also made a fantastic [theme](https://www.lsdev.biz/product/lsx-wordpress-theme/) that work well with the LSX Customizer plugin.
+We've also made a fantastic [theme](https://lsx.lsdev.biz/) that work well with the LSX Customizer plugin.
+
+= Gutenberg Compatible =
+Have you updated to the new WordPress Gutenberg editor? We've got you covered! [The LSX Theme](https://lsx.lsdev.biz/) and all of its extensions have been optimised for the Gutenberg update. 
 
 = It's free, and always will be. =
-We’re firm believers in open source - that’s why we’re releasing the LSX Customizer plugin for free, forever. We offer free support on the [LSX Customizer support forums](https://wordpress.org/support/plugin/lsx-customizer).
+We’re firm believers in open source - that’s why we’re releasing the LSX Customizer plugin for free, forever.
 
 = Support =
-We offer premium support for this plugin. Premium support that can be purchased via [lsdev.biz](https://www.lsdev.biz/).
+We offer premium support for this plugin. Premium support that can be purchased via [lsdev.biz](https://www.lsdev.biz/services/support/).
+
+Looking for an example of the LSX Customizer? Check out our [LSX Customizer demo](https://lsx.lsdev.biz/extensions/site-customizer/) for more information on available features.
 
 == Installation ==
 
-1. Upload the plugin files to the `/wp-content/plugins/lsx-customizer` directory, or install the plugin through the WordPress plugins screen directly.
-2. Activate the plugin through the 'Plugins' screen in WordPress
+You can also download and install the extension directly from the backend of your website
+
+1. Login to the backend of your website.
+2. Navigate to the “Plugins” dashboard item.
+3. Select the “Add New” option on the plugins page.
+4. Search for “LSX Customizer” in the plugin search bar.
+5. Download and activate the plugin.
 
 == Frequently Asked Questions ==
 
@@ -34,11 +44,12 @@ We offer premium support for this plugin. Premium support that can be purchased 
 For help setting up and configuring the Customizer plugin please refer to our [user guide](https://www.lsdev.biz/documentation/lsx/lsx-customizer/)
 
 = Where can I get support or talk to other users =
-If you get stuck, you can ask for help in the [LSX Customizer plugin forum](https://wordpress.org/support/plugin/lsx-customizer).
-For help with premium add-ons from LightSpeed, use [our contact page](https://www.lsdev.biz/contact-us/)
+For add-on support from LightSpeed, [get a quote](https://www.lsdev.biz/contact-us/) from us!
 
-= Will the LSX Customizer plugin work with my theme 
-No; the Customizer plugin will only work with the LSX theme Please see our [codex](https://www.lsdev.biz/documentation/lsx/) for help.
+= Will the LSX Customizer plugin work with my theme? =
+Not unless you are making use of the [The LSX theme!](https://lsx.lsdev.biz/) 
+
+All of the LSX Extensions were built for the LSX theme. Be sure to have it installed and activated for this extension to function. 
 
 = Where can I report bugs or contribute to the project? =
 Bugs can be reported either in our support forum or preferably on the [LSX Customizer GitHub repository](https://github.com/lightspeeddevelopment/lsx/issues).
@@ -49,5 +60,4 @@ Yes you can! Join in on our [GitHub repository](https://github.com/lightspeeddev
 == Screenshots ==
 
 1. Customiser Settings 
-
 2. Customiser Colour Options
