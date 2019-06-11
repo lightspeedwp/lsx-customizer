@@ -2,6 +2,7 @@
 
 ### 1.2.2 (development)
 * Dev - Update the SCSS 2 CSS Vendor (http://leafo.github.io/scssphp/)
+* Fix - Making sure the Thank You page does not redirect when you land on the page.
 
 ### 1.2.1
 * Dev - Removed the API Class

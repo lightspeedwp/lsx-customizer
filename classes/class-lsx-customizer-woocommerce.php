@@ -275,7 +275,7 @@ if ( ! class_exists( 'LSX_Customizer_WooCommerce' ) ) {
 			if ( is_checkout() && ! empty( $wp->query_vars['order-received'] ) ) {
 				$thankyou_page = get_theme_mod( 'lsx_wc_checkout_thankyou_page', '0' );
 
-				if ( ! empty( $thankyou_page ) ) {
+				if ( ! empty( $thankyou_page ) && ! is_page( $thankyou_page ) ) {
 					$order_id  = apply_filters( 'woocommerce_thankyou_order_id', absint( $wp->query_vars['order-received'] ) );
 					$order_key = apply_filters( 'woocommerce_thankyou_order_key', empty( $_GET['key'] ) ? '' : wc_clean( $_GET['key'] ) );
 
