@@ -1,6 +1,6 @@
 === LSX Customizer ===
 Contributors: feedmymedia
-Donate link: 
+Donate link: https://donate.lsdev.biz/
 Tags: LSX, WordPress Customizer, Gutenberg, website colours
 Requires at least: 4.3
 Tested up to: 5.1.1
