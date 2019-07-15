@@ -1,4 +1,4 @@
-# Copyright (C) 2017 lsx-customizer
+# Copyright (C) 2019 lsx-customizer
 # This file is distributed under the same license as the lsx-customizer package.
 msgid ""
 msgstr ""
@@ -174,7 +174,7 @@ msgstr ""
 msgid "Extra HTML to display at cart page (bottom/left)."
 msgstr ""
 
-#: classes/class-lsx-customizer-woocommerce.php:189, classes/class-lsx-customizer-woocommerce.php:531
+#: classes/class-lsx-customizer-woocommerce.php:189, classes/class-lsx-customizer-woocommerce.php:533
 msgid "My Account"
 msgstr ""
 
@@ -226,35 +226,11 @@ msgstr ""
 msgid "Thank you!"
 msgstr ""
 
-#: classes/class-lsx-customizer-woocommerce.php:531, classes/class-lsx-customizer-woocommerce.php:543
+#: classes/class-lsx-customizer-woocommerce.php:533, classes/class-lsx-customizer-woocommerce.php:542
 msgid "View your account"
 msgstr ""
 
-#: classes/class-lsx-customizer-woocommerce.php:533
-msgid "Downloads"
-msgstr ""
-
-#: classes/class-lsx-customizer-woocommerce.php:534
-msgid "Subscriptions"
-msgstr ""
-
-#: classes/class-lsx-customizer-woocommerce.php:535
-msgid "Wishlists"
-msgstr ""
-
-#: classes/class-lsx-customizer-woocommerce.php:536
-msgid "Courses"
-msgstr ""
-
-#: classes/class-lsx-customizer-woocommerce.php:537
-msgid "Change Password"
-msgstr ""
-
-#: classes/class-lsx-customizer-woocommerce.php:538
-msgid "Logout"
-msgstr ""
-
-#: classes/class-lsx-customizer-woocommerce.php:543
+#: classes/class-lsx-customizer-woocommerce.php:542
 msgid "Login"
 msgstr ""
 
