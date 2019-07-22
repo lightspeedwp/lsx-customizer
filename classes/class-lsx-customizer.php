@@ -30,6 +30,7 @@ if ( ! class_exists( 'LSX_Customizer' ) ) {
 			require_once( LSX_CUSTOMIZER_PATH . 'classes/class-lsx-customizer-frontend.php' );
 			require_once( LSX_CUSTOMIZER_PATH . 'classes/class-lsx-customizer-core.php' );
 			require_once( LSX_CUSTOMIZER_PATH . 'classes/class-lsx-customizer-colour.php' );
+			require_once( LSX_CUSTOMIZER_PATH . 'classes/class-lsx-customizer-login.php' );
 
 			add_action( 'plugins_loaded', array( $this, 'woocommerce' ) );
 			add_action( 'after_setup_theme', array( $this, 'wysiwyg_editor_control' ), 20 );
