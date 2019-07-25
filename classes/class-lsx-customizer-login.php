@@ -1,5 +1,5 @@
 <?php
-if (!class_exists('LSX_Customizer_Login')) {
+if ( ! class_exists( 'LSX_Customizer_Login' ) ) {
 
 	/**
 	 * LSX Customizer Login Class
@@ -10,23 +10,21 @@ if (!class_exists('LSX_Customizer_Login')) {
 	 * @link
 	 * @copyright 2019 LightSpeed
 	 */
-	class LSX_Customizer_Login extends LSX_Customizer
-	{
+	class LSX_Customizer_Login extends LSX_Customizer {
 
 		/**
 		 * Constructor.
 		 *
 		 * @since 1.0.0
 		 */
-		public function __construct()
-		{
-			add_action('customize_register', array($this, 'register_general'), 20);
-			add_action('customize_register', array($this, 'register_form'), 30);
-			add_action('customize_register', array($this, 'register_background'), 40);
+		public function __construct() {
+			add_action( 'customize_register', array( $this, 'register_general' ), 20 );
+			add_action( 'customize_register', array( $this, 'register_form' ), 30 );
+			add_action( 'customize_register', array( $this, 'register_background' ), 40 );
 
-			add_action('after_switch_theme', array($this, 'set_theme_mod'));
-			add_action('customize_save_after', array($this, 'set_theme_mod'));
-			add_action('login_enqueue_scripts', array($this, 'enqueue_css'), 2999);
+			add_action( 'after_switch_theme', array( $this, 'set_theme_mod' ) );
+			add_action( 'customize_save_after', array( $this, 'set_theme_mod ') );
+			add_action( 'login_enqueue_scripts', array( $this, 'enqueue_css' ), 2999 );
 		}
 
 		/**
