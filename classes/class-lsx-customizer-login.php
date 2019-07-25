@@ -23,7 +23,7 @@ if ( ! class_exists( 'LSX_Customizer_Login' ) ) {
 			add_action( 'customize_register', array( $this, 'register_background' ), 40 );
 
 			add_action( 'after_switch_theme', array( $this, 'set_theme_mod' ) );
-			add_action( 'customize_save_after', array( $this, 'set_theme_mod ') );
+			add_action( 'customize_save_after', array( $this, 'set_theme_mod ' ) );
 			add_action( 'login_enqueue_scripts', array( $this, 'enqueue_css' ), 2999 );
 		}
 
@@ -40,7 +40,7 @@ if ( ! class_exists( 'LSX_Customizer_Login' ) ) {
 			$wp_customize->add_panel(
 				'login',
 				array(
-					'title'    => esc_html__('WP Login Screen', 'lsx-customizer'),
+					'title'    => esc_html__( 'WP Login Screen', 'lsx-customizer' ),
 					'priority' => 60,
 				)
 			);
@@ -215,7 +215,7 @@ if ( ! class_exists( 'LSX_Customizer_Login' ) ) {
 						'settings' => 'lsx_login_form_label_colour',
 					)
 				)
-			);				
+			);
 
 			/**
 			 * Button Color
@@ -261,7 +261,7 @@ if ( ! class_exists( 'LSX_Customizer_Login' ) ) {
 						'settings' => 'lsx_login_button_shadow_colour',
 					)
 				)
-			);			
+			);
 
 			/**
 			 * Button Hover Color
@@ -468,7 +468,7 @@ if ( ! class_exists( 'LSX_Customizer_Login' ) ) {
 		 *
 		 * @since 1.0.0
 		 */
-		public function get_theme_mods() { 
+		public function get_theme_mods() {
 			$mods = apply_filters(
 				'lsx_customizer_login_styles',
 				array(
@@ -480,7 +480,7 @@ if ( ! class_exists( 'LSX_Customizer_Login' ) ) {
 					'button_hover_colour'     => get_theme_mod( 'lsx_login_button_hover_colour', '#000000' ),
 					'button_text_colour'      => get_theme_mod( 'lsx_login_button_text_colour', '#0085ba' ),
 					'login_form_colour'       => get_theme_mod( 'lsx_login_form_colour', '#ffffff' ),
-					'login_form_label_colour' => get_theme_mod( 'lsx_login_form_label_colour', '#ffffff' ),					
+					'login_form_label_colour' => get_theme_mod( 'lsx_login_form_label_colour', '#ffffff' ),
 					'background_colour'       => get_theme_mod( 'lsx_login_bg_colour', 'inherit' ),
 					'background_image'        => get_theme_mod( 'lsx_login_bg_image', '' ),
 					'background_repeat'       => get_theme_mod( 'lsx_login_bg_repeat', 'no-repeat' ),
