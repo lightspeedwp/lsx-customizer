@@ -33,8 +33,7 @@ if ( ! class_exists( 'LSX_Customizer_Login' ) ) {
 		 * @param WP_Customize_Manager $wp_customize Theme Customizer object.
 		 * @since 1.0.0
 		 */
-		public function register_general($wp_customize)
-		{
+		public function register_general( $wp_customize ) {
 			/**
 			 * Register the main panel
 			 */
@@ -52,7 +51,7 @@ if ( ! class_exists( 'LSX_Customizer_Login' ) ) {
 			$wp_customize->add_section(
 				'login-general',
 				array(
-					'title'    => esc_html__('General', 'lsx-customizer'),
+					'title'    => esc_html__( 'General', 'lsx-customizer' ),
 					'priority' => 1,
 					'panel'    => 'login',
 				)
@@ -75,7 +74,7 @@ if ( ! class_exists( 'LSX_Customizer_Login' ) ) {
 					$wp_customize,
 					'lsx_login_logo',
 					array(
-						'label'    => __('Upload a logo', 'lsx-customizer'),
+						'label'    => __( 'Upload a logo', 'lsx-customizer' ),
 						'section'  => 'login-general',
 						'settings' => 'lsx_login_logo',
 					)
@@ -98,7 +97,7 @@ if ( ! class_exists( 'LSX_Customizer_Login' ) ) {
 					$wp_customize,
 					'lsx_login_link_colour',
 					array(
-						'label'    => __('Link Colour', 'lsx-customizer'),
+						'label'    => __( 'Link Colour', 'lsx-customizer' ),
 						'section'  => 'login-general',
 						'settings' => 'lsx_login_link_colour',
 					)
@@ -121,7 +120,7 @@ if ( ! class_exists( 'LSX_Customizer_Login' ) ) {
 					$wp_customize,
 					'lsx_login_link_hover_colour',
 					array(
-						'label'    => __('Link Hover Colour', 'lsx-customizer'),
+						'label'    => __( 'Link Hover Colour', 'lsx-customizer' ),
 						'section'  => 'login-general',
 						'settings' => 'lsx_login_link_hover_colour',
 					)
@@ -144,7 +143,7 @@ if ( ! class_exists( 'LSX_Customizer_Login' ) ) {
 					$wp_customize,
 					'lsx_login_custom_css',
 					array(
-						'label'    => __('Custom CSS', 'lsx-customizer'),
+						'label'    => __( 'Custom CSS', 'lsx-customizer' ),
 						'section'  => 'login-general',
 						'settings' => 'lsx_login_custom_css',
 						'type'     => 'textarea',
@@ -159,15 +158,14 @@ if ( ! class_exists( 'LSX_Customizer_Login' ) ) {
 		 * @param WP_Customize_Manager $wp_customize Theme Customizer object.
 		 * @since 1.0.0
 		 */
-		public function register_form($wp_customize)
-		{
+		public function register_form( $wp_customize ) {
 			/**
 			 * Reigster the Form section
 			 */
 			$wp_customize->add_section(
 				'login-form',
 				array(
-					'title'    => esc_html__('Form', 'lsx-customizer'),
+					'title'    => esc_html__( 'Form', 'lsx-customizer' ),
 					'priority' => 1,
 					'panel'    => 'login',
 				)
@@ -189,7 +187,7 @@ if ( ! class_exists( 'LSX_Customizer_Login' ) ) {
 					$wp_customize,
 					'lsx_login_form_colour',
 					array(
-						'label'    => __('Form Background Color', 'lsx-customizer'),
+						'label'    => __( 'Form Background Color', 'lsx-customizer' ),
 						'section'  => 'login-form',
 						'settings' => 'lsx_login_form_colour',
 					)
@@ -212,7 +210,7 @@ if ( ! class_exists( 'LSX_Customizer_Login' ) ) {
 					$wp_customize,
 					'lsx_login_form_label_colour',
 					array(
-						'label'    => __('Form Label Color', 'lsx-customizer'),
+						'label'    => __( 'Form Label Color', 'lsx-customizer' ),
 						'section'  => 'login-form',
 						'settings' => 'lsx_login_form_label_colour',
 					)
@@ -235,7 +233,7 @@ if ( ! class_exists( 'LSX_Customizer_Login' ) ) {
 					$wp_customize,
 					'lsx_login_button_colour',
 					array(
-						'label'    => __('Button Colour', 'lsx-customizer'),
+						'label'    => __( 'Button Colour', 'lsx-customizer' ),
 						'section'  => 'login-form',
 						'settings' => 'lsx_login_button_colour',
 					)
@@ -258,7 +256,7 @@ if ( ! class_exists( 'LSX_Customizer_Login' ) ) {
 					$wp_customize,
 					'lsx_login_button_shadow_colour',
 					array(
-						'label'    => __('Button Shadow Colour', 'lsx-customizer'),
+						'label'    => __( 'Button Shadow Colour', 'lsx-customizer' ),
 						'section'  => 'login-form',
 						'settings' => 'lsx_login_button_shadow_colour',
 					)
@@ -281,7 +279,7 @@ if ( ! class_exists( 'LSX_Customizer_Login' ) ) {
 					$wp_customize,
 					'lsx_login_button_hover_colour',
 					array(
-						'label'    => __('Button Hover Colour', 'lsx-customizer'),
+						'label'    => __( 'Button Hover Colour', 'lsx-customizer' ),
 						'section'  => 'login-form',
 						'settings' => 'lsx_login_button_hover_colour',
 					)
@@ -304,7 +302,7 @@ if ( ! class_exists( 'LSX_Customizer_Login' ) ) {
 					$wp_customize,
 					'lsx_login_button_text_colour',
 					array(
-						'label'    => __('Button Text Colour', 'lsx-customizer'),
+						'label'    => __( 'Button Text Colour', 'lsx-customizer' ),
 						'section'  => 'login-form',
 						'settings' => 'lsx_login_button_text_colour',
 					)
@@ -319,12 +317,11 @@ if ( ! class_exists( 'LSX_Customizer_Login' ) ) {
 		 * @param WP_Customize_Manager $wp_customize Theme Customizer object.
 		 * @since 1.0.0
 		 */
-		public function register_background($wp_customize)
-		{
+		public function register_background( $wp_customize ) {
 			$wp_customize->add_section(
 				'login-background',
 				array(
-					'title'    => esc_html__('Background', 'lsx-customizer'),
+					'title'    => esc_html__( 'Background', 'lsx-customizer' ),
 					'priority' => 1,
 					'panel'    => 'login',
 				)
@@ -345,7 +342,7 @@ if ( ! class_exists( 'LSX_Customizer_Login' ) ) {
 					$wp_customize,
 					'lsx_login_bg_colour',
 					array(
-						'label'    => __('Background Colour', 'lsx-customizer'),
+						'label'    => __( 'Background Colour', 'lsx-customizer' ),
 						'section'  => 'login-background',
 						'settings' => 'lsx_login_bg_colour',
 					)
@@ -369,7 +366,7 @@ if ( ! class_exists( 'LSX_Customizer_Login' ) ) {
 					$wp_customize,
 					'lsx_login_bg_image',
 					array(
-						'label'    => __('Background Image', 'lsx-customizer'),
+						'label'    => __( 'Background Image', 'lsx-customizer' ),
 						'section'  => 'login-background',
 						'settings' => 'lsx_login_bg_image',
 					)
@@ -392,14 +389,14 @@ if ( ! class_exists( 'LSX_Customizer_Login' ) ) {
 					$wp_customize,
 					'lsx_login_bg_repeat',
 					array(
-						'label'    => __('Background Repeat', 'lsx-customizer'),
+						'label'    => __( 'Background Repeat', 'lsx-customizer' ),
 						'section'  => 'login-background',
 						'settings' => 'lsx_login_bg_repeat',
 						'type'     => 'select',
 						'choices'  => array(
-							'no-repeat'  => __('No Repeat', 'lsx-customizer'),
-							'repeat-x' => __('Repeat X', 'lsx-customizer'),
-							'repeat-y' => __('Repeat Y', 'lsx-customizer'),
+							'no-repeat'  => __( 'No Repeat', 'lsx-customizer' ),
+							'repeat-x' => __( 'Repeat X', 'lsx-customizer' ),
+							'repeat-y' => __( 'Repeat Y', 'lsx-customizer' ),
 						),
 					)
 				)
@@ -421,13 +418,13 @@ if ( ! class_exists( 'LSX_Customizer_Login' ) ) {
 					$wp_customize,
 					'lsx_login_bg_size',
 					array(
-						'label'    => __('Background Size', 'lsx-customizer'),
+						'label'    => __( 'Background Size', 'lsx-customizer' ),
 						'section'  => 'login-background',
 						'settings' => 'lsx_login_bg_size',
 						'type'     => 'select',
 						'choices'  => array(
-							'cover'  => __('Cover', 'lsx-customizer'),
-							'contain' => __('Contain', 'lsx-customizer'),
+							'cover'  => __( 'Cover', 'lsx-customizer' ),
+							'contain' => __( 'Contain', 'lsx-customizer' ),
 						),
 					)
 				)
@@ -439,12 +436,11 @@ if ( ! class_exists( 'LSX_Customizer_Login' ) ) {
 		 *
 		 * @since 1.0.0
 		 */
-		public function set_theme_mod()
-		{
+		public function set_theme_mod() {
 			$theme_mods = $this->get_theme_mods();
-			$styles     = $this->get_css($theme_mods);
+			$styles     = $this->get_css( $theme_mods );
 
-			set_theme_mod('lsx_customizer_login_styles', $styles);
+			set_theme_mod( 'lsx_customizer_login_styles', $styles );
 		}
 
 		/**
@@ -452,20 +448,19 @@ if ( ! class_exists( 'LSX_Customizer_Login' ) ) {
 		 *
 		 * @since 1.0.0
 		 */
-		public function enqueue_css()
-		{
-			$styles_from_theme_mod = get_theme_mod('lsx_customizer_login_styles');
-			if (is_customize_preview() || false === $styles_from_theme_mod) {
+		public function enqueue_css() {
+			$styles_from_theme_mod = get_theme_mod( 'lsx_customizer_login_styles' );
+			if ( is_customize_preview() || false === $styles_from_theme_mod ) {
 				$theme_mods = $this->get_theme_mods();
-				$styles     = $this->get_css($theme_mods);
+				$styles     = $this->get_css( $theme_mods );
 
-				if (false === $styles_from_theme_mod) {
-					set_theme_mod('lsx_customizer_login_styles', $styles);
+				if ( false === $styles_from_theme_mod ) {
+					set_theme_mod( 'lsx_customizer_login_styles', $styles );
 				}
 			} else {
 				$styles = $styles_from_theme_mod;
 			}
-			echo wp_kses($styles, array('style' => array()));
+			echo wp_kses( $styles, array( 'style' => array() ) );
 		}
 
 		/**
@@ -473,25 +468,24 @@ if ( ! class_exists( 'LSX_Customizer_Login' ) ) {
 		 *
 		 * @since 1.0.0
 		 */
-		public function get_theme_mods()
-		{
+		public function get_theme_mods() { 
 			$mods = apply_filters(
 				'lsx_customizer_login_styles',
 				array(
-					'logo'              		=> get_theme_mod('lsx_login_logo', ''),
-					'link_colour'       		=> get_theme_mod('lsx_login_link_colour', '#0085ba'),
-					'link_hover_colour' 		=> get_theme_mod('lsx_login_link_hover_colour', '#000000'),
-					'button_colour' 			=> get_theme_mod('lsx_login_button_colour', '#000000'),
-					'button_shadow_colour' 		=> get_theme_mod('lsx_login_button_shadow_colour', '#015d82'),
-					'button_hover_colour' 		=> get_theme_mod('lsx_login_button_hover_colour', '#000000'),
-					'button_text_colour' 		=> get_theme_mod('lsx_login_button_text_colour', '#0085ba'),
-					'login_form_colour' 		=> get_theme_mod('lsx_login_form_colour', '#ffffff'),
-					'login_form_label_colour' 	=> get_theme_mod('lsx_login_form_label_colour', '#ffffff'),					
-					'background_colour' 		=> get_theme_mod('lsx_login_bg_colour', 'inherit'),
-					'background_image'  		=> get_theme_mod('lsx_login_bg_image', ''),
-					'background_repeat' 		=> get_theme_mod('lsx_login_bg_repeat', 'no-repeat'),
-					'background_size'   		=> get_theme_mod('lsx_login_bg_size', 'cover'),
-					'custom_css'        		=> get_theme_mod('lsx_login_custom_css', ''),
+					'logo'                    => get_theme_mod( 'lsx_login_logo', '' ),
+					'link_colour'             => get_theme_mod( 'lsx_login_link_colour', '#0085ba' ),
+					'link_hover_colour'       => get_theme_mod( 'lsx_login_link_hover_colour', '#000000' ),
+					'button_colour'           => get_theme_mod( 'lsx_login_button_colour', '#000000' ),
+					'button_shadow_colour'    => get_theme_mod( 'lsx_login_button_shadow_colour', '#015d82' ),
+					'button_hover_colour'     => get_theme_mod( 'lsx_login_button_hover_colour', '#000000' ),
+					'button_text_colour'      => get_theme_mod( 'lsx_login_button_text_colour', '#0085ba' ),
+					'login_form_colour'       => get_theme_mod( 'lsx_login_form_colour', '#ffffff' ),
+					'login_form_label_colour' => get_theme_mod( 'lsx_login_form_label_colour', '#ffffff' ),					
+					'background_colour'       => get_theme_mod( 'lsx_login_bg_colour', 'inherit' ),
+					'background_image'        => get_theme_mod( 'lsx_login_bg_image', '' ),
+					'background_repeat'       => get_theme_mod( 'lsx_login_bg_repeat', 'no-repeat' ),
+					'background_size'         => get_theme_mod( 'lsx_login_bg_size', 'cover' ),
+					'custom_css'              => get_theme_mod( 'lsx_login_custom_css', '' ),
 				)
 			);
 			return $mods;
@@ -502,8 +496,7 @@ if ( ! class_exists( 'LSX_Customizer_Login' ) ) {
 		 *
 		 * @since 1.0.0
 		 */
-		public function get_css($theme_mods)
-		{
+		public function get_css( $theme_mods ) {
 			$css = '<style>';
 
 			$css .= "body.login #backtoblog a, body.login #nav a { color: {$theme_mods['link_colour']}; }";
@@ -514,12 +507,11 @@ if ( ! class_exists( 'LSX_Customizer_Login' ) ) {
 			$css .= "body.login.wp-core-ui .button-primary:hover { border-color: {$theme_mods['button_hover_colour']}; }";
 			$css .= "body.login .button-primary { box-shadow: {$theme_mods['button_shadow_colour']}; }";
 			$css .= "body.login .button-primary { color: {$theme_mods['button_text_colour']} ; }";
-			$css .= "body.login .button-primary { text-shadow: none; }";
+			$css .= 'body.login .button-primary { text-shadow: none; }';
 			$css .= "body.login form { background: {$theme_mods['login_form_colour']}; }";
 			$css .= "body.login label { color: {$theme_mods['login_form_label_colour']}; }";
 
-
-			if (isset($theme_mods['logo']) && '' !== $theme_mods['logo']) {
+			if ( isset( $theme_mods['logo'] ) && '' !== $theme_mods['logo'] ) {
 				$css .= "
 					#login h1 a, .login h1 a {
 						background-image: url('" . $theme_mods['logo'] . "');
@@ -534,15 +526,15 @@ if ( ! class_exists( 'LSX_Customizer_Login' ) ) {
 
 			// Add in the background image options.
 			$background_image = '';
-			if (isset($theme_mods['background_image']) && '' !== $theme_mods['background_image']) {
+			if ( isset( $theme_mods['background_image'] ) && '' !== $theme_mods['background_image'] ) {
 				$background_image = "background-image:url('{$theme_mods['background_image']}');";
 			}
 			$background_repeat = '';
-			if (isset($theme_mods['background_repeat']) && '' !== $theme_mods['background_repeat']) {
+			if ( isset( $theme_mods['background_repeat'] ) && '' !== $theme_mods['background_repeat'] ) {
 				$background_repeat = "background-repeat:{$theme_mods['background_repeat']};";
 			}
 			$background_size = '';
-			if (isset($theme_mods['background_size']) && '' !== $theme_mods['background_size']) {
+			if ( isset( $theme_mods['background_size'] ) && '' !== $theme_mods['background_size'] ) {
 				$background_size = "background-size:{$theme_mods['background_size']};";
 			}
 			$css .= "
@@ -557,27 +549,12 @@ if ( ! class_exists( 'LSX_Customizer_Login' ) ) {
 				}";
 
 			// Add in the custom css
-			if (isset($theme_mods['custom_css']) && '' !== $theme_mods['custom_css']) {
+			if ( isset( $theme_mods['custom_css'] ) && '' !== $theme_mods['custom_css'] ) {
 				$css .= $theme_mods['custom_css'];
 			}
 
-			$css_new .= "
-				.wp-core-ui .button-primary { /* change button colors */
-					background: #1f2024;
-					border-color: #1f2024;
-					color: #fff;
-					text-decoration: none;
-					text-shadow:none;
-					transition:0.4s;
-				}
-				.wp-core-ui .button-primary:hover {
-					background:#151618;
-					border-color:#151618;
-				}
-			";
-
 			$css .= '</style>';
-			$css = apply_filters('lsx_customizer_login_styles', $css);
+			$css  = apply_filters( 'lsx_customizer_login_styles', $css );
 			return $css;
 		}
 	}
