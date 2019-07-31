@@ -483,9 +483,9 @@ if ( ! class_exists( 'LSX_Customizer_Login' ) ) {
 					'button_colour'           => get_theme_mod( 'lsx_login_button_colour', '#0085ba' ),
 					'button_shadow_colour'    => get_theme_mod( 'lsx_login_button_shadow_colour', '#015d82' ),
 					'button_hover_colour'     => get_theme_mod( 'lsx_login_button_hover_colour', '#015d82' ),
-					'button_text_colour'      => get_theme_mod( 'lsx_login_button_text_colour', '#0085ba' ),
+					'button_text_colour'      => get_theme_mod( 'lsx_login_button_text_colour', '#ffffff' ),
 					'login_form_colour'       => get_theme_mod( 'lsx_login_form_colour', '#ffffff' ),
-					'login_form_label_colour' => get_theme_mod( 'lsx_login_form_label_colour', '#ffffff' ),
+					'login_form_label_colour' => get_theme_mod( 'lsx_login_form_label_colour', '#333333' ),
 					'background_colour'       => get_theme_mod( 'lsx_login_bg_colour', '#f2f2f2' ),
 					'background_image'        => get_theme_mod( 'lsx_login_bg_image', '' ),
 					'background_repeat'       => get_theme_mod( 'lsx_login_bg_repeat', 'no-repeat' ),
@@ -566,3 +566,7 @@ if ( ! class_exists( 'LSX_Customizer_Login' ) ) {
 	}
 	new LSX_Customizer_Login();
 }
+function custom_login_url() {
+	return home_url();
+}
+add_filter( 'login_headerurl', 'custom_login_url' );
