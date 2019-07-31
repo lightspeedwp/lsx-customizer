@@ -479,14 +479,14 @@ if ( ! class_exists( 'LSX_Customizer_Login' ) ) {
 				array(
 					'logo'                    => get_theme_mod( 'lsx_login_logo', '' ),
 					'link_colour'             => get_theme_mod( 'lsx_login_link_colour', '#0085ba' ),
-					'link_hover_colour'       => get_theme_mod( 'lsx_login_link_hover_colour', '#000000' ),
-					'button_colour'           => get_theme_mod( 'lsx_login_button_colour', '#000000' ),
+					'link_hover_colour'       => get_theme_mod( 'lsx_login_link_hover_colour', '#0085ba' ),
+					'button_colour'           => get_theme_mod( 'lsx_login_button_colour', '#0085ba' ),
 					'button_shadow_colour'    => get_theme_mod( 'lsx_login_button_shadow_colour', '#015d82' ),
-					'button_hover_colour'     => get_theme_mod( 'lsx_login_button_hover_colour', '#000000' ),
+					'button_hover_colour'     => get_theme_mod( 'lsx_login_button_hover_colour', '#015d82' ),
 					'button_text_colour'      => get_theme_mod( 'lsx_login_button_text_colour', '#0085ba' ),
 					'login_form_colour'       => get_theme_mod( 'lsx_login_form_colour', '#ffffff' ),
 					'login_form_label_colour' => get_theme_mod( 'lsx_login_form_label_colour', '#ffffff' ),
-					'background_colour'       => get_theme_mod( 'lsx_login_bg_colour', 'inherit' ),
+					'background_colour'       => get_theme_mod( 'lsx_login_bg_colour', '#f2f2f2' ),
 					'background_image'        => get_theme_mod( 'lsx_login_bg_image', '' ),
 					'background_repeat'       => get_theme_mod( 'lsx_login_bg_repeat', 'no-repeat' ),
 					'background_size'         => get_theme_mod( 'lsx_login_bg_size', 'cover' ),
@@ -510,7 +510,8 @@ if ( ! class_exists( 'LSX_Customizer_Login' ) ) {
 			$css .= "body.login.wp-core-ui .button-primary { border-color: {$theme_mods['button_colour']}; }";
 			$css .= "body.login.wp-core-ui .button-primary:hover { background-color: {$theme_mods['button_hover_colour']}; }";
 			$css .= "body.login.wp-core-ui .button-primary:hover { border-color: {$theme_mods['button_hover_colour']}; }";
-			$css .= "body.login .button-primary { box-shadow: {$theme_mods['button_shadow_colour']}; }";
+			$css .= "body.login .button-primary { box-shadow: 0 1px 0 {$theme_mods['button_shadow_colour']}; }";
+			$css .= "body.login .button-primary:active { box-shadow: 0 2px 0 {$theme_mods['button_shadow_colour']}; }";
 			$css .= "body.login .button-primary { color: {$theme_mods['button_text_colour']} ; }";
 			$css .= 'body.login .button-primary { text-shadow: none; }';
 			$css .= "body.login form { background: {$theme_mods['login_form_colour']}; }";
