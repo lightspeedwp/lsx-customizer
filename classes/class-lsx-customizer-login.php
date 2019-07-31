@@ -23,7 +23,7 @@ if ( ! class_exists( 'LSX_Customizer_Login' ) ) {
 			add_action( 'customize_register', array( $this, 'register_background' ), 40 );
 
 			add_action( 'after_switch_theme', array( $this, 'set_theme_mod' ) );
-			add_action( 'customize_save_after', array( $this, 'set_theme_mod ' ) );
+			add_action( 'customize_save_after', array( $this, 'set_theme_mod' ) );
 			add_action( 'login_enqueue_scripts', array( $this, 'enqueue_css' ), 2999 );
 		}
 
@@ -460,7 +460,12 @@ if ( ! class_exists( 'LSX_Customizer_Login' ) ) {
 			} else {
 				$styles = $styles_from_theme_mod;
 			}
-			echo wp_kses( $styles, array( 'style' => array() ) );
+			echo wp_kses(
+				$styles,
+				array(
+					'style' => array(),
+				)
+			);
 		}
 
 		/**
