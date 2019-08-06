@@ -1,8 +1,14 @@
-# LSX Customizer
+<p align="center"><a target="_blank" href="https://lsx.lsdev.biz/"><img width="100px;" src="https://lsx.lsdev.biz/wp-content/uploads/2019/03/Customizer.svg" alt="LSX Blog Customizer"></a>
+</p>
+<h1 align="center">LSX Customizer</h1>
+
+<p align="center">
+    <a href="http://gulpjs.com/"><img src="https://img.shields.io/badge/built%20with-gulp.js-green.svg" alt="Built with gulp.js"></a> 
+    <a href="https://travis-ci.org/lightspeeddevelopment/lsx-customizer"><img src="https://travis-ci.org/lightspeeddevelopment/lsx-blog-customizer.svg?branch=master" alt="Build Status"></a>
+    <a href="https://lsx.lsdev.biz/"><img src="https://lsx.lsdev.biz/wp-content/uploads/2019/06/Designed-for-LSX-Theme-blue.png" alt="Made for LSX"></a>
+</p>
 
 The LSX Customizer extension gives you control over the colours of your LSX-powered WordPress site, allowing you to adjust all your individual element styles. 
-
-## Description
 
 The LSX Customizer plugin extends the power of your normal WordPress customiser. Update your site colours and structure with no code or hassle!
 
@@ -10,15 +16,22 @@ The LSX Customizer plugin extends the power of your normal WordPress customiser.
 We've also made a fantastic [theme](https://lsx.lsdev.biz/) that work well with the LSX Customizer plugin.
 
 ## Gutenberg Compatible
-Have you updated to the new WordPress Gutenberg editor? We've got you covered! [The LSX Theme](https://lsx.lsdev.biz/) and all of its extensions have been optimised for the Gutenberg update. 
+Have you updated to the new WordPress Gutenberg editor? We've got you covered! The LSX Customizer Plugin has been optimized for the Gutenberg update. Check out our [release post](https://lsx.lsdev.biz/lsx-blocks-available-on-wordpress-org/) on the update for more information.
 
 ## It's free, and always will be.
-We’re firm believers in open source - that’s why we’re releasing the LSX Customizer plugin for free, forever.
+We’re firm believers in open source - that’s why the [LSX Customizer](https://lsx.lsdev.biz/extensions/lsx-customizer/) is free, and that won't change. We are constantly maintaining and updating our extension so you have the latest and greatest abilities on your LSX Theme powered site. 
 
-## Support
-We offer premium support for this plugin. Premium support that can be purchased via [lsdev.biz](https://www.lsdev.biz/services/support/).
+## LSX Customizer Documentation
 
-Looking for an example of the LSX Customizer? Check out our [LSX Customizer demo](https://lsx.lsdev.biz/extensions/site-customizer/) for more information on available features.
+We have created extensive documentation on all of the LSX Customizer Plugin functionality. This means a hassle free installation and setup with no code requirements. Go to the [LSX Customizer Documentation](https://lsx.lsdev.biz/documentation/lsx-customizer/).
+
+## LSX Customizer Help & Support
+
+We offer premium support for this plugin. Premium support that can be purchased [via our website](https://www.lsdev.biz/services/support/).
+
+If you are experiencing issues with the LSX Customizer Plugin & have experience with Github, please log any bug issues you are having on the [LSX Customizer Github Issues](https://github.com/lightspeeddevelopment/lsx-customizer/issues/) page.
+
+You can also send an email to our Support Team at [support@lsdev.biz](support@lsdev.biz) if you have a request for the LightSpeed Development team.
 
 ## Installation
 
