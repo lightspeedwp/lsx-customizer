@@ -31,7 +31,7 @@ We offer premium support for this plugin. Premium support that can be purchased 
 
 If you are experiencing issues with the LSX Customizer Plugin & have experience with Github, please log any bug issues you are having on the [LSX Customizer Github Issues](https://github.com/lightspeeddevelopment/lsx-customizer/issues/) page.
 
-You can also send an email to our Support Team at [support@lsdev.biz](support@lsdev.biz) if you have a request for the LightSpeed Development team.
+You can also send an email to our Support Team at [support@lsdev.biz](mailto:support@lsdev.biz) if you have a request for the LightSpeed Development team.
 
 ## Installation
 
