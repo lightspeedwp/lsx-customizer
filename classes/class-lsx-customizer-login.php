@@ -408,7 +408,7 @@ if ( ! class_exists( 'LSX_Customizer_Login' ) ) {
 			$wp_customize->add_setting(
 				'lsx_login_bg_size',
 				array(
-					'default'   => 'cover',
+					'default'   => 'none',
 					'type'      => 'theme_mod',
 					'transport' => 'postMessage',
 				)
@@ -423,6 +423,7 @@ if ( ! class_exists( 'LSX_Customizer_Login' ) ) {
 						'settings' => 'lsx_login_bg_size',
 						'type'     => 'select',
 						'choices'  => array(
+							'initial'  => __( 'None', 'lsx-customizer' ),
 							'cover'  => __( 'Cover', 'lsx-customizer' ),
 							'contain' => __( 'Contain', 'lsx-customizer' ),
 						),
@@ -489,7 +490,7 @@ if ( ! class_exists( 'LSX_Customizer_Login' ) ) {
 					'background_colour'       => get_theme_mod( 'lsx_login_bg_colour', '#f2f2f2' ),
 					'background_image'        => get_theme_mod( 'lsx_login_bg_image', '' ),
 					'background_repeat'       => get_theme_mod( 'lsx_login_bg_repeat', 'no-repeat' ),
-					'background_size'         => get_theme_mod( 'lsx_login_bg_size', 'cover' ),
+					'background_size'         => get_theme_mod( 'lsx_login_bg_size', 'initial' ),
 					'custom_css'              => get_theme_mod( 'lsx_login_custom_css', '' ),
 				)
 			);
