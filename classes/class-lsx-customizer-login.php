@@ -395,8 +395,9 @@ if ( ! class_exists( 'LSX_Customizer_Login' ) ) {
 						'type'     => 'select',
 						'choices'  => array(
 							'no-repeat'  => __( 'No Repeat', 'lsx-customizer' ),
-							'repeat-x' => __( 'Repeat X', 'lsx-customizer' ),
-							'repeat-y' => __( 'Repeat Y', 'lsx-customizer' ),
+							'repeat'  => __( 'Repeat', 'lsx-customizer' ),
+							'repeat-x' => __( 'Repeat Horizontally', 'lsx-customizer' ),
+							'repeat-y' => __( 'Repeat Vertically', 'lsx-customizer' ),
 						),
 					)
 				)
