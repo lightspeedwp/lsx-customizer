@@ -520,9 +520,9 @@ if ( ! class_exists( 'LSX_Customizer_WooCommerce' ) ) {
 
 				if ( ! empty( $customizer_option ) ) {
 					if ( is_account_page() ) {
-						$item_class = 'current-menu-item';
+						$class = 'current-menu-item';
 					} else {
-						$item_class = '';
+						$class = '';
 					}
 
 					$item_class = 'menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children dropdown lsx-wc-my-account-menu-item ' . $class;
