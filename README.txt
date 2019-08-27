@@ -64,5 +64,5 @@ Yes you can! Join in on our [GitHub repository](https://github.com/lightspeeddev
 
 == Upgrade Notice ==
 
-= 1.3.0 =
-Added improvements to the general look and feel of the site. Adding better core file structures.
+= 1.3.1 =
+Bug fixes and new background repeat options
