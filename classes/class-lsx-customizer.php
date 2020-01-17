@@ -34,6 +34,7 @@ if ( ! class_exists( 'LSX_Customizer' ) ) {
 
 			add_action( 'plugins_loaded', array( $this, 'woocommerce' ) );
 			add_action( 'after_setup_theme', array( $this, 'wysiwyg_editor_control' ), 20 );
+			add_filter( 'login_headerurl', array( $this, 'custom_login_url' ) );
 		}
 
 		/**
@@ -90,6 +91,9 @@ if ( ! class_exists( 'LSX_Customizer' ) ) {
 			return wp_kses_post( $input );
 		}
 
+		function custom_login_url() {
+			return home_url();
+		}
 	}
 
 	new LSX_Customizer();
