@@ -293,6 +293,7 @@ if ( ! class_exists( 'LSX_Customizer_WooCommerce' ) ) {
 		 * @since 1.1.1
 		 */
 		public function checkout_steps() {
+			$cart_url = function_exists( 'wc_get_cart_url' ) ? wc_get_cart_url() : WC()->cart->get_cart_url();
 			if ( ( is_checkout() || is_cart() ) && ! empty( get_theme_mod( 'lsx_checkout_steps', '1' ) ) ) :
 				global $wp;
 				?>
@@ -302,7 +303,7 @@ if ( ! class_exists( 'LSX_Customizer_WooCommerce' ) ) {
 						<?php if ( is_cart() ) : ?>
 
 							<li class="lsx-wc-checkout-steps-item lsx-wc-checkout-steps-item-done">
-								<a href="<?php echo esc_url( get_permalink( woocommerce_get_page_id( 'shop' ) ) ); ?>" class="lsx-wc-checkout-steps-link">
+								<a href="<?php echo esc_url( get_permalink( wc_get_page_id( 'shop' ) ) ); ?>" class="lsx-wc-checkout-steps-link">
 									<i class="fa fa-check-circle" aria-hidden="true"></i>
 									<span><span><?php esc_html_e( 'Choose your product', 'lsx-customizer' ); ?></span></span>
 								</a>
@@ -330,7 +331,7 @@ if ( ! class_exists( 'LSX_Customizer_WooCommerce' ) ) {
 						<?php elseif ( is_checkout() && empty( $wp->query_vars['order-received'] ) ) : ?>
 
 							<li class="lsx-wc-checkout-steps-item lsx-wc-checkout-steps-item-done">
-								<a href="<?php echo esc_url( get_permalink( woocommerce_get_page_id( 'shop' ) ) ); ?>" class="lsx-wc-checkout-steps-link">
+								<a href="<?php echo esc_url( get_permalink( wc_get_page_id( 'shop' ) ) ); ?>" class="lsx-wc-checkout-steps-link">
 									<i class="fa fa-check-circle" aria-hidden="true"></i>
 									<span><span><?php esc_html_e( 'Choose your product', 'lsx-customizer' ); ?></span></span>
 								</a>
@@ -339,7 +340,7 @@ if ( ! class_exists( 'LSX_Customizer_WooCommerce' ) ) {
 							</li>
 
 							<li class="lsx-wc-checkout-steps-item lsx-wc-checkout-steps-item-done lsx-wc-checkout-steps-item-cart">
-								<a href="<?php echo esc_url( WC()->cart->get_cart_url() ); ?>" class="lsx-wc-checkout-steps-link">
+								<a href="<?php echo esc_url( $cart_url ); ?>" class="lsx-wc-checkout-steps-link">
 									<i class="fa fa-check-circle" aria-hidden="true"></i>
 									<span><span><?php esc_html_e( 'My Cart', 'lsx-customizer' ); ?></span></span>
 								</a>

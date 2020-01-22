@@ -3,9 +3,9 @@ Contributors: feedmymedia
 Donate link: https://donate.lsdev.biz/
 Tags: LSX, WordPress Customizer, Gutenberg, website colours
 Requires at least: 5.0
-Tested up to: 5.2.2
+Tested up to: 5.3
 Requires PHP: 7.0
-Stable tag: 1.3.0
+Stable tag: 1.3.2
 License: GPLv3
 
 The LSX Customizer extension gives you control over the colours of your LSX-powered WordPress site, allowing you to adjust all your individual element styles. 
@@ -64,5 +64,5 @@ Yes you can! Join in on our [GitHub repository](https://github.com/lightspeeddev
 
 == Upgrade Notice ==
 
-= 1.3.1 =
+= 1.3.2 =
 Bug fixes and new background repeat options

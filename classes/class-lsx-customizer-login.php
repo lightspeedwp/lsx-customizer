@@ -568,7 +568,3 @@ if ( ! class_exists( 'LSX_Customizer_Login' ) ) {
 	}
 	new LSX_Customizer_Login();
 }
-function custom_login_url() {
-	return home_url();
-}
-add_filter( 'login_headerurl', 'custom_login_url' );
