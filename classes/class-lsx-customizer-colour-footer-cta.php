@@ -113,7 +113,6 @@ if ( ! class_exists( 'LSX_Customizer_Colour_Footer_CTA' ) ) {
 
 			$css = apply_filters( 'lsx_customizer_colour_selectors_footer_cta', $css, $colors );
 			$css = parent::scss_to_css( $css );
-
 			return $css;
 		}
 

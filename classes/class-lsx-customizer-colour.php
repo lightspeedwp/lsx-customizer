@@ -391,6 +391,7 @@ if ( ! class_exists( 'LSX_Customizer_Colour' ) ) {
 
 				try {
 					$scss = '
+						@import "' . LSX_CUSTOMIZER_PATH . '/assets/css/scss/include-media";
 						@import "' . get_template_directory() . '/assets/css/scss/global/lsx-variables";
 						@import "' . get_template_directory() . '/assets/css/scss/global/mixins/colours-helper";
 						' . $scss . '
