@@ -61,3 +61,6 @@ Bugs can be reported either in our support forum or preferably on the [LSX Custo
 
 ### The LSX Customizer plugin is awesome! Can I contribute?
 Yes you can! Join in on our [GitHub repository](https://github.com/lightspeeddevelopment/lsx-customizer) :)
+
+## Like what you see?
+<a href="https://www.lsdev.biz/contact/"><img src="https://www.lsdev.biz/wp-content/uploads/2020/02/work-with-lightspeed.png" width="850" alt="Work with us at LightSpeed"></a>
