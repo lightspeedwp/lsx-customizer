@@ -39,10 +39,12 @@
     "susy": "^3.0.5"
   },
   "dependencies": {
+    "acorn": "^5.7.4",
     "braces": "^2.3.1",
     "clean-css": "^4.1.11",
     "gulp-plumber": "^1.2.1",
     "lodash.template": "^4.5.0",
+    "minimist": "^1.2.2",
     "stringstream": "0.0.6"
   }
 }
