@@ -44,7 +44,7 @@
     "clean-css": "^4.1.11",
     "gulp-plumber": "^1.2.1",
     "lodash.template": "^4.5.0",
-    "minimist": "^1.2.2",
+    "minimist": "^1.2.3",
     "stringstream": "0.0.6"
   }
 }
