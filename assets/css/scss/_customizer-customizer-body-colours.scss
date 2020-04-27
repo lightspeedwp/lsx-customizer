@@ -1,11 +1,11 @@
-@mixin customizer-customizer-body-colours($bg: #F6F6F6, $breaker: #DADDDF, $color: #4A4A4A, $link: #418AD0, $hover: #F7AE00, $small: #919191) {
+@mixin customizer-customizer-body-colours($bg: #F6F6F6, $breaker: #9B9B9B, $color: #4A4A4A, $link: #418AD0, $hover: #F7AE00, $small: #919191, $green: #6BAF21 ) {
 	.lsx-wc-checkout-steps-item {
-		color: $link;
+		color: $green;
 
 		&.lsx-wc-checkout-steps-item-done {
 			@media (max-width: 767px) {
 				.fa-check-circle {
-					background-color: $link;
+					background-color: $green;
 					&:after { background-color: #FFF; }
 				}
 			}
@@ -24,12 +24,12 @@
 		}
 
 		&.lsx-wc-checkout-steps-item-current {
-			color: $hover;
+			color: $link;
 
 			& > span,
 			a > span {
 				@media (max-width: 767px) {
-					&:before { background-color: $hover; }
+					&:before { background-color: $link; }
 				}
 			}
 		}
