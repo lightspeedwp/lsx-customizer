@@ -115,6 +115,6 @@
 
 .lsx-wc-checkout-steps-item-disabled .content-area .lsx-wc-checkout-steps .lsx-wc-checkout-steps-counter { background-color: #DADDDF; }
 
-.content-area .lsx-wc-checkout-steps .lsx-wc-checkout-steps-link { color: #6BAF21; }
+.content-area .lsx-wc-checkout-steps .lsx-wc-checkout-steps-link, .content-area .lsx-wc-checkout-steps a.lsx-wc-checkout-steps-link:not(.btn):not(.wp-block-button__link) { color: #6BAF21; }
 
-@media (max-width: 767px) { .content-area .lsx-wc-checkout-steps .lsx-wc-checkout-steps-link:hover, .content-area .lsx-wc-checkout-steps .lsx-wc-checkout-steps-link:focus { color: #418AD0 !important; } }
+@media (max-width: 767px) { .content-area .lsx-wc-checkout-steps .lsx-wc-checkout-steps-link:hover, .content-area .lsx-wc-checkout-steps .lsx-wc-checkout-steps-link:focus, .content-area .lsx-wc-checkout-steps a.lsx-wc-checkout-steps-link:not(.btn):not(.wp-block-button__link):hover, .content-area .lsx-wc-checkout-steps a.lsx-wc-checkout-steps-link:not(.btn):not(.wp-block-button__link):focus { color: #418AD0 !important; } }

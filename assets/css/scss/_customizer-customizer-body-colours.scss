@@ -58,7 +58,8 @@
 				.lsx-wc-checkout-steps-item-disabled & { background-color: $breaker; }
 			}
 
-			.lsx-wc-checkout-steps-link {
+			.lsx-wc-checkout-steps-link,
+			a.lsx-wc-checkout-steps-link:not(.btn):not(.wp-block-button__link) {
 				color: $green;
 				&:hover,
 				&:focus {
