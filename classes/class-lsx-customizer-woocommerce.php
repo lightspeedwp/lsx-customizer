@@ -534,7 +534,7 @@ if ( ! class_exists( 'LSX_Customizer_WooCommerce' ) ) {
 						$item .= '<a title="' . esc_attr__( 'View your account', 'lsx-customizer' ) . '" href="' . esc_url( get_permalink( wc_get_page_id( 'myaccount' ) ) ) . '" data-toggle="dropdown" class="dropdown-toggle" aria-haspopup="true"><span>' . esc_attr__( 'My Account', 'lsx-customizer' ) . '</span></a>';
 						$item .= '<ul role="menu" class=" dropdown-menu lsx-wc-my-account-sub-menu">';
 							foreach ( wc_get_account_menu_items() as $endpoint => $label ) {
-								$item .= '<li class="menu-item"><a title="" href="' . esc_url( get_permalink( wc_get_page_id( 'myaccount' ) ) . '' . $endpoint ) . '">' . $label . '</a></li>';
+								$item .= '<li class="menu-item"><a title="" href="' . esc_url( wc_get_endpoint_url( $endpoint ) ) . '">' . $label . '</a></li>';
 							}
 						$item .= '</ul></li>';
 
