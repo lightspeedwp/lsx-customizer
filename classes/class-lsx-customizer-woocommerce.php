@@ -529,12 +529,18 @@ if ( ! class_exists( 'LSX_Customizer_WooCommerce' ) ) {
 					$item_class = 'menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children dropdown lsx-wc-my-account-menu-item ' . $class;
 					$item_class = apply_filters( 'lsx_wc_my_account_menu_item_class', $item_class );
 
+					$endpoints = WC()->query->get_query_vars();
+
 					if ( is_user_logged_in() ) {
 						$item  = '<li class="' . $item_class . '">';
 						$item .= '<a title="' . esc_attr__( 'View your account', 'lsx-customizer' ) . '" href="' . esc_url( get_permalink( wc_get_page_id( 'myaccount' ) ) ) . '" data-toggle="dropdown" class="dropdown-toggle" aria-haspopup="true"><span>' . esc_attr__( 'My Account', 'lsx-customizer' ) . '</span></a>';
 						$item .= '<ul role="menu" class=" dropdown-menu lsx-wc-my-account-sub-menu">';
 							foreach ( wc_get_account_menu_items() as $endpoint => $label ) {
-								$item .= '<li class="menu-item"><a title="" href="' . esc_url( wc_get_endpoint_url( $endpoint ) ) . '">' . $label . '</a></li>';
+								$slug = $endpoint;
+								if ( isset( $endpoints[ $endpoint ] ) && '' !== $endpoints[ $endpoint ] ) {
+									$slug = $endpoints[ $endpoint ];
+								}
+								$item .= '<li class="menu-item"><a title="" href="' . esc_url( get_permalink( wc_get_page_id( 'myaccount' ) ) . $slug ) . '">' . $label . '</a></li>';
 							}
 						$item .= '</ul></li>';
 
