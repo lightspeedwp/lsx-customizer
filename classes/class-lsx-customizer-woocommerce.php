@@ -540,7 +540,7 @@ if ( ! class_exists( 'LSX_Customizer_WooCommerce' ) ) {
 
 					} else {
 						$item = '<li class="' . $item_class . '">' .
-									'<a title="' . esc_attr__( 'View your account', 'lsx-customizer' ) . '" href="' . esc_url( wc_get_page_permalink( 'myaccount' ) ) . '"><span>' . esc_attr__( 'Login', 'lsx-customizer' ) . '</span></a>' .
+									'<a title="' . esc_attr__( 'View your account', 'lsx-customizer' ) . '" href="' . esc_url( get_permalink( wc_get_page_id( 'myaccount' ) ) ) . '"><span>' . esc_attr__( 'Login', 'lsx-customizer' ) . '</span></a>' .
 								'</li>';
 					}
 
