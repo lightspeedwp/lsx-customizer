@@ -540,6 +540,9 @@ if ( ! class_exists( 'LSX_Customizer_WooCommerce' ) ) {
 								if ( isset( $endpoints[ $endpoint ] ) && '' !== $endpoints[ $endpoint ] ) {
 									$slug = $endpoints[ $endpoint ];
 								}
+								if ( 'dashboard' === $slug ) {
+									$slug = '';
+								}
 								$item .= '<li class="menu-item"><a title="" href="' . esc_url( get_permalink( wc_get_page_id( 'myaccount' ) ) . $slug ) . '">' . $label . '</a></li>';
 							}
 						$item .= '</ul></li>';
