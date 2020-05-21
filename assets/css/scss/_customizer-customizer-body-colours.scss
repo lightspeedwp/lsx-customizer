@@ -69,6 +69,8 @@
 				}
 			}
 		}
-
+	}
+	.lsx-block-accordion details summary:before {
+		color: $link;
 	}
 }
