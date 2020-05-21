@@ -1,12 +1,18 @@
 # Change log
 
-## [[1.3.4]]() - Unreleased
-
-### Fixed
-- Fixed the My Account menu slug not calling the correct page ID
+## [[1.3.4]]() - 2020-05-21
 
 ### Added
 - Woocommerce checkout and cart styling improved.
+- Adding in the customizer colour for the accordian block.
+
+### Fixed
+- Fixed the My Account menu slug not calling the correct page ID.
+- Fixing the my account menu translations.
+
+### Security
+- General testing to ensure compatibility with latest WordPress version (5.4.1).
+- General testing to ensure compatibility with latest LSX Theme version (2.8).
 
 
 ## [[1.3.3]](https://github.com/lightspeeddevelopment/lsx-customizer/releases/tag/1.3.3) - 2020-03-30
