@@ -197,75 +197,82 @@ if ( ! class_exists( 'LSX_Customizer_Colour' ) ) {
 				'panel'             => 'colors',
 			) );
 
+			$wp_customize->add_section( 'colors-palette' , array(
+				'title'             => esc_html__( 'Color Palette', 'lsx-customizer' ),
+				'description' => esc_html__( 'Add colors to use within the Gutenberg editor color palette.', 'lsx-customizer' ),
+				'priority'          => 2,
+				'panel'             => 'colors',
+			) );
+
 			$wp_customize->add_section( 'colors-button' , array(
 				'title'             => esc_html__( 'Button', 'lsx-customizer' ),
-				'priority'          => 2,
+				'priority'          => 3,
 				'panel'             => 'colors',
 			) );
 
 			$wp_customize->add_section( 'colors-button-cta' , array(
 				'title'             => esc_html__( 'Button CTA', 'lsx-customizer' ),
-				'priority'          => 3,
+				'priority'          => 4,
 				'panel'             => 'colors',
 			) );
 
 			$wp_customize->add_section( 'colors-button-secondary' , array(
 				'title'             => esc_html__( 'Button Secondary', 'lsx-customizer' ),
-				'priority'          => 4,
+				'priority'          => 5,
 				'panel'             => 'colors',
 			) );
 
 			$wp_customize->add_section( 'colors-button-tertiary' , array(
 				'title'             => esc_html__( 'Button Tertiary', 'lsx-customizer' ),
-				'priority'          => 5,
+				'priority'          => 6,
 				'panel'             => 'colors',
 			) );
 
 			$wp_customize->add_section( 'colors-top-menu' , array(
 				'title'             => esc_html__( 'Top Menu', 'lsx-customizer' ),
-				'priority'          => 6,
+				'priority'          => 7,
 				'panel'             => 'colors',
 			) );
 
 			$wp_customize->add_section( 'colors-header' , array(
 				'title'             => esc_html__( 'Header', 'lsx-customizer' ),
-				'priority'          => 7,
+				'priority'          => 8,
 				'panel'             => 'colors',
 			) );
 
 			$wp_customize->add_section( 'colors-main-menu' , array(
 				'title'             => esc_html__( 'Main Menu', 'lsx-customizer' ),
-				'priority'          => 8,
+				'priority'          => 9,
 				'panel'             => 'colors',
 			) );
 
 			$wp_customize->add_section( 'colors-banner' , array(
 				'title'             => esc_html__( 'Banner', 'lsx-customizer' ),
-				'priority'          => 9,
+				'priority'          => 10,
 				'panel'             => 'colors',
 			) );
 
 			$wp_customize->add_section( 'colors-body' , array(
 				'title'             => esc_html__( 'Body', 'lsx-customizer' ),
-				'priority'          => 10,
+				'priority'          => 11,
 				'panel'             => 'colors',
 			) );
 
 			$wp_customize->add_section( 'colors-footer-cta' , array(
 				'title'             => esc_html__( 'Footer CTA', 'lsx-customizer' ),
-				'priority'          => 11,
+				'priority'          => 12,
 				'panel'             => 'colors',
 			) );
 
 			$wp_customize->add_section( 'colors-footer-widgets' , array(
 				'title'             => esc_html__( 'Footer Widgets', 'lsx-customizer' ),
-				'priority'          => 12,
+				'priority'          => 13,
 				'panel'             => 'colors',
 			) );
 
 			$wp_customize->add_section( 'colors-footer' , array(
 				'title'             => esc_html__( 'Footer', 'lsx-customizer' ),
-				'priority'          => 13,
+				'priority'          => 14,
 				'panel'             => 'colors',
 			) );
 
@@ -278,13 +285,58 @@ if ( ! class_exists( 'LSX_Customizer_Colour' ) ) {
 				'transport'         => 'postMessage',
 			) );
 
-			$wp_customize->add_control( new LSX_Customizer_Colour_Control( $wp_customize, 'color_scheme', array(
+			$wp_customize->add_control( new LSX_Customizer_Colour_Control(
+				$wp_customize, 'color_scheme', array(
 				'label'             => esc_html__( 'Base Color Scheme', 'lsx-customizer' ),
 				'section'           => 'colors-core',
 				'type'              => 'select',
 				'priority'          => 1,
 				'choices'           => $customizer_colour_choices,
-			) ) );
+				)
+			) );
+
+			/**
+			 * Color Palette
+			 */
+			$colors = $this->get_color_scheme();
+
+			$customizer_colour_defaults = array(
+				__( 'Primary', 'lsx-customizer' )        => get_theme_mod( 'button_background_color', $colors['button_background_color'] ),
+				__( 'Strong Primary', 'lsx-button_shadow' ) => get_theme_mod( 'button_shadow', $colors['body_link_color'] ),
+				__( 'Call To Action', 'lsx-customizer' ) => get_theme_mod( 'button_cta_background_color', $colors['button_cta_background_color'] ),
+				__( 'Strong CTA', 'lsx-button_shadow' )  => get_theme_mod( 'button_cta_shadow', $colors['button_cta_shadow'] ),
+				__( 'Secondary', 'lsx-customizer' )      => get_theme_mod( 'button_secondary_background_color', $colors['button_secondary_background_color'] ),
+				__( 'Strong Secondary', 'lsx-button_shadow' ) => get_theme_mod( 'button_secondary_shadow', $colors['button_secondary_shadow'] ),
+				__( 'Tertiary', 'lsx-customizer' )       => get_theme_mod( 'button_tertiary_background_color', $colors['button_tertiary_background_color'] ),
+				__( 'Strong Tertiary', 'lsx-button_shadow' ) => get_theme_mod( 'button_tertiary_shadow', $colors['button_tertiary_shadow'] ),
+				__( 'Heading Color', 'lsx-customizer' )  => get_theme_mod( 'body_text_heading_color', $colors['body_text_heading_color'] ),
+				__( 'Body Text color', 'lsx-button_shadow' ) => get_theme_mod( 'body_text_color', $colors['body_text_color'] ),
+				__( 'White', 'lsx-button_shadow' )       => '#ffffff',
+				__( 'Black', 'lsx-button_shadow' )       => '#000000',
+			);
+			foreach ( $customizer_colour_defaults as $key => $value ) {
+
+				$color_name = strtolower( str_replace( ' ', '_', $key ) );
+				$color_name = $color_name . '_color';
+
+				$wp_customize->add_setting( $color_name, array(
+					'default'           => $value,
+					'type'              => 'theme_mod',
+					'transport'         => 'postMessage',
+					'sanitize_callback' => 'sanitize_hex_color',
+				) );
+				$wp_customize->add_control(
+					new WP_Customize_Color_Control(
+						$wp_customize,
+						$color_name,
+						array(
+							'label'    => $key,
+							'section'  => 'colors-palette',
+							'settings' => $color_name,
+						)
+					)
+				);
+			}
 
 			/**
 			 * Colors

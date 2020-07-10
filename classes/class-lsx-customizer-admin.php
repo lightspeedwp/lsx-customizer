@@ -68,7 +68,8 @@ if ( ! class_exists( 'LSX_Customizer_Admin' ) ) {
 					$color:    	' . $colors['body_text_color'] . ',
 					$link:    	' . $colors['body_link_color'] . ',
 					$hover:    	' . $colors['body_link_hover_color'] . ',
-					$small:    	' . $colors['body_text_small_color'] . '
+					$small:    	' . $colors['body_text_small_color'] . ',
+					$primary:   ' . $colors['primary_color'] . ',
 				);
 			';
 
