@@ -47,9 +47,9 @@ if ( ! class_exists( 'LSX_Customizer_WooCommerce' ) ) {
 			 */
 
 			$wp_customize->add_section( 'lsx-wc-checkout' , array(
-				'title'       => esc_html__( 'Checkout', 'lsx-customizer' ),
+				'title'       => esc_html__( 'LSX Checkout', 'lsx-customizer' ),
 				'description' => esc_html__( 'Change the WooCommerce checkout settings.', 'lsx-customizer' ),
-				'panel'       => 'lsx-wc',
+				'panel'       => 'woocommerce',
 				'priority'    => 3,
 			) );
 
@@ -186,9 +186,9 @@ if ( ! class_exists( 'LSX_Customizer_WooCommerce' ) ) {
 			 */
 
 			$wp_customize->add_section( 'lsx-wc-my-account' , array(
-				'title'       => esc_html__( 'My Account', 'lsx-customizer' ),
+				'title'       => esc_html__( 'LSX My Account', 'lsx-customizer' ),
 				'description' => esc_html__( 'Change the WooCommerce My Account settings.', 'lsx-customizer' ),
-				'panel'       => 'lsx-wc',
+				'panel'       => 'woocommerce',
 				'priority'    => 4,
 			) );
 
