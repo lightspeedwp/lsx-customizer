@@ -1,6 +1,10 @@
 # Change log
 
-## [[1.3.5]]
+## [[1.4.0]]
+
+### Added
+
+- Adding color palette options for the customizer
 
 ### Changed
 
