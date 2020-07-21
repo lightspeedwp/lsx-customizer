@@ -101,9 +101,7 @@
 
 .checkout.lsx-wc-checkout-distraction-free #masthead > .container .primary-navbar, .checkout.lsx-wc-checkout-distraction-free #masthead > .container #searchform { display: none !important; }
 
-.checkout.lsx-wc-checkout-distraction-free .breadcrumbs-container { display: none; }
-
-.checkout.lsx-wc-checkout-distraction-free .checkout-cta-bottom { display: none; }
+.checkout.lsx-wc-checkout-distraction-free .breadcrumbs-container, .checkout.lsx-wc-checkout-distraction-free #top-menu, .checkout.lsx-wc-checkout-distraction-free .checkout-cta-bottom { display: none; }
 
 .checkout.lsx-wc-checkout-distraction-free.using-gutenberg #primary .entry-content { padding-top: 0; }
 
