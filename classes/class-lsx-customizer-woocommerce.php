@@ -67,6 +67,9 @@ if ( ! class_exists( 'LSX_Customizer_WooCommerce' ) ) {
 				'priority'    => 1,
 			) ) );
 
+			/**
+			 * Checkout Layout
+			 */
 			$wp_customize->add_setting( 'lsx_wc_checkout_layout', array(
 				'default' => 'default',
 				'sanitize_callback' => array( $this, 'sanitize_select' ),
@@ -95,6 +98,49 @@ if ( ! class_exists( 'LSX_Customizer_WooCommerce' ) ) {
 				'0' => esc_html__( 'Default', 'lsx-customizer' ),
 			);
 
+			/**
+			 * Distraction Free Checkout
+			 */
+			$wp_customize->add_setting( 'lsx_distraction_free_checkout', array(
+				'sanitize_callback' => array( $this, 'sanitize_checkbox' ),
+			) );
+
+			$wp_customize->add_control( new WP_Customize_Control(
+				$wp_customize,
+				'lsx_distraction_free_checkout',
+				array(
+					'label'       => esc_html__( 'Distraction Free Checkout', 'lsx-customizer' ),
+					'description' => esc_html__( 'Removes all clutter from the checkout, allowing the customer to focus entirely on that procedure.', 'lsx-customizer' ),
+					'section'     => 'lsx-wc-checkout',
+					'settings'    => 'lsx_distraction_free_checkout',
+					'type'        => 'checkbox',
+					'priority'    => 3,
+				)
+			) );
+
+			/**
+			 * Two Step Checkout
+			 */
+			$wp_customize->add_setting( 'lsx_two_step_checkout', array(
+				'sanitize_callback' => array( $this, 'sanitize_checkbox' ),
+			) );
+
+			$wp_customize->add_control( new WP_Customize_Control(
+				$wp_customize,
+				'lsx_two_step_checkout',
+				array(
+					'label'       => esc_html__( 'Two Step Checkout', 'lsx-customizer' ),
+					'description' => esc_html__( 'Separates the customer details collection form, and the order summary / payment details form in to two separate pages.', 'lsx-customizer' ),
+					'section'     => 'lsx-wc-checkout',
+					'settings'    => 'lsx_two_step_checkout',
+					'type'        => 'checkbox',
+					'priority'    => 4,
+				)
+			) );
+
+			/**
+			 * Thank you page options
+			 */
 			$pages = get_pages();
 
 			foreach ( $pages as $key => $page ) {
@@ -107,7 +153,7 @@ if ( ! class_exists( 'LSX_Customizer_WooCommerce' ) ) {
 				'section'     => 'lsx-wc-checkout',
 				'settings'    => 'lsx_wc_checkout_thankyou_page',
 				'type'        => 'select',
-				'priority'    => 3,
+				'priority'    => 5,
 				'choices'     => $choices,
 			) ) );
 
@@ -121,7 +167,7 @@ if ( ! class_exists( 'LSX_Customizer_WooCommerce' ) ) {
 				'description' => esc_html__( 'Extra HTML to display at checkout page (bottom/right).', 'lsx-customizer' ),
 				'section'     => 'lsx-wc-checkout',
 				'settings'    => 'lsx_wc_checkout_extra_html',
-				'priority'    => 4,
+				'priority'    => 6,
 				'type'        => 'wysiwyg',
 			) ) );
 
@@ -251,6 +297,7 @@ if ( ! class_exists( 'LSX_Customizer_WooCommerce' ) ) {
 		 * @since 1.1.1
 		 */
 		public function body_class( $classes ) {
+			$distraction_free = get_theme_mod( 'lsx_distraction_free_checkout', false );
 			if ( is_checkout() ) {
 				$layout = get_theme_mod( 'lsx_wc_checkout_layout', 'default' );
 
@@ -258,6 +305,9 @@ if ( ! class_exists( 'LSX_Customizer_WooCommerce' ) ) {
 					$classes[] = 'lsx-wc-checkout-layout-stacked';
 				} elseif ( 'columns' === $layout ) {
 					$classes[] = 'lsx-wc-checkout-layout-two-column-addreses';
+				}
+				if ( ! empty( $distraction_free ) ) {
+					$classes[] = 'lsx-wc-checkout-distraction-free';
 				}
 			}
 
@@ -294,7 +344,7 @@ if ( ! class_exists( 'LSX_Customizer_WooCommerce' ) ) {
 		 */
 		public function checkout_steps() {
 			$cart_url = function_exists( 'wc_get_cart_url' ) ? wc_get_cart_url() : WC()->cart->get_cart_url();
-			if ( ( is_checkout() || is_cart() ) && ! empty( get_theme_mod( 'lsx_checkout_steps', '1' ) ) ) :
+			if ( ( is_checkout() || is_cart() ) && ! empty( get_theme_mod( 'lsx_checkout_steps', '1' ) ) && empty( get_theme_mod( 'lsx_distraction_free_checkout', '1' ) ) ) :
 				global $wp;
 				?>
 				<div class="lsx-wc-checkout-steps">

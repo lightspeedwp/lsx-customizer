@@ -20,6 +20,7 @@ if ( ! class_exists( 'LSX_Customizer_Frontend' ) ) {
 		public function __construct() {
 			add_action( 'wp_enqueue_scripts', array( $this, 'assets' ), 2999 );
 			add_action( 'wp', array( $this, 'layout' ), 2999 );
+			add_action( 'wp', array( $this, 'lsx_distraction_free_checkout' ), 2999 );
 		}
 
 		/**
@@ -50,6 +51,23 @@ if ( ! class_exists( 'LSX_Customizer_Frontend' ) ) {
 
 			if ( false == $theme_credit ) {
 				add_filter( 'lsx_credit_link', '__return_false' );
+			}
+		}
+
+		/**
+		 * Create the distraction free checkout.
+		 *
+		 * @since 1.0.0
+		 * @return  void
+		 */
+		public function lsx_distraction_free_checkout() {
+
+			$distraction_free = get_theme_mod( 'lsx_distraction_free_checkout', false );
+
+			if ( is_checkout() && ! empty( $distraction_free ) ) {
+
+				remove_action( 'lsx_body_bottom', 'lsx_wc_footer_bar', 15 );
+
 			}
 		}
 

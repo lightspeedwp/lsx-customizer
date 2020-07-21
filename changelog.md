@@ -4,7 +4,13 @@
 
 ### Added
 
-- Adding color palette options for the customizer
+- Adding color palette options for the customizer.
+- Added Distraction free checkout option.
+- Added 2 steps checkout option.
+
+### Updated
+
+- Updated Checkout and Cart styles.
 
 ### Changed
 
