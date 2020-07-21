@@ -350,7 +350,7 @@ if ( ! class_exists( 'LSX_Customizer_WooCommerce' ) ) {
 		 */
 		public function checkout_steps() {
 			$cart_url = function_exists( 'wc_get_cart_url' ) ? wc_get_cart_url() : WC()->cart->get_cart_url();
-			if ( ( is_checkout() || is_cart() ) && ! empty( get_theme_mod( 'lsx_checkout_steps', '1' ) ) && empty( get_theme_mod( 'lsx_distraction_free_checkout', '1' ) ) ) :
+			if ( ( is_checkout() || is_cart() ) && ! empty( get_theme_mod( 'lsx_checkout_steps', '1' ) ) ) :
 				global $wp;
 				?>
 				<div class="lsx-wc-checkout-steps">

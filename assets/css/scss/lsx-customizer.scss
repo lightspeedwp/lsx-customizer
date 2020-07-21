@@ -523,7 +523,8 @@ ul.lsx-wc-my-account-sub-menu {
 		}
 		.breadcrumbs-container,
 		#top-menu,
-		.checkout-cta-bottom {
+		.checkout-cta-bottom,
+		.lsx-wc-checkout-steps {
 			display: none;
 		}
 		&.using-gutenberg {
@@ -535,7 +536,7 @@ ul.lsx-wc-my-account-sub-menu {
 		}
 		&:not(.using-gutenberg) {
 			#primary {
-				padding-top: 0;
+				margin-top: 0;
 			}
 		}
 	}
@@ -652,7 +653,10 @@ ul.lsx-wc-my-account-sub-menu {
 
 			li {
 				list-style: none;
-
+				a {
+					width: 100%;
+					font-size: 18px !important;
+				}
 				&:first-child {
 					float: left;
 
