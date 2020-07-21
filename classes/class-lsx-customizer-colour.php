@@ -128,6 +128,7 @@ if ( ! class_exists( 'LSX_Customizer_Colour' ) ) {
 		public function after_setup_theme() {
 			require_once( LSX_CUSTOMIZER_PATH . 'includes/lsx-customizer-colour-options.php' );
 			require_once( LSX_CUSTOMIZER_PATH . 'includes/lsx-customizer-colour-deprecated.php' );
+			require_once( LSX_CUSTOMIZER_PATH . 'includes/lsx-customizer-templates.php' );
 
 			if ( class_exists( 'WP_Customize_Control' ) ) {
 				require_once( LSX_CUSTOMIZER_PATH . 'classes/class-lsx-customizer-colour-control.php' );

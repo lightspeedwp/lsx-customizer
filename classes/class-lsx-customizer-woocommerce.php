@@ -298,16 +298,22 @@ if ( ! class_exists( 'LSX_Customizer_WooCommerce' ) ) {
 		 */
 		public function body_class( $classes ) {
 			$distraction_free = get_theme_mod( 'lsx_distraction_free_checkout', false );
+			$two_step_checkout = get_theme_mod( 'lsx_two_step_checkout', false );
 			if ( is_checkout() ) {
 				$layout = get_theme_mod( 'lsx_wc_checkout_layout', 'default' );
 
-				if ( 'stacked' === $layout ) {
+				if ( 'default' === $layout ) {
+					$classes[] = 'lsx-wc-checkout-layout-default';
+				} elseif ( 'stacked' === $layout ) {
 					$classes[] = 'lsx-wc-checkout-layout-stacked';
 				} elseif ( 'columns' === $layout ) {
 					$classes[] = 'lsx-wc-checkout-layout-two-column-addreses';
 				}
 				if ( ! empty( $distraction_free ) ) {
 					$classes[] = 'lsx-wc-checkout-distraction-free';
+				}
+				if ( ! empty( $two_step_checkout ) ) {
+					$classes[] = 'lsx-wc-checkout-two-steps';
 				}
 			}
 
