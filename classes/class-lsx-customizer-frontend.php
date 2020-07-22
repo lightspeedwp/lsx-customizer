@@ -19,6 +19,7 @@ if ( ! class_exists( 'LSX_Customizer_Frontend' ) ) {
 		 */
 		public function __construct() {
 			add_action( 'wp_enqueue_scripts', array( $this, 'assets' ), 2999 );
+			add_action( 'wp_enqueue_scripts', array( $this, 'color_palette_css' ), 2999 );
 			add_action( 'wp', array( $this, 'layout' ), 2999 );
 			add_action( 'after_setup_theme', array( $this, 'lsx_customizer_color_palette_setup' ), 100 );
 		}
@@ -39,6 +40,20 @@ if ( ! class_exists( 'LSX_Customizer_Frontend' ) ) {
 
 			wp_enqueue_style( 'lsx-customizer', LSX_CUSTOMIZER_URL . 'assets/css/lsx-customizer.css', array(), LSX_CUSTOMIZER_VER );
 			wp_style_add_data( 'lsx-customizer', 'rtl', 'replace' );
+		}
+
+		/**
+		 * Enqueues front-end colour palette CSS.
+		 *
+		 * @since 1.0.0
+		 */
+		public function color_palette_css() {
+			$styles = '
+			.has-primary-color-background-color {
+				background-color:' . get_theme_mod( 'primary_color', '#428bca' ) . ' !important;
+			}
+			';
+			wp_add_inline_style( 'lsx-customizer', $styles );
 		}
 
 		/**
