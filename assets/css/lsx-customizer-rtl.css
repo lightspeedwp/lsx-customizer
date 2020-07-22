@@ -92,10 +92,6 @@
 
 .lsx-wc-my-account-menu-item-simple ul.lsx-wc-my-account-sub-menu { display: none !important; }
 
-.container #primary.content-area .has-primary-color-color { color: #428bca; }
-
-.container #primary.content-area .has-primary-color-background-color { background-color: #428bca; }
-
 .content-area .lsx-wc-checkout-steps .lsx-wc-checkout-steps-item { color: #428bca; }
 
 @media (max-width: 767px) { .content-area .lsx-wc-checkout-steps .lsx-wc-checkout-steps-item.lsx-wc-checkout-steps-item-done .fa-check-circle { background-color: #428bca; }

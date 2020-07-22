@@ -19,7 +19,7 @@ if ( ! class_exists( 'LSX_Customizer_Frontend' ) ) {
 		 */
 		public function __construct() {
 			add_action( 'wp_enqueue_scripts', array( $this, 'assets' ), 2999 );
-			add_action( 'wp_enqueue_scripts', array( $this, 'color_palette_css' ), 2999 );
+			add_action( 'wp_enqueue_scripts', array( $this, 'lsx_customizer_color_palette_css' ), 2999 );
 			add_action( 'wp', array( $this, 'layout' ), 2999 );
 			add_action( 'after_setup_theme', array( $this, 'lsx_customizer_color_palette_setup' ), 100 );
 		}
@@ -47,11 +47,85 @@ if ( ! class_exists( 'LSX_Customizer_Frontend' ) ) {
 		 *
 		 * @since 1.0.0
 		 */
-		public function color_palette_css() {
+		public function lsx_customizer_color_palette_css() {
 			$styles = '
-			.has-primary-color-background-color {
-				background-color:' . get_theme_mod( 'primary_color', '#428bca' ) . ' !important;
+			.container #primary.content-area .has-primary-color-background-color {
+				background-color:' . get_theme_mod( 'primary_color', '#428bca' ) . ';
 			}
+			.container #primary.content-area .has-primary-color-color {
+				color: ' . get_theme_mod( 'primary_color', '#428bca' ) . ';
+			}
+
+			.container #primary.content-area .has-strong-primary-color-background-color {
+				background-color:' . get_theme_mod( 'strong_primary_color', '#2a6496' ) . ';
+			}
+			.container #primary.content-area .has-strong-primary-color-color {
+				color: ' . get_theme_mod( 'strong_primary_color', '#2a6496' ) . ';
+			}
+
+			.container #primary.content-area .has-cta-color-background-color {
+				background-color:' . get_theme_mod( 'call_to_action_color', '#f7941d' ) . ';
+			}
+			.container #primary.content-area .has-cta-color-color {
+				color: ' . get_theme_mod( 'call_to_action_color', '#f7941d' ) . ';
+			}
+
+			.container #primary.content-area .has-strong-cta-color-background-color {
+				background-color:' . get_theme_mod( 'strong_cta_color', '#f7741d' ) . ';
+			}
+			.container #primary.content-area .has-strong-cta-color-color {
+				color: ' . get_theme_mod( 'strong_cta_color', '#f7741d' ) . ';
+			}
+
+			.container #primary.content-area .has-strong-cta-color-background-color {
+				background-color:' . get_theme_mod( 'strong_cta_color', '#f7741d' ) . ';
+			}
+			.container #primary.content-area .has-strong-cta-color-color {
+				color: ' . get_theme_mod( 'strong_cta_color', '#f7741d' ) . ';
+			}
+
+			.container #primary.content-area .has-secondary-color-background-color {
+				background-color:' . get_theme_mod( 'secondary_color', '#eaeaea' ) . ';
+			}
+			.container #primary.content-area .has-secondary-color-color {
+				color: ' . get_theme_mod( 'secondary_color', '#eaeaea' ) . ';
+			}
+
+			.container #primary.content-area .has-strong-secondary-color-background-color {
+				background-color:' . get_theme_mod( 'strong_secondary_color', '#c4c4c4' ) . ';
+			}
+			.container #primary.content-area .has-strong-secondary-color-color {
+				color: ' . get_theme_mod( 'strong_secondary_color', '#c4c4c4' ) . ';
+			}
+
+			.container #primary.content-area .has-tertiary-color-background-color {
+				background-color:' . get_theme_mod( 'tertiary_color', '#6BA913' ) . ';
+			}
+			.container #primary.content-area .has-tertiary-color-color {
+				color: ' . get_theme_mod( 'tertiary_color', '#6BA913' ) . ';
+			}
+
+			.container #primary.content-area .has-strong-tertiary-color-background-color {
+				background-color:' . get_theme_mod( 'strong_tertiary_color', '#3F640B' ) . ';
+			}
+			.container #primary.content-area .has-strong-tertiary-color-color {
+				color: ' . get_theme_mod( 'strong_tertiary_color', '#3F640B' ) . ';
+			}
+
+			.container #primary.content-area .has-heading-color-background-color {
+				background-color:' . get_theme_mod( 'heading_color', '#4a4a4a' ) . ';
+			}
+			.container #primary.content-area .has-heading-color-color {
+				color: ' . get_theme_mod( 'heading_color', '#4a4a4a' ) . ';
+			}
+
+			.container #primary.content-area .has-body-color-background-color {
+				background-color:' . get_theme_mod( 'body_text_color_color', '#444444' ) . ';
+			}
+			.container #primary.content-area .has-body-color-color {
+				color: ' . get_theme_mod( 'body_text_color_color', '#444444' ) . ';
+			}
+
 			';
 			wp_add_inline_style( 'lsx-customizer', $styles );
 		}

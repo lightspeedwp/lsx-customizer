@@ -8,16 +8,6 @@
 	$green: #6baf21,
 	$primary: #428bca
 ) {
-	.container {
-		#primary.content-area {
-			.has-primary-color-color {
-				color: $primary;
-			}
-			.has-primary-color-background-color {
-				background-color: $primary;
-			}
-		}
-	}
 	.content-area {
 		.lsx-wc-checkout-steps {
 			.lsx-wc-checkout-steps-item {
