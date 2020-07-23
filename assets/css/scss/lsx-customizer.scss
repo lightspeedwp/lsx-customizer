@@ -1,5 +1,5 @@
-@import 'include-media';
-@import 'customizer-customizer-body-colours';
+@import "include-media";
+@import "customizer-customizer-body-colours";
 
 @mixin fa-icon() {
 	display: inline-block;
@@ -15,12 +15,15 @@
 // Structure
 
 article.page {
-	.page-template-default:not(.has-sidebar).woocommerce-page.lsx-wc-checkout-layout-stacked & {
-		@include media ('>=tablet') { width: 750px !important; }
+	.page-template-default:not(.has-sidebar).woocommerce-page.lsx-wc-checkout-layout-stacked
+		& {
+		@include media(">=tablet") {
+			width: 750px !important;
+		}
 	}
 }
 
-@include media ('>=phone') {
+@include media(">=phone") {
 	.lsx-wc-checkout-layout-stacked {
 		.col2-set {
 			clear: both;
@@ -138,7 +141,7 @@ article.page {
 
 			&:after {
 				clear: both;
-				content: '';
+				content: "";
 				display: table;
 			}
 
@@ -231,14 +234,16 @@ article.page {
 	margin-right: 10px;
 	white-space: nowrap;
 
-	&:last-child { margin-right: 0; }
+	&:last-child {
+		margin-right: 0;
+	}
 
 	.fa-check-circle {
 		font-size: 30px;
 		margin-right: 5px;
 		vertical-align: middle;
 
-		@include media ('<phone') {
+		@include media("<phone") {
 			border-radius: 50%;
 			line-height: 35px;
 			height: 35px;
@@ -253,7 +258,7 @@ article.page {
 
 			&:after {
 				border-radius: 50%;
-				content: '';
+				content: "";
 				height: 21px;
 				left: 50%;
 				position: absolute;
@@ -271,14 +276,18 @@ article.page {
 		line-height: 30px;
 		vertical-align: middle;
 
-		@include media ('<phone') {
-			span { display: none; }
+		@include media("<phone") {
+			span {
+				display: none;
+			}
 		}
 	}
 
 	&:not(.lsx-wc-checkout-steps-item-done) {
-		@include media ('<phone') {
-			.fa-check-circle { display: none; }
+		@include media("<phone") {
+			.fa-check-circle {
+				display: none;
+			}
 
 			& > span,
 			a > span {
@@ -305,38 +314,46 @@ article.page {
 	}
 }
 
-.lsx-wc-checkout-steps-item-current {}
+.lsx-wc-checkout-steps-item-current {
+}
 
-.lsx-wc-checkout-steps-item-disabled {}
+.lsx-wc-checkout-steps-item-disabled {
+}
 
 .lsx-wc-checkout-steps-item-cart {
-	@include media ('<phone') {
+	@include media("<phone") {
 		&:not(.lsx-wc-checkout-steps-item-done) {
 			& > span,
 			a > span {
-				&:before { content: '\f291'; }
+				&:before {
+					content: "\f291";
+				}
 			}
 		}
 	}
 }
 
 .lsx-wc-checkout-steps-item-payment {
-	@include media ('<phone') {
+	@include media("<phone") {
 		&:not(.lsx-wc-checkout-steps-item-done) {
 			& > span,
 			a > span {
-				&:before { content: '\f09d'; }
+				&:before {
+					content: "\f09d";
+				}
 			}
 		}
 	}
 }
 
 .lsx-wc-checkout-steps-item-thankyou {
-	@include media ('<phone') {
+	@include media("<phone") {
 		&:not(.lsx-wc-checkout-steps-item-done) {
 			& > span,
 			a > span {
-				&:before { content: '\f118'; }
+				&:before {
+					content: "\f118";
+				}
 			}
 		}
 	}
@@ -354,7 +371,9 @@ article.page {
 	vertical-align: middle;
 	width: 26px;
 
-	@include media ('<tablet') { display: none; }
+	@include media("<tablet") {
+		display: none;
+	}
 }
 
 .lsx-wc-checkout-steps-link {
@@ -368,14 +387,15 @@ article.page {
 	margin-bottom: 4.25rem;
 	width: 100%;
 
-	@include media ('>=phone') {
+	@include media(">=phone") {
 		float: left;
 		margin-bottom: 0;
 		width: 48%;
 	}
 }
 
-.lsx-wc-checkout-extra-html {}
+.lsx-wc-checkout-extra-html {
+}
 
 // Main menu
 
@@ -383,12 +403,14 @@ article.page {
 	& > a {
 		&:after {
 			@include fa-icon();
-			content: '\f007';
+			content: "\f007";
 			float: right;
 			font-size: 20px;
 			margin-left: 2rem;
 
-			#top-menu & { margin-left: 1.2rem; }
+			#top-menu & {
+				margin-left: 1.2rem;
+			}
 		}
 	}
 
@@ -396,7 +418,7 @@ article.page {
 		& > a {
 			&:before {
 				@include fa-icon();
-				content: '\f007';
+				content: "\f007";
 				float: right;
 				font-size: 20px;
 				margin-right: 0.5rem;
@@ -407,33 +429,54 @@ article.page {
 				}
 			}
 
-			&:after, span { display: none; }
+			&:after,
+			span {
+				display: none;
+			}
 		}
 	}
 
 	&.lsx-wc-my-account-menu-item-right-aligned {
-		@include media ('>=desktop') { margin-left: auto; }
+		@include media(">=desktop") {
+			margin-left: auto;
+		}
 
 		& + .lsx-wc-cart-menu-item-right-aligned {
-			@include media ('>=desktop') { margin-left: 0; }
+			@include media(">=desktop") {
+				margin-left: 0;
+			}
 		}
 	}
 
 	&.lsx-wc-my-account-login {
 		& > a {
-			&:after { content: '\f090'; }
+			&:after {
+				content: "\f090";
+			}
 		}
 
 		&.lsx-wc-my-account-menu-item-simple {
 			& > a {
-				&:before { content: '\f090'; }
+				&:before {
+					content: "\f090";
+				}
 			}
 		}
 	}
 }
 
 ul.lsx-wc-my-account-sub-menu {
-	.lsx-wc-my-account-menu-item-simple & { display: none !important; }
+	.lsx-wc-my-account-menu-item-simple & {
+		display: none !important;
+	}
 }
 
-@include customizer-customizer-body-colours(#F6F6F6, #DADDDF, #4A4A4A, #418AD0, #F7AE00, #919191);
+@include customizer-customizer-body-colours(
+	#f6f6f6,
+	#dadddf,
+	#4a4a4a,
+	#418ad0,
+	#f7ae00,
+	#919191,
+	#428bca
+);

@@ -1,4 +1,13 @@
-@mixin customizer-customizer-body-colours($bg: #F6F6F6, $breaker: #9B9B9B, $color: #4A4A4A, $link: #418AD0, $hover: #F7AE00, $small: #919191, $green: #6BAF21 ) {
+@mixin customizer-customizer-body-colours(
+	$bg: #f6f6f6,
+	$breaker: #9b9b9b,
+	$color: #4a4a4a,
+	$link: #418ad0,
+	$hover: #f7ae00,
+	$small: #919191,
+	$green: #6baf21,
+	$primary: #428bca
+) {
 	.content-area {
 		.lsx-wc-checkout-steps {
 			.lsx-wc-checkout-steps-item {
@@ -8,7 +17,9 @@
 					@media (max-width: 767px) {
 						.fa-check-circle {
 							background-color: $green;
-							&:after { background-color: #FFF; }
+							&:after {
+								background-color: #fff;
+							}
 						}
 					}
 				}
@@ -19,7 +30,7 @@
 						a > span {
 							&:before {
 								background-color: $link;
-								color: #FFF;
+								color: #fff;
 							}
 						}
 					}
@@ -31,7 +42,9 @@
 					& > span,
 					a > span {
 						@media (max-width: 767px) {
-							&:before { background-color: $link; }
+							&:before {
+								background-color: $link;
+							}
 						}
 					}
 				}
@@ -44,7 +57,9 @@
 					& > span,
 					a > span {
 						@media (max-width: 767px) {
-							&:before { background-color: $breaker; }
+							&:before {
+								background-color: $breaker;
+							}
 						}
 					}
 				}
@@ -52,10 +67,14 @@
 
 			.lsx-wc-checkout-steps-counter {
 				background-color: $link;
-				color: #FFF;
+				color: #fff;
 
-				.lsx-wc-checkout-steps-item-current & { background-color: $hover; }
-				.lsx-wc-checkout-steps-item-disabled & { background-color: $breaker; }
+				.lsx-wc-checkout-steps-item-current & {
+					background-color: $hover;
+				}
+				.lsx-wc-checkout-steps-item-disabled & {
+					background-color: $breaker;
+				}
 			}
 
 			.lsx-wc-checkout-steps-link,

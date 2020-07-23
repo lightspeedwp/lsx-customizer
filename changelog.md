@@ -1,14 +1,15 @@
 # Change log
 
-## [[1.4.0]]
+## [[1.4.0]] - In development
 
 ### Added
 
-- Adding color palette options for the customizer
+- Added customizer colour options for the Block editor palette
 
 ### Changed
 
 - Merged two WooCommerce panels within the customizer sidebar.
+
 
 ## [[1.3.4]]() - 2020-05-21
 
