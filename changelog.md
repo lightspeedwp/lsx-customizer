@@ -5,6 +5,7 @@
 ### Added
 
 - Added customizer colour options for the Block editor palette
+- Added integration for the [WooCommerce Grid / List toggle](https://wordpress.org/plugins/woocommerce-grid-list-toggle/) plugin.
 
 ### Changed
 

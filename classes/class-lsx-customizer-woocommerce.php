@@ -33,6 +33,10 @@ if ( ! class_exists( 'LSX_Customizer_WooCommerce' ) ) {
 			add_filter( 'wp_nav_menu_items', array( $this, 'my_account_menu_item' ), 9, 2 );
 			add_action( 'lsx_wc_my_account_menu_item_position', array( $this, 'my_account_menu_item_position' ) );
 			add_action( 'lsx_wc_my_account_menu_item_class', array( $this, 'my_account_menu_item_class' ) );
+
+			// Shop Layout Switcher.
+			add_action( 'wp_head', array( $this, 'show_layout_switcher' ), 1 );
+			add_filter( 'gridlist_toggle_button_output', array( $this, 'gridlist_toggle_button_output' ), 10, 3 );
 		}
 
 		/**
@@ -616,7 +620,37 @@ if ( ! class_exists( 'LSX_Customizer_WooCommerce' ) ) {
 
 			return $item_class;
 		}
-
+		/**
+		 * Display the woocommerce archive swticher.
+		 */
+		public function show_layout_switcher() {
+			$body_classes = get_body_class();
+			if ( in_array( 'post-type-archive-product', $body_classes ) ) {
+				global $WC_List_Grid;
+				if ( null !== $WC_List_Grid ) {
+					remove_action( 'woocommerce_before_shop_loop', array( $WC_List_Grid, 'gridlist_toggle_button' ), 30 );
+					add_action( 'lsx_banner_inner_bottom', array( $this, 'shop_gridlist_toggle_button' ), 90 );
+					add_action( 'lsx_global_header_inner_bottom', array( $this, 'shop_gridlist_toggle_button' ), 90 );
+					wp_deregister_style( 'grid-list-button' );
+				}
+			}
+		}
+		/**
+		 * Display the woocommerce archive swticher.
+		 */
+		public function shop_gridlist_toggle_button() {
+			global $WC_List_Grid;
+			?>
+			<div class="lsx-layout-switcher">
+				<span class="lsx-layout-switcher-label"><?php esc_html_e( 'Select view:', 'lsx-blog-customizer' ); ?></span>
+				<?php $WC_List_Grid->gridlist_toggle_button(); ?>
+			</div>
+			<?php
+		}
+		public function gridlist_toggle_button_output( $output, $grid_view, $list_view ) {
+			$output = sprintf( '<div class="gridlist-toggle lsx-layout-switcher-options"><a href="#" class="lsx-layout-switcher-option" id="grid" title="%1$s"><span class="fa fa fa-th"></span></a><a href="#" class="lsx-layout-switcher-option" id="list" title="%2$s"><span class="fa fa-bars"></span></a></div>', $grid_view, $list_view );
+			return $output;
+		}
 	}
 
 	new LSX_Customizer_WooCommerce;
