@@ -35,8 +35,8 @@ if ( ! class_exists( 'LSX_Customizer_WooCommerce' ) ) {
 			add_action( 'lsx_wc_my_account_menu_item_class', array( $this, 'my_account_menu_item_class' ) );
 
 			// Shop Layout Switcher.
-			add_action( 'wp_head', array( $this, 'show_layout_switcher' ), 1 );
-			add_filter( 'gridlist_toggle_button_output', array( $this, 'gridlist_toggle_button_output' ), 10, 3 );
+			//add_action( 'wp_head', array( $this, 'show_layout_switcher' ), 1 );
+			//add_filter( 'gridlist_toggle_button_output', array( $this, 'gridlist_toggle_button_output' ), 10, 3 );
 		}
 
 		/**
