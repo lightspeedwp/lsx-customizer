@@ -107,7 +107,9 @@ if ( ! function_exists( 'lsx_customizer_fire_flexslider' ) ) {
 				animationLoop:  false,
 				manualControls: '.lsx-checkout-control-nav li a',
 				keyboard:       false,
+				smoothHeight: true,
 			});
+
 
 			jQuery( '.flex-direction-nav a' ).removeAttr( 'href' ).addClass( 'button' );
 

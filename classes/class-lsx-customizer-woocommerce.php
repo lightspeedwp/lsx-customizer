@@ -23,7 +23,10 @@ if ( ! class_exists( 'LSX_Customizer_WooCommerce' ) ) {
 			add_filter( 'body_class', array( $this, 'body_class' ), 2999 );
 
 			add_action( 'template_redirect', array( $this, 'thankyou_page' ), 2999 );
-			add_action( 'lsx_entry_inside_top', array( $this, 'checkout_steps' ), 15 );
+
+			if ( empty( get_theme_mod( 'lsx_two_step_checkout', false ) ) ) {
+				add_action( 'lsx_entry_inside_top', array( $this, 'checkout_steps' ), 15 );
+			}
 
 			add_action( 'wp', array( $this, 'cart_extra_html' ), 2999 );
 			add_action( 'wp', array( $this, 'checkout_extra_html' ), 2999 );
@@ -130,7 +133,7 @@ if ( ! class_exists( 'LSX_Customizer_WooCommerce' ) ) {
 				'lsx_two_step_checkout',
 				array(
 					'label'       => esc_html__( 'Two Step Checkout', 'lsx-customizer' ),
-					'description' => esc_html__( 'Separates the customer details collection form, and the order summary / payment details form in to two separate pages.', 'lsx-customizer' ),
+					'description' => esc_html__( 'Separates the customer details collection form, and the order summary / payment details form in to two separate pages. Removes the stepped cart.', 'lsx-customizer' ),
 					'section'     => 'lsx-wc-checkout',
 					'settings'    => 'lsx_two_step_checkout',
 					'type'        => 'checkbox',
