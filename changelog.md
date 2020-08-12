@@ -10,7 +10,7 @@
 ### Changed
 
 - Merged two WooCommerce panels within the customizer sidebar.
-
+- Enhancements for the custom login logo.
 
 ## [[1.3.4]]() - 2020-05-21
 
