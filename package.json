@@ -39,7 +39,7 @@
     "susy": "3.0.6"
   },
   "dependencies": {
-    "acorn": "^7.4.0",
+    "acorn": "^8.0.0",
     "braces": "^3.0.2",
     "clean-css": "^4.2.3",
     "gulp-plumber": "^1.2.1",
