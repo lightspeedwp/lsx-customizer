@@ -15,10 +15,141 @@
 // Structure
 
 article.page {
+	.page-template-default:not(.has-sidebar).woocommerce-page.lsx-wc-checkout-layout-default
+		& {
+		.entry-content {
+			.woocommerce {
+				> * {
+					max-width: 1020px;
+					margin-left: auto;
+					margin-right: auto;
+				}
+			}
+		}
+	}
+	.page-template-default:not(.has-sidebar).woocommerce-page.lsx-wc-checkout-layout-two-column-addreses
+		& {
+		.entry-content {
+			.woocommerce {
+				> * {
+					max-width: 900px;
+					margin-left: auto;
+					margin-right: auto;
+				}
+			}
+		}
+	}
+
 	.page-template-default:not(.has-sidebar).woocommerce-page.lsx-wc-checkout-layout-stacked
 		& {
 		@include media(">=tablet") {
 			width: 750px !important;
+		}
+		.col2-set {
+			clear: both;
+			float: none;
+			width: 100%;
+
+			.col-1 {
+				float: none;
+				width: 100%;
+
+				.form-row-first {
+					float: left;
+					margin-right: 5.8823529412%;
+					width: 41.1764705882%;
+				}
+
+				.form-row-last {
+					float: right;
+					margin-right: 0;
+					width: 52.9411764706%;
+				}
+			}
+
+			.col-2 {
+				float: none;
+				width: 100%;
+
+				.form-row-first {
+					float: left;
+					margin-right: 5.8823529412%;
+					width: 41.1764705882%;
+				}
+
+				.form-row-last {
+					float: right;
+					margin-right: 0;
+					width: 52.9411764706%;
+				}
+			}
+		}
+		#order_review_heading {
+			clear: both;
+			float: none;
+			width: 100%;
+		}
+
+		#order_review {
+			clear: both;
+			float: none;
+			width: 100%;
+		}
+
+		#primary:not([class*="-8"]) {
+			.col2-set {
+				clear: both;
+				float: none;
+				width: 100%;
+
+				.col-1 {
+					float: none;
+					width: 100%;
+
+					.form-row-first {
+						float: left;
+						margin-right: 4.347826087%;
+						width: 47.8260869565%;
+					}
+
+					.form-row-last {
+						float: right;
+						margin-left: 0;
+						margin-right: 0;
+						width: 47.8260869565%;
+					}
+				}
+
+				.col-2 {
+					float: none;
+					width: 100%;
+
+					.form-row-first {
+						float: left;
+						margin-right: 4.347826087%;
+						width: 47.8260869565%;
+					}
+
+					.form-row-last {
+						float: right;
+						margin-left: 0;
+						margin-right: 0;
+						width: 47.8260869565%;
+					}
+				}
+			}
+
+			#order_review_heading {
+				clear: both;
+				float: none;
+				width: 100%;
+			}
+
+			#order_review {
+				clear: both;
+				float: none;
+				width: 100%;
+			}
 		}
 	}
 
@@ -526,6 +657,10 @@ ul.lsx-wc-my-account-sub-menu {
 				clear: both;
 				margin-left: 0;
 				padding-left: 0;
+				.col2-set,
+				#order_review {
+					width: 100%;
+				}
 				> li {
 					&:not(:first-child) {
 						display: none;
