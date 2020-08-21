@@ -188,8 +188,9 @@ if ( ! class_exists( 'LSX_Customizer_Frontend' ) ) {
 				add_action( 'woocommerce_checkout_before_order_review', 'lsx_customizer_order_review_wrap', 1 );
 				add_action( 'woocommerce_checkout_after_order_review', 'lsx_customizer_close_li', 40 );
 			}
+		}
 
-     /**
+		/**
 		 * Editor color palette.
 		 *
 		 * @return void
