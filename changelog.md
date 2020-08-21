@@ -1,6 +1,6 @@
 # Change log
 
-## [[1.4.0]]
+## [[1.4.0]] - In development
 
 ### Added
 
@@ -11,10 +11,14 @@
 ### Updated
 
 - Updated Checkout and Cart styles.
+- Added customizer colour options for the Block editor palette
+- Added integration for the [WooCommerce Grid / List toggle](https://wordpress.org/plugins/woocommerce-grid-list-toggle/) plugin.
+
 
 ### Changed
 
 - Merged two WooCommerce panels within the customizer sidebar.
+- Enhancements for the custom login logo.
 
 ## [[1.3.4]]() - 2020-05-21
 

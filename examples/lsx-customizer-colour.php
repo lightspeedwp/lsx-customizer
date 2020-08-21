@@ -334,6 +334,7 @@ function test_lsx_customizer_colour_selectors_body( $css, $colors ) {
 		attr13: {$colors['body_section_full_cta_text_color']};
 		attr14: {$colors['body_section_full_cta_link_color']};
 		attr15: {$colors['body_section_full_cta_link_hover_color']};
+		attr16: {$colors['primary_color']};
 	}
 CSS;
 

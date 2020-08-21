@@ -523,11 +523,10 @@ if ( ! class_exists( 'LSX_Customizer_Login' ) ) {
 				$css .= "
 					#login h1 a, .login h1 a {
 						background-image: url('" . $theme_mods['logo'] . "');
-						height: 150px;
-						width: 150px;
-						background-size: 150px 150px;
+						max-height: 150px;
+						width: 100%;
+						background-size: contain;
 						background-repeat: no-repeat;
-						padding-bottom: 20px;
 					}
 				";
 			}

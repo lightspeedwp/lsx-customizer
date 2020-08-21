@@ -22,35 +22,6 @@ article.page {
 		}
 	}
 }
-
-@include media(">=phone") {
-	.lsx-wc-checkout-layout-default {
-		&.lsx-wc-checkout-two-steps {
-			.woocommerce {
-				max-width: 900px !important;
-				margin-left: auto;
-				margin-right: auto;
-			}
-			.checkout {
-				.lsx-checkout-slides {
-					max-width: 900px;
-					margin-left: auto;
-					margin-right: auto;
-					.lsx-two-step-checkout {
-						li {
-							#customer_details,
-							#order_review {
-								width: 100%;
-							}
-						}
-					}
-				}
-			}
-		}
-	}
-	.cart-collaterals {
-		padding-bottom: 8.4rem;
-	}
 	.lsx-wc-checkout-layout-stacked {
 		.col2-set {
 			clear: both;
@@ -701,5 +672,6 @@ ul.lsx-wc-my-account-sub-menu {
 	#4a4a4a,
 	#418ad0,
 	#f7ae00,
-	#919191
+	#919191,
+	#428bca
 );

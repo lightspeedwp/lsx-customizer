@@ -94,6 +94,7 @@ if ( ! class_exists( 'LSX_Customizer' ) ) {
 		function custom_login_url() {
 			return home_url();
 		}
+
 	}
 
 	new LSX_Customizer();
