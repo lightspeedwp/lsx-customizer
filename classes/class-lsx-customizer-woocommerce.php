@@ -113,7 +113,7 @@ if ( ! class_exists( 'LSX_Customizer_WooCommerce' ) ) {
 				'lsx_distraction_free_checkout',
 				array(
 					'label'       => esc_html__( 'Distraction Free Checkout', 'lsx-customizer' ),
-					'description' => esc_html__( 'Removes all clutter from the checkout, allowing the customer to focus entirely on that procedure.', 'lsx-customizer' ),
+					'description' => esc_html__( 'Removes all clutter from the checkout, allowing the customer to focus entirely on that procedure. Removes the stepped cart and checkout.', 'lsx-customizer' ),
 					'section'     => 'lsx-wc-checkout',
 					'settings'    => 'lsx_distraction_free_checkout',
 					'type'        => 'checkbox',
@@ -133,7 +133,7 @@ if ( ! class_exists( 'LSX_Customizer_WooCommerce' ) ) {
 				'lsx_two_step_checkout',
 				array(
 					'label'       => esc_html__( 'Two Step Checkout', 'lsx-customizer' ),
-					'description' => esc_html__( 'Separates the customer details collection form, and the order summary / payment details form in to two separate pages. Removes the stepped cart.', 'lsx-customizer' ),
+					'description' => esc_html__( 'Separates the customer details collection form, and the order summary / payment details form in to two separate pages. Removes the stepped cart and checkout.', 'lsx-customizer' ),
 					'section'     => 'lsx-wc-checkout',
 					'settings'    => 'lsx_two_step_checkout',
 					'type'        => 'checkbox',
