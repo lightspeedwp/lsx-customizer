@@ -48,6 +48,6 @@ if ( ! class_exists( 'LSX_Customizer_Core' ) ) {
 
 	}
 
-	new LSX_Customizer_Core;
+	new LSX_Customizer_Core();
 
 }

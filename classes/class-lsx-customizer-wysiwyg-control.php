@@ -23,7 +23,7 @@ if ( ! class_exists( 'LSX_Customizer_Wysiwyg_Control' ) ) {
 			?>
 			<label>
 				<?php if ( ! empty( $this->label ) ) { ?>
-					<span class="customize-control-title"><?php echo esc_html( $this->label ) ?></span>
+					<span class="customize-control-title"><?php echo esc_html( $this->label ); ?></span>
 				<?php } ?>
 				<?php
 					$settings = array(

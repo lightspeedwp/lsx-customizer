@@ -262,6 +262,6 @@ if ( ! class_exists( 'LSX_Customizer_Frontend' ) ) {
 
 	}
 
-	new LSX_Customizer_Frontend;
+	new LSX_Customizer_Frontend();
 
 }
