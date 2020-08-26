@@ -14,11 +14,17 @@
 - Added customizer colour options for the Block editor palette
 - Added integration for the [WooCommerce Grid / List toggle](https://wordpress.org/plugins/woocommerce-grid-list-toggle/) plugin.
 
-
 ### Changed
 
 - Merged two WooCommerce panels within the customizer sidebar.
 - Enhancements for the custom login logo.
+
+### Security
+
+- Updating dependencies to prevent vulnerabilities.
+- Updating PHPCS options for better code.
+- General testing to ensure compatibility with latest WordPress version (5.5).
+- General testing to ensure compatibility with latest LSX Theme version (2.9).
 
 ## [[1.3.4]]() - 2020-05-21
 
