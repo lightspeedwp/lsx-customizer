@@ -6,7 +6,7 @@
  * Version:     1.4.0
  * Author:      LightSpeed
  * Author URI:  https://www.lsdev.biz/
- * License:     GPL3
+ * License: GPLv3 or later
  * License URI: https://www.gnu.org/licenses/gpl-3.0.html
  * Text Domain: lsx-customizer
  * Domain Path: /languages
