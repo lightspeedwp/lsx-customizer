@@ -2,9 +2,9 @@
 Contributors: feedmymedia, lightspeedwp, eleshar, krugazul, virginialsdev, deon80, jaab1985, jacquesvdh, ignusvermaak, garthlsdev
 Donate link: https://donate.lsdev.biz/
 Tags: LSX, WordPress Customizer, Gutenberg, website colours
-Requires at least: 5.0
-Tested up to: 5.4.2
-Requires PHP: 7.0
+Requires at least: 5.3
+Tested up to: 5.5
+Requires PHP: 7.2
 Stable tag: 1.4.0
 License: GPLv3
 
