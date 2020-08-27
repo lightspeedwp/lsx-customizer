@@ -3,17 +3,17 @@ checks:
   argument-count:
     enabled: true
     config:
-      threshold: 4
+      threshold: 25
   complex-logic:
     enabled: true
     config:
-      threshold: 4
+      threshold: 25
   file-lines:
     enabled: false
   method-complexity:
     enabled: true
     config:
-      threshold: 25
+      threshold: 50
   method-count:
     enabled: true
     config:
