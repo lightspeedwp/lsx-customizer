@@ -35,4 +35,4 @@ before_script:
 script:
   - pwd
   - ls
-  - ./vendor/bin/phpcs --colors -p -s -v -n --standard=./.phpcs.xml
+  - ./vendor/bin/phpcs --colors -p -s -v -n --standard=.phpcs.xml
