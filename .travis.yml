@@ -35,7 +35,7 @@ before_install:
   - phpenv config-rm xdebug.ini || true
 
 before_script:
-  - composer require  wp-coding-standards/wpcs dealerdirect/phpcodesniffer-composer-installer --update-with-all-dependencies
+  - composer install
 
 script:
   - ./vendor/bin/phpcs --colors -p -s -v -n --standard=./.phpcs.xml
