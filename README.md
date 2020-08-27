@@ -3,19 +3,15 @@
 <h1 align="center">LSX Customizer</h1>
 
 <p align="center">
-    <a href="https://www.gnu.org/licenses/gpl-3.0.en.html"><img src="https://poser.pugx.org/woocommerce/woocommerce/license" alt="license"></a>
-    <a href="http://gulpjs.com/"><img src="https://img.shields.io/badge/built%20with-gulp.js-green.svg" alt="Built with gulp.js"></a> <a href="https://app.fossa.com/projects/git%2Bgithub.com%2Flightspeeddevelopment%2Flsx-customizer?ref=badge_shield" alt="FOSSA Status"><img src="https://app.fossa.com/api/projects/git%2Bgithub.com%2Flightspeeddevelopment%2Flsx-customizer.svg?type=shield"/></a>
-
-    <a href="https://travis-ci.org/lightspeeddevelopment/lsx-customizer"><img src="https://travis-ci.org/lightspeeddevelopment/lsx-blog-customizer.svg?branch=master" alt="Build Status"></a>
-    <a href="https://lsx.lsdev.biz/"><img src="https://lsx.lsdev.biz/wp-content/uploads/2019/06/Designed-for-LSX-Theme-blue.png" alt="Made for LSX"></a>
+	<a href="https://www.gnu.org/licenses/gpl-3.0.en.html"><img src="https://poser.pugx.org/woocommerce/woocommerce/license" alt="license"></a> 
+    <a href="http://gulpjs.com/"><img src="https://img.shields.io/badge/built%20with-gulp.js-green.svg" alt="Built with gulp.js"></a> 
+    <a href="https://travis-ci.org/lightspeeddevelopment/lsx-blocks/"><img src="https://travis-ci.org/lightspeeddevelopment/lsx-blocks.svg?branch=master" alt="Build Status"></a>
+    <a href="https://www.lsdev.biz/lsx/"><img src="https://www.lsdev.biz/lsx/wp-content/uploads/2019/06/Designed-for-LSX-Theme-blue.png" alt="Made for LSX"></a>
 </p>
 
 The LSX Customizer extension gives you control over the colours of your LSX-powered WordPress site, allowing you to adjust all your individual element styles. 
 
 The LSX Customizer plugin extends the power of your normal WordPress customiser. Update your site colours and structure with no code or hassle!
-
-
-[![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2Flightspeeddevelopment%2Flsx-customizer.svg?type=large)](https://app.fossa.com/projects/git%2Bgithub.com%2Flightspeeddevelopment%2Flsx-customizer?ref=badge_large)
 
 ## Works with the LSX Theme
 We've also made a fantastic [theme](https://lsx.lsdev.biz/) that work well with the LSX Customizer plugin.
