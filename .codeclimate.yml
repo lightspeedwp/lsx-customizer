@@ -21,6 +21,8 @@ engines:
     checks:
       CleanCode/StaticAccess:
         enabled: false
+  method-lines:
+    enabled: false
 ratings:
   paths:
   - "**.css"
