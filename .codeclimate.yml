@@ -41,10 +41,8 @@ checks:
     config:
       threshold: 
 plugins:
-  rubocop:
-    enabled: true
   eslint:
-    enabled: false
+    enabled: true
   csslint:
     enabled: true
   scss-lint:
