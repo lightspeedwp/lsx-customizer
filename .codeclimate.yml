@@ -3,21 +3,21 @@ checks:
   argument-count:
     enabled: true
     config:
-      threshold: 25
+      threshold: 15
   complex-logic:
     enabled: true
     config:
-      threshold: 25
+      threshold: 15
   file-lines:
     enabled: false
   method-complexity:
     enabled: true
     config:
-      threshold: 50
+      threshold: 25
   method-count:
     enabled: true
     config:
-      threshold: 50
+      threshold: 25
   method-lines:
     enabled: false
   nested-control-flow:
