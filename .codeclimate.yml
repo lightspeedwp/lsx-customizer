@@ -9,9 +9,7 @@ checks:
     config:
       threshold: 4
   file-lines:
-    enabled: true
-    config:
-      threshold: 250
+    enabled: false
   method-complexity:
     enabled: true
     config:
@@ -25,21 +23,13 @@ checks:
     config:
       threshold: 25
   nested-control-flow:
-    enabled: true
-    config:
-      threshold: 4
+    enabled: false
   return-statements:
-    enabled: true
-    config:
-      threshold: 4
+    enabled: false
   similar-code:
-    enabled: true
-    config:
-      threshold: 
+    enabled: false
   identical-code:
     enabled: true
-    config:
-      threshold: 
 plugins:
   eslint:
     enabled: true
