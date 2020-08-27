@@ -1,11 +1,9 @@
 engines:
-  phpcodesniffer:
-    enabled: true
-    config:
-      standard: "WordPress"
   eslint:
     enabled: true
   scss-lint:
+    enabled: true
+  csslint:
     enabled: true
   duplication:
     enabled: true
@@ -13,10 +11,26 @@ engines:
       languages:
       - php
       - javascript
+  fixme:
+    enabled: true
+  phpmd:
+    enabled: true
+    config:
+      file_extensions: "php"
+      rulesets: "unusedcode,cleancode"
+    checks:
+      CleanCode/StaticAccess:
+        enabled: false
 ratings:
   paths:
-   - "includes/*"
+  - "**.css"
+  - "**.js"
+  - "**.php"
 exclude_paths:
 - "tests/"
 - "sample-data/"
 - "i18n/"
+- "bin/"
+- "languages/"
+- "includes/classes/legacy/"
+- "vendor/"
