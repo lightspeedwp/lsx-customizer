@@ -1,36 +1,55 @@
-engines:
+version: "2"
+checks:
+  argument-count:
+    enabled: true
+    config:
+      threshold: 4
+  complex-logic:
+    enabled: true
+    config:
+      threshold: 4
+  file-lines:
+    enabled: true
+    config:
+      threshold: 250
+  method-complexity:
+    enabled: true
+    config:
+      threshold: 5
+  method-count:
+    enabled: true
+    config:
+      threshold: 20
+  method-lines:
+    enabled: true
+    config:
+      threshold: 25
+  nested-control-flow:
+    enabled: true
+    config:
+      threshold: 4
+  return-statements:
+    enabled: true
+    config:
+      threshold: 4
+  similar-code:
+    enabled: true
+    config:
+      threshold: 
+  identical-code:
+    enabled: true
+    config:
+      threshold: 
+plugins:
+  rubocop:
+    enabled: true
   eslint:
+    enabled: false
+  csslint:
     enabled: true
   scss-lint:
     enabled: true
-  csslint:
-    enabled: true
-  duplication:
-    enabled: true
-    config:
-      languages:
-      - php
-      - javascript
-  fixme:
-    enabled: true
-  phpmd:
-    enabled: true
-    config:
-      file_extensions: "php"
-      rulesets: "unusedcode,cleancode"
-    checks:
-      CleanCode/StaticAccess:
-        enabled: false
-  method-lines:
-    enabled: false
-  file-lines:
-    enabled: false
-ratings:
-  paths:
-  - "**.css"
-  - "**.js"
-  - "**.php"
-exclude_paths:
+exclude_patterns:
 - "tests/"
 - "sample-data/"
 - "i18n/"
@@ -38,3 +57,14 @@ exclude_paths:
 - "languages/"
 - "includes/classes/legacy/"
 - "vendor/"
+- "config/"
+- "db/"
+- "dist/"
+- "features/"
+- "**/node_modules/"
+- "script/"
+- "**/spec/"
+- "**/test/"
+- "**/tests/"
+- "**/vendor/"
+- "**/*.d.ts"
