@@ -1,9 +1,6 @@
 language: php
 dist: focal
 
-services:
-    - mysql
-
 notifications:
   email:
     on_success: never
