@@ -238,16 +238,6 @@ if ( ! class_exists( 'LSX_Customizer_Frontend' ) ) {
 					'color' => get_theme_mod( 'strong_tertiary_color', '#3F640B' ),
 				),
 				array(
-					'name'  => esc_html__( 'Heading Color', 'lsx-customizer' ),
-					'slug'  => 'heading-color',
-					'color' => get_theme_mod( 'heading_color_color', '#4a4a4a' ),
-				),
-				array(
-					'name'  => esc_html__( 'Body Color', 'lsx-customizer' ),
-					'slug'  => 'body-color',
-					'color' => get_theme_mod( 'body_text_color_color', '#444444' ),
-				),
-				array(
 					'name'  => esc_html__( 'White', 'lsx-customizer' ),
 					'slug'  => 'white',
 					'color' => '#ffffff',
