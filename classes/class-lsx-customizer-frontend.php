@@ -44,7 +44,7 @@ if ( ! class_exists( 'LSX_Customizer_Frontend' ) ) {
 			wp_style_add_data( 'lsx-customizer', 'rtl', 'replace' );
 
 			$two_step_checkout = get_theme_mod( 'lsx_two_step_checkout', false );
-			if ( function_exists( 'is_checkout' ) && is_checkout() && ! empty( $two_step_checkout ) ) {
+			if ( class_exists( 'WooCommerce' ) && function_exists( 'is_checkout' ) && is_checkout() && ! empty( $two_step_checkout ) ) {
 
 				wp_enqueue_script( 'flexslider', LSX_CUSTOMIZER_URL . 'assets/js/jquery.flexslider.min.js', array( 'jquery' ), '2.5.0' );
 			}
@@ -162,7 +162,7 @@ if ( ! class_exists( 'LSX_Customizer_Frontend' ) ) {
 
 			$distraction_free = get_theme_mod( 'lsx_distraction_free_checkout', false );
 
-			if ( function_exists( 'is_checkout' ) && is_checkout() && ! empty( $distraction_free ) ) {
+			if ( class_exists( 'WooCommerce' ) && function_exists( 'is_checkout' ) && is_checkout() && ! empty( $distraction_free ) ) {
 				remove_action( 'lsx_body_bottom', 'lsx_wc_footer_bar', 15 );
 
 			}
@@ -177,7 +177,7 @@ if ( ! class_exists( 'LSX_Customizer_Frontend' ) ) {
 		public function lsx_customizer_two_step_checkout() {
 			$two_step_checkout = get_theme_mod( 'lsx_two_step_checkout', false );
 
-			if ( function_exists( 'is_checkout' ) && is_checkout() && ! empty( $two_step_checkout ) ) {
+			if ( class_exists( 'WooCommerce' ) && function_exists( 'is_checkout' ) && is_checkout() && ! empty( $two_step_checkout ) ) {
 				add_action( 'woocommerce_checkout_before_customer_details', 'lsx_customizer_checkout_form_wrapper_div', 1 );
 				add_action( 'woocommerce_checkout_before_customer_details', 'lsx_customizer_checkout_form_wrapper', 2 );
 				add_action( 'woocommerce_checkout_order_review', 'lsx_customizer_close_div', 30 );
