@@ -39,7 +39,7 @@ if ( ! class_exists( 'LSX_Customizer_Core' ) ) {
 			$wp_customize->add_control( new WP_Customize_Control( $wp_customize, 'lsx_theme_credit_status', array(
 				'label'         => esc_html__( 'Theme Credit', 'lsx-customizer' ),
 				// 'description'   => esc_html__( 'Displays theme credit in footer.', 'lsx-customizer' ),
-				'section'       => 'lsx-core',
+				'section'       => 'lsx-layout',
 				'settings'      => 'lsx_theme_credit_status',
 				'type'          => 'checkbox',
 				'priority'      => 10,
