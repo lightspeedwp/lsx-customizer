@@ -571,10 +571,11 @@ article.page {
 					margin-right: 0;
 				}
 			}
-
-			&:after,
-			span {
-				display: none;
+			@include media(">=desktop") {
+				&:after,
+				span {
+					display: none;
+				}
 			}
 		}
 	}

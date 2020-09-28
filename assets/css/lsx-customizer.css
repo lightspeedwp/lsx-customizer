@@ -154,7 +154,7 @@ article.page .lsx-wc-checkout-layout-two-column-addreses #primary:not([class*="-
 
 #top-menu .lsx-wc-my-account-menu-item.lsx-wc-my-account-menu-item-simple > a:before { float: none; margin-right: 0; }
 
-.lsx-wc-my-account-menu-item.lsx-wc-my-account-menu-item-simple > a:after, .lsx-wc-my-account-menu-item.lsx-wc-my-account-menu-item-simple > a span { display: none; }
+@media (min-width: 1200px) { .lsx-wc-my-account-menu-item.lsx-wc-my-account-menu-item-simple > a:after, .lsx-wc-my-account-menu-item.lsx-wc-my-account-menu-item-simple > a span { display: none; } }
 
 @media (min-width: 1200px) { .lsx-wc-my-account-menu-item.lsx-wc-my-account-menu-item-right-aligned { margin-left: auto; } }
 

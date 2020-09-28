@@ -303,7 +303,7 @@ if ( ! class_exists( 'LSX_Customizer_Colour' ) ) {
 
 			$customizer_colour_defaults = array(
 				__( 'Primary Color', 'lsx-customizer' )   => get_theme_mod( 'button_background_color', $colors['button_background_color'] ),
-				__( 'Strong Primary Color', 'lsx-button_shadow' ) => get_theme_mod( 'button_shadow', $colors['body_link_color'] ),
+				__( 'Strong Primary Color', 'lsx-button_shadow' ) => get_theme_mod( 'button_background_hover_color', $colors['button_background_hover_color'] ),
 				__( 'Call To Action Color', 'lsx-customizer' ) => get_theme_mod( 'button_cta_background_color', $colors['button_cta_background_color'] ),
 				__( 'Strong CTA Color', 'lsx-button_shadow' ) => get_theme_mod( 'button_cta_shadow', $colors['button_cta_shadow'] ),
 				__( 'Secondary Color', 'lsx-customizer' ) => get_theme_mod( 'button_secondary_background_color', $colors['button_secondary_background_color'] ),
