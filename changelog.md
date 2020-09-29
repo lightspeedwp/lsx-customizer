@@ -7,17 +7,20 @@
 - Adding color palette options for the customizer.
 - Added Distraction free checkout option.
 - Added 2 steps checkout option.
+- Added in the default banner background colour and title support for the LSX Blocks default title.
 
 ### Updated
 
 - Updated Checkout and Cart styles.
 - Added customizer colour options for the Block editor palette
 - Added integration for the [WooCommerce Grid / List toggle](https://wordpress.org/plugins/woocommerce-grid-list-toggle/) plugin.
+- Renaming the `Colors` customizer panel to `Site Design`
 
 ### Changed
 
 - Merged two WooCommerce panels within the customizer sidebar.
 - Enhancements for the custom login logo.
+- Removed the `Color Scheme` option.
 
 ### Security
 
