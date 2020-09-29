@@ -12,7 +12,7 @@
 ### Updated
 
 - Updated Checkout and Cart styles.
-- Added customizer colour options for the Block editor palette
+- Added customizer colour options for the Block editor palette.
 - Added integration for the [WooCommerce Grid / List toggle](https://wordpress.org/plugins/woocommerce-grid-list-toggle/) plugin.
 - Renaming the `Colors` customizer panel to `Site Design`
 
@@ -21,6 +21,10 @@
 - Merged two WooCommerce panels within the customizer sidebar.
 - Enhancements for the custom login logo.
 - Removed the `Color Scheme` option.
+
+### Removed
+
+- Colour preset options deprecated.
 
 ### Security
 
