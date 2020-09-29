@@ -514,12 +514,12 @@ if ( ! class_exists( 'LSX_Customizer_WooCommerce' ) ) {
 			if ( is_cart() ) {
 				$cart_extra_html = get_theme_mod( 'lsx_wc_cart_extra_html', '' );
 
-				if ( ! empty( $cart_extra_html ) ) { 
+				if ( ! empty( $cart_extra_html ) ) {
                 ?>
 					<div class="lsx-wc-cart-extra-html">
 						<?php echo wp_kses_post( $cart_extra_html ); ?>
 					</div>
-				<?php 
+				<?php
                 }
 			}
 		}

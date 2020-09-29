@@ -185,21 +185,12 @@ if ( ! class_exists( 'LSX_Customizer_Colour' ) ) {
 			 * Colors
 			 */
 			$wp_customize->add_panel( 'colors', array(
-				'title'             => esc_html__( 'Colors', 'lsx-customizer' ),
+				'title'             => esc_html__( 'Colours', 'lsx-customizer' ),
 				'priority'          => 60,
 			) );
 
-			/**
-			 * Colors - Sections
-			 */
-			$wp_customize->add_section( 'colors-core', array(
-				'title'             => esc_html__( 'Color Scheme', 'lsx-customizer' ),
-				'priority'          => 1,
-				'panel'             => 'colors',
-			) );
-
 			$wp_customize->add_section( 'colors-palette', array(
-				'title'             => esc_html__( 'Block Editor Color Palette', 'lsx-customizer' ),
+				'title'             => esc_html__( 'Block Editor Colour Palette', 'lsx-customizer' ),
 				'description' => esc_html__( 'Add colors to use within the Gutenberg editor color palette.', 'lsx-customizer' ),
 				'priority'          => 2,
 				'panel'             => 'colors',
@@ -275,25 +266,6 @@ if ( ! class_exists( 'LSX_Customizer_Colour' ) ) {
 				'title'             => esc_html__( 'Footer', 'lsx-customizer' ),
 				'priority'          => 14,
 				'panel'             => 'colors',
-			) );
-
-			/**
-			 * Color Scheme
-			 */
-			$wp_customize->add_setting( 'color_scheme', array(
-				'default'           => 'default',
-				'type'              => 'theme_mod',
-				'transport'         => 'postMessage',
-			) );
-
-			$wp_customize->add_control( new LSX_Customizer_Colour_Control(
-				$wp_customize, 'color_scheme', array(
-					'label'             => esc_html__( 'Base Color Scheme', 'lsx-customizer' ),
-					'section'           => 'colors-core',
-					'type'              => 'select',
-					'priority'          => 1,
-					'choices'           => $customizer_colour_choices,
-				)
 			) );
 
 			/**
@@ -491,12 +463,12 @@ if ( ! class_exists( 'LSX_Customizer_Colour' ) ) {
 		public function get_color_scheme() {
 			global $customizer_colour_choices;
 
-			$color_scheme_option = get_theme_mod( 'color_scheme', 'default' );
+			//$color_scheme_option = get_theme_mod( 'color_scheme', 'default' );
 			$color_schemes = $customizer_colour_choices;
 
-			if ( array_key_exists( $color_scheme_option, $color_schemes ) ) {
-				return $color_schemes[ $color_scheme_option ]['colors'];
-			}
+			// if ( array_key_exists( $color_scheme_option, $color_schemes ) ) {
+			// 	return $color_schemes[ $color_scheme_option ]['colors'];
+			// }
 
 			return $color_schemes['default']['colors'];
 		}

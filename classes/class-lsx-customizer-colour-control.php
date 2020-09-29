@@ -19,7 +19,7 @@ if ( ! class_exists( 'LSX_Customizer_Colour_Control' ) ) {
 		 */
 		public function enqueue() {
 			wp_enqueue_script( 'lsx_customizer_colour_admin', LSX_CUSTOMIZER_URL . 'assets/js/lsx-customizer-colour-admin.min.js', array( 'customize-controls', 'iris', 'underscore', 'wp-util' ), LSX_CUSTOMIZER_VER, true );
-			wp_localize_script( 'lsx_customizer_colour_admin', 'color_scheme', $this->choices );
+			//wp_localize_script( 'lsx_customizer_colour_admin', 'color_scheme', $this->choices );
 
 			global $customizer_colour_names;
 			$colors = array();

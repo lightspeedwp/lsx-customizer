@@ -53,7 +53,7 @@ if ( ! class_exists( 'LSX_Customizer_Admin' ) ) {
 		}
 
 		/**
-		 * Handle body colours that might be change by LSX Customiser.
+		 * Handle body colours that might be change by LSX Customizer.
 		 */
 		public function customizer_body_colours_handler( $css, $colors ) {
 			$css .= '
@@ -69,7 +69,6 @@ if ( ! class_exists( 'LSX_Customizer_Admin' ) ) {
 					$link:    	' . $colors['body_link_color'] . ',
 					$hover:    	' . $colors['body_link_hover_color'] . ',
 					$small:    	' . $colors['body_text_small_color'] . ',
-					$primary:   ' . $colors['primary_color'] . ',
 				);
 			';
 

@@ -230,9 +230,9 @@ article.page .lsx-wc-checkout-layout-two-column-addreses #primary:not([class*="-
 
 .checkout.lsx-wc-checkout-two-steps .flex-direction-nav a { cursor: pointer; }
 
-.content-area .lsx-wc-checkout-steps .lsx-wc-checkout-steps-item { color: #428bca; }
+.content-area .lsx-wc-checkout-steps .lsx-wc-checkout-steps-item { color: #6baf21; }
 
-@media (max-width: 767px) { .content-area .lsx-wc-checkout-steps .lsx-wc-checkout-steps-item.lsx-wc-checkout-steps-item-done .fa-check-circle { background-color: #428bca; }
+@media (max-width: 767px) { .content-area .lsx-wc-checkout-steps .lsx-wc-checkout-steps-item.lsx-wc-checkout-steps-item-done .fa-check-circle { background-color: #6baf21; }
   .content-area .lsx-wc-checkout-steps .lsx-wc-checkout-steps-item.lsx-wc-checkout-steps-item-done .fa-check-circle:after { background-color: #fff; } }
 
 @media (max-width: 767px) { .content-area .lsx-wc-checkout-steps .lsx-wc-checkout-steps-item:not(.lsx-wc-checkout-steps-item-done) > span:before, .content-area .lsx-wc-checkout-steps .lsx-wc-checkout-steps-item:not(.lsx-wc-checkout-steps-item-done) a > span:before { background-color: #418ad0; color: #fff; } }
@@ -253,7 +253,7 @@ article.page .lsx-wc-checkout-layout-two-column-addreses #primary:not([class*="-
 
 .lsx-wc-checkout-steps-item-disabled .content-area .lsx-wc-checkout-steps .lsx-wc-checkout-steps-counter { background-color: #dadddf; }
 
-.content-area .lsx-wc-checkout-steps .lsx-wc-checkout-steps-link, .content-area .lsx-wc-checkout-steps a.lsx-wc-checkout-steps-link:not(.btn):not(.wp-block-button__link) { color: #428bca; }
+.content-area .lsx-wc-checkout-steps .lsx-wc-checkout-steps-link, .content-area .lsx-wc-checkout-steps a.lsx-wc-checkout-steps-link:not(.btn):not(.wp-block-button__link) { color: #6baf21; }
 
 @media (max-width: 767px) { .content-area .lsx-wc-checkout-steps .lsx-wc-checkout-steps-link:hover, .content-area .lsx-wc-checkout-steps .lsx-wc-checkout-steps-link:focus, .content-area .lsx-wc-checkout-steps a.lsx-wc-checkout-steps-link:not(.btn):not(.wp-block-button__link):hover, .content-area .lsx-wc-checkout-steps a.lsx-wc-checkout-steps-link:not(.btn):not(.wp-block-button__link):focus { color: #418ad0 !important; } }
 
