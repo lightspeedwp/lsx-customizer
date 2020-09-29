@@ -130,10 +130,6 @@ if ( ! class_exists( 'LSX_Customizer_Colour' ) ) {
 			require_once( LSX_CUSTOMIZER_PATH . 'includes/lsx-customizer-colour-deprecated.php' );
 			require_once( LSX_CUSTOMIZER_PATH . 'includes/lsx-customizer-templates.php' );
 
-			if ( class_exists( 'WP_Customize_Control' ) ) {
-				require_once( LSX_CUSTOMIZER_PATH . 'classes/class-lsx-customizer-colour-control.php' );
-			}
-
 			require_once( LSX_CUSTOMIZER_PATH . 'classes/class-lsx-customizer-colour-button.php' );
 			$this->button = new LSX_Customizer_Colour_Button();
 
@@ -185,17 +181,8 @@ if ( ! class_exists( 'LSX_Customizer_Colour' ) ) {
 			 * Colors
 			 */
 			$wp_customize->add_panel( 'colors', array(
-				'title'             => esc_html__( 'Colors', 'lsx-customizer' ),
+				'title'             => esc_html__( 'Site Design', 'lsx-customizer' ),
 				'priority'          => 60,
-			) );
-
-			/**
-			 * Colors - Sections
-			 */
-			$wp_customize->add_section( 'colors-core', array(
-				'title'             => esc_html__( 'Color Scheme', 'lsx-customizer' ),
-				'priority'          => 1,
-				'panel'             => 'colors',
 			) );
 
 			$wp_customize->add_section( 'colors-palette', array(
@@ -275,25 +262,6 @@ if ( ! class_exists( 'LSX_Customizer_Colour' ) ) {
 				'title'             => esc_html__( 'Footer', 'lsx-customizer' ),
 				'priority'          => 14,
 				'panel'             => 'colors',
-			) );
-
-			/**
-			 * Color Scheme
-			 */
-			$wp_customize->add_setting( 'color_scheme', array(
-				'default'           => 'default',
-				'type'              => 'theme_mod',
-				'transport'         => 'postMessage',
-			) );
-
-			$wp_customize->add_control( new LSX_Customizer_Colour_Control(
-				$wp_customize, 'color_scheme', array(
-					'label'             => esc_html__( 'Base Color Scheme', 'lsx-customizer' ),
-					'section'           => 'colors-core',
-					'type'              => 'select',
-					'priority'          => 1,
-					'choices'           => $customizer_colour_choices,
-				)
 			) );
 
 			/**
