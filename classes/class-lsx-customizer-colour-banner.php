@@ -115,6 +115,15 @@ if ( ! class_exists( 'LSX_Customizer_Colour_Banner' ) ) {
 					$breadcrumb-color:   ' . $colors['banner_breadcrumb_text_color'] . ',
 					$breadcrumb-current: ' . $colors['banner_breadcrumb_text_selected_color'] . '
 				);
+
+				.lsx-hero-banner-block {
+					background-color: ' . $colors['banner_background_color'] . ';
+					.lsx-title-block {
+						h1 {
+							color: ' . $colors['banner_text_color'] . ';
+						}
+					}
+				}
 			';
 
 			$css = apply_filters( 'lsx_customizer_colour_selectors_banner', $css, $colors );
