@@ -20,7 +20,7 @@
 
 - Merged two WooCommerce panels within the customizer sidebar.
 - Enhancements for the custom login logo.
-- Removed the `Color Scheme` option.
+- Removed the `Colour Scheme` option.
 
 ### Removed
 

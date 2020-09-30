@@ -31,7 +31,7 @@
 		}
 	});
 
-	// Generate the CSS for the current Color Scheme.
+	// Generate the CSS for the current Colour Scheme.
 	function update_css() {
 		if (skip_update_css) {
 			return;

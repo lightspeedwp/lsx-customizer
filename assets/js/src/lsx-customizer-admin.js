@@ -11,7 +11,7 @@
 		style = $( 'body' ).append( '<style type="text/css" id="lsx-color-scheme-css" />' ).find( '#lsx-color-scheme-css' );
 	}
 
-	// Color Scheme CSS.
+	// Colour Scheme CSS.
 	wp.customize.bind( 'preview-ready', function() {
 		wp.customize.preview.bind( 'update-color-scheme-css', function( css ) {
 			style.html( css );

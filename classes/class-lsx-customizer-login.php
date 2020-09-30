@@ -187,7 +187,7 @@ if ( ! class_exists( 'LSX_Customizer_Login' ) ) {
 					$wp_customize,
 					'lsx_login_form_colour',
 					array(
-						'label'    => __( 'Form Background Color', 'lsx-customizer' ),
+						'label'    => __( 'Form Background Colour', 'lsx-customizer' ),
 						'section'  => 'login-form',
 						'settings' => 'lsx_login_form_colour',
 					)
@@ -210,7 +210,7 @@ if ( ! class_exists( 'LSX_Customizer_Login' ) ) {
 					$wp_customize,
 					'lsx_login_form_label_colour',
 					array(
-						'label'    => __( 'Form Label Color', 'lsx-customizer' ),
+						'label'    => __( 'Form Label Colour', 'lsx-customizer' ),
 						'section'  => 'login-form',
 						'settings' => 'lsx_login_form_label_colour',
 					)
@@ -218,7 +218,7 @@ if ( ! class_exists( 'LSX_Customizer_Login' ) ) {
 			);
 
 			/**
-			 * Button Color
+			 * Button Colour
 			 */
 			$wp_customize->add_setting(
 				'lsx_login_button_colour',
@@ -241,7 +241,7 @@ if ( ! class_exists( 'LSX_Customizer_Login' ) ) {
 			);
 
 			/**
-			 * Button Shadow Color
+			 * Button Shadow Colour
 			 */
 			$wp_customize->add_setting(
 				'lsx_login_button_shadow_colour',
@@ -264,7 +264,7 @@ if ( ! class_exists( 'LSX_Customizer_Login' ) ) {
 			);
 
 			/**
-			 * Button Hover Color
+			 * Button Hover Colour
 			 */
 			$wp_customize->add_setting(
 				'lsx_login_button_hover_colour',

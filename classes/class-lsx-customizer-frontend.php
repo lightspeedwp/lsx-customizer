@@ -198,42 +198,42 @@ if ( ! class_exists( 'LSX_Customizer_Frontend' ) ) {
 		public function lsx_customizer_color_palette_setup() {
 			add_theme_support( 'editor-color-palette', array(
 				array(
-					'name'  => esc_html__( 'Primary Color', 'lsx-customizer' ),
+					'name'  => esc_html__( 'Primary Colour', 'lsx-customizer' ),
 					'slug'  => 'primary-color',
 					'color' => get_theme_mod( 'primary_color', '#428bca' ),
 				),
 				array(
-					'name'  => esc_html__( 'Strong Primary Color', 'lsx-customizer' ),
+					'name'  => esc_html__( 'Strong Primary Colour', 'lsx-customizer' ),
 					'slug'  => 'strong-primary-color',
 					'color' => get_theme_mod( 'strong_primary_color', '#2a6496' ),
 				),
 				array(
-					'name'  => esc_html__( 'CTA Color', 'lsx-customizer' ),
+					'name'  => esc_html__( 'CTA Colour', 'lsx-customizer' ),
 					'slug'  => 'cta-color',
 					'color' => get_theme_mod( 'call_to_action_color', '#f7941d' ),
 				),
 				array(
-					'name'  => esc_html__( 'Strong CTA Color', 'lsx-customizer' ),
+					'name'  => esc_html__( 'Strong CTA Colour', 'lsx-customizer' ),
 					'slug'  => 'strong-cta-color',
 					'color' => get_theme_mod( 'strong_cta_color', '#f7741d' ),
 				),
 				array(
-					'name'  => esc_html__( 'Secondary Color', 'lsx-customizer' ),
+					'name'  => esc_html__( 'Secondary Colour', 'lsx-customizer' ),
 					'slug'  => 'secondary-color',
 					'color' => get_theme_mod( 'secondary_color', '#eaeaea' ),
 				),
 				array(
-					'name'  => esc_html__( 'Strong Secondary Color', 'lsx-customizer' ),
+					'name'  => esc_html__( 'Strong Secondary Colour', 'lsx-customizer' ),
 					'slug'  => 'strong-secondary-color',
 					'color' => get_theme_mod( 'strong_secondary_color', '#c4c4c4' ),
 				),
 				array(
-					'name'  => esc_html__( 'Tertiary Color', 'lsx-customizer' ),
+					'name'  => esc_html__( 'Tertiary Colour', 'lsx-customizer' ),
 					'slug'  => 'tertiary-color',
 					'color' => get_theme_mod( 'tertiary_color', '#6BA913' ),
 				),
 				array(
-					'name'  => esc_html__( 'Strong Tertiary Color', 'lsx-customizer' ),
+					'name'  => esc_html__( 'Strong Tertiary Colour', 'lsx-customizer' ),
 					'slug'  => 'strong-tertiary-color',
 					'color' => get_theme_mod( 'strong_tertiary_color', '#3F640B' ),
 				),

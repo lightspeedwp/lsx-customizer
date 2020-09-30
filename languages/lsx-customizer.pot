@@ -75,19 +75,19 @@ msgid "Footer"
 msgstr ""
 
 #: classes/class-lsx-customizer-colour.php:273, classes/class-lsx-customizer-frontend.php:201
-msgid "Primary Color"
+msgid "Primary Colour"
 msgstr ""
 
 #: classes/class-lsx-customizer-colour.php:275
-msgid "Call To Action Color"
+msgid "Call To Action Colour"
 msgstr ""
 
 #: classes/class-lsx-customizer-colour.php:277, classes/class-lsx-customizer-frontend.php:221
-msgid "Secondary Color"
+msgid "Secondary Colour"
 msgstr ""
 
 #: classes/class-lsx-customizer-colour.php:279, classes/class-lsx-customizer-frontend.php:231
-msgid "Tertiary Color"
+msgid "Tertiary Colour"
 msgstr ""
 
 #: classes/class-lsx-customizer-core.php:40
@@ -95,23 +95,23 @@ msgid "Theme Credit"
 msgstr ""
 
 #: classes/class-lsx-customizer-frontend.php:206
-msgid "Strong Primary Color"
+msgid "Strong Primary Colour"
 msgstr ""
 
 #: classes/class-lsx-customizer-frontend.php:211
-msgid "CTA Color"
+msgid "CTA Colour"
 msgstr ""
 
 #: classes/class-lsx-customizer-frontend.php:216
-msgid "Strong CTA Color"
+msgid "Strong CTA Colour"
 msgstr ""
 
 #: classes/class-lsx-customizer-frontend.php:226
-msgid "Strong Secondary Color"
+msgid "Strong Secondary Colour"
 msgstr ""
 
 #: classes/class-lsx-customizer-frontend.php:236
-msgid "Strong Tertiary Color"
+msgid "Strong Tertiary Colour"
 msgstr ""
 
 #: classes/class-lsx-customizer-frontend.php:241
@@ -151,11 +151,11 @@ msgid "Form"
 msgstr ""
 
 #: classes/class-lsx-customizer-login.php:190
-msgid "Form Background Color"
+msgid "Form Background Colour"
 msgstr ""
 
 #: classes/class-lsx-customizer-login.php:213
-msgid "Form Label Color"
+msgid "Form Label Colour"
 msgstr ""
 
 #: classes/class-lsx-customizer-login.php:236
