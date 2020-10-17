@@ -9,29 +9,31 @@
     <a href="https://www.lsdev.biz/lsx/"><img src="https://www.lsdev.biz/lsx/wp-content/uploads/2019/06/Designed-for-LSX-Theme-blue.png" alt="Made for LSX"></a>
 </p>
 
+Welcome to the LSX Customizer repository on GitHub. Here you can browse the source, look at open issues and keep track of development. We recommend all developers to follow LightSpeed's [blog](https://lsdev.biz/blog/) to stay up to date about everything happening with the LSX Theme & extensions.
+
 ## LSX Customizer is a LSX Theme Extension
 
 LSX Customizer is plugin extends the [LSX Theme](https://lsdev.biz/lsx/) and the WordPress customiser. Update your site colours and structure for WordPress pages & posts without code or hassle.
 
-## WordPress Block Editor Support
+## WordPress Block Editor Supported
 
 Add colors to use within the block editor primary, secondary and tertiary colour palettes.
 
 Check out our [release post](https://www.lsdev.biz/lsx-blocks-available-on-wordpress-org/) on the update for more information.
 
-## WooCommerce Support
+## WooCommerce Supported
 
 Activate [WooCommerce](https://woocommerce.com/), then for to the WordPress Customizer to enable cart & my account menus or customise the checkout page.
 
-## Find Documentation 
+## Documentation 
 
-Comprehensive [LSX Customizer Documentation](https://www.lsdev.biz/lsx/documentation/lsx-extensions/lsx-customiser/) available on LightSpeed's LSX product site.
+Comprehensive [documentation](https://www.lsdev.biz/lsx/documentation/lsx-extensions/lsx-customiser/) is available on LightSpeed's LSX product site.
 
 ## Premium Support
 
 [LightSpeed](https://www.lsdev.biz/) offers [premium support](https://www.lsdev.biz/contact/), contact us for more information.
 
-## Submit Bugs via GitHub
+## Bugs via GitHub Issues
 
 If you are experiencing issues with the LSX Customizer Plugin & have experience with Github, please log any bug issues you are having on the [LSX Customizer Github Issues](https://github.com/lightspeeddevelopment/lsx-customizer/issues/) page.
 
