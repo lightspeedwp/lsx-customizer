@@ -1,7 +1,7 @@
 === LSX Customizer ===
 Contributors: feedmymedia, lightspeedwp, eleshar, krugazul, jacquesvdh, ignusvermaak
-Donate link: https://donate.lsdev.biz/
-Tags: LSX, WordPress Customizer, Gutenberg, website colours
+Donate link: https://www.lsdev.biz/lsx/donate/
+Tags: LSX, Customizer, Colours, Layout, WooCommerce
 Requires at least: 5.3
 Tested up to: 5.5.1
 Requires PHP: 7.2
@@ -53,13 +53,13 @@ You can also download and install the extension directly from the backend of you
 == Frequently Asked Questions ==
 
 = Where can I find LSX Customizer plugin documentation and user guides? =
-For help setting up and configuring the Customizer plugin please refer to our [user guide](https://www.lsdev.biz/documentation/lsx/lsx-customizer/)
+For help setting up and configuring the Customizer plugin please refer to our [user guide](https://www.lsdev.biz/lsx/documentation/lsx-extensions/lsx-customizer/)
 
 = Where can I get support or talk to other users =
-For add-on support from LightSpeed, [get a quote](https://www.lsdev.biz/contact-us/) from us!
+For add-on support from LightSpeed, [get a quote](https://www.lsdev.biz/contact/) from us!
 
 = Will the LSX Customizer plugin work with my theme? =
-Not unless you are making use of the [The LSX theme!](https://lsx.lsdev.biz/) 
+Not unless you are making use of the [The LSX theme!](https://lsdev.biz/lsx/) 
 
 All of the LSX Extensions were built for the LSX theme. Be sure to have it installed and activated for this extension to function. 
 
