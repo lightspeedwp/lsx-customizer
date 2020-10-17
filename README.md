@@ -1,4 +1,4 @@
-<p align="center"><a target="_blank" href="https://lsx.lsdev.biz/"><img width="100px;" src="https://lsx.lsdev.biz/wp-content/uploads/2019/03/Customizer.svg" alt="LSX Blog Customizer"></a>
+<p align="center"><a target="_blank" href="https://www.lsdev.biz/lsx/extensions/site-customizer/"><img width="100px;" src="https://www.lsdev.biz/lsx/wp-content/uploads/2020/08/Extension_LSX_Customizer.svg" alt="LSX Blog Customizer"></a>
 </p>
 <h1 align="center">LSX Customizer</h1>
 
@@ -23,7 +23,7 @@ Check out our [release post](https://www.lsdev.biz/lsx-blocks-available-on-wordp
 
 ## WooCommerce Supported
 
-Activate [WooCommerce](https://woocommerce.com/), then for to the WordPress Customizer to enable cart & my account menus or customise the checkout page.
+Activate [WooCommerce](https://woocommerce.com/), then use the WordPress Customizer to enable cart & my account menus or customise the checkout page.
 
 ## Documentation 
 
