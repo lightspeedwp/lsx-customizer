@@ -1,32 +1,44 @@
 === LSX Customizer ===
-Contributors: feedmymedia, lightspeedwp, eleshar, krugazul, virginialsdev, deon80, jaab1985, jacquesvdh, ignusvermaak, garthlsdev
+Contributors: feedmymedia, lightspeedwp, eleshar, krugazul, jacquesvdh, ignusvermaak
 Donate link: https://donate.lsdev.biz/
 Tags: LSX, WordPress Customizer, Gutenberg, website colours
 Requires at least: 5.3
-Tested up to: 5.5
+Tested up to: 5.5.1
 Requires PHP: 7.2
 Stable tag: 1.4.0
 License: GPLv3
 
-The LSX Customizer extension gives you control over the colours of your LSX-powered WordPress site, allowing you to adjust all your individual element styles. 
+Welcome to the LSX Customizer repository on GitHub. Here you can browse the source, look at open issues and keep track of development. We recommend all developers to follow LightSpeed's [blog](https://www.lsdev.biz/tag/release-posts/) to stay up to date about everything happening with the LSX Theme & extensions. 
 
 == Description ==
 
-The LSX Customizer plugin extends the power of your normal WordPress customizer. Update your site colours and structure with no code or hassle!
+## LSX Customizer is a LSX Theme Extension
 
-= Works with the LSX Theme =
-We've also made a fantastic [theme](https://lsx.lsdev.biz/) that work well with the LSX Customizer plugin.
+LSX Customizer is plugin extends the [LSX Theme](https://lsdev.biz/lsx/) and the WordPress customiser. Update your site colours and structure for WordPress pages & posts without code or hassle.
 
-= Gutenberg Compatible =
-Have you updated to the new WordPress Gutenberg editor? We've got you covered! [The LSX Theme](https://lsx.lsdev.biz/) and all of its extensions have been optimized for the Gutenberg update. 
+= WordPress Block Editor Supported =
 
-= It's free, and always will be. =
-We’re firm believers in open source - that’s why we’re releasing the LSX Customizer plugin for free, forever.
+Add colors to use within the block editor primary, secondary and tertiary colour palettes.
 
-= Support =
-We offer premium support for this plugin. Premium support that can be purchased via [lsdev.biz](https://www.lsdev.biz/services/support/).
+Check out our [release post](https://www.lsdev.biz/lsx-blocks-available-on-wordpress-org/) on the update for more information.
 
-Looking for an example of the LSX Customizer? Check out our [LSX Customizer demo](https://lsx.lsdev.biz/extensions/site-customizer/) for more information on available features.
+= WooCommerce Supported =
+
+Activate [WooCommerce](https://woocommerce.com/), then use the WordPress Customizer to enable cart & my account menus or customise the checkout page.
+
+= Documentation 
+
+Comprehensive [documentation](https://www.lsdev.biz/lsx/documentation/lsx-extensions/lsx-customiser/) is available on LightSpeed's LSX product site.
+
+= Premium Support
+
+[LightSpeed](https://www.lsdev.biz/) offers [premium support](https://www.lsdev.biz/contact/), contact us for more information.
+
+= Bugs via GitHub Issues
+
+If you are experiencing issues with the LSX Customizer Plugin & have experience with Github, please log any bug issues you are having on the [LSX Customizer Github Issues](https://github.com/lightspeeddevelopment/lsx-customizer/issues/) page.
+
+You can also send an email to our Support Team at [support@lsdev.biz](mailto:support@lsdev.biz) if you have a request for the LightSpeed Development team.
 
 == Installation ==
 
