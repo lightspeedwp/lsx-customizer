@@ -3,11 +3,13 @@
 <h1 align="center">LSX Customizer</h1>
 
 <p align="center">
-	  <a href="https://www.gnu.org/licenses/gpl-3.0.en.html"><img src="https://poser.pugx.org/woocommerce/woocommerce/license" alt="license"></a> 
     <a href="https://www.lsdev.biz/lsx/"><img src="https://www.lsdev.biz/lsx/wp-content/uploads/2019/06/Designed-for-LSX-Theme-blue.png" alt="Made for LSX Theme"></a>
+	  <a href="https://www.gnu.org/licenses/gpl-3.0.en.html"><img src="https://poser.pugx.org/woocommerce/woocommerce/license" alt="license"></a> 
     <a href="http://gulpjs.com/"><img src="https://img.shields.io/badge/built%20with-gulp.js-green.svg" alt="Built with gulp.js"></a> 
+  </p>
+<p align="center">
     <a href="https://codeclimate.com/github/lightspeeddevelopment/tour-operator/"><img src="https://codeclimate.com/github/lightspeeddevelopment/tour-operator/badges/gpa.svg" alt="Code Climate"></a>
-    <a href="https://scrutinizer-ci.com/g/lightspeeddevelopment/tour-operator/?branch=master"><img src="https://scrutinizer-ci.com/g/lightspeeddevelopment/tour-operator/badges/quality-score.png?b=master" alt="Scrutinizer"></a>
+    <a href="https://scrutinizer-ci.com/g/lightspeeddevelopment/lsx-customizer/?branch=master"><img src="https://scrutinizer-ci.com/g/lightspeeddevelopment/lsx-customizer/badges/quality-score.png?b=master" alt="Scrutinizer"></a>
     <a href="https://travis-ci.org/lightspeeddevelopment/lsx-customizer/"><img src="https://travis-ci.org/lightspeeddevelopment/lsx-customizer.svg?branch=master" alt="Build Status"></a>
 </p>
 
@@ -25,8 +27,6 @@
 	<a href="#support">Support</a>
 	&nbsp;|&nbsp;
   <a href="#contributing">Contributing</a>
-	&nbsp;|&nbsp;
-	<a href="#credits">Credits</a>
 	&nbsp;|&nbsp;
 	<a href="#license">License</a>
 </p>
@@ -46,6 +46,18 @@ Activate [WooCommerce](https://woocommerce.com/), then use the WordPress Customi
 * WooCommerce Ready 
 * Translation Ready
 
+### LSX Extension
+
+LSX Customizer is plugin extends the [LSX Theme](https://lsdev.biz/lsx/) and the WordPress customiser. Update your site colours and structure for WordPress pages & posts without code or hassle.
+
+### LSX Blocks
+
+WordPress Block Editor Supported, use the customizer to define colours to use within the block editor primary, secondary and tertiary colour palettes. Check out our [release post](https://www.lsdev.biz/lsx-blocks-available-on-wordpress-org/) on the update for more information.
+
+### WooCommerce Supported
+
+
+
 ## Download
 
 [Click here to download](https://downloads.wordpress.org/plugins/lsx-customizer.zip) the latest release package of LSX Customizer for WordPress & the LSX Theme.
@@ -59,31 +71,22 @@ Activate [WooCommerce](https://woocommerce.com/), then use the WordPress Customi
 * [LSX + WooCommerce + Sensei + Paid Courses](https://lsx-sensei-demo.lsdev.biz/)
 * [LSX + WooCommerce](https://lsx-woocommerce-demo.lsdev.biz/)
 
-## LSX Customizer is a LSX Theme Extension
-
-LSX Customizer is plugin extends the [LSX Theme](https://lsdev.biz/lsx/) and the WordPress customiser. Update your site colours and structure for WordPress pages & posts without code or hassle.
-
-## 
-
-WordPress Block Editor Supported, use the customizer to define colours to use within the block editor primary, secondary and tertiary colour palettes. Check out our [release post](https://www.lsdev.biz/lsx-blocks-available-on-wordpress-org/) on the update for more information.
-
-## WooCommerce Supported
-
-
-
 ## Documentation 
 
 Comprehensive [documentation](https://www.lsdev.biz/lsx/documentation/lsx-extensions/lsx-customiser/) is available on LightSpeed's LSX product site.
 
-## Premium Support
+## Support
 
 [LightSpeed](https://www.lsdev.biz/) offers [premium support](https://www.lsdev.biz/contact/), contact us for more information.
-
-## Bugs via GitHub Issues
 
 If you are experiencing issues with the LSX Customizer Plugin & have experience with Github, please log any bug issues you are having on the [LSX Customizer Github Issues](https://github.com/lightspeeddevelopment/lsx-customizer/issues/) page.
 
 You can also send an email to our Support Team at [support@lsdev.biz](mailto:support@lsdev.biz) if you have a request for the LightSpeed Development team.
+
+## Contributing
+
+
+
 
 ## License
 
