@@ -1,22 +1,22 @@
 === LSX Customizer ===
 Contributors: feedmymedia, lightspeedwp, eleshar, krugazul, jacquesvdh, ignusvermaak
-Donate link: https://www.lsdev.biz/lsx/donate/
+Donate link: https://lsdev.biz/lsx/donate/
 Tags: LSX, Customizer, Colours, Layout, WooCommerce
-Requires at least: 5.3
+Requires at least: 5.0
 Tested up to: 5.5.1
-Requires PHP: 7.2
+Requires PHP: 7.0
 Stable tag: 1.4.0
-License: GPLv3
+License: GPLv3 or later
+License URI: https://www.gnu.org/licenses/gpl-3.0.en.html
 
-Welcome to the LSX Customizer repository on GitHub. Here you can browse the source, look at open issues and keep track of development. We recommend all developers to follow LightSpeed's [blog](https://www.lsdev.biz/tag/release-posts/) to stay up to date about everything happening with the LSX Theme & extensions. 
+This plugin extends the LSX Theme & the WordPress Customiser to allow you to edit site designe. 
+
 
 == Description ==
 
-## LSX Customizer is a LSX Theme Extension
+Welcome to the LSX Customizer repository on GitHub. Here you can browse the source, look at open issues and keep track of development. We recommend all developers to follow LightSpeed's [blog](https://www.lsdev.biz/tag/release-posts/) to stay up to date about everything happening with the LSX Theme & extensions. 
 
-LSX Customizer is plugin extends the [LSX Theme](https://lsdev.biz/lsx/) and the WordPress customiser. Update your site colours and structure for WordPress pages & posts without code or hassle.
-
-= WordPress Block Editor Supported =
+= WordPress Block Editor Supported 
 
 Add colors to use within the block editor primary, secondary and tertiary colour palettes.
 
@@ -26,21 +26,19 @@ Check out our [release post](https://www.lsdev.biz/lsx-blocks-available-on-wordp
 
 Activate [WooCommerce](https://woocommerce.com/), then use the WordPress Customizer to enable cart & my account menus or customise the checkout page.
 
-= Documentation 
+= Documentation =
 
 Comprehensive [documentation](https://www.lsdev.biz/lsx/documentation/lsx-extensions/lsx-customiser/) is available on LightSpeed's LSX product site.
 
-= Premium Support
+= Support ==
 
-[LightSpeed](https://www.lsdev.biz/) offers [premium support](https://www.lsdev.biz/contact/), contact us for more information.
-
-= Bugs via GitHub Issues
+Contact the [LightSpeed](https://lsdev.biz/) for assistance via the [LSX support form](https://www.lsdev.biz/lsx/support/).
 
 If you are experiencing issues with the LSX Customizer Plugin & have experience with Github, please log any bug issues you are having on the [LSX Customizer Github Issues](https://github.com/lightspeeddevelopment/lsx-customizer/issues/) page.
 
 You can also send an email to our Support Team at [support@lsdev.biz](mailto:support@lsdev.biz) if you have a request for the LightSpeed Development team.
 
-== Installation ==
+= Installation =
 
 You can also download and install the extension directly from the backend of your website
 
@@ -73,3 +71,32 @@ Yes you can! Join in on our [GitHub repository](https://github.com/lightspeeddev
 
 1. Customizer Settings 
 2. Customizer Colour Options
+
+
+== Screenshots ==
+
+1. Back-end Gutenberg block selection
+2. Block Settings Screenshot - Recommend LSX Container
+3. Block Usage Screenshot 1
+4. Block Usage Screenshot 2
+5. Block Usage Screenshot 3
+
+
+== Frequently Asked Questions ==
+
+Take a look at all our [Frequently Asked Questions](https://www.lsdev.biz/lsx/documentation/lsx-theme/lsx-theme-faqs/), we are sure you'll find what you're looking for. 
+
+= First question? =
+First answer
+
+= Second question? =
+First answer
+
+= Third question? =
+First answer
+
+== Changelog == 
+
+[Lastest changelogs can be found on GitHub](https://github.com/lightspeeddevelopment/lsx-blocks/blob/master/changelog.md).
+
+== Upgrade Notice == 
