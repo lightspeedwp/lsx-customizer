@@ -186,8 +186,8 @@ if ( ! class_exists( 'LSX_Customizer_Colour' ) ) {
 			) );
 
 			$wp_customize->add_section( 'colors-palette', array(
-				'title'             => esc_html__( 'Block Editor Colour Palette', 'lsx-customizer' ),
-				'description' => esc_html__( 'Add colors to use within the Gutenberg editor color palette.', 'lsx-customizer' ),
+				'title'             => esc_html__( 'Block Editor', 'lsx-customizer' ),
+				'description' => esc_html__( 'Define the block editor colour pallette.', 'lsx-customizer' ),
 				'priority'          => 2,
 				'panel'             => 'colors',
 			) );
