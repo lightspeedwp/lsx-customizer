@@ -11,7 +11,6 @@ License URI: https://www.gnu.org/licenses/gpl-3.0.en.html
 
 This plugin extends the LSX Theme & the WordPress Customiser to allow you to edit site designe. 
 
-
 == Description ==
 
 Welcome to the LSX Customizer repository on GitHub. Here you can browse the source, look at open issues and keep track of development. We recommend all developers to follow LightSpeed's [blog](https://www.lsdev.biz/tag/release-posts/) to stay up to date about everything happening with the LSX Theme & extensions. 
