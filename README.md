@@ -6,9 +6,9 @@
     <a href="https://www.lsdev.biz/lsx/"><img src="https://www.lsdev.biz/lsx/wp-content/uploads/2019/06/Designed-for-LSX-Theme-blue.png" alt="Made for LSX Theme"></a>
 	  <a href="https://www.gnu.org/licenses/gpl-3.0.en.html"><img src="https://poser.pugx.org/woocommerce/woocommerce/license" alt="license"></a> 
     <a href="http://gulpjs.com/"><img src="https://img.shields.io/badge/built%20with-gulp.js-green.svg" alt="Built with gulp.js"></a> 
-  </p>
+</p>
 <p align="center">
-    <a href="https://codeclimate.com/github/lightspeeddevelopment/tour-operator/"><img src="https://codeclimate.com/github/lightspeeddevelopment/tour-operator/badges/gpa.svg" alt="Code Climate"></a>
+    <a href="https://codeclimate.com/github/lightspeeddevelopment/lsx-customizer/"><img src="https://codeclimate.com/github/lightspeeddevelopment/lsx-customizer/badges/gpa.svg" alt="Code Climate"></a>
     <a href="https://scrutinizer-ci.com/g/lightspeeddevelopment/lsx-customizer/?branch=master"><img src="https://scrutinizer-ci.com/g/lightspeeddevelopment/lsx-customizer/badges/quality-score.png?b=master" alt="Scrutinizer"></a>
     <a href="https://travis-ci.org/lightspeeddevelopment/lsx-customizer/"><img src="https://travis-ci.org/lightspeeddevelopment/lsx-customizer.svg?branch=master" alt="Build Status"></a>
 </p>
@@ -54,9 +54,11 @@ LSX Customizer is plugin extends the [LSX Theme](https://lsdev.biz/lsx/) and the
 
 WordPress Block Editor Supported, use the customizer to define colours to use within the block editor primary, secondary and tertiary colour palettes. Check out our [release post](https://www.lsdev.biz/lsx-blocks-available-on-wordpress-org/) on the update for more information.
 
-### WooCommerce Supported
+### WooCommerce Integration
 
-
+* WooCommerce Ready
+* Customizer Cart and Checkout
+* Supports latest WooCommerce Blocks
 
 ## Download
 
@@ -77,7 +79,7 @@ Comprehensive [documentation](https://www.lsdev.biz/lsx/documentation/lsx-extens
 
 ## Support
 
-[LightSpeed](https://www.lsdev.biz/) offers [premium support](https://www.lsdev.biz/contact/), contact us for more information.
+Contact the [LightSpeed](https://lsdev.biz/) for assistance via the [LSX support form](https://www.lsdev.biz/lsx/support/).
 
 If you are experiencing issues with the LSX Customizer Plugin & have experience with Github, please log any bug issues you are having on the [LSX Customizer Github Issues](https://github.com/lightspeeddevelopment/lsx-customizer/issues/) page.
 
@@ -85,8 +87,7 @@ You can also send an email to our Support Team at [support@lsdev.biz](mailto:sup
 
 ## Contributing
 
-
-
+If you're a developer who's spotted a bug issue and have a fix, or simply have functionality you think would extend our core plugin, we are always happy to accept your contribution! Visit the [LSX Customizer Plugin on Github](https://github.com/lightspeeddevelopment/lsx-customizer/) and submit a Pull Request with your updates.
 
 ## License
 
