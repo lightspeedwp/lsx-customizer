@@ -29,7 +29,7 @@ Activate [WooCommerce](https://woocommerce.com/), then use the WordPress Customi
 
 Comprehensive [documentation](https://www.lsdev.biz/lsx/documentation/lsx-extensions/lsx-customiser/) is available on LightSpeed's LSX product site.
 
-= Support ==
+= Support =
 
 Contact the [LightSpeed](https://lsdev.biz/) for assistance via the [LSX support form](https://www.lsdev.biz/lsx/support/).
 
