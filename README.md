@@ -100,6 +100,9 @@ This program is distributed in the hope that it will be useful, but WITHOUT ANY 
   <a href="https://www.lsdev.biz/contact/"><img src="https://www.lsdev.biz/wp-content/uploads/2020/02/work-with-lightspeed.png" width="850" alt="Work with us at LightSpeed"></a>
 </p>
 <p align="center">
+  Copyright © 2020 LightSpeed WordPress Development. All Rights Reserved.
+</p>
+<p align="center">
   <a href="https://www.lsdev.biz">LightSpeed's Company Website</a> &nbsp;&middot;&nbsp;
   <a href="https://www.lsdev.biz/lsx/">LSX Product Website</a>
 </p>
@@ -108,7 +111,5 @@ This program is distributed in the hope that it will be useful, but WITHOUT ANY 
   <a href="https://facebook.com/lightspeedwordpressdevelopment">Facebook</a> &nbsp;&middot;&nbsp;
   <a href="https://twitter.com/lightspeedwp">Twitter</a>
 </p>
-<p align="center">
-  Copyright © 2020 LightSpeed WordPress Development. All Rights Reserved.
-</p>
+
 
