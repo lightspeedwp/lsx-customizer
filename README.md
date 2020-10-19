@@ -1,4 +1,4 @@
-<p align="center"><a target="_blank" href="https://www.lsdev.biz/lsx/extensions/site-customizer/"><img width="100px;" src="https://www.lsdev.biz/lsx/wp-content/uploads/2020/08/Extension_LSX_Customizer.svg" alt="LSX Customizer"></a>
+<p align="center"><a target="_blank" href="https://www.lsdev.biz/lsx/extensions/site-customizer/"><img src="https://www.lsdev.biz/lsx/wp-content/uploads/2020/10/lsx-blog-customizer-banner-1544-500.jpg" alt="LSX Customizer"></a>
 </p>
 <h1 align="center">LSX Customizer</h1>
 
