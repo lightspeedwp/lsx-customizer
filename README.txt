@@ -3,17 +3,25 @@ Contributors: feedmymedia, lightspeedwp, eleshar, krugazul, jacquesvdh, ignusver
 Donate link: https://lsdev.biz/lsx/donate/
 Tags: LSX, Customizer, Colours, Layout, WooCommerce
 Requires at least: 5.0
-Tested up to: 5.5.1
+Tested up to: 5.5.3
 Requires PHP: 7.0
 Stable tag: 1.4.0
 License: GPLv3 or later
 License URI: https://www.gnu.org/licenses/gpl-3.0.en.html
 
-This plugin extends the LSX Theme & the WordPress Customiser to allow you to edit site designe. 
+The LSX Customizer extension increases your control over how the LSX theme will display on your website. 
 
 == Description ==
 
-Welcome to the LSX Customizer repository on GitHub. Here you can browse the source, look at open issues and keep track of development. We recommend all developers to follow LightSpeed's [blog](https://www.lsdev.biz/tag/release-posts/) to stay up to date about everything happening with the LSX Theme & extensions. 
+The LSX Customizer plugin allows you  to customise your LSX website by adding additional customizer options to the WordPress customizer.
+
+Key features:
+* Set the website layout for desktop and mobile.
+* Customise the WordPress login screen with background images, logo and colours.
+* Control the colours of your menu, buttons, links and hover states on your website.
+* If you’re using WooCommerce, all the customizer options for your store are grouped in one place.
+* Control The Events Calendar colours if installed.
+* If you are using [LSX Currencies](https://wordpress.org/plugins/lsx-currencies/) extension, the currency switcher options will appear in the customiser when LSX Customizer is activated.
 
 = WordPress Block Editor Supported 
 
@@ -33,11 +41,15 @@ Comprehensive [documentation](https://www.lsdev.biz/lsx/documentation/lsx-extens
 
 Contact the [LightSpeed](https://lsdev.biz/) for assistance via the [LSX support form](https://www.lsdev.biz/lsx/support/).
 
-If you are experiencing issues with the LSX Customizer Plugin & have experience with Github, please log any bug issues you are having on the [LSX Customizer Github Issues](https://github.com/lightspeeddevelopment/lsx-customizer/issues/) page.
+If you are experiencing issues with the LSX  plugin, please log any bug issues you are having on the [LSX Customiser Issues](https://github.com/lightspeeddevelopment/lsx-customiser/issues) page.
 
-You can also send an email to our Support Team at [support@lsdev.biz](mailto:support@lsdev.biz) if you have a request for the LightSpeed Development team.
+= Contributing =
 
-= Installation =
+Extensible, adaptable, and open source — LSX Customiser is created with theme and plugin developers in mind. If you’re interested to jump in the project, there are opportunities for developers at all levels to get involved. 
+
+If you're a developer who's spotted a bug issue and have a fix, or simply have the functionality you think would extend our core theme, we are always happy to accept your contribution! Visit the [LSX Customiser on Github](https://github.com/lightspeeddevelopment/lsx-customiser/) and submit a Pull Request with your updates.
+
+== Installation ==
 
 You can also download and install the extension directly from the backend of your website
 
@@ -68,34 +80,28 @@ Yes you can! Join in on our [GitHub repository](https://github.com/lightspeeddev
 
 == Screenshots ==
 
-1. Customizer Settings 
-2. Customizer Colour Options
-
-
-== Screenshots ==
-
-1. Back-end Gutenberg block selection
-2. Block Settings Screenshot - Recommend LSX Container
-3. Block Usage Screenshot 1
-4. Block Usage Screenshot 2
-5. Block Usage Screenshot 3
-
+1. Customizer panels
+2. Customizer WooCommerce panels
+3. Customizer Cover Template Settings
+4. Customizer WP Login Screen
+5. Customizer Block Editor Colour Palette
+6. Customizer WooCommerce Cart Options
+7. Customizer Cover Template Settings with Alternate logo
 
 == Frequently Asked Questions ==
 
 Take a look at all our [Frequently Asked Questions](https://www.lsdev.biz/lsx/documentation/lsx-theme/lsx-theme-faqs/), we are sure you'll find what you're looking for. 
 
-= First question? =
-First answer
+= I’ve installed the plugin, now what? =
+Go to Appearance > Customise, and start customising your website the way you want. You can find details on all the options in the [documentation](https://www.lsdev.biz/lsx/documentation/lsx-customizer/).
 
-= Second question? =
-First answer
+= Will the LSX Customizer plugin work with my theme? =
+Not unless you are making use of the [The LSX theme!](https://wordpress.org/themes/lsx/) 
 
-= Third question? =
-First answer
+All of the LSX Extensions were built for the LSX theme. Be sure to have it installed and activated for this extension to function. 
 
 == Changelog == 
 
-[Lastest changelogs can be found on GitHub](https://github.com/lightspeeddevelopment/lsx-blocks/blob/master/changelog.md).
+[Lastest changelogs can be found on GitHub](https://github.com/lightspeeddevelopment/lsx-customizer/blob/master/changelog.md).
 
 == Upgrade Notice == 
