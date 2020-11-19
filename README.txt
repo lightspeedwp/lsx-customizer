@@ -23,7 +23,7 @@ Key features:
 * Control The Events Calendar colours if installed.
 * If you are using [LSX Currencies](https://wordpress.org/plugins/lsx-currencies/) extension, the currency switcher options will appear in the customiser when LSX Customizer is activated.
 
-= WordPress Block Editor Supported 
+= WordPress Block Editor Supported =
 
 Add colors to use within the block editor primary, secondary and tertiary colour palettes.
 
@@ -35,7 +35,7 @@ Activate [WooCommerce](https://woocommerce.com/), then use the WordPress Customi
 
 = Documentation =
 
-Comprehensive [documentation](https://www.lsdev.biz/lsx/documentation/lsx-extensions/lsx-customiser/) is available on LightSpeed's LSX product site.
+Comprehensive [documentation](https://www.lsdev.biz/lsx/documentation/lsx-extensions/lsx-customiser/) available on LightSpeed's LSX product site.
 
 = Support =
 
