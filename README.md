@@ -1,67 +1,115 @@
-<p align="center"><a target="_blank" href="https://lsx.lsdev.biz/"><img width="100px;" src="https://lsx.lsdev.biz/wp-content/uploads/2019/03/Customizer.svg" alt="LSX Blog Customizer"></a>
+<p align="center"><a target="_blank" href="https://www.lsdev.biz/lsx/extensions/site-customizer/"><img src="https://www.lsdev.biz/lsx/wp-content/uploads/2020/10/lsx-blog-customizer-banner-1544-500.jpg" alt="LSX Customizer"></a>
 </p>
 <h1 align="center">LSX Customizer</h1>
-
 <p align="center">
-	<a href="https://www.gnu.org/licenses/gpl-3.0.en.html"><img src="https://poser.pugx.org/woocommerce/woocommerce/license" alt="license"></a> 
+	<a href="#key-features">Key Features</a>
+	&nbsp;|&nbsp;
+	<a href="#download">Download</a>
+	&nbsp;|&nbsp;
+	<a href="#showcase">Showcase</a>
+	&nbsp;|&nbsp;
+  <a href="#documentation">Documentation</a>
+	&nbsp;|&nbsp;
+	<a href="#support">Support</a>
+	&nbsp;|&nbsp;
+  <a href="#contributing">Contributing</a>
+	&nbsp;|&nbsp;
+	<a href="#license">License</a>
+</p>
+<p align="center">
+    <a href="https://www.lsdev.biz/lsx/"><img src="https://www.lsdev.biz/lsx/wp-content/uploads/2019/06/Designed-for-LSX-Theme-blue.png" alt="Made for LSX Theme"></a>
+	  <a href="https://www.gnu.org/licenses/gpl-3.0.en.html"><img src="https://poser.pugx.org/woocommerce/woocommerce/license" alt="license"></a> 
     <a href="http://gulpjs.com/"><img src="https://img.shields.io/badge/built%20with-gulp.js-green.svg" alt="Built with gulp.js"></a> 
-    <a href="https://travis-ci.org/lightspeeddevelopment/lsx-blocks/"><img src="https://travis-ci.org/lightspeeddevelopment/lsx-blocks.svg?branch=master" alt="Build Status"></a>
-    <a href="https://www.lsdev.biz/lsx/"><img src="https://www.lsdev.biz/lsx/wp-content/uploads/2019/06/Designed-for-LSX-Theme-blue.png" alt="Made for LSX"></a>
+</p>
+<p align="center">
+    <a href="https://codeclimate.com/github/lightspeeddevelopment/lsx-customizer/"><img src="https://codeclimate.com/github/lightspeeddevelopment/lsx-customizer/badges/gpa.svg" alt="Code Climate"></a>
+    <a href="https://scrutinizer-ci.com/g/lightspeeddevelopment/lsx-customizer/?branch=master"><img src="https://scrutinizer-ci.com/g/lightspeeddevelopment/lsx-customizer/badges/quality-score.png?b=master" alt="Scrutinizer"></a>
+    <a href="https://travis-ci.org/lightspeeddevelopment/lsx-customizer/"><img src="https://travis-ci.org/lightspeeddevelopment/lsx-customizer.svg?branch=master" alt="Build Status"></a>
 </p>
 
-The LSX Customizer extension gives you control over the colours of your LSX-powered WordPress site, allowing you to adjust all your individual element styles. 
 
-The LSX Customizer plugin extends the power of your normal WordPress customiser. Update your site colours and structure with no code or hassle!
+<br>
 
-## Works with the LSX Theme
-We've also made a fantastic [theme](https://lsx.lsdev.biz/) that work well with the LSX Customizer plugin.
+Welcome to the LSX Customizer repository on GitHub. Here you can browse the source, look at open issues and keep track of development. We recommend all developers to follow LightSpeed's [blog](https://www.lsdev.biz/tag/release-posts/) to stay up to date about everything happening with the LSX Theme & extensions.
 
-## Gutenberg Compatible
-Have you updated to the new WordPress Gutenberg editor? We've got you covered! The LSX Customizer Plugin has been optimized for the Gutenberg update. Check out our [release post](https://lsx.lsdev.biz/lsx-blocks-available-on-wordpress-org/) on the update for more information.
+## Key Features
 
-## It's free, and always will be.
-We’re firm believers in open source - that’s why the [LSX Customizer](https://lsx.lsdev.biz/extensions/lsx-customizer/) is free, and that won't change. We are constantly maintaining and updating our extension so you have the latest and greatest abilities on your LSX Theme powered site. 
+Activate [WooCommerce](https://woocommerce.com/), then use the WordPress Customizer to enable cart & my account menus or customise the checkout page.
 
-## LSX Customizer Documentation
+* Responsive Layout
+* Customise Colors
+* Customise Fonts
+* Customise Menus
+* WooCommerce Ready 
+* Translation Ready
 
-We have created extensive documentation on all of the LSX Customizer Plugin functionality. This means a hassle free installation and setup with no code requirements. Go to the [LSX Customizer Documentation](https://lsx.lsdev.biz/documentation/lsx-customizer/).
+### LSX Extension
 
-## LSX Customizer Help & Support
+LSX Customizer is plugin extends the [LSX Theme](https://lsdev.biz/lsx/) and the WordPress customiser. Update your site colours and structure for WordPress pages & posts without code or hassle.
 
-We offer premium support for this plugin. Premium support that can be purchased [via our website](https://www.lsdev.biz/services/support/).
+### LSX Blocks
+
+WordPress Block Editor Supported, use the customizer to define colours to use within the block editor primary, secondary and tertiary colour palettes. Check out our [release post](https://www.lsdev.biz/lsx-blocks-available-on-wordpress-org/) on the update for more information.
+
+### WooCommerce Integration
+
+* WooCommerce Ready
+* Customizer Cart and Checkout
+* Supports latest WooCommerce Blocks
+
+## Download
+
+[Click here to download](https://downloads.wordpress.org/plugins/lsx-customizer.zip) the latest release package of LSX Customizer for WordPress & the LSX Theme.
+
+## Showcase
+
+* [LSX + LSX Extensions + WooCommerce](https://lsx-demo.lsdev.biz/)
+* [LSX + LSX Tour Operator Plugin + Wetu Importer](https://tour-operator-demo.lsdev.biz/)
+* [LSX + LSX Tour Operator Plugin & Extensions + Wetu Importer](https://to-demo.lsdev.biz/)
+* [LSX + LSX Business Directory Extension + WooCommerce + WooCommerce Memberships](https://lsx-business-directory.lsdev.biz/)
+* [LSX + WooCommerce + Sensei + Paid Courses](https://lsx-sensei-demo.lsdev.biz/)
+* [LSX + WooCommerce](https://lsx-woocommerce-demo.lsdev.biz/)
+
+## Documentation 
+
+Comprehensive [documentation](https://www.lsdev.biz/lsx/documentation/lsx-extensions/lsx-customiser/) is available on LightSpeed's LSX product site.
+
+## Support
+
+Contact the [LightSpeed](https://lsdev.biz/) for assistance via the [LSX support form](https://www.lsdev.biz/lsx/support/).
 
 If you are experiencing issues with the LSX Customizer Plugin & have experience with Github, please log any bug issues you are having on the [LSX Customizer Github Issues](https://github.com/lightspeeddevelopment/lsx-customizer/issues/) page.
 
 You can also send an email to our Support Team at [support@lsdev.biz](mailto:support@lsdev.biz) if you have a request for the LightSpeed Development team.
 
-## Installation
+## Contributing
 
-You can also download and install the extension directly from the backend of your website
+If you're a developer who's spotted a bug issue and have a fix, or simply have functionality you think would extend our core plugin, we are always happy to accept your contribution! Visit the [LSX Customizer Plugin on Github](https://github.com/lightspeeddevelopment/lsx-customizer/) and submit a Pull Request with your updates.
 
-1. Login to the backend of your website.
-2. Navigate to the “Plugins” dashboard item.
-3. Select the “Add New” option on the plugins page.
-4. Search for “LSX Customizer” in the plugin search bar.
-5. Download and activate the plugin.
+## License
 
-## Frequently Asked Questions
+This theme, like WordPress, is licensed under the GPL. Use it to make something cool, have fun, and share what you've learned with others.
 
-### Where can I find LSX Customizer plugin documentation and user guides?
-For help setting up and configuring the Customizer plugin please refer to our [user guide](https://www.lsdev.biz/documentation/lsx/lsx-customizer/)
+This program is free software: you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation, either version 2 of the License, or (at your option) any later version.
 
-### Where can I get support or talk to other users
-For add-on support from LightSpeed, [get a quote](https://www.lsdev.biz/contact-us/) from us!
+This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details.
 
-### Will the LSX Customizer plugin work with my theme?
-Not unless you are making use of the [The LSX theme!](https://lsx.lsdev.biz/) 
 
-All of the LSX Extensions were built for the LSX theme. Be sure to have it installed and activated for this extension to function. 
+---
+<p align="center">
+  <a href="https://www.lsdev.biz/contact/"><img src="https://www.lsdev.biz/wp-content/uploads/2020/02/work-with-lightspeed.png" width="850" alt="Work with us at LightSpeed"></a>
+</p>
+<p align="center">
+  Copyright © 2020 LightSpeed WordPress Development. All Rights Reserved.
+</p>
+<p align="center">
+  <a href="https://www.lsdev.biz">LightSpeed's Company Website</a> &nbsp;&middot;&nbsp;
+  <a href="https://www.lsdev.biz/lsx/">LSX Product Website</a>
+</p>
+<p align="center">
+  <a href="https://github.com/lightspeeddevelopment">GitHub</a> &nbsp;&middot;&nbsp;
+  <a href="https://facebook.com/lightspeedwordpressdevelopment">Facebook</a> &nbsp;&middot;&nbsp;
+  <a href="https://twitter.com/lightspeedwp">Twitter</a>
+</p>
 
-### Where can I report bugs or contribute to the project?
-Bugs can be reported either in our support forum or preferably on the [LSX Customizer GitHub repository](https://github.com/lightspeeddevelopment/lsx/issues).
 
-### The LSX Customizer plugin is awesome! Can I contribute?
-Yes you can! Join in on our [GitHub repository](https://github.com/lightspeeddevelopment/lsx-customizer) :)
-
-## Like what you see?
-<a href="https://www.lsdev.biz/contact/"><img src="https://www.lsdev.biz/wp-content/uploads/2020/02/work-with-lightspeed.png" width="850" alt="Work with us at LightSpeed"></a>

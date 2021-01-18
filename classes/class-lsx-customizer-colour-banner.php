@@ -116,6 +116,13 @@ if ( ! class_exists( 'LSX_Customizer_Colour_Banner' ) ) {
 					$breadcrumb-current: ' . $colors['banner_breadcrumb_text_selected_color'] . '
 				);
 
+				.lsx:not(.single-post) .archive-header .archive-title, .lsx:not(.single-post) .archive-header .page-title, .lsx:not(.single-post) .archive-header *, .lsx:not(.single-post) .archive-header *, .lsx:not(.single-post) .archive-header >p, .lsx:not(.single-post) .archive-header >p, .lsx:not(.single-post):not(.page-has-banner) .archive-header-wrapper .archive-header .archive-title, .lsx:not(.single-post):not(.page-has-banner) .archive-header-wrapper .archive-header>p, .lsx-layout-switcher .lsx-layout-switcher-option {
+					color: ' . $colors['banner_text_color'] . ';
+				}
+
+				.lsx:not(.single-post) .archive-header.banner-has-custom-bg .archive-title, .lsx:not(.single-post) .archive-header.banner-has-custom-bg .page-title, .lsx:not(.single-post) .archive-header.banner-has-custom-bg *, .lsx:not(.single-post) .archive-header.banner-has-custom-bg *, .lsx:not(.single-post) .archive-header.banner-has-custom-bg >p, .lsx:not(.single-post) .archive-header.banner-has-custom-bg >p, .lsx:not(.single-post):not(.page-has-banner) .archive-header-wrapper .archive-header.banner-has-custom-bg .archive-title, .lsx:not(.single-post):not(.page-has-banner) .archive-header-wrapper .archive-header.banner-has-custom-bg>p, .banner-has-custom-bg .lsx-layout-switcher .lsx-layout-switcher-option {
+					color: ' . $colors['banner_text_image_color'] . ';
+				}
 				.lsx-hero-banner-block {
 					background-color: ' . $colors['banner_background_color'] . ';
 					.lsx-title-block {

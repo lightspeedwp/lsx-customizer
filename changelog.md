@@ -1,6 +1,6 @@
 # Change log
 
-## [[1.4.1]] - 2021-01-15
+## [[1.4.1]](https://github.com/lightspeeddevelopment/lsx-customizer/releases/tag/1.4.1) - 2021-01-15
 
 ### Updated
 - Documentation and support links.
@@ -8,31 +8,25 @@
 ### Security
 - General testing to ensure compatibility with latest WordPress version (5.6).
 
-## [[1.4.0]] - 2020-10-04
+## [[1.4.0]](https://github.com/lightspeeddevelopment/lsx-customizer/releases/tag/1.4.0) - 2020-11-04
 
 ### Added
 
 - Adding color palette options for the customizer.
 - Added Distraction free checkout option.
 - Added 2 steps checkout option.
-- Added in the default banner background colour and title support for the LSX Blocks default title.
 
 ### Updated
 
 - Updated Checkout and Cart styles.
-- Added customizer colour options for the Block editor palette.
+- Added customizer colour options for the Block editor palette
 - Added integration for the [WooCommerce Grid / List toggle](https://wordpress.org/plugins/woocommerce-grid-list-toggle/) plugin.
-- Renaming the `Colors` customizer panel to `Site Design`
+
 
 ### Changed
 
 - Merged two WooCommerce panels within the customizer sidebar.
 - Enhancements for the custom login logo.
-- Removed the `Colour Scheme` option.
-
-### Removed
-
-- Colour preset options deprecated.
 
 ### Security
 
@@ -41,7 +35,7 @@
 - General testing to ensure compatibility with latest WordPress version (5.5).
 - General testing to ensure compatibility with latest LSX Theme version (2.9).
 
-## [[1.3.4]]() - 2020-05-21
+## [[1.3.4]](https://github.com/lightspeeddevelopment/lsx-customizer/releases/tag/1.3.4) - 2020-05-21
 
 ### Added
 
