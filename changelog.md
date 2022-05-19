@@ -5,6 +5,9 @@
 ### Added
 - Added in a filter to allow 3rd party filtering of the WooCommerce menu item. `lsx_wc_my_account_menu_item`
 
+### Update
+- Updated the method of generating the language files.
+
 ### Security
 - General testing to ensure compatibility with latest WordPress version (6.0).
 

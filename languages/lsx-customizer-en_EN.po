@@ -1,29 +1,49 @@
-# Copyright (C) 2020 lsx-customizer
-# This file is distributed under the same license as the lsx-customizer package.
+# Copyright (C) 2022 LightSpeed
+# This file is distributed under the GPLv3 or later.
 msgid ""
 msgstr ""
-"Project-Id-Version: lsx-customizer\n"
+"Project-Id-Version: LSX Customizer 1.5.0\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/lsx-customizer\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language-Team: LightSpeed <webmaster@lsdev.biz>\n"
-"X-Poedit-Basepath: ..\n"
-"X-Poedit-KeywordsList: __;_e;_ex:1,2c;_n:1,2;_n_noop:1,2;_nx:1,2,4c;_nx_noop:1,2,3c;_x:1,2c;esc_attr__;esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c\n"
-"X-Poedit-SearchPath-0: .\n"
-"X-Poedit-SearchPathExcluded-0: *.js\n"
-"X-Poedit-SourceCharset: UTF-8\n"
-"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"POT-Creation-Date: 2022-05-19T07:19:17+00:00\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"X-Generator: WP-CLI 2.5.0\n"
+"X-Domain: lsx-customizer\n"
+
+#. Plugin Name of the plugin
+msgid "LSX Customizer"
+msgstr ""
+
+#. Plugin URI of the plugin
+msgid "https://www.lsdev.biz/product/lsx-site-customizer/"
+msgstr ""
+
+#. Description of the plugin
+msgid "The LSX Customizer extension gives you complete control over the appearance of your LSX-powered WordPress site"
+msgstr ""
+
+#. Author of the plugin
+msgid "LightSpeed"
+msgstr ""
+
+#. Author URI of the plugin
+msgid "https://www.lsdev.biz/"
+msgstr ""
 
 #: classes/class-lsx-customizer-colour.php:184
 msgid "Site Design"
 msgstr ""
 
 #: classes/class-lsx-customizer-colour.php:189
-msgid "Block Editor Colour Palette"
+msgid "Block Editor"
 msgstr ""
 
 #: classes/class-lsx-customizer-colour.php:190
-msgid "Add colors to use within the Gutenberg editor color palette."
+msgid "Define the block editor colour pallette."
 msgstr ""
 
 #: classes/class-lsx-customizer-colour.php:196
@@ -74,7 +94,8 @@ msgstr ""
 msgid "Footer"
 msgstr ""
 
-#: classes/class-lsx-customizer-colour.php:273, classes/class-lsx-customizer-frontend.php:201
+#: classes/class-lsx-customizer-colour.php:273
+#: classes/class-lsx-customizer-frontend.php:201
 msgid "Primary Colour"
 msgstr ""
 
@@ -82,11 +103,13 @@ msgstr ""
 msgid "Call To Action Colour"
 msgstr ""
 
-#: classes/class-lsx-customizer-colour.php:277, classes/class-lsx-customizer-frontend.php:221
+#: classes/class-lsx-customizer-colour.php:277
+#: classes/class-lsx-customizer-frontend.php:221
 msgid "Secondary Colour"
 msgstr ""
 
-#: classes/class-lsx-customizer-colour.php:279, classes/class-lsx-customizer-frontend.php:231
+#: classes/class-lsx-customizer-colour.php:279
+#: classes/class-lsx-customizer-frontend.php:231
 msgid "Tertiary Colour"
 msgstr ""
 
@@ -174,7 +197,19 @@ msgstr ""
 msgid "Button Text Colour"
 msgstr ""
 
-#: classes/class-lsx-customizer-login.php:324, includes/lsx-customizer-colour-options.php:16, includes/lsx-customizer-colour-options.php:22, includes/lsx-customizer-colour-options.php:28, includes/lsx-customizer-colour-options.php:34, includes/lsx-customizer-colour-options.php:40, includes/lsx-customizer-colour-options.php:50, includes/lsx-customizer-colour-options.php:55, includes/lsx-customizer-colour-options.php:63, includes/lsx-customizer-colour-options.php:70, includes/lsx-customizer-colour-options.php:86, includes/lsx-customizer-colour-options.php:91, includes/lsx-customizer-colour-options.php:96
+#: classes/class-lsx-customizer-login.php:324
+#: includes/lsx-customizer-colour-options.php:16
+#: includes/lsx-customizer-colour-options.php:22
+#: includes/lsx-customizer-colour-options.php:28
+#: includes/lsx-customizer-colour-options.php:34
+#: includes/lsx-customizer-colour-options.php:40
+#: includes/lsx-customizer-colour-options.php:50
+#: includes/lsx-customizer-colour-options.php:55
+#: includes/lsx-customizer-colour-options.php:63
+#: includes/lsx-customizer-colour-options.php:70
+#: includes/lsx-customizer-colour-options.php:86
+#: includes/lsx-customizer-colour-options.php:91
+#: includes/lsx-customizer-colour-options.php:96
 msgid "Background"
 msgstr ""
 
@@ -246,7 +281,9 @@ msgstr ""
 msgid "WooCommerce checkout layout."
 msgstr ""
 
-#: classes/class-lsx-customizer-woocommerce.php:93, classes/class-lsx-customizer-woocommerce.php:105, includes/lsx-customizer-colour-options.php:104
+#: classes/class-lsx-customizer-woocommerce.php:93
+#: classes/class-lsx-customizer-woocommerce.php:105
+#: includes/lsx-customizer-colour-options.php:104
 msgid "Default"
 msgstr ""
 
@@ -282,7 +319,8 @@ msgstr ""
 msgid "WooCommerce checkout thank you page."
 msgstr ""
 
-#: classes/class-lsx-customizer-woocommerce.php:173, classes/class-lsx-customizer-woocommerce.php:229
+#: classes/class-lsx-customizer-woocommerce.php:173
+#: classes/class-lsx-customizer-woocommerce.php:229
 msgid "Extra HTML"
 msgstr ""
 
@@ -290,7 +328,8 @@ msgstr ""
 msgid "Extra HTML to display at checkout page (bottom/right)."
 msgstr ""
 
-#: classes/class-lsx-customizer-woocommerce.php:191, classes/class-lsx-customizer-woocommerce.php:268
+#: classes/class-lsx-customizer-woocommerce.php:191
+#: classes/class-lsx-customizer-woocommerce.php:268
 msgid "Menu Item Style"
 msgstr ""
 
@@ -298,15 +337,18 @@ msgstr ""
 msgid "WooCommerce menu item cart style."
 msgstr ""
 
-#: classes/class-lsx-customizer-woocommerce.php:198, classes/class-lsx-customizer-woocommerce.php:275
+#: classes/class-lsx-customizer-woocommerce.php:198
+#: classes/class-lsx-customizer-woocommerce.php:275
 msgid "Simple"
 msgstr ""
 
-#: classes/class-lsx-customizer-woocommerce.php:199, classes/class-lsx-customizer-woocommerce.php:276
+#: classes/class-lsx-customizer-woocommerce.php:199
+#: classes/class-lsx-customizer-woocommerce.php:276
 msgid "Extended"
 msgstr ""
 
-#: classes/class-lsx-customizer-woocommerce.php:209, classes/class-lsx-customizer-woocommerce.php:286
+#: classes/class-lsx-customizer-woocommerce.php:209
+#: classes/class-lsx-customizer-woocommerce.php:286
 msgid "Menu Item Position"
 msgstr ""
 
@@ -314,19 +356,23 @@ msgstr ""
 msgid "WooCommerce menu item cart position."
 msgstr ""
 
-#: classes/class-lsx-customizer-woocommerce.php:216, classes/class-lsx-customizer-woocommerce.php:293
+#: classes/class-lsx-customizer-woocommerce.php:216
+#: classes/class-lsx-customizer-woocommerce.php:293
 msgid "Main Menu (as last item)"
 msgstr ""
 
-#: classes/class-lsx-customizer-woocommerce.php:217, classes/class-lsx-customizer-woocommerce.php:294
+#: classes/class-lsx-customizer-woocommerce.php:217
+#: classes/class-lsx-customizer-woocommerce.php:294
 msgid "Main Menu (as last item, right aligned)"
 msgstr ""
 
-#: classes/class-lsx-customizer-woocommerce.php:218, classes/class-lsx-customizer-woocommerce.php:295
+#: classes/class-lsx-customizer-woocommerce.php:218
+#: classes/class-lsx-customizer-woocommerce.php:295
 msgid "Top Menu (left)"
 msgstr ""
 
-#: classes/class-lsx-customizer-woocommerce.php:219, classes/class-lsx-customizer-woocommerce.php:296
+#: classes/class-lsx-customizer-woocommerce.php:219
+#: classes/class-lsx-customizer-woocommerce.php:296
 msgid "Top Menu (right)"
 msgstr ""
 
@@ -358,7 +404,9 @@ msgstr ""
 msgid "WooCommerce menu item My Account position."
 msgstr ""
 
-#: classes/class-lsx-customizer-woocommerce.php:371, classes/class-lsx-customizer-woocommerce.php:399, classes/class-lsx-customizer-woocommerce.php:429
+#: classes/class-lsx-customizer-woocommerce.php:371
+#: classes/class-lsx-customizer-woocommerce.php:399
+#: classes/class-lsx-customizer-woocommerce.php:429
 msgid "Shop"
 msgstr ""
 
@@ -366,27 +414,37 @@ msgstr ""
 msgid "2"
 msgstr ""
 
-#: classes/class-lsx-customizer-woocommerce.php:379, classes/class-lsx-customizer-woocommerce.php:408, classes/class-lsx-customizer-woocommerce.php:435
+#: classes/class-lsx-customizer-woocommerce.php:379
+#: classes/class-lsx-customizer-woocommerce.php:408
+#: classes/class-lsx-customizer-woocommerce.php:435
 msgid "My Cart"
 msgstr ""
 
-#: classes/class-lsx-customizer-woocommerce.php:384, classes/class-lsx-customizer-woocommerce.php:415
+#: classes/class-lsx-customizer-woocommerce.php:384
+#: classes/class-lsx-customizer-woocommerce.php:415
 msgid "3"
 msgstr ""
 
-#: classes/class-lsx-customizer-woocommerce.php:385, classes/class-lsx-customizer-woocommerce.php:416, classes/class-lsx-customizer-woocommerce.php:441
+#: classes/class-lsx-customizer-woocommerce.php:385
+#: classes/class-lsx-customizer-woocommerce.php:416
+#: classes/class-lsx-customizer-woocommerce.php:441
 msgid "Billing details"
 msgstr ""
 
-#: classes/class-lsx-customizer-woocommerce.php:390, classes/class-lsx-customizer-woocommerce.php:421, classes/class-lsx-customizer-woocommerce.php:446
+#: classes/class-lsx-customizer-woocommerce.php:390
+#: classes/class-lsx-customizer-woocommerce.php:421
+#: classes/class-lsx-customizer-woocommerce.php:446
 msgid "4"
 msgstr ""
 
-#: classes/class-lsx-customizer-woocommerce.php:391, classes/class-lsx-customizer-woocommerce.php:422, classes/class-lsx-customizer-woocommerce.php:447
+#: classes/class-lsx-customizer-woocommerce.php:391
+#: classes/class-lsx-customizer-woocommerce.php:422
+#: classes/class-lsx-customizer-woocommerce.php:447
 msgid "Payment"
 msgstr ""
 
-#: classes/class-lsx-customizer-woocommerce.php:601, classes/class-lsx-customizer-woocommerce.php:617
+#: classes/class-lsx-customizer-woocommerce.php:601
+#: classes/class-lsx-customizer-woocommerce.php:617
 msgid "View your account"
 msgstr ""
 
@@ -410,27 +468,56 @@ msgstr ""
 msgid "Test"
 msgstr ""
 
-#: includes/lsx-customizer-colour-options.php:17, includes/lsx-customizer-colour-options.php:23, includes/lsx-customizer-colour-options.php:29, includes/lsx-customizer-colour-options.php:35
+#: includes/lsx-customizer-colour-options.php:17
+#: includes/lsx-customizer-colour-options.php:23
+#: includes/lsx-customizer-colour-options.php:29
+#: includes/lsx-customizer-colour-options.php:35
 msgid "Background (hover)"
 msgstr ""
 
-#: includes/lsx-customizer-colour-options.php:18, includes/lsx-customizer-colour-options.php:24, includes/lsx-customizer-colour-options.php:30, includes/lsx-customizer-colour-options.php:36, includes/lsx-customizer-colour-options.php:64, includes/lsx-customizer-colour-options.php:74, includes/lsx-customizer-colour-options.php:87, includes/lsx-customizer-colour-options.php:92, includes/lsx-customizer-colour-options.php:97
+#: includes/lsx-customizer-colour-options.php:18
+#: includes/lsx-customizer-colour-options.php:24
+#: includes/lsx-customizer-colour-options.php:30
+#: includes/lsx-customizer-colour-options.php:36
+#: includes/lsx-customizer-colour-options.php:64
+#: includes/lsx-customizer-colour-options.php:74
+#: includes/lsx-customizer-colour-options.php:87
+#: includes/lsx-customizer-colour-options.php:92
+#: includes/lsx-customizer-colour-options.php:97
 msgid "Text"
 msgstr ""
 
-#: includes/lsx-customizer-colour-options.php:19, includes/lsx-customizer-colour-options.php:25, includes/lsx-customizer-colour-options.php:31, includes/lsx-customizer-colour-options.php:37
+#: includes/lsx-customizer-colour-options.php:19
+#: includes/lsx-customizer-colour-options.php:25
+#: includes/lsx-customizer-colour-options.php:31
+#: includes/lsx-customizer-colour-options.php:37
 msgid "Text (hover)"
 msgstr ""
 
-#: includes/lsx-customizer-colour-options.php:20, includes/lsx-customizer-colour-options.php:26, includes/lsx-customizer-colour-options.php:32, includes/lsx-customizer-colour-options.php:38
+#: includes/lsx-customizer-colour-options.php:20
+#: includes/lsx-customizer-colour-options.php:26
+#: includes/lsx-customizer-colour-options.php:32
+#: includes/lsx-customizer-colour-options.php:38
 msgid "Shadow"
 msgstr ""
 
-#: includes/lsx-customizer-colour-options.php:41, includes/lsx-customizer-colour-options.php:51, includes/lsx-customizer-colour-options.php:56, includes/lsx-customizer-colour-options.php:75, includes/lsx-customizer-colour-options.php:88, includes/lsx-customizer-colour-options.php:93, includes/lsx-customizer-colour-options.php:98
+#: includes/lsx-customizer-colour-options.php:41
+#: includes/lsx-customizer-colour-options.php:51
+#: includes/lsx-customizer-colour-options.php:56
+#: includes/lsx-customizer-colour-options.php:75
+#: includes/lsx-customizer-colour-options.php:88
+#: includes/lsx-customizer-colour-options.php:93
+#: includes/lsx-customizer-colour-options.php:98
 msgid "Link"
 msgstr ""
 
-#: includes/lsx-customizer-colour-options.php:42, includes/lsx-customizer-colour-options.php:52, includes/lsx-customizer-colour-options.php:57, includes/lsx-customizer-colour-options.php:76, includes/lsx-customizer-colour-options.php:89, includes/lsx-customizer-colour-options.php:94, includes/lsx-customizer-colour-options.php:99
+#: includes/lsx-customizer-colour-options.php:42
+#: includes/lsx-customizer-colour-options.php:52
+#: includes/lsx-customizer-colour-options.php:57
+#: includes/lsx-customizer-colour-options.php:76
+#: includes/lsx-customizer-colour-options.php:89
+#: includes/lsx-customizer-colour-options.php:94
+#: includes/lsx-customizer-colour-options.php:99
 msgid "Link (hover)"
 msgstr ""
 
@@ -442,19 +529,23 @@ msgstr ""
 msgid "Icon (hover)"
 msgstr ""
 
-#: includes/lsx-customizer-colour-options.php:45, includes/lsx-customizer-colour-options.php:58
+#: includes/lsx-customizer-colour-options.php:45
+#: includes/lsx-customizer-colour-options.php:58
 msgid "Dropdown"
 msgstr ""
 
-#: includes/lsx-customizer-colour-options.php:46, includes/lsx-customizer-colour-options.php:59
+#: includes/lsx-customizer-colour-options.php:46
+#: includes/lsx-customizer-colour-options.php:59
 msgid "Dropdown (hover)"
 msgstr ""
 
-#: includes/lsx-customizer-colour-options.php:47, includes/lsx-customizer-colour-options.php:60
+#: includes/lsx-customizer-colour-options.php:47
+#: includes/lsx-customizer-colour-options.php:60
 msgid "Dropdown link"
 msgstr ""
 
-#: includes/lsx-customizer-colour-options.php:48, includes/lsx-customizer-colour-options.php:61
+#: includes/lsx-customizer-colour-options.php:48
+#: includes/lsx-customizer-colour-options.php:61
 msgid "Dropdown link (hover)"
 msgstr ""
 
