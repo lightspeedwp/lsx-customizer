@@ -618,6 +618,8 @@ if ( ! class_exists( 'LSX_Customizer_WooCommerce' ) ) {
 								'</li>';
 					}
 
+					$item = apply_filters( 'lsx_wc_my_account_menu_item', $item );
+
 					if ( 'top-menu' === $args->theme_location ) {
 						$items = $item . $items;
 					} else {
