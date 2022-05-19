@@ -1,5 +1,13 @@
 # Change log
 
+## [[1.5.0]](https://github.com/lightspeeddevelopment/lsx-customizer/releases/tag/1.5.0) - ???
+
+### Added
+- Added in a filter to allow 3rd party filtering of the WooCommerce menu item. `lsx_wc_my_account_menu_item`
+
+### Security
+- General testing to ensure compatibility with latest WordPress version (6.0).
+
 ## [[1.4.1]](https://github.com/lightspeeddevelopment/lsx-customizer/releases/tag/1.4.1) - 2021-01-15
 
 ### Updated
