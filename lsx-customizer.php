@@ -24,7 +24,26 @@ define( 'LSX_CUSTOMIZER_CORE', __FILE__ );
 define( 'LSX_CUSTOMIZER_URL', plugin_dir_url( __FILE__ ) );
 define( 'LSX_CUSTOMIZER_VER', '1.5.0' );
 
-
 /* ======================= Below is the Plugin Class init ========================= */
 
 require_once LSX_CUSTOMIZER_PATH . 'classes/class-lsx-customizer.php';
+
+if ( in_array( 'wordpress-seo/wp-seo.php', apply_filters( 'active_plugins', get_option( 'active_plugins' ) ) ) || in_array( 'wordpress-seo-premium/wp-seo-premium.php', apply_filters( 'active_plugins', get_option( 'active_plugins' ) ) ) ) {
+	require LSX_CUSTOMIZER_PATH  . 'includes/yoast/class-lsx-yoast.php';
+}
+
+if ( class_exists( 'Tribe__Events__Main' ) ) {
+	require LSX_CUSTOMIZER_PATH  . 'includes/the-events-calendar/the-events-calendar.php';
+}
+
+if ( class_exists( 'Sensei_Main' ) || class_exists( 'Sensei_WC' ) ) {
+	require LSX_CUSTOMIZER_PATH  . 'includes/sensei/class-lsx-sensei.php';
+}
+
+if ( class_exists( 'Popup_Maker' ) ) {
+	require LSX_CUSTOMIZER_PATH  . 'includes/popup-maker/class-lsx-popup-maker.php';
+}
+
+if ( class_exists( 'bbPress' ) ) {
+	require LSX_CUSTOMIZER_PATH  . 'includes/bbpress/bbpress.php';
+}

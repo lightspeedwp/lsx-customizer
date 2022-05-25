@@ -1,6 +1,15 @@
 # Change log
 
-## [[1.5.0]](https://github.com/lightspeeddevelopment/lsx-customizer/releases/tag/1.5.0) - ???
+## [[1.5.0]](https://github.com/lightspeeddevelopment/lsx-customizer/releases/tag/1.5.0) - 2022-05-25
+
+### Added
+
+- Adding Yoast CSS & JS file - Moved from LSX Theme
+- Adding WooCommerce CSS & PHP files file - Moved from LSX Theme
+- Adding Sensei CSS & PHP files file - Moved from LSX Theme
+- Adding Popup-Maker CSS & PHP files file - Moved from LSX Theme
+- Adding The Events Calendar plugin CSS & PHP files file - Moved from LSX Theme
+- Adding bbPress CSS & PHP files file - Moved from LSX Theme
 
 ### Added
 - Added in a filter to allow 3rd party filtering of the WooCommerce menu item. `lsx_wc_my_account_menu_item`

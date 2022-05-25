@@ -1,6 +1,6 @@
 const gulp         = require('gulp');
 const rtlcss       = require('gulp-rtlcss');
-const sass         = require('gulp-sass');
+const sass         = require('gulp-sass')(require('node-sass'));
 const sourcemaps   = require('gulp-sourcemaps');
 const jshint       = require('gulp-jshint');
 const concat       = require('gulp-concat');
@@ -90,6 +90,138 @@ gulp.task('styles-rtl', function (done) {
 });
 
 gulp.task('compile-css', gulp.series( ['styles', 'styles-rtl'], function(done) {
+	done();
+}));
+
+
+// 3rd Party Styles.
+gulp.task('events-styles', gulp.series( function () {
+    return gulp.src('assets/css/the-events-calendar/the-events-calendar.scss')
+        .pipe(plumber({
+            errorHandler: function(err) {
+                console.log(err);
+                this.emit('end');
+            }
+        }))
+        .pipe(sourcemaps.init())
+        .pipe(sass({
+            outputStyle: 'compressed',
+            includePaths: ['assets/css/the-events-calendar']
+        }).on('error', gutil.log))
+        .pipe(autoprefixer({
+            browsers: browserlist,
+            casacade: true
+        }))
+        .pipe(sourcemaps.write('maps'))
+        .pipe(gulp.dest('assets/css/the-events-calendar'))
+}));
+
+gulp.task('events-styles-5', gulp.series(function () {
+    return gulp.src('assets/css/the-events-calendar/the-events-calendar-5.scss')
+        .pipe(plumber({
+            errorHandler: function(err) {
+                console.log(err);
+                this.emit('end');
+            }
+        }))
+        .pipe(sourcemaps.init())
+        .pipe(sass({
+            outputStyle: 'compressed',
+            includePaths: ['assets/css/the-events-calendar']
+        }).on('error', gutil.log))
+        .pipe(autoprefixer({
+            browsers: browserlist,
+            casacade: true
+        }))
+        .pipe(sourcemaps.write('maps'))
+        .pipe(gulp.dest('assets/css/the-events-calendar'))
+}));
+
+gulp.task('sensei-styles', gulp.series(function () {
+    return gulp.src('assets/css/sensei/sensei.scss')
+        .pipe(plumber({
+            errorHandler: function(err) {
+                console.log(err);
+                this.emit('end');
+            }
+        }))
+        .pipe(sourcemaps.init())
+        .pipe(sass({
+            outputStyle: 'compressed',
+            includePaths: ['assets/css/sensei']
+        }).on('error', gutil.log))
+        .pipe(autoprefixer({
+            browsers: browserlist,
+            casacade: true
+        }))
+        .pipe(sourcemaps.write('maps'))
+        .pipe(gulp.dest('assets/css/sensei'))
+}));
+
+gulp.task('popup-maker-styles', gulp.series(function () {
+    return gulp.src('assets/css/popup-maker/popup-maker.scss')
+        .pipe(plumber({
+            errorHandler: function(err) {
+                console.log(err);
+                this.emit('end');
+            }
+        }))
+        .pipe(sourcemaps.init())
+        .pipe(sass({
+            outputStyle: 'compressed',
+            includePaths: ['assets/css/popup-maker']
+        }).on('error', gutil.log))
+        .pipe(autoprefixer({
+            browsers: browserlist,
+            casacade: true
+        }))
+        .pipe(sourcemaps.write('maps'))
+        .pipe(gulp.dest('assets/css/popup-maker'))
+}));
+
+gulp.task('bbpress-styles', gulp.series(function () {
+    return gulp.src('assets/css/bb-press/bb-press.scss')
+        .pipe(plumber({
+            errorHandler: function(err) {
+                console.log(err);
+                this.emit('end');
+            }
+        }))
+        .pipe(sourcemaps.init())
+        .pipe(sass({
+            outputStyle: 'compressed',
+            includePaths: ['assets/css/bb-press']
+        }).on('error', gutil.log))
+        .pipe(autoprefixer({
+            browsers: browserlist,
+            casacade: true
+        }))
+        .pipe(sourcemaps.write('maps'))
+        .pipe(gulp.dest('assets/css/bb-press'))
+}));
+
+gulp.task('woocommerce-styles', gulp.series(function () {
+    return gulp.src('assets/css/woocommerce/*.scss')
+        .pipe(plumber({
+            errorHandler: function(err) {
+                console.log(err);
+                this.emit('end');
+            }
+        }))
+        .pipe(sourcemaps.init())
+        .pipe(sass({
+            outputStyle: 'compressed',
+            includePaths: ['assets/css/woocommerce']
+        }).on('error', gutil.log))
+        .pipe(autoprefixer({
+            browsers: browserlist,
+            casacade: true
+        }))
+        .pipe(sourcemaps.write('maps'))
+        .pipe(gulp.dest('assets/css/woocommerce'))
+}));
+
+gulp.task('compile-css', gulp.series( ['events-styles', 'events-styles-5', 'sensei-styles', 'popup-maker-styles', 'bbpress-styles', 'woocommerce-styles'], function(done) {
 	done();
 }));
 
