@@ -4,7 +4,7 @@
   "description": "Customizer for LSX",
   "main": "gulpfile.js",
   "scripts": {
-	"build-pot": "wp i18n make-pot . languages/lsx-customizer.pot",
+    "build-pot": "wp i18n make-pot . languages/lsx-customizer.pot",
     "build-mopo": "rm -R languages/lsx-customizer-en_EN.mo && cp languages/lsx-customizer.pot languages/lsx-customizer-en_EN.po && wp i18n make-mo languages",
     "translate-US": "cp languages/lsx-customizer-en_EN.po languages/lsx-customizer-en_US.po && cp languages/lsx-customizer-en_EN.mo languages/lsx-customizer-en_US.mo"
   },
@@ -38,6 +38,8 @@
     "gulp-wp-pot": "2.5.0",
     "jshint": "2.13.4",
     "map-stream": "0.0.7",
+    "node-sass": "^7.0.1",
+    "sass": "^1.52.1",
     "susy": "3.0.7"
   },
   "dependencies": {
