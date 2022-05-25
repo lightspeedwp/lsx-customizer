@@ -32,7 +32,7 @@ if ( ! class_exists( 'LSX_Customizer_Frontend' ) ) {
 		 * @since 1.0.0
 		 */
 		public function assets() {
-			wp_enqueue_script( 'lsx-customizer', LSX_CUSTOMIZER_URL . 'assets/js/lsx-customizer.min.js', array( 'jquery' ), LSX_CUSTOMIZER_VER, true );
+			wp_enqueue_script( 'lsx-customizer', LSX_CUSTOMIZER_PATH  . 'assets/js/lsx-customizer.min.js', array( 'jquery' ), LSX_CUSTOMIZER_VER, true );
 
 			$params = apply_filters( 'lsx_customizer_js_params', array(
 				'ajax_url' => admin_url( 'admin-ajax.php' ),
@@ -40,13 +40,13 @@ if ( ! class_exists( 'LSX_Customizer_Frontend' ) ) {
 
 			wp_localize_script( 'lsx-customizer', 'lsx_customizer_params', $params );
 
-			wp_enqueue_style( 'lsx-customizer', LSX_CUSTOMIZER_URL . 'assets/css/lsx-customizer.css', array(), LSX_CUSTOMIZER_VER );
+			wp_enqueue_style( 'lsx-customizer', LSX_CUSTOMIZER_PATH  . 'assets/css/lsx-customizer.css', array(), LSX_CUSTOMIZER_VER );
 			wp_style_add_data( 'lsx-customizer', 'rtl', 'replace' );
 
 			$two_step_checkout = get_theme_mod( 'lsx_two_step_checkout', false );
 			if ( class_exists( 'WooCommerce' ) && function_exists( 'is_checkout' ) && is_checkout() && ! empty( $two_step_checkout ) ) {
 
-				wp_enqueue_script( 'flexslider', LSX_CUSTOMIZER_URL . 'assets/js/jquery.flexslider.min.js', array( 'jquery' ), '2.5.0' );
+				wp_enqueue_script( 'flexslider', LSX_CUSTOMIZER_PATH  . 'assets/js/jquery.flexslider.min.js', array( 'jquery' ), '2.5.0' );
 			}
 
 		}

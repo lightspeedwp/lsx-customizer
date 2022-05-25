@@ -45,6 +45,8 @@ if ( ! class_exists( 'LSX_Customizer' ) ) {
 		public function woocommerce() {
 			if ( class_exists( 'WooCommerce' ) ) {
 				require_once( LSX_CUSTOMIZER_PATH . 'classes/class-lsx-customizer-woocommerce.php' );
+				require_once( LSX_CUSTOMIZER_PATH . 'includes/woocommerce/woocommerce.php' );
+				require_once( LSX_CUSTOMIZER_PATH . 'includes/woocommerce/addons.php' );
 			}
 		}
 
