@@ -56,8 +56,8 @@ if ( ! class_exists( 'LSX_Yoast' ) ) :
 		 * @subpackage yoast
 		 */
 		public function lsx_yoast_scripts_add_styles() {
-			wp_enqueue_script( 'lsx_yoast_js', LSX_CUSTOMIZER_PATH  . 'assets/js/yoast/yoast.js', array( 'jquery' ), LSX_VERSION, true );
-			wp_enqueue_style( 'lsx_yoast_css', LSX_CUSTOMIZER_PATH  . 'assets/css/yoast/yoast.css', array( 'lsx_main' ), LSX_VERSION );
+			wp_enqueue_script( 'lsx_yoast_js', LSX_CUSTOMIZER_URL  . 'assets/js/yoast/yoast.js', array( 'jquery' ), LSX_VERSION, true );
+			wp_enqueue_style( 'lsx_yoast_css', LSX_CUSTOMIZER_URL  . 'assets/css/yoast/yoast.css', array( 'lsx_main' ), LSX_VERSION );
 		}
 	}
 
