@@ -2,5 +2,18 @@
 	&.wc_points_redeem_earn_points {
 		margin-bottom: 30px;
 		margin-top: 30px;
+		display: flex;
+
+		.lsx-woocommerce-message-text {
+			flex-basis: 70%;
+			align-self: center;
+		}
+
+		form.wc_points_rewards_apply_discount {
+			display: inline;
+			max-width: none;
+			margin: 0;
+			flex-basis: 30%;
+		}
 	}
 } 

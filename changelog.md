@@ -1,5 +1,10 @@
 # Change log
 
+## [[1.5.1]](https://github.com/lightspeeddevelopment/lsx-customizer/releases/tag/1.5.1) - In Development
+
+### Fixed
+- Fixed a plugin conflict with the WooCommerce Points and Rewards plugin.
+
 ## [[1.5.0]](https://github.com/lightspeeddevelopment/lsx-customizer/releases/tag/1.5.0) - 2022-05-25
 
 ### Added

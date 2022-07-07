@@ -61,19 +61,4 @@ if ( class_exists( 'WC_Points_Rewards' ) ) {
 		return $message;
 	}
 	add_filter( 'option_wc_points_rewards_redeem_points_message', 'lsx_wc_points_message_div', 10, 2 );
-
-	/**
-	 * Adds in the lsx wrapper class.
-	 *
-	 * @param string $message
-	 * @param boolean $discount_available
-	 * @return string
-	 */
-	function lsx_wc_points_message_div_wrapper_class( $message = '', $discount_available ) {
-		if ( '' !== $message ) {
-			$message = str_replace( 'wc_points_redeem_earn_points', 'wc_points_redeem_earn_points woocommerce-message lsx-woocommerce-message-wrap', $message );
-		}
-		return $message;
-	}
-	add_filter( 'wc_points_rewards_redeem_points_message', 'lsx_wc_points_message_div_wrapper_class', 10, 2 );
 }
