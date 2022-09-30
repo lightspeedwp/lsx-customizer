@@ -1,10 +1,13 @@
 # Change log
 
-## [[1.5.1]](https://github.com/lightspeeddevelopment/lsx-customizer/releases/tag/1.5.1) - In Development
+## [[1.5.1]](https://github.com/lightspeeddevelopment/lsx-customizer/releases/tag/1.5.1) - 2022-09-30
 
 ### Fixed
 - Fixed a plugin conflict with the WooCommerce Points and Rewards plugin.
 - The block editor colours being called incorrectly from the theme mods.
+
+### Security
+- General testing to ensure compatibility with latest WordPress version (6.0.2).
 
 ## [[1.5.0]](https://github.com/lightspeeddevelopment/lsx-customizer/releases/tag/1.5.0) - 2022-05-25
 
