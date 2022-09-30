@@ -59,80 +59,80 @@ if ( ! class_exists( 'LSX_Customizer_Frontend' ) ) {
 		public function lsx_customizer_color_palette_css() {
 			$styles = '
 			.container #primary.content-area .has-primary-color-background-color {
-				background-color:' . get_theme_mod( 'primary_color', '#428bca' ) . ';
+				background-color:' . get_theme_mod( 'primary_colour', '#428bca' ) . ';
 			}
 			.container #primary.content-area .has-primary-color-color {
-				color: ' . get_theme_mod( 'primary_color', '#428bca' ) . ';
+				color: ' . get_theme_mod( 'primary_colour', '#428bca' ) . ';
 			}
 
 			.container #primary.content-area .has-strong-primary-color-background-color {
-				background-color:' . get_theme_mod( 'strong_primary_color', '#2a6496' ) . ';
+				background-color:' . get_theme_mod( 'strong_primary_colour', '#2a6496' ) . ';
 			}
 			.container #primary.content-area .has-strong-primary-color-color {
-				color: ' . get_theme_mod( 'strong_primary_color', '#2a6496' ) . ';
+				color: ' . get_theme_mod( 'strong_primary_colour', '#2a6496' ) . ';
 			}
 
 			.container #primary.content-area .has-cta-color-background-color {
-				background-color:' . get_theme_mod( 'call_to_action_color', '#f7941d' ) . ';
+				background-color:' . get_theme_mod( 'call_to_action_colour', '#f7941d' ) . ';
 			}
 			.container #primary.content-area .has-cta-color-color {
-				color: ' . get_theme_mod( 'call_to_action_color', '#f7941d' ) . ';
+				color: ' . get_theme_mod( 'call_to_action_colour', '#f7941d' ) . ';
 			}
 
 			.container #primary.content-area .has-strong-cta-color-background-color {
-				background-color:' . get_theme_mod( 'strong_cta_color', '#f7741d' ) . ';
+				background-color:' . get_theme_mod( 'strong_cta_colour', '#f7741d' ) . ';
 			}
 			.container #primary.content-area .has-strong-cta-color-color {
-				color: ' . get_theme_mod( 'strong_cta_color', '#f7741d' ) . ';
+				color: ' . get_theme_mod( 'strong_cta_colour', '#f7741d' ) . ';
 			}
 
 			.container #primary.content-area .has-strong-cta-color-background-color {
-				background-color:' . get_theme_mod( 'strong_cta_color', '#f7741d' ) . ';
+				background-color:' . get_theme_mod( 'strong_cta_colour', '#f7741d' ) . ';
 			}
 			.container #primary.content-area .has-strong-cta-color-color {
-				color: ' . get_theme_mod( 'strong_cta_color', '#f7741d' ) . ';
+				color: ' . get_theme_mod( 'strong_cta_colour', '#f7741d' ) . ';
 			}
 
 			.container #primary.content-area .has-secondary-color-background-color {
-				background-color:' . get_theme_mod( 'secondary_color', '#eaeaea' ) . ';
+				background-color:' . get_theme_mod( 'secondary_colour', '#eaeaea' ) . ';
 			}
 			.container #primary.content-area .has-secondary-color-color {
-				color: ' . get_theme_mod( 'secondary_color', '#eaeaea' ) . ';
+				color: ' . get_theme_mod( 'secondary_colour', '#eaeaea' ) . ';
 			}
 
 			.container #primary.content-area .has-strong-secondary-color-background-color {
-				background-color:' . get_theme_mod( 'strong_secondary_color', '#c4c4c4' ) . ';
+				background-color:' . get_theme_mod( 'strong_secondary_colour', '#c4c4c4' ) . ';
 			}
 			.container #primary.content-area .has-strong-secondary-color-color {
-				color: ' . get_theme_mod( 'strong_secondary_color', '#c4c4c4' ) . ';
+				color: ' . get_theme_mod( 'strong_secondary_colour', '#c4c4c4' ) . ';
 			}
 
 			.container #primary.content-area .has-tertiary-color-background-color {
-				background-color:' . get_theme_mod( 'tertiary_color', '#6BA913' ) . ';
+				background-color:' . get_theme_mod( 'tertiary_colour', '#6BA913' ) . ';
 			}
 			.container #primary.content-area .has-tertiary-color-color {
-				color: ' . get_theme_mod( 'tertiary_color', '#6BA913' ) . ';
+				color: ' . get_theme_mod( 'tertiary_colour', '#6BA913' ) . ';
 			}
 
 			.container #primary.content-area .has-strong-tertiary-color-background-color {
-				background-color:' . get_theme_mod( 'strong_tertiary_color', '#3F640B' ) . ';
+				background-color:' . get_theme_mod( 'strong_tertiary_colour', '#3F640B' ) . ';
 			}
 			.container #primary.content-area .has-strong-tertiary-color-color {
-				color: ' . get_theme_mod( 'strong_tertiary_color', '#3F640B' ) . ';
+				color: ' . get_theme_mod( 'strong_tertiary_colour', '#3F640B' ) . ';
 			}
 
 			.container #primary.content-area .has-heading-color-background-color {
-				background-color:' . get_theme_mod( 'heading_color', '#4a4a4a' ) . ';
+				background-color:' . get_theme_mod( 'heading_colour', '#4a4a4a' ) . ';
 			}
 			.container #primary.content-area .has-heading-color-color {
-				color: ' . get_theme_mod( 'heading_color', '#4a4a4a' ) . ';
+				color: ' . get_theme_mod( 'heading_colour', '#4a4a4a' ) . ';
 			}
 
 			.container #primary.content-area .has-body-color-background-color {
-				background-color:' . get_theme_mod( 'body_text_color_color', '#444444' ) . ';
+				background-color:' . get_theme_mod( 'body_text_color_colour', '#444444' ) . ';
 			}
 			.container #primary.content-area .has-body-color-color {
-				color: ' . get_theme_mod( 'body_text_color_color', '#444444' ) . ';
+				color: ' . get_theme_mod( 'body_text_color_colour', '#444444' ) . ';
 			}
 
 			';
@@ -200,42 +200,42 @@ if ( ! class_exists( 'LSX_Customizer_Frontend' ) ) {
 				array(
 					'name'  => esc_html__( 'Primary Colour', 'lsx-customizer' ),
 					'slug'  => 'primary-color',
-					'color' => get_theme_mod( 'primary_color', '#428bca' ),
+					'color' => get_theme_mod( 'primary_colour', '#428bca' ),
 				),
 				array(
 					'name'  => esc_html__( 'Strong Primary Colour', 'lsx-customizer' ),
 					'slug'  => 'strong-primary-color',
-					'color' => get_theme_mod( 'strong_primary_color', '#2a6496' ),
+					'color' => get_theme_mod( 'strong_primary_colour', '#2a6496' ),
 				),
 				array(
 					'name'  => esc_html__( 'CTA Colour', 'lsx-customizer' ),
 					'slug'  => 'cta-color',
-					'color' => get_theme_mod( 'call_to_action_color', '#f7941d' ),
+					'color' => get_theme_mod( 'call_to_action_colour', '#f7941d' ),
 				),
 				array(
 					'name'  => esc_html__( 'Strong CTA Colour', 'lsx-customizer' ),
 					'slug'  => 'strong-cta-color',
-					'color' => get_theme_mod( 'strong_cta_color', '#f7741d' ),
+					'color' => get_theme_mod( 'strong_cta_colour', '#f7741d' ),
 				),
 				array(
 					'name'  => esc_html__( 'Secondary Colour', 'lsx-customizer' ),
 					'slug'  => 'secondary-color',
-					'color' => get_theme_mod( 'secondary_color', '#eaeaea' ),
+					'color' => get_theme_mod( 'secondary_colour', '#eaeaea' ),
 				),
 				array(
 					'name'  => esc_html__( 'Strong Secondary Colour', 'lsx-customizer' ),
 					'slug'  => 'strong-secondary-color',
-					'color' => get_theme_mod( 'strong_secondary_color', '#c4c4c4' ),
+					'color' => get_theme_mod( 'strong_secondary_colour', '#c4c4c4' ),
 				),
 				array(
 					'name'  => esc_html__( 'Tertiary Colour', 'lsx-customizer' ),
 					'slug'  => 'tertiary-color',
-					'color' => get_theme_mod( 'tertiary_color', '#6BA913' ),
+					'color' => get_theme_mod( 'tertiary_colour', '#6BA913' ),
 				),
 				array(
 					'name'  => esc_html__( 'Strong Tertiary Colour', 'lsx-customizer' ),
 					'slug'  => 'strong-tertiary-color',
-					'color' => get_theme_mod( 'strong_tertiary_color', '#3F640B' ),
+					'color' => get_theme_mod( 'strong_tertiary_colour', '#3F640B' ),
 				),
 				array(
 					'name'  => esc_html__( 'White', 'lsx-customizer' ),

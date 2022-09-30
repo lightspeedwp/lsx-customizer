@@ -270,14 +270,14 @@ if ( ! class_exists( 'LSX_Customizer_Colour' ) ) {
 			$colors = $this->get_color_scheme();
 
 			$customizer_colour_defaults = array(
-				__( 'Primary Colour', 'lsx-customizer' )   => get_theme_mod( 'button_background_color', $colors['button_background_color'] ),
-				__( 'Strong Primary Colour', 'lsx-button_shadow' ) => get_theme_mod( 'button_background_hover_color', $colors['button_background_hover_color'] ),
-				__( 'Call To Action Colour', 'lsx-customizer' ) => get_theme_mod( 'button_cta_background_color', $colors['button_cta_background_color'] ),
-				__( 'Strong CTA Colour', 'lsx-button_shadow' ) => get_theme_mod( 'button_cta_shadow', $colors['button_cta_shadow'] ),
-				__( 'Secondary Colour', 'lsx-customizer' ) => get_theme_mod( 'button_secondary_background_color', $colors['button_secondary_background_color'] ),
-				__( 'Strong Secondary Colour', 'lsx-button_shadow' ) => get_theme_mod( 'button_secondary_shadow', $colors['button_secondary_shadow'] ),
-				__( 'Tertiary Colour', 'lsx-customizer' )  => get_theme_mod( 'button_tertiary_background_color', $colors['button_tertiary_background_color'] ),
-				__( 'Strong Tertiary Colour', 'lsx-button_shadow' ) => get_theme_mod( 'button_tertiary_shadow', $colors['button_tertiary_shadow'] ),
+				__( 'Primary Colour', 'lsx-customizer' )   => get_theme_mod( 'primary_colour', $colors['button_background_color'] ),
+				__( 'Strong Primary Colour', 'lsx-button_shadow' ) => get_theme_mod( 'strong_primary_colour', $colors['button_background_hover_color'] ),
+				__( 'Call To Action Colour', 'lsx-customizer' ) => get_theme_mod( 'call_to_action_colour', $colors['button_cta_background_color'] ),
+				__( 'Strong CTA Colour', 'lsx-button_shadow' ) => get_theme_mod( 'strong_cta_colour', $colors['button_cta_shadow'] ),
+				__( 'Secondary Colour', 'lsx-customizer' ) => get_theme_mod( 'secondary_colour', $colors['button_secondary_background_color'] ),
+				__( 'Strong Secondary Colour', 'lsx-button_shadow' ) => get_theme_mod( 'strong_secondary_colour', $colors['button_secondary_shadow'] ),
+				__( 'Tertiary Colour', 'lsx-customizer' )  => get_theme_mod( 'tertiary_colour', $colors['button_tertiary_background_color'] ),
+				__( 'Strong Tertiary Colour', 'lsx-button_shadow' ) => get_theme_mod( 'strong_tertiary_colour', $colors['button_tertiary_shadow'] ),
 			);
 			foreach ( $customizer_colour_defaults as $key => $value ) {
 
