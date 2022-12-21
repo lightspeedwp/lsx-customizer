@@ -1,5 +1,10 @@
 # Change log
 
+## [[1.5.2]](https://github.com/lightspeeddevelopment/lsx-customizer/releases/tag/1.5.2) - 2022-12-22
+
+### Security
+- General testing to ensure compatibility with latest WordPress version (6.1.1).
+
 ## [[1.5.1]](https://github.com/lightspeeddevelopment/lsx-customizer/releases/tag/1.5.1) - 2022-09-30
 
 ### Fixed
