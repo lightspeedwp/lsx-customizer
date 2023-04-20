@@ -3,9 +3,9 @@ Contributors: feedmymedia, lightspeedwp, eleshar, krugazul, jacquesvdh, ignusver
 Donate link: https://lsdev.biz/lsx/donate/
 Tags: LSX, Customizer, Colours, Layout, WooCommerce
 Requires at least: 5.3
-Tested up to: 6.1.1
+Tested up to: 6.2
 Requires PHP: 7.2
-Stable tag: 1.5.2
+Stable tag: 1.5.3
 License: GPLv3 or later
 License URI: https://www.gnu.org/licenses/gpl-3.0.en.html
 
